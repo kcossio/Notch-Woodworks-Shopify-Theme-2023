@@ -38,6 +38,34 @@
     },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "b6b5b47f-3a31-4ced-9810-2c19b9413c3e": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Notch",
+            "menu": "footer"
+          }
+        },
+        "aff2aec5-f81b-42c5-bee1-fb3e08c441a8": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Collections",
+            "menu": "collections"
+          }
+        },
+        "b339a3eb-ed31-41f8-99bf-52db6c04cf6c": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Support",
+            "menu": "support"
+          }
+        }
+      },
+      "block_order": [
+        "b6b5b47f-3a31-4ced-9810-2c19b9413c3e",
+        "aff2aec5-f81b-42c5-bee1-fb3e08c441a8",
+        "b339a3eb-ed31-41f8-99bf-52db6c04cf6c"
+      ],
       "settings": {
         "color_scheme": "background-2",
         "newsletter_enable": false,

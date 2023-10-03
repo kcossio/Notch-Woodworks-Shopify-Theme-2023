@@ -99,7 +99,7 @@
     "sale_badge_color_scheme": "accent-1",
     "sold_out_badge_color_scheme": "background-1",
     "brand_headline": "",
-    "brand_description": "<p><\/p>",
+    "brand_description": "",
     "brand_image_width": 100,
     "social_facebook_link": "https:\/\/www.facebook.com\/notchwoodworks",
     "social_instagram_link": "https:\/\/instagram.com\/Notchwoodworks",
@@ -160,13 +160,13 @@
       },
       "inverse": {
         "settings": {
-          "background": "#0e1b4d",
+          "background": "#56563f",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
-          "button_label": "#0e1b4d",
+          "button_label": "#56563f",
           "secondary_button_label": "#ffffff",
-          "shadow": "#0e1b4d"
+          "shadow": "#56563f"
         }
       },
       "accent-1": {

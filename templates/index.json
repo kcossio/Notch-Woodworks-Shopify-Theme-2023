@@ -63,36 +63,20 @@
         "padding_bottom": 60
       }
     },
-    "16963681164b6dab00": {
+    "1696371259dfbcc728": {
       "type": "apps",
       "blocks": {
-        "345b546f-e734-49cc-88d7-ff885455ac8a": {
-          "type": "shopify:\/\/apps\/maestrooo-section-feed\/blocks\/app-block\/43cd482b-515a-4e82-b170-05d391763cd2",
+        "719485e8-d773-44b0-8720-7bb6d7a58e8f": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "Instagram feed",
-            "subheading": "",
-            "button_text": "",
-            "button_link": "",
-            "layout": "grid",
-            "image_size": "large",
-            "add_spacing": true,
-            "rows_count": 2,
-            "show_author": false,
-            "show_caption": true,
-            "show_date": true,
-            "click_action": "open_instagram",
-            "heading_color": "#000000",
-            "subheading_color": "#000000",
-            "button_background": "#000000",
-            "button_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_text_color": "#ffffff",
-            "overlay_opacity": 65
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
           }
         }
       },
       "block_order": [
-        "345b546f-e734-49cc-88d7-ff885455ac8a"
+        "719485e8-d773-44b0-8720-7bb6d7a58e8f"
       ],
       "settings": {
         "include_margins": true
@@ -102,6 +86,6 @@
   "order": [
     "slideshow",
     "featured-collection-0",
-    "16963681164b6dab00"
+    "1696371259dfbcc728"
   ]
 }

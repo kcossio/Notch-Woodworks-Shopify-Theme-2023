@@ -114,6 +114,16 @@
       {%- endfor -%}
     </div><!--End newsletter left column-->
     <div class="newsletter-right">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+      
+          {%- when 'hero_image' -%}
+            {%- assign hero_image = block.settings.hero_image -%}
+            {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'nl_hero', loading: 'lazy' }}
+      
+        {%- endcase -%}
+      {%- endfor -%}
+      
     </div><!-- End newsletter right column-->
     
   </div>

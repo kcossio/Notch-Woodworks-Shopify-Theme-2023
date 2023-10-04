@@ -2,3 +2,7 @@
 /*-----------------------
 EASING 
 ---------------------- */
+.bg-chevron-white {
+  background: url("bg-chevron-white.svg") center center repeat;
+  background-size: 23374.6px 1740.6px;
+}

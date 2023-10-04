@@ -5,7 +5,8 @@
   padding-left: calc(4rem / var(--font-body-scale));
   display:flex;
   flex-wrap:wrap;
-  align-items:justify-content;
+  justify-content: space-between;
+  align-items: flex-start;s
 
   .newsletter-left {
     width:100%;

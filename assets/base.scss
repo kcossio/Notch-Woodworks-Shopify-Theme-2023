@@ -74,6 +74,78 @@
 // ------ Include Partials ------- //
 @import "mixins";
 
+// ---------- Basic Structure ------ //
+
+.inner {
+  width:1312px;
+  max-width:100%;
+  padding:0px 40px;
+  margin:0px auto;
+  position:relative;
+  z-index:1;
+
+  &.narrow {
+    width:780px;
+  }
+  &.center {
+    text-align:center;
+  }
+}
+.wide {
+  width:1320px;
+  max-width:100%;
+  padding:0px 40px;
+  margin:0px auto;
+}
+.full {
+  width:100%;
+}
+
+img {
+max-width:100%;
+}
+section {
+max-width:100%;
+position:relative;
+}
+//  --------------- Section Background Image --------------- //
+
+.bg-img {
+
+display: flex;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:1;
+  overflow:hidden;
+
+  &.bg-hero {
+    z-index:0;
+  }
+
+  &.svg {
+    align-items:center;
+  }
+
+  img, picture, svg {
+    z-index:1;
+    object-fit: cover; 
+    height: auto;
+    min-height:100%;
+    width:100%;
+    display:block;
+  }
+
+
+
+&.cover {
+  object-fit:cover;
+}
+}
+
+
 /* base */
 
 .no-js:not(html) {

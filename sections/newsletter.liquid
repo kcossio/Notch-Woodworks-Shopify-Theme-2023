@@ -119,7 +119,9 @@
       
           {%- when 'hero_image' -%}
             {%- assign hero_image = block.settings.hero_image -%}
+            {%- if hero_image != blank -%}
             {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'nl_hero', loading: 'lazy' }}
+            {%- endif -%}
       
         {%- endcase -%}
       {%- endfor -%}

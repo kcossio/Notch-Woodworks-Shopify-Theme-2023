@@ -22,12 +22,19 @@
           "type": "email_form",
           "settings": {
           }
+        },
+        "1fb03b37-309b-4646-bf3d-0a06830a00a8": {
+          "type": "hero_image",
+          "settings": {
+            "hero_image": "shopify:\/\/shop_images\/newsletter-hero-cutting-board.jpg"
+          }
         }
       },
       "block_order": [
         "heading",
         "paragraph",
-        "email-form"
+        "email-form",
+        "1fb03b37-309b-4646-bf3d-0a06830a00a8"
       ],
       "settings": {
         "color_scheme": "background-2",

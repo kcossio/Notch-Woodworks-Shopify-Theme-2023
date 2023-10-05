@@ -2,6 +2,16 @@
 @import "mixins";
 @import "fonts";
 
+.section-newsletter {
+
+  padding:48px 0px;
+
+  @include breakpoint(tablet) {
+    padding:75px 0px 86px 0px;
+  }
+
+
+}
 .newsletter__wrapper {
   display:flex;
   flex-wrap:wrap;
@@ -11,9 +21,6 @@
   max-width:100%;
   margin:0px auto;
 
-  @include breakpoint(tablet) {
-    padding:75px 0px 86px 0px;
-  }
 
   .newsletter-left {
     width:100%;

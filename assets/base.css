@@ -37,6 +37,7 @@ EASING
   --alpha-button-border: 1;
   --alpha-link: 0.85;
   --alpha-badge-border: 0.1;
+  --font-family-header-cn: "FSIndustrieCondensedBold", sans-serif;
 }
 
 .product-card-wrapper .card,

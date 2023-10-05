@@ -4,7 +4,33 @@ EASING
 ---------------------- */
 @font-face {
   font-family: "Buinton";
-  src: url("font-Buinton.woff2") format("woff2"), url("font-Buinton.woff") format("woff");
+  src: url("ft-Buinton.woff2") format("woff2"), url("ft-Buinton.woff") format("woff");
+}
+@font-face {
+  font-family: "Editor Bold";
+  src: url("ft-Editor-Bold.woff") format("woff"), url("ft-Editor-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FSIndustrieCondensedBold";
+  src: url("ft-FSIndustrieCondensedBold.woff2") format("woff2"), url("ft-FSIndustrieCondensedBold.woff") format("woff");
+}
+@font-face {
+  font-family: "FSIndustrieExtendedBlack";
+  src: url("ft-FSIndustrieExtendedBlack.woff2") format("woff2"), url("ft-FSIndustrieExtendedBlack.woff") format("woff");
+}
+@font-face {
+  font-family: "FSKimText";
+  src: url("ft-FSKimTextItalic.woff2") format("woff2"), url("ft-FSKimTextItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "FSKimText";
+  src: url("ft-FSKimTextRegular.woff2") format("woff2"), url("ft-FSKimTextRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 .bg-chevron-white {
   background: #F2F2F2 url("bg-chevron-white.svg") center center repeat;

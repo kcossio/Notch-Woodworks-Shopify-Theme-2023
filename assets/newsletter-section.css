@@ -39,7 +39,7 @@ EASING
   width: 1086px;
   max-width: 100%;
   margin: 0px auto;
-  padding: 48px 0px;
+  padding: 46px 0px;
 }
 @media (min-width: 768px) {
   .newsletter__wrapper {

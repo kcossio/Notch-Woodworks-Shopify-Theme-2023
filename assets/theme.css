@@ -2,6 +2,10 @@
 /*-----------------------
 EASING 
 ---------------------- */
+@font-face {
+  font-family: "Buinton";
+  src: url("font-Buinton.woff2") format("woff2"), url("font-Buinton.woff") format("woff");
+}
 .bg-chevron-white {
   background: #F2F2F2 url("bg-chevron-white.svg") center center repeat;
   background-size: 23374.6px 1740.6px;

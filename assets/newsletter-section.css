@@ -32,18 +32,24 @@ EASING
   font-style: normal;
 }
 .newsletter__wrapper {
-  padding-right: calc(4rem / var(--font-body-scale));
-  padding-left: calc(4rem / var(--font-body-scale));
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  width: 1086px;
+  max-width: 100%;
+  margin: 0px auto;
 }
-.newsletter__wrapper s .newsletter-left {
+@media (min-width: 768px) {
+  .newsletter__wrapper {
+    padding: 75px 0px 86px 0px;
+  }
+}
+.newsletter__wrapper .newsletter-left {
   width: 100%;
 }
 @media (min-width: 1024px) {
-  .newsletter__wrapper s .newsletter-left {
+  .newsletter__wrapper .newsletter-left {
     width: 33%;
   }
 }

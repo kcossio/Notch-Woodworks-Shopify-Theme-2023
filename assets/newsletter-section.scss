@@ -3,12 +3,17 @@
 @import "fonts";
 
 .newsletter__wrapper {
-  padding-right: calc(4rem / var(--font-body-scale));
-  padding-left: calc(4rem / var(--font-body-scale));
   display:flex;
   flex-wrap:wrap;
   justify-content: space-between;
-  align-items: flex-start;s
+  align-items: flex-start;
+  width:1086px;
+  max-width:100%;
+  margin:0px auto;
+
+  @include breakpoint(tablet) {
+    padding:75px 0px 86px 0px;
+  }
 
   .newsletter-left {
     width:100%;

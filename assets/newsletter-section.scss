@@ -1,4 +1,6 @@
+// ------ Include Partials ------- //
 @import "mixins";
+@import "fonts";
 
 .newsletter__wrapper {
   padding-right: calc(4rem / var(--font-body-scale));
@@ -24,6 +26,9 @@
   }
 }
 
+.nl-hero {
+  aspect-ratio: 639 / 261;
+}
 @media screen and (min-width: 750px) {
   .newsletter__wrapper {
     padding-right: 9rem;

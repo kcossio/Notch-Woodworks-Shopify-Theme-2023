@@ -144,10 +144,8 @@ section {
 .bg-img {
   display: flex;
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  height: auto;
+  position: relative;
   z-index: 1;
   overflow: hidden;
 }
@@ -158,13 +156,14 @@ section {
   align-items: center;
 }
 .bg-img img, .bg-img picture, .bg-img svg {
-  z-index: 1;
+  z-index: 0;
   -o-object-fit: cover;
      object-fit: cover;
   height: auto;
   min-height: 100%;
   width: 100%;
   display: block;
+  position: absolute;
 }
 .bg-img.cover {
   -o-object-fit: cover;

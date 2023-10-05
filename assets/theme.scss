@@ -4,7 +4,18 @@
 @import "mixins";
 @import "fonts";
 
+// CSS Variables 
 
+:root {
+  --font-family-header-cn: 'FSIndustrieCondensedBold', sans-serif;
+  --font-family-script: 'Buiton', cursive;
+}
+
+// General Font Styles //
+
+.script {
+    font-family: var(--font-family-script);
+}
 
 // ---- General/Misc Items ------ //
 

@@ -32,6 +32,15 @@ EASING
   font-weight: normal;
   font-style: normal;
 }
+:root {
+  --font-family-header-cn: "FSIndustrieCondensedBold", sans-serif;
+  --font-family-script: "Buiton", cursive;
+}
+
+.script {
+  font-family: var(--font-family-script);
+}
+
 .bg-chevron-white {
   background: #F2F2F2 url("bg-chevron-white.svg") center center repeat;
   background-size: 23374.6px 1740.6px;

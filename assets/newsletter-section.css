@@ -57,6 +57,7 @@ EASING
 }
 
 .nl-hero {
+  width: 100%;
   aspect-ratio: 639/261;
 }
 

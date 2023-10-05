@@ -120,7 +120,7 @@
           {%- when 'hero_image' -%}
 
             
-              {%- assign hero_image = section.settings.hero_image -%}
+              {%- assign hero_image = block.settings.hero_image -%}
               {%- if hero_image != blank -%}
                 <div class="bg-img nl-hero">
                   {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'bg', loading: 'lazy' }}

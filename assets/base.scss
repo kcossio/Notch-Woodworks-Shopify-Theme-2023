@@ -112,6 +112,7 @@ section {
 max-width:100%;
 position:relative;
 }
+
 //  --------------- Section Background Image --------------- //
 
 
@@ -139,10 +140,7 @@ position:relative;
     min-height:100%;
     width:100%;
     display:block;
-    position: absolute;
   }
-
-
 
   &.cover {
     object-fit:cover;

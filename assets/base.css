@@ -163,7 +163,6 @@ section {
   min-height: 100%;
   width: 100%;
   display: block;
-  position: absolute;
 }
 .bg-img.cover {
   -o-object-fit: cover;

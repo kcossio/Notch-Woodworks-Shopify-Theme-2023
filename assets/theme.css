@@ -3,6 +3,6 @@
 EASING 
 ---------------------- */
 .bg-chevron-white {
-  background: url("bg-chevron-white.svg") center center repeat;
+  background: #F2F2F2 url("bg-chevron-white.svg") center center repeat;
   background-size: 17531.25px 1305.45px;
 }

@@ -4,11 +4,6 @@
 
 .section-newsletter {
 
-  padding:48px 0px;
-
-  @include breakpoint(tablet) {
-    padding:75px 0px 86px 0px;
-  }
 
 
 }
@@ -20,6 +15,13 @@
   width:1086px;
   max-width:100%;
   margin:0px auto;
+
+
+  padding:48px 0px;
+
+  @include breakpoint(tablet) {
+    padding:75px 0px 86px 0px;
+  }
 
 
   .newsletter-left {

@@ -16,7 +16,7 @@
 {%- endstyle -%}
 
 <div class="newsletter center bg-chevron-white {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
-  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+  <div class="newsletter__wrapper content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
     <div class="newsletter-left">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -140,12 +140,6 @@
     "groups": ["header"]
   },
   "settings": [
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "background-1"
-    },
     {
       "type": "checkbox",
       "id": "full_width",

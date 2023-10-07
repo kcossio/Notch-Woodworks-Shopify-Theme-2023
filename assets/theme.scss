@@ -9,6 +9,11 @@
 :root {
   --font-family-header-cn: 'FSIndustrieCondensedBold', sans-serif;
   --font-family-script: 'Buinton', cursive;
+  --font-family-header-ex: 'FSIndustrieExtendedBlack', sans-serif;
+  --font-family-body: 'FSKimText', serif;
+  --color-main:#004356;
+  --color-accent:#C15232;
+
 }
 
 // General Font Styles //
@@ -16,7 +21,18 @@
 .script {
     font-family: var(--font-family-script);
 }
+.header-cn {
+    font-family: var(--font-family-header-cn);
+}
+.header-ex {
+    font-family: var(--font-family-header-ex);
+}
 
+//------ Layout/Setup --------- //
+
+body {
+    font-family: var(--font-family-body);
+}
 // ---- General/Misc Items ------ //
 
 .bg-chevron-white {

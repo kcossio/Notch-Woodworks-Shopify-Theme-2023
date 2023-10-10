@@ -144,14 +144,14 @@
         "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>We make what makes sense. The most beautiful things are a long time coming. When they find us, they remind us what we love.<\/p>"
           }
         },
         "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-button-1": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",

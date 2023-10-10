@@ -1,5 +1,14 @@
 {
   "sections": {
+    "63ab7c80-4d5f-4467-b000-ff3a8a733be9": {
+      "type": "home-main-banner",
+      "settings": {
+        "heading": "Exquisitely individual.<br>Supremely usable.",
+        "subheading": "Cut from reclaimed pecan, the wood is dried for two years, flattened, carved, and finally treated with the kindness and care for our heirloom pieces.",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections"
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -84,6 +93,7 @@
     }
   },
   "order": [
+    "63ab7c80-4d5f-4467-b000-ff3a8a733be9",
     "slideshow",
     "featured-collection-0",
     "1696371259dfbcc728"

@@ -1,42 +1,57 @@
+{%- # Label: Heading -%}
+{{ section.settings.heading }} 
+
+{%- # Label: Subheading -%}
+{{ section.settings.subheading }} 
+
+{%- # Label: Button Label -%}
+{{ section.settings.button_label }} 
+
+{%- # Label: Button Link -%}
+{{ section.settings.button_link }} 
+
 {% schema %}
-{
+  {
   "name": "Home Main Banner",
-  "tag": "section",
   "class": "section section-home-banner",
+  "tag": "section",
   "settings": [
     {
-      "type": "text",
-      "label": "Headline",
-      "id": "headline",
-      "placeholder": "Add a headline for the banner section"
+      "type": "paragraph",
+      "content": "Add content for the custom banner at the top of the Home Page, which includes product images that slide in to the screen."
     },
     {
       "type": "text",
-      "label": "Intro Paragraph",
-      "id": "intro_paragraph",
-      "placeholder": "Add an introductory paragraph to this section"
+      "id": "heading",
+      "label": "Heading",
+      "info": "Add a heading for this section"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "info": "Add a subheading for this section"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Shop Now",
+      "info": "Enter the label for the button in this section"
     },
     {
       "type": "url",
-      "label": "Call to Action Button Link",
-      "id": "call_to_action_button_link",
-      "info": "Choose the link this button should point to"
-    },
-    {
-      "type": "text",
-      "label": "Call to Action Button Label",
-      "id": "call_to_action_button_label",
-      "default": "Shop Now",
-      "placeholder": "Enter a label for the button in this section"
+      "id": "button_link",
+      "label": "Button Link",
+      "info": "Choose or enter the link that this button should point to"
     }
   ],
-  "blocks": [],
   "presets": [
     {
-      "name": "Main Banner"
+      "name": "Home Main Banner"
     }
   ]
-}
+}  
 {% endschema %}
 
 {% stylesheet %}

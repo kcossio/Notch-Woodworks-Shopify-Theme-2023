@@ -90,12 +90,96 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "c248c849-563a-4ae6-a63c-0f127069fe90": {
+      "type": "collection-list",
+      "blocks": {
+        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "boards"
+          }
+        },
+        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "utensils"
+          }
+        },
+        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wood-care"
+          }
+        }
+      },
+      "block_order": [
+        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-1",
+        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-2",
+        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-3"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6a46f4a9-1d0b-4534-952b-718b8a239989": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "CHARACTER INGRAINED™",
+            "heading_size": "h1"
+          }
+        },
+        "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-heading-1",
+        "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-text-1",
+        "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "63ab7c80-4d5f-4467-b000-ff3a8a733be9",
     "slideshow",
     "featured-collection-0",
-    "1696371259dfbcc728"
+    "1696371259dfbcc728",
+    "c248c849-563a-4ae6-a63c-0f127069fe90",
+    "6a46f4a9-1d0b-4534-952b-718b8a239989"
   ]
 }

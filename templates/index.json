@@ -173,6 +173,56 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "d753ca8b-3fba-48d2-a998-c30262ca2719": {
+      "type": "rich-text-w-icons",
+      "blocks": {
+        "b708b3b7-0a3e-46d6-9d58-3a2673086013": {
+          "type": "heading",
+          "settings": {
+            "heading": "Testing",
+            "heading_size": "h1"
+          }
+        },
+        "4a163e28-dea7-41d6-ba7e-2297f962fddd": {
+          "type": "caption",
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "1cdba1bd-5a12-4694-9af3-48b0326bb17c": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "72779114-e78c-4024-a124-6a65e8581d7a": {
+          "type": "icon_images",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "b708b3b7-0a3e-46d6-9d58-3a2673086013",
+        "4a163e28-dea7-41d6-ba7e-2297f962fddd",
+        "1cdba1bd-5a12-4694-9af3-48b0326bb17c",
+        "72779114-e78c-4024-a124-6a65e8581d7a"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -181,6 +231,7 @@
     "featured-collection-0",
     "1696371259dfbcc728",
     "c248c849-563a-4ae6-a63c-0f127069fe90",
-    "6a46f4a9-1d0b-4534-952b-718b8a239989"
+    "6a46f4a9-1d0b-4534-952b-718b8a239989",
+    "d753ca8b-3fba-48d2-a998-c30262ca2719"
   ]
 }

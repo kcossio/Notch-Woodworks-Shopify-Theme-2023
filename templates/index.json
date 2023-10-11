@@ -132,88 +132,47 @@
         "padding_bottom": 36
       }
     },
-    "6a46f4a9-1d0b-4534-952b-718b8a239989": {
-      "type": "rich-text",
-      "blocks": {
-        "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "CHARACTER  INGRAINED™",
-            "heading_size": "h0"
-          }
-        },
-        "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We make what makes sense. The most beautiful things are a long time coming. When they find us, they remind us what we love.<\/p>"
-          }
-        },
-        "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Now",
-            "button_link": "shopify:\/\/collections",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-heading-1",
-        "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-text-1",
-        "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-button-1"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "d753ca8b-3fba-48d2-a998-c30262ca2719": {
       "type": "rich-text-w-icons",
       "blocks": {
         "b708b3b7-0a3e-46d6-9d58-3a2673086013": {
           "type": "heading",
           "settings": {
-            "heading": "Testing",
+            "heading": "CHARACTER  INGRAINED™",
             "heading_size": "h1"
           }
         },
-        "4a163e28-dea7-41d6-ba7e-2297f962fddd": {
-          "type": "caption",
+        "8b4bd860-9b2c-424d-ba34-b7ca551a53bf": {
+          "type": "text",
           "settings": {
-            "caption": "Add a tagline",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "1cdba1bd-5a12-4694-9af3-48b0326bb17c": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p>We make what makes sense. The most beautiful things are a long time coming. When they find us, they remind us what we love.<\/p>"
           }
         },
         "72779114-e78c-4024-a124-6a65e8581d7a": {
           "type": "icon_images",
           "settings": {
+            "icon_1": "shopify:\/\/shop_images\/character-ingrained.svg",
+            "icon_2": "shopify:\/\/shop_images\/character-ingrained.svg",
+            "icon_3": "shopify:\/\/shop_images\/character-ingrained.svg"
+          }
+        },
+        "1cdba1bd-5a12-4694-9af3-48b0326bb17c": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
         "b708b3b7-0a3e-46d6-9d58-3a2673086013",
-        "4a163e28-dea7-41d6-ba7e-2297f962fddd",
-        "1cdba1bd-5a12-4694-9af3-48b0326bb17c",
-        "72779114-e78c-4024-a124-6a65e8581d7a"
+        "8b4bd860-9b2c-424d-ba34-b7ca551a53bf",
+        "72779114-e78c-4024-a124-6a65e8581d7a",
+        "1cdba1bd-5a12-4694-9af3-48b0326bb17c"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -231,7 +190,6 @@
     "featured-collection-0",
     "1696371259dfbcc728",
     "c248c849-563a-4ae6-a63c-0f127069fe90",
-    "6a46f4a9-1d0b-4534-952b-718b8a239989",
     "d753ca8b-3fba-48d2-a998-c30262ca2719"
   ]
 }

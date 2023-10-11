@@ -3,8 +3,9 @@
     "63ab7c80-4d5f-4467-b000-ff3a8a733be9": {
       "type": "home-main-banner",
       "settings": {
-        "heading": "Exquisitely individual.<br>Supremely usable.",
-        "subheading": "Cut from reclaimed pecan, the wood is dried for two years, flattened, carved, and finally treated with the kindness and care for our heirloom pieces.",
+        "heading": "<p>Exquisitely individual.<br\/>Supremely usable.<\/p>",
+        "subheading": "<p>Cut from reclaimed pecan, the wood is dried for two years, flattened, carved, and finally treated with the kindness and care for our heirloom pieces.<\/p>",
+        "subheading_3": "",
         "button_label": "Shop Now",
         "button_link": "shopify:\/\/collections"
       }
@@ -137,8 +138,8 @@
         "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "CHARACTER INGRAINED™",
-            "heading_size": "h1"
+            "heading": "CHARACTER  INGRAINED™",
+            "heading_size": "h0"
           }
         },
         "template--21136916676903__6a46f4a9-1d0b-4534-952b-718b8a239989-text-1": {

@@ -73,25 +73,6 @@
         "padding_bottom": 60
       }
     },
-    "1696371259dfbcc728": {
-      "type": "apps",
-      "blocks": {
-        "719485e8-d773-44b0-8720-7bb6d7a58e8f": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "heading_size": 20,
-            "feed_width": 100,
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "719485e8-d773-44b0-8720-7bb6d7a58e8f"
-      ],
-      "settings": {
-        "include_margins": false
-      }
-    },
     "c248c849-563a-4ae6-a63c-0f127069fe90": {
       "type": "collection-list",
       "blocks": {
@@ -120,7 +101,7 @@
         "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-3"
       ],
       "settings": {
-        "title": "Collections",
+        "title": "",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
@@ -182,14 +163,51 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "169698618623113ade": {
+      "type": "apps",
+      "blocks": {
+        "16d536af-c62c-41e4-9b30-6d54ab6acd3b": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "16d536af-c62c-41e4-9b30-6d54ab6acd3b"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "1696371259dfbcc728": {
+      "type": "apps",
+      "blocks": {
+        "719485e8-d773-44b0-8720-7bb6d7a58e8f": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "719485e8-d773-44b0-8720-7bb6d7a58e8f"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
     "63ab7c80-4d5f-4467-b000-ff3a8a733be9",
     "slideshow",
     "featured-collection-0",
-    "1696371259dfbcc728",
     "c248c849-563a-4ae6-a63c-0f127069fe90",
-    "d753ca8b-3fba-48d2-a998-c30262ca2719"
+    "d753ca8b-3fba-48d2-a998-c30262ca2719",
+    "169698618623113ade",
+    "1696371259dfbcc728"
   ]
 }

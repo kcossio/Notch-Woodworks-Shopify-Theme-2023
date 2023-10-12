@@ -141,7 +141,7 @@ section {
   position: relative;
 }
 
-.bg-img {
+.bg-img, .has-bg {
   display: flex;
   width: 100%;
   height: auto;
@@ -149,13 +149,13 @@ section {
   z-index: 1;
   overflow: hidden;
 }
-.bg-img.bg-hero {
+.bg-img.bg-hero, .has-bg.bg-hero {
   z-index: 0;
 }
-.bg-img.svg {
+.bg-img.svg, .has-bg.svg {
   align-items: center;
 }
-.bg-img img, .bg-img picture, .bg-img svg {
+.bg-img img, .bg-img picture, .bg-img svg, .has-bg img, .has-bg picture, .has-bg svg {
   z-index: 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -164,7 +164,7 @@ section {
   width: 100%;
   display: block;
 }
-.bg-img.cover {
+.bg-img.cover, .has-bg.cover {
   -o-object-fit: cover;
      object-fit: cover;
 }

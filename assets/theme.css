@@ -36,6 +36,7 @@ EASING
   --font-family-header-cn: "FSIndustrieCondensedBold", sans-serif;
   --font-family-script: "Buinton", cursive;
   --font-family-header-ex: "FSIndustrieExtendedBlack", sans-serif;
+  --font-family-header-alt: "Editor", sans-serif;
   --font-family-body: "FSKimText", serif;
   --color-main:#004356;
   --color-accent:#C15232;
@@ -51,6 +52,10 @@ EASING
 
 .header-ex {
   font-family: var(--font-family-header-ex);
+}
+
+.header-alt {
+  font-family: var(--font-family-header-alt);
 }
 
 body {

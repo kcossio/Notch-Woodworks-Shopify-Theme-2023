@@ -513,6 +513,9 @@ EASING
             clip-path: polygon(var(--shape--blob-5));
   }
 }
+.collection-card-wrapper {
+  aspect-ratio: 640/719;
+}
 .collection-card-wrapper .card-collection-title {
   position: absolute;
   bottom: 0px;

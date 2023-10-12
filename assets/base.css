@@ -155,7 +155,7 @@ section {
 .bg-img.svg, .has-bg.svg {
   align-items: center;
 }
-.bg-img img, .bg-img picture, .bg-img svg, .has-bg img, .has-bg picture, .has-bg svg {
+.bg-img img.bg, .bg-img picture.bg, .bg-img svg.bg, .has-bg img.bg, .has-bg picture.bg, .has-bg svg.bg {
   z-index: 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -163,6 +163,7 @@ section {
   min-height: 100%;
   width: 100%;
   display: block;
+  position: absolute;
 }
 .bg-img.cover, .has-bg.cover {
   -o-object-fit: cover;

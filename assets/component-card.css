@@ -513,6 +513,13 @@ EASING
             clip-path: polygon(var(--shape--blob-5));
   }
 }
+.collection-card-wrapper .card-collection-title {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 2;
+}
 .collection-card-wrapper h3.card__heading {
   text-align: center;
   text-transform: uppercase;

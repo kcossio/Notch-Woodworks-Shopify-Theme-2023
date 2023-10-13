@@ -24,19 +24,6 @@
   --text-alignment: var(--product-card-text-alignment);
 }
 
-.collection-card-wrapper .card,
-.contains-card--collection {
-  --border-radius: var(--collection-card-corner-radius);
-  --border-width: var(--collection-card-border-width);
-  --border-opacity: var(--collection-card-border-opacity);
-  --shadow-horizontal-offset: var(--collection-card-shadow-horizontal-offset);
-  --shadow-vertical-offset: var(--collection-card-shadow-vertical-offset);
-  --shadow-blur-radius: var(--collection-card-shadow-blur-radius);
-  --shadow-opacity: var(--collection-card-shadow-opacity);
-  --shadow-visible: var(--collection-card-shadow-visible);
-  --image-padding: var(--collection-card-image-padding);
-  --text-alignment: var(--collection-card-text-alignment);
-}
 
 .article-card-wrapper .card,
 .contains-card--article {

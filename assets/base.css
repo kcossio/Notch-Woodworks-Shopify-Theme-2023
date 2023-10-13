@@ -1277,8 +1277,8 @@ button.shopify-payment-button__button--unbranded:hover,
 .shopify-payment-button [role=button]:hover,
 .cart__dynamic-checkout-buttons [role=button]:hover,
 .cart__dynamic-checkout-buttons iframe:hover {
-  color: var(--color-accent);
-  border-color: var(--color-accent);
+  color: red;
+  border-color: red;
 }
 @media (min-width: 768px) {
   .button,

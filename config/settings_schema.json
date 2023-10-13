@@ -242,16 +242,6 @@
       },
       {
         "type": "range",
-        "id": "buttons_border_thickness",
-        "min": 0,
-        "max": 12,
-        "step": 1,
-        "unit": "px",
-        "label": "t:settings_schema.global.settings.thickness.label",
-        "default": 1
-      },
-      {
-        "type": "range",
         "id": "buttons_border_opacity",
         "min": 0,
         "max": 100,
@@ -259,16 +249,6 @@
         "unit": "%",
         "label": "t:settings_schema.global.settings.opacity.label",
         "default": 100
-      },
-      {
-        "type": "range",
-        "id": "buttons_radius",
-        "min": 0,
-        "max": 40,
-        "step": 2,
-        "unit": "px",
-        "label": "t:settings_schema.global.settings.corner_radius.label",
-        "default": 0
       },
       {
         "type": "header",

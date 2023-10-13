@@ -4,6 +4,8 @@ EASING
 @font-face {
   font-family: "Buinton";
   src: url("ft-Buinton.woff2") format("woff2"), url("ft-Buinton.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "Editor Bold";
@@ -14,10 +16,14 @@ EASING
 @font-face {
   font-family: "FSIndustrieCondensedBold";
   src: url("ft-FSIndustrieCondensedBold.woff2") format("woff2"), url("ft-FSIndustrieCondensedBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "FSIndustrieExtendedBlack";
   src: url("ft-FSIndustrieExtendedBlack.woff2") format("woff2"), url("ft-FSIndustrieExtendedBlack.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "FSKimText";

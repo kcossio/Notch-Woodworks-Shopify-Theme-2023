@@ -552,3 +552,6 @@ EASING
     font-size: 22.5px;
   }
 }
+.collection-card-wrapper .button {
+  z-index: 4;
+}

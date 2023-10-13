@@ -1244,15 +1244,26 @@ button.shopify-payment-button__button--unbranded,
 .shopify-payment-button [role=button],
 .cart__dynamic-checkout-buttons [role=button],
 .cart__dynamic-checkout-buttons iframe {
-  --shadow-horizontal-offset: var(--buttons-shadow-horizontal-offset);
-  --shadow-vertical-offset: var(--buttons-shadow-vertical-offset);
-  --shadow-blur-radius: var(--buttons-shadow-blur-radius);
-  --shadow-opacity: var(--buttons-shadow-opacity);
-  --shadow-visible: var(--buttons-shadow-visible);
-  --border-offset: var(--buttons-border-offset); /* reduce radius edge artifacts */
-  --border-opacity: calc(1 - var(--buttons-border-opacity));
-  border-radius: var(--buttons-radius-outset);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-main);
+  font-family: var(--font-family-header-ex);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 24px;
+  color: var(--color-main);
+  border-radius: 0px;
   position: relative;
+}
+@media (min-width: 768px) {
+  .button,
+  .shopify-challenge__button,
+  .customer button,
+  button.shopify-payment-button__button--unbranded,
+  .shopify-payment-button [role=button],
+  .cart__dynamic-checkout-buttons [role=button],
+  .cart__dynamic-checkout-buttons iframe {
+    font-size: 28px;
+  }
 }
 
 .button,
@@ -1330,10 +1341,6 @@ button.shopify-payment-button__button--unbranded {
 .shopify-payment-button__button--unbranded:hover::after {
   --border-offset: 1.3px;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)), 0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
-}
-
-.button--secondary:after {
-  --border-opacity: var(--buttons-border-opacity);
 }
 
 .button:focus-visible,

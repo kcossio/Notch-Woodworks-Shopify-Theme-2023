@@ -241,16 +241,6 @@
         "content": "t:settings_schema.global.settings.header__border.content"
       },
       {
-        "type": "range",
-        "id": "buttons_border_opacity",
-        "min": 0,
-        "max": 100,
-        "step": 5,
-        "unit": "%",
-        "label": "t:settings_schema.global.settings.opacity.label",
-        "default": 100
-      },
-      {
         "type": "header",
         "content": "t:settings_schema.global.settings.header__shadow.content"
       },

@@ -45,45 +45,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "c248c849-563a-4ae6-a63c-0f127069fe90": {
-      "type": "collection-list",
-      "blocks": {
-        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "boards"
-          }
-        },
-        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "utensils"
-          }
-        },
-        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-3": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wood-care"
-          }
-        }
-      },
-      "block_order": [
-        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-1",
-        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-2",
-        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "d753ca8b-3fba-48d2-a998-c30262ca2719": {
       "type": "rich-text-w-icons",
       "blocks": {
@@ -135,6 +96,45 @@
         "padding_bottom": 52
       }
     },
+    "c248c849-563a-4ae6-a63c-0f127069fe90": {
+      "type": "collection-list",
+      "blocks": {
+        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "boards"
+          }
+        },
+        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "utensils"
+          }
+        },
+        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wood-care"
+          }
+        }
+      },
+      "block_order": [
+        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-1",
+        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-2",
+        "template--21136916676903__c248c849-563a-4ae6-a63c-0f127069fe90-featured_collection-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "169698618623113ade": {
       "type": "apps",
       "blocks": {
@@ -175,8 +175,8 @@
   "order": [
     "63ab7c80-4d5f-4467-b000-ff3a8a733be9",
     "slideshow",
-    "c248c849-563a-4ae6-a63c-0f127069fe90",
     "d753ca8b-3fba-48d2-a998-c30262ca2719",
+    "c248c849-563a-4ae6-a63c-0f127069fe90",
     "169698618623113ade",
     "1696371259dfbcc728"
   ]

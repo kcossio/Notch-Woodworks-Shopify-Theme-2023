@@ -1270,6 +1270,16 @@ button.shopify-payment-button__button--unbranded,
   position: relative;
   transition: all 0.3s ease 0s;
 }
+.button:hover,
+.shopify-challenge__button:hover,
+.customer button:hover,
+button.shopify-payment-button__button--unbranded:hover,
+.shopify-payment-button [role=button]:hover,
+.cart__dynamic-checkout-buttons [role=button]:hover,
+.cart__dynamic-checkout-buttons iframe:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
 @media (min-width: 768px) {
   .button,
   .shopify-challenge__button,

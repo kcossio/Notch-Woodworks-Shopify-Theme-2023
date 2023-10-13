@@ -1312,6 +1312,10 @@ button.shopify-payment-button__button--unbranded,
   position: relative;
   transition:all .3s ease 0s;
 
+  &:hover {
+    color:var(--color-accent);
+    border-color:var(--color-accent);
+  }
   @include breakpoint(tablet) {
     font-size:17.25px;
   }
@@ -1371,11 +1375,7 @@ button.shopify-payment-button__button--unbranded {
   color:var(--color-white);
 }
 
-.button,
-.button-label,
-.shopify-challenge__button,
-.customer button {
-}
+
 
 .button--tertiary {
   font-size: 1.2rem;

@@ -1248,8 +1248,8 @@ button.shopify-payment-button__button--unbranded,
   border: 1px solid var(--color-main);
   font-family: var(--font-family-header-ex);
   text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 24px;
+  letter-spacing: 0.4em;
+  font-size: 14px;
   color: var(--color-main);
   border-radius: 0px;
   position: relative;
@@ -1262,7 +1262,7 @@ button.shopify-payment-button__button--unbranded,
   .shopify-payment-button [role=button],
   .cart__dynamic-checkout-buttons [role=button],
   .cart__dynamic-checkout-buttons iframe {
-    font-size: 28px;
+    font-size: 17.25px;
   }
 }
 

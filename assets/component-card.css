@@ -543,6 +543,18 @@ EASING
   margin-bottom: 14px;
   letter-spacing: 0.08em;
   position: relative;
+  padding-bottom: 16px;
+}
+.collection-card-wrapper h3.card__heading::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 9px;
+  background: url("assets/card-collection-h3-divider.svg") no-repeat center center no-repeat;
+  background-size: auto;
 }
 .collection-card-wrapper h3.card__heading a {
   color: var(--color-main);

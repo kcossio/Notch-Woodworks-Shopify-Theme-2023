@@ -1342,15 +1342,6 @@ button.shopify-payment-button__button--unbranded {
 
 
 
-.button:not([disabled]):hover,
-.shopify-challenge__button:hover,
-.customer button:hover,
-.shopify-payment-button__button--unbranded:hover {
-  color:var(--color-accent);
-  border-color:var(--color-accent);
-}
-
-
 
 .button:focus-visible,
 .button:focus,

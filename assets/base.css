@@ -1308,14 +1308,6 @@ button.shopify-payment-button__button--unbranded {
   box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius) rgba(var(--color-shadow), var(--shadow-opacity));
 }
 
-.button:not([disabled]):hover,
-.shopify-challenge__button:hover,
-.customer button:hover,
-.shopify-payment-button__button--unbranded:hover {
-  color: var(--color-accent);
-  border-color: var(--color-accent);
-}
-
 .button:focus-visible,
 .button:focus,
 .button.focused,

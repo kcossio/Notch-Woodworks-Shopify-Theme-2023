@@ -170,6 +170,36 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "081c888d-402d-4203-a0d3-aa799a4370d1": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21136916676903__081c888d-402d-4203-a0d3-aa799a4370d1-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Reclaimed Texas Pecan",
+            "heading_size": "h1"
+          }
+        },
+        "template--21136916676903__081c888d-402d-4203-a0d3-aa799a4370d1-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We rescue fallen pecan trees from neighboring farms and choose them over other woods for their extreme density and durability. Perfectly designed for generations of wear and use.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21136916676903__081c888d-402d-4203-a0d3-aa799a4370d1-heading-1",
+        "template--21136916676903__081c888d-402d-4203-a0d3-aa799a4370d1-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 68
+      }
     }
   },
   "order": [
@@ -178,6 +208,7 @@
     "d753ca8b-3fba-48d2-a998-c30262ca2719",
     "c248c849-563a-4ae6-a63c-0f127069fe90",
     "169698618623113ade",
-    "1696371259dfbcc728"
+    "1696371259dfbcc728",
+    "081c888d-402d-4203-a0d3-aa799a4370d1"
   ]
 }

@@ -100,37 +100,7 @@
 
     </div><!--End card-collection-title-->
    
-    {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
-      <div class="card__content">
-        <div class="card__information">
-          <h3 class="card__heading header-alt">
-            <a
-              {% if card_collection == blank %}
-                role="link" aria-disabled="true"
-              {% else %}
-                href="{{ card_collection.url }}"
-              {% endif %}
-              class="full-unstyled-link"
-            >
-              {%- if card_collection.title != blank -%}
-                {{- card_collection.title | escape -}}
-              {%- else -%}
-                {{ 'onboarding.collection_title' | t }}
-              {%- endif -%}
-              {%- if card_collection.featured_image or card_collection.description == blank -%}
-                <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-              {%- endif %}
-            </a>
-          </h3>
-          {%- if card_collection.featured_image == null and card_collection.description != blank -%}
-            <p class="card__caption">
-              {{- card_collection.description | strip_html | truncatewords: 12 -}}
-              <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
-            </p>
-          {%- endif -%}
-        </div>
-      </div>
-    {%- endif -%}
+   
     {%- if card_collection == blank -%}
       <div class="card__content">
         <div class="card__information">

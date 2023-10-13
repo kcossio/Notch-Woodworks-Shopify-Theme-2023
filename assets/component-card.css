@@ -529,6 +529,12 @@ EASING
   width: 100%;
   z-index: 2;
   text-align: center;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .collection-card-wrapper .card-collection-title {
+    padding: 20px 20px 36px 20px;
+  }
 }
 .collection-card-wrapper h3.card__heading {
   text-align: center;

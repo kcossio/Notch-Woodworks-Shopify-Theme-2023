@@ -1268,6 +1268,7 @@ button.shopify-payment-button__button--unbranded,
   color: var(--color-main);
   border-radius: 0px;
   position: relative;
+  line-height: 1em;
   transition: all 0.3s ease 0s;
 }
 .button:hover,

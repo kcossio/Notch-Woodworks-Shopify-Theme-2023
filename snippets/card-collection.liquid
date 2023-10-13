@@ -37,8 +37,6 @@
       card
       card--{{ card_style }}
       {% if card_collection.featured_image %} card--media{% else %} card--text{% endif %}
-      {% if card_style == 'card' %} color-{{ card_color_scheme }} gradient{% endif %}
-      {% if extend_height %} card--extend-height{% endif %}
       {% if card_collection.featured_image == nil and card_style == 'card' %} ratio{% endif %} 
       has-bg
     "

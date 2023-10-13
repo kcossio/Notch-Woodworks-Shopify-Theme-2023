@@ -45,34 +45,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "featured-collection-0": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
     "c248c849-563a-4ae6-a63c-0f127069fe90": {
       "type": "collection-list",
       "blocks": {
@@ -106,7 +78,6 @@
         "image_ratio": "square",
         "columns_desktop": 3,
         "color_scheme": "",
-        "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -204,7 +175,6 @@
   "order": [
     "63ab7c80-4d5f-4467-b000-ff3a8a733be9",
     "slideshow",
-    "featured-collection-0",
     "c248c849-563a-4ae6-a63c-0f127069fe90",
     "d753ca8b-3fba-48d2-a998-c30262ca2719",
     "169698618623113ade",

@@ -522,8 +522,20 @@ EASING
   left: 0px;
   width: 100%;
   z-index: 2;
+  text-align: center;
 }
 .collection-card-wrapper h3.card__heading {
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
+}
+.collection-card-wrapper h3.card__heading a {
+  color: var(--color-main);
+  text-decoration: none;
+  font-size: 28px;
+}
+@media (min-width: 768px) {
+  .collection-card-wrapper h3.card__heading a {
+    font-size: 30px;
+  }
 }

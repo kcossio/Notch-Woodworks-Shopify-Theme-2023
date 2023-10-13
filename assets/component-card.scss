@@ -498,11 +498,23 @@
         left:0px;
         width:100%;
         z-index:2;
+        text-align:center;
     }
 
     h3.card__heading {
         text-align:center;
         text-transform: uppercase;
+        width:100%;
+
+        a {
+          color:var(--color-main);
+          text-decoration:none;
+          font-size:28px;
+
+          @include breakpoint(tablet) {
+            font-size:30px;
+          }
+        }
     }
 
   }

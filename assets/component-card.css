@@ -540,6 +540,7 @@ EASING
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+  margin-bottom: 14px;
 }
 .collection-card-wrapper h3.card__heading a {
   color: var(--color-main);

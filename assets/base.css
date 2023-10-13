@@ -1277,8 +1277,8 @@ button.shopify-payment-button__button--unbranded:hover,
 .shopify-payment-button [role=button]:hover,
 .cart__dynamic-checkout-buttons [role=button]:hover,
 .cart__dynamic-checkout-buttons iframe:hover {
-  color: red;
-  border-color: red;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 @media (min-width: 768px) {
   .button,
@@ -1306,6 +1306,14 @@ button.shopify-payment-button__button--unbranded {
 
 .cart__dynamic-checkout-buttons iframe {
   box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius) rgba(var(--color-shadow), var(--shadow-opacity));
+}
+
+.button:not([disabled]):hover,
+.shopify-challenge__button:hover,
+.customer button:hover,
+.shopify-payment-button__button--unbranded:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .button:focus-visible,

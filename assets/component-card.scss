@@ -509,10 +509,10 @@
         a {
           color:var(--color-main);
           text-decoration:none;
-          font-size:28px;
+          font-size:22.5px;
 
           @include breakpoint(tablet) {
-            font-size:30px;
+            font-size:22.5px;
           }
         }
     }

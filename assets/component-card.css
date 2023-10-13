@@ -538,10 +538,10 @@ EASING
 .collection-card-wrapper h3.card__heading a {
   color: var(--color-main);
   text-decoration: none;
-  font-size: 28px;
+  font-size: 22.5px;
 }
 @media (min-width: 768px) {
   .collection-card-wrapper h3.card__heading a {
-    font-size: 30px;
+    font-size: 22.5px;
   }
 }

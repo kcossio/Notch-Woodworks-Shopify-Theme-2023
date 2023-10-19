@@ -3,4 +3,12 @@
   padding: 10vh 0vh;
   display: flex;
   flex-wrap: wrap;
+  color: var(--color-white);
+}
+.section-home-banner h1, .section-home-banner h2 {
+  color: var(--color-white);
+}
+.section-home-banner .section-content {
+  width: 416px;
+  max-width: 100%;
 }

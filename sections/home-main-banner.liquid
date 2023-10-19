@@ -2,12 +2,14 @@
 
 <div class="inner">
 
-  <h2>{{ section.settings.heading }} </h2>
-  <div class="subhead">
-    {%- # Label: Subheading -%}
-    {{ section.settings.subheading }} 
-  </div>
-  <a class="button" href="{{ section.settings.button_link }} ">{{ section.settings.button_label }} </a>
+  <div class="section-content">
+    <h1 class="header-alt">{{ section.settings.heading }} </h1>
+    <div class="subhead">
+      {%- # Label: Subheading -%}
+      {{ section.settings.subheading }} 
+    </div>
+    <a class="button" href="{{ section.settings.button_link }} ">{{ section.settings.button_label }} </a>
+  </div><!---End section-content-->
 
 </div><!--End inner-->
 {%- # Label: Heading -%}

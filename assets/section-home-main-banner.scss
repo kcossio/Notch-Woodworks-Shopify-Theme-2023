@@ -3,4 +3,17 @@
     padding:10vh 0vh;
     display: flex;
     flex-wrap: wrap;
+
+    color:var(--color-white);
+    
+    h1, h2 {
+        color:var(--color-white);
+    }
+
+    .section-content {
+        width:416px;
+        max-width:100%;
+    }
+
+
 }

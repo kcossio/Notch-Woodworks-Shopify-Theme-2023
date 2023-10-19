@@ -1,3 +1,7 @@
+// ------ Include Partials ------- //
+@import "mixins";
+@import "fonts";
+
 .section-home-banner {
     min-height:80vh;
     padding:10vh 0vh;
@@ -8,6 +12,18 @@
     
     h1, h2 {
         color:var(--color-white);
+    }
+
+    h1 {
+        p {
+            margin:0px;
+            font-size:28px;
+            letter-spacing:0px;
+
+            @include breakpoint(tablet) {
+                font-size:48px;
+            }
+        }
     }
 
     .section-content {

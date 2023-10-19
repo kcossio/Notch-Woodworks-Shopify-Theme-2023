@@ -54,8 +54,11 @@ EASING
 }
 @media (min-width: 768px) {
   .section-home-banner h1 p {
-    font-size: 48px;
+    font-size: 36px;
   }
+}
+.section-home-banner p {
+  font-size: 16.5px;
 }
 .section-home-banner .section-content {
   width: 416px;

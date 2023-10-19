@@ -68,6 +68,8 @@ EASING
 
 body {
   font-family: var(--font-family-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .bg-chevron-white {

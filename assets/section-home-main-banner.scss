@@ -21,9 +21,13 @@
             letter-spacing:0px;
 
             @include breakpoint(tablet) {
-                font-size:48px;
+                font-size:36px;
             }
         }
+    }
+
+    p {
+        font-size:16.5px;
     }
 
     .section-content {

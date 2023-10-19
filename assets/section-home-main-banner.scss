@@ -38,5 +38,21 @@
         max-width:100%;
     }
 
+    .home-hero-products {
+        position:absolute;
+        z-index:1;
+        right:0px;
+        bottom:0px;
+        width:130vw;
+        transform:translate(15% -30%);
+
+        @include breakpoint(laptop) {
+            bottom:auto;
+            top:0px;
+            right:0px;
+            transform:translate(15% 50%);
+        }
+
+    }
 
 }

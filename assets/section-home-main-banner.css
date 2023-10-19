@@ -66,3 +66,19 @@ EASING
   width: 416px;
   max-width: 100%;
 }
+.section-home-banner .home-hero-products {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  bottom: 0px;
+  width: 130vw;
+  transform: translate(15% -30%);
+}
+@media (min-width: 1280px) {
+  .section-home-banner .home-hero-products {
+    bottom: auto;
+    top: 0px;
+    right: 0px;
+    transform: translate(15% 50%);
+  }
+}

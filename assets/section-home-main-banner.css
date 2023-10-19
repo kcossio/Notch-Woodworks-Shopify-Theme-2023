@@ -51,6 +51,7 @@ EASING
   margin: 0px;
   font-size: 28px;
   letter-spacing: 0px;
+  color: var(--color-white);
 }
 @media (min-width: 768px) {
   .section-home-banner h1 p {
@@ -59,6 +60,7 @@ EASING
 }
 .section-home-banner p {
   font-size: 16.5px;
+  color: #D5D5D5;
 }
 .section-home-banner .section-content {
   width: 416px;

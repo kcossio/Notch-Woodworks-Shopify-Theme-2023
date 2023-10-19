@@ -73,13 +73,13 @@ EASING
   right: 0px;
   bottom: 0px;
   width: 130vw;
-  transform: translate(15%, 0%);
+  transform: translate(15%, 30%);
 }
 @media (min-width: 1280px) {
   .section-home-banner .home-hero-products {
     bottom: auto;
     top: 0px;
     right: 0px;
-    transform: translate(15%, 30%);
+    transform: translate(15%, 1%);
   }
 }

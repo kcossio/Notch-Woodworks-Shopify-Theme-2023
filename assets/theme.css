@@ -74,3 +74,8 @@ body {
   background: #F2F2F2 url("bg-chevron-white.svg") center center repeat;
   background-size: 23374.6px 1740.6px;
 }
+
+.bg-chevron-blue {
+  background: #004356 url("bg-chevron-white.svg") center center repeat;
+  background-size: 23374.6px 1740.6px;
+}

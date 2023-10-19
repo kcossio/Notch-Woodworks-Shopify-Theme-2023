@@ -1,22 +1,26 @@
+{{ 'section-home-main-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="inner">
+
+  <h2>{{ section.settings.heading }} </h2>
+  <div class="subhead">
+    {%- # Label: Subheading -%}
+    {{ section.settings.subheading }} 
+  </div>
+  <a class="button" href="{{ section.settings.button_link }} ">{{ section.settings.button_label }} </a>
+
+</div><!--End inner-->
 {%- # Label: Heading -%}
-{{ section.settings.heading }} 
 
-{%- # Label: Subheading -%}
-{{ section.settings.subheading }} 
 
-{%- # Label: Subheading 3 -%}
-{{ section.settings.subheading_3 }} 
 
-{%- # Label: Button Label -%}
-{{ section.settings.button_label }} 
 
-{%- # Label: Button Link -%}
-{{ section.settings.button_link }} 
+
 
 {% schema %}
   {
   "name": "Home Main Banner",
-  "class": "section section-home-banner",
+  "class": "section section-home-banner bg-chevron-blue",
   "tag": "section",
   "settings": [
     {

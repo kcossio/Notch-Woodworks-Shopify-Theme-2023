@@ -1,0 +1,6 @@
+.section-home-banner {
+  min-height: 80vh;
+  padding: 10vh 0vh;
+  display: flex;
+  flex-wrap: wrap;
+}

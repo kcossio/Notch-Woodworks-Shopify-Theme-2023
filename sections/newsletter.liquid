@@ -11,6 +11,9 @@
         {%- case block.type -%}
           {%- when '@app' -%}
             {% render block %}
+          {%- when 'klaviyo_form' -%}
+            {%- # Label: Klaviyo Form Code -%}
+            {{ block.settings.klaviyo_form_code }} 
           {%- when 'heading' -%}
             <h2
               class="inline-richtext {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -145,6 +148,18 @@
     }
   ],
   "blocks": [
+    {
+      "name": "Klaviyo Form",
+      "type": "klaviyo_form",
+      "settings": [
+        {
+          "type": "html",
+          "id": "klaviyo_form_code",
+          "label": "Klaviyo Form Code",
+          "info": "Paste the form code provided by Klaviyo here"
+        }
+      ]
+    },
     {
       "type": "heading",
       "name": "t:sections.newsletter.blocks.heading.name",

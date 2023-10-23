@@ -65,11 +65,6 @@ EASING
 .newsletter__wrapper .newsletter-right {
   width: 100%;
 }
-@media (min-width: 768px) {
-  .newsletter__wrapper .newsletter-right {
-    height: 100%;
-  }
-}
 @media (min-width: 1024px) {
   .newsletter__wrapper .newsletter-right {
     width: 56.85%;
@@ -83,6 +78,11 @@ EASING
 .nl-hero {
   width: 100%;
   aspect-ratio: 639/261;
+}
+@media (min-width: 768px) {
+  .nl-hero {
+    height: 100%;
+  }
 }
 
 .newsletter__wrapper > * {

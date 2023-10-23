@@ -32,9 +32,6 @@
   .newsletter-right {
     width:100%;
 
-    @include breakpoint(tablet) {
-      height:100%;
-    }
     @include breakpoint(tabletwide) {
       width:56.85%;
     }
@@ -51,6 +48,10 @@
 .nl-hero {
   width:100%;
   aspect-ratio: 639 / 261;
+
+  @include breakpoint(tablet) {
+    height: 100%;
+  }
 }
 
 

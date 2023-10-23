@@ -50,6 +50,8 @@ EASING
 @media (min-width: 768px) {
   .newsletter__wrapper {
     padding: 75px 0px 86px 0px;
+    align-items: stretch;
+    align-content: stretch;
   }
 }
 .newsletter__wrapper .newsletter-left {
@@ -62,6 +64,11 @@ EASING
 }
 .newsletter__wrapper .newsletter-right {
   width: 100%;
+}
+@media (min-width: 768px) {
+  .newsletter__wrapper .newsletter-right {
+    height: 100%;
+  }
 }
 @media (min-width: 1024px) {
   .newsletter__wrapper .newsletter-right {
@@ -81,10 +88,6 @@ EASING
 .newsletter__wrapper > * {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.newsletter__wrapper > * + * {
-  margin-top: 2rem;
 }
 
 .newsletter__wrapper > * + .newsletter-form {

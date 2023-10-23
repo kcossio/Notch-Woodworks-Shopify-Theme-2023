@@ -5,22 +5,10 @@
     "newsletter": {
       "type": "newsletter",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "b70b2908-4b14-47a6-810a-f78f1bef2614": {
+          "type": "klaviyo_form",
           "settings": {
-            "heading": "LET'S GET COOKING",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
-          }
-        },
-        "email-form": {
-          "type": "email_form",
-          "settings": {
+            "klaviyo_form_code": "<div class=\"klaviyo-form-XGKRha\"><\/div>"
           }
         },
         "1fb03b37-309b-4646-bf3d-0a06830a00a8": {
@@ -31,15 +19,11 @@
         }
       },
       "block_order": [
-        "heading",
-        "paragraph",
-        "email-form",
+        "b70b2908-4b14-47a6-810a-f78f1bef2614",
         "1fb03b37-309b-4646-bf3d-0a06830a00a8"
       ],
       "settings": {
-        "full_width": true,
-        "padding_top": 28,
-        "padding_bottom": 0
+        "full_width": true
       }
     },
     "footer": {

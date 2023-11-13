@@ -75,6 +75,18 @@ body {
 .block-header-v1 {
   font-family: var(--font-family-header-alt);
   color: var(--color-main);
+  position: relative;
+}
+.block-header-v1::after {
+  content: "";
+  background: url("assets/divider-notch-mobile.svg") center center no-repeat;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 16px;
+  width: 100%;
+  z-index: 1;
 }
 
 .block-header-v2 {

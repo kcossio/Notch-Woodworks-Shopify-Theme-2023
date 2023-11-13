@@ -84,6 +84,11 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .block-header-v2 {
+    font-size: 45px;
+  }
+}
 
 .bg-chevron-white {
   background: #F2F2F2 url("bg-chevron-white.svg") center center repeat;

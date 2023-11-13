@@ -21,8 +21,14 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
-              <h2
-                class="rich-text__heading rte inline-richtext header-cn {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              {%- if block.settings.heading_style == 'red_all_caps' -%}
+                {%- assign heading_class = 'header-cn block-header-v1' -%}
+              {%- endif -%}
+              {%- if block.settings.heading_style == 'blue_w_notch_underline' -%}
+                {%- assign heading_class = 'block-header-v2' -%}
+              {%- endif -%}
+              <h2                
+                class="rich-text__heading rte inline-richtext {{ heading_class }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -205,34 +211,27 @@
       "limit": 3,
       "settings": [
         {
+          "type": "select",
+          "id": "heading_style",
+          "label": "Heading Style",
+          "options": [
+            {
+              "value": "blue_w_notch_underline",
+              "label": "Blue w/ Notch Underline"
+            },
+            {
+              "value": "red_all_caps",
+              "label": "Red All Caps"
+            }
+          ],
+          "default": "blue_w_notch_underline",
+          "info": "Choose the style for this section's headline"
+        },
+        {
           "type": "inline_richtext",
           "id": "heading",
           "default": "Talk about your brand",
           "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
-        },
-        {
-          "type": "select",
-          "id": "heading_size",
-          "options": [
-            {
-              "value": "h2",
-              "label": "t:sections.all.heading_size.options__1.label"
-            },
-            {
-              "value": "h1",
-              "label": "t:sections.all.heading_size.options__2.label"
-            },
-            {
-              "value": "h0",
-              "label": "t:sections.all.heading_size.options__3.label"
-            },
-            {
-              "value": "hxl",
-              "label": "t:sections.all.heading_size.options__4.label"
-            }
-          ],
-          "default": "h1",
-          "label": "t:sections.all.heading_size.label"
         }
       ]
     },

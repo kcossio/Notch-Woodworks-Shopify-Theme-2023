@@ -64,9 +64,9 @@
         "72779114-e78c-4024-a124-6a65e8581d7a": {
           "type": "icon_images",
           "settings": {
-            "icon_1": "shopify:\/\/shop_images\/character-ingrained.svg",
-            "icon_2": "shopify:\/\/shop_images\/character-ingrained.svg",
-            "icon_3": "shopify:\/\/shop_images\/character-ingrained.svg"
+            "icon_1": "shopify:\/\/shop_images\/hand-crafted.svg",
+            "icon_2": "shopify:\/\/shop_images\/made-in-usa.svg",
+            "icon_3": "shopify:\/\/shop_images\/texas-pecan.svg"
           }
         },
         "1cdba1bd-5a12-4694-9af3-48b0326bb17c": {
@@ -158,8 +158,6 @@
         "719485e8-d773-44b0-8720-7bb6d7a58e8f": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_size": 20,
-            "feed_width": 100,
             "html_area": ""
           }
         }

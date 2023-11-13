@@ -51,8 +51,8 @@
         "b708b3b7-0a3e-46d6-9d58-3a2673086013": {
           "type": "heading",
           "settings": {
-            "heading": "CHARACTER  INGRAINED™",
-            "heading_size": "h1"
+            "heading_style": "red_all_caps",
+            "heading": "CHARACTER  INGRAINED™"
           }
         },
         "8b4bd860-9b2c-424d-ba34-b7ca551a53bf": {

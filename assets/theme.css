@@ -79,7 +79,7 @@ body {
 }
 .block-header-v1::after {
   content: "";
-  background: url("assets/divider-notch-mobile.svg") center center no-repeat;
+  background: url("divider-notch-mobile.svg") center center no-repeat;
   display: block;
   position: absolute;
   bottom: 0px;

@@ -72,6 +72,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.block-header-v1 {
+  font-family: var(--font-family-header-alt);
+  color: var(--color-main);
+}
+
+.block-header-v2 {
+  font-family: var(--font-family-header-cn);
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
 .bg-chevron-white {
   background: #F2F2F2 url("bg-chevron-white.svg") center center repeat;
   background-size: 23374.6px 1740.6px;

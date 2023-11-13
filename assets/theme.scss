@@ -43,6 +43,19 @@ body {
     -moz-osx-font-smoothing: grayscale
 
 }
+
+// ---- Misc. Headlines --- //
+
+.block-header-v1 {
+    font-family: var(--font-family-header-alt);
+    color:var(--color-main);
+}
+.block-header-v2 {
+    font-family: var(--font-family-header-cn);
+    color:var(--color-accent);
+    text-transform: uppercase;
+}
+
 // ---- General/Misc Items ------ //
 
 .bg-chevron-white {

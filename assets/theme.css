@@ -39,8 +39,8 @@ EASING
   font-style: normal;
 }
 :root {
-  --font-family-header-cn: "FSIndustrieCondensedBold", sans-serif;
   --font-family-script: "Buinton", cursive;
+  --font-family-header-cn: "FSIndustrieCondensedBold", sans-serif;
   --font-family-header-ex: "FSIndustrieExtendedBlack", sans-serif;
   --font-family-header-alt: "Editor", sans-serif;
   --font-family-body: "FSKimText", serif;

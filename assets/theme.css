@@ -83,6 +83,7 @@ body {
 @media (min-width: 768px) {
   .block-header-v1 {
     font-size: 45px;
+    padding-bottom: 1em;
   }
 }
 .block-header-v1::after {

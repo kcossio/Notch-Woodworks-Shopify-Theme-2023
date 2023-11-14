@@ -80,6 +80,11 @@ body {
   padding-bottom: 1em;
   line-height: 1.15em;
 }
+@media (min-width: 768px) {
+  .block-header-v1 {
+    font-size: 45px;
+  }
+}
 .block-header-v1::after {
   content: "";
   background: url("divider-notch-mobile.svg") center center no-repeat;
@@ -87,9 +92,14 @@ body {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  height: 16px;
+  height: 20px;
   width: 100%;
   z-index: 1;
+}
+@media (min-width: 768px) {
+  .block-header-v1::after {
+    background: url("divider-notch-desktop.svg") center center no-repeat;
+  }
 }
 
 .block-header-v2 {

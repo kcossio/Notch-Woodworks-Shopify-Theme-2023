@@ -54,6 +54,10 @@ body {
     padding-bottom:1em;
     line-height:1.15em;
 
+    @include breakpoint(tablet) {
+        font-size:45px;
+    }
+
     &::after {
         content:"";
         background:url('divider-notch-mobile.svg') center center no-repeat;
@@ -61,10 +65,13 @@ body {
         position:absolute;
         bottom:0px;
         left:0px;
-        height: 16px;
+        height: 20px;
         width: 100%;
         z-index: 1;
 
+        @include breakpoint(tablet) {
+            background:url('divider-notch-desktop.svg') center center no-repeat;
+        }
 
     }
 }

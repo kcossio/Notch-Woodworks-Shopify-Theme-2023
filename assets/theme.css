@@ -44,6 +44,7 @@ EASING
   --font-family-header-ex: "FSIndustrieExtendedBlack", sans-serif;
   --font-family-header-alt: "Editor", sans-serif;
   --font-family-body: "FSKimText", serif;
+  --color-text:#121212;
   --color-main:#004356;
   --color-accent:#C15232;
   --color-white:#ffffff;
@@ -70,6 +71,7 @@ body {
   font-family: var(--font-family-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color-text);
 }
 
 .block-header-v1 {

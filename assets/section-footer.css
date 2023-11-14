@@ -147,15 +147,13 @@
   margin-bottom: 2rem;
   margin-top: 0;
   color:rgba(255,255,255,.84);
-  font-size:1rem;
-  letter-spacing:.2em;
+  font-size:1em;
+  letter-spacing:.3em;
   text-transform: uppercase;
+  font-family: var(--font-family-header-ex);
 }
 
-@media screen and (min-width: 990px) {
-  .footer-block__heading {
-  }
-}
+
 
 .footer__list-social:empty,
 .footer-block--newsletter:empty {

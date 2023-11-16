@@ -1,3 +1,6 @@
+/*-----------------------
+EASING 
+---------------------- */
 .rich-text {
   z-index: 1;
 }
@@ -78,4 +81,36 @@
 
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
+}
+
+.rich-text__blocks .icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.rich-text__blocks .icon-row .icon-item {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.rich-text__blocks .icon-row .icon-item[data-num="1"] {
+  justify-content: flex-start;
+}
+.rich-text__blocks .icon-row .icon-item[data-num="3"] {
+  justify-content: flex-end;
+}
+.rich-text__blocks .icon-row .dots-divider {
+  width: 3.5px;
+  height: 67.5px;
+  background: url("divider-vert-red-dots.svg") center center no-repeat;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .rich-text__blocks .icon-row .dots-divider {
+    width: 5px;
+    height: 82px;
+  }
 }

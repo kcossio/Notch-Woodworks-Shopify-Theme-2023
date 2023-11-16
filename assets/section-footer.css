@@ -2,10 +2,10 @@
 /*-----------------------
 EASING 
 ---------------------- */
-.shopify-section-group-footer-group {
+.footer {
   position: relative;
 }
-.shopify-section-group-footer-group::before {
+.footer::before {
   content: "";
   display: block;
   position: absolute;
@@ -16,10 +16,6 @@ EASING
   transform: translateY(-98%);
   background: url("border-top-scallop-blue.svg") center center repeat-x;
   background-size: auto 100%;
-}
-
-.footer {
-  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
 .footer:not(.color-background-1) {

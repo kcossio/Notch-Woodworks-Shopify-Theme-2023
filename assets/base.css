@@ -1228,8 +1228,9 @@ deferred-media {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   border: 0;
-  padding: 0 3rem;
+  padding: 1.2em 2.5em 1em 2.5em;
   cursor: pointer;
   text-decoration: none;
   -webkit-appearance: none;
@@ -1245,10 +1246,10 @@ button.shopify-payment-button__button--unbranded,
 .cart__dynamic-checkout-buttons [role=button],
 .cart__dynamic-checkout-buttons iframe {
   background-color: var(--color-white);
-  border: 1px solid var(--color-main);
+  border: 2px solid var(--color-main);
   font-family: var(--font-family-header-ex);
   text-transform: uppercase;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.35em;
   font-size: 14px;
   color: var(--color-main);
   border-radius: 0px;
@@ -1283,7 +1284,6 @@ button.shopify-payment-button__button--unbranded:hover,
 .customer button,
 button.shopify-payment-button__button--unbranded {
   min-width: calc(12rem + var(--buttons-border-width) * 2);
-  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
 }
 
 .shopify-payment-button__button--branded {

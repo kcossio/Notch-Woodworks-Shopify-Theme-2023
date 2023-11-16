@@ -104,6 +104,7 @@
         display:flex;
         align-items:center;
         align-content:center;
+        justify-content: center;
 
         &[data-num="1"] {
           justify-content: flex-start;
@@ -117,10 +118,11 @@
         }
       }
       .dots-divider {
+        display: block;
         width:3.5px;
         height:67.5px;
         background:url('divider-vert-red-dots.svg') center center no-repeat;
-        background-size:cover;
+        background-size:auto 100%;
 
         @include breakpoint(tablet) {
           width:5px;

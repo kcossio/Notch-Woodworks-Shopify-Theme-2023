@@ -95,6 +95,7 @@ EASING
   display: flex;
   align-items: center;
   align-content: center;
+  justify-content: center;
 }
 .rich-text__blocks .icon-row .icon-item[data-num="1"] {
   justify-content: flex-start;
@@ -103,10 +104,11 @@ EASING
   justify-content: flex-end;
 }
 .rich-text__blocks .icon-row .dots-divider {
+  display: block;
   width: 3.5px;
   height: 67.5px;
   background: url("divider-vert-red-dots.svg") center center no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
 }
 @media (min-width: 768px) {
   .rich-text__blocks .icon-row .dots-divider {

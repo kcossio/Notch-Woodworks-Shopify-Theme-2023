@@ -108,13 +108,15 @@
 
         &[data-num="1"] {
           justify-content: flex-start;
+
+          
         }
         &[data-num="3"] {
           justify-content: flex-end;
         }
 
         img {
-
+          aspect-ratio: attr(width) / attr(height);
         }
       }
       .dots-divider {

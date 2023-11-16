@@ -108,16 +108,32 @@
 
         &[data-num="1"] {
           justify-content: flex-start;
-
-          
+          img {
+            width:70px;
+            @include breakpoint(tablet) {
+              width:124px;
+            }
+          }          
+        }
+        &[data-num="2"] {
+          img {
+            width:56px;
+            @include breakpoint(tablet) {
+              width:98px;
+            }
+          }
         }
         &[data-num="3"] {
           justify-content: flex-end;
+          img {
+            width:58px;
+            @include breakpoint(tablet) {
+              width:102px;
+            }
+          }
         }
 
-        img {
-          aspect-ratio: [width] / [height];
-        }
+        
       }
       .dots-divider {
         display: block;

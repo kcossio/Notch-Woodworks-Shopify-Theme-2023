@@ -36,16 +36,8 @@
       justify-content: flex-end;
     }
   
-    .rich-text__blocks {
-      max-width: 50rem;
-    }
   }
   
-  @media screen and (min-width: 990px) {
-    .rich-text__blocks {
-      max-width: 78rem;
-    }
-  }
   
   .rich-text__blocks * {
     overflow-wrap: break-word;
@@ -102,7 +94,7 @@
       justify-content: center;
       width:780px;
       max-width: 100%;
-      margin:1em auto 0px auto;
+      margin:3em auto 3em auto;
 
       .icon-item {
         width:30%;

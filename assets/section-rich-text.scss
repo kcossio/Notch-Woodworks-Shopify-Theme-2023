@@ -19,7 +19,9 @@
     width: 100%;
   }
   .rich-text__text {
-    
+    width:540px;
+    max-width: 100%;
+    margin:0px auto;
   }
   @media screen and (min-width: 750px) {
     .rich-text__wrapper {
@@ -98,6 +100,9 @@
       align-items: center;
       align-content: center;
       justify-content: center;
+      width:780px;
+      max-width: 100%;
+      margin:1em auto 0px auto;
 
       .icon-item {
         width:30%;
@@ -107,7 +112,6 @@
         justify-content: center;
 
         &[data-num="1"] {
-          justify-content: flex-start;
           img {
             width:70px;
             @include breakpoint(tablet) {
@@ -124,7 +128,6 @@
           }
         }
         &[data-num="3"] {
-          justify-content: flex-end;
           img {
             width:58px;
             @include breakpoint(tablet) {

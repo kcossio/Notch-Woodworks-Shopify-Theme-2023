@@ -116,7 +116,7 @@
         }
 
         img {
-          aspect-ratio: attr(width) / attr(height);
+          aspect-ratio: [width] / [height];
         }
       }
       .dots-divider {

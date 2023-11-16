@@ -104,7 +104,7 @@ EASING
   justify-content: flex-end;
 }
 .rich-text__blocks .icon-row .icon-item img {
-  aspect-ratio: attr(width)/attr(height);
+  aspect-ratio: [width]/[height];
 }
 .rich-text__blocks .icon-row .dots-divider {
   display: block;

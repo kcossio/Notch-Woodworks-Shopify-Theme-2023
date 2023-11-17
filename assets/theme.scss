@@ -116,6 +116,7 @@ body {
         display:inline-flex;
         text-transform:uppercase;
         font-size:33px;
+        align-items: center;
 
         &::before {
             content:"";
@@ -125,10 +126,11 @@ body {
             margin-right:.5em;
             background:url('icon-instagram.svg') center center no-repeat;
             background-size: cover;
+            margin-top:-.1em;
         }
 
         @include breakpoint(tablet) {
-            font-size:35px;
+            font-size:45px;
 
             &::before {
                 width:43px;

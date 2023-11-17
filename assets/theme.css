@@ -142,6 +142,7 @@ body {
   display: inline-flex;
   text-transform: uppercase;
   font-size: 33px;
+  align-items: center;
 }
 .insta-feed-title a::before {
   content: "";
@@ -151,10 +152,11 @@ body {
   margin-right: 0.5em;
   background: url("icon-instagram.svg") center center no-repeat;
   background-size: cover;
+  margin-top: -0.1em;
 }
 @media (min-width: 768px) {
   .insta-feed-title a {
-    font-size: 35px;
+    font-size: 45px;
   }
   .insta-feed-title a::before {
     width: 43px;

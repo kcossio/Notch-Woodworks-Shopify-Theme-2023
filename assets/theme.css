@@ -176,12 +176,14 @@ h2.jdgm-carousel-title, h2.jdgm-rev-widg__title {
 
 .jdgm-carousel-item {
   display: inline-flex;
+  flex-wrap: wrap;
 }
 .jdgm-carousel-item > * {
   width: 100%;
 }
 .jdgm-carousel-item .jdgm-carousel-item__review {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 .jdgm-carousel-item .jdgm-carousel-item__review > * {
   width: 100%;

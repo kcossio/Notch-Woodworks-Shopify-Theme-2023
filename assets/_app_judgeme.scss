@@ -18,13 +18,15 @@ h2 {
 }
 .jdgm-carousel-item {
     display:inline-flex;
+    flex-wrap:wrap;
 
     & > * {
         width: 100%;
     }
 
     .jdgm-carousel-item__review {
-        display:flex;
+        display:inline-flex;
+        flex-wrap: wrap;
 
         & > * {
             width: 100%;

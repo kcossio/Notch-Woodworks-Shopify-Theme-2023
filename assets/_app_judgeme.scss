@@ -18,6 +18,10 @@ section {
     .jdgm-carousel-wrapper {
     
         width:100%;
+
+        .jdgm-carousel__item-wrapper {
+            height:auto;
+        }
         .jdgm-all-reviews-rating-wrapper {
             display:none !important;
         }
@@ -61,7 +65,7 @@ section {
             }
             .jdgm-carousel-item__review-rating {
                 order:2;
-    
+                font-size:90%;
             }
         }
     }

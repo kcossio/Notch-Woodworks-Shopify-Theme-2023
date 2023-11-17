@@ -176,6 +176,9 @@ section .jdgm-carousel__item-container {
 section .jdgm-carousel-wrapper {
   width: 100%;
 }
+section .jdgm-carousel-wrapper .jdgm-carousel__item-wrapper {
+  height: auto;
+}
 section .jdgm-carousel-wrapper .jdgm-all-reviews-rating-wrapper {
   display: none !important;
 }
@@ -215,4 +218,5 @@ section .jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__rev
 }
 section .jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__review-rating {
   order: 2;
+  font-size: 90%;
 }

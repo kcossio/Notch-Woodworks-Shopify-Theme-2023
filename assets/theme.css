@@ -165,11 +165,18 @@ body {
   }
 }
 
-h2.jdgm-carousel-title {
+h2.jdgm-carousel-title h2.jdgm-rev-widg__title {
   font-family: var(--font-family-script);
   font-weight: normal;
   font-size: 60px;
 }
 .jdgm-carousel-wrapper .jdgm-all-reviews-rating-wrapper {
   display: none;
+}
+
+.jdgm-carousel-item {
+  display: inline-flex;
+}
+.jdgm-carousel-item > * {
+  width: 100%;
 }

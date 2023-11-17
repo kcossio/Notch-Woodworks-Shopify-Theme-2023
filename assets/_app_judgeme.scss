@@ -1,7 +1,7 @@
 // Judge.Me Styling overrides
 
 h2 {
-    .jdgm-carousel-title {
+    &.jdgm-carousel-title {
         font-family: var(--font-family-script);
         font-weight: normal;
         font-size:60px;

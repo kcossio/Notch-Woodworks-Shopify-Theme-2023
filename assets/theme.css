@@ -38,11 +38,6 @@ EASING
   font-weight: normal;
   font-style: normal;
 }
-h2 .jdgm-carousel-title {
-  font-family: var(--font-family-script);
-  font-weight: normal;
-  font-size: 60px;
-}
 :root {
   --font-family-script: "Buinton", cursive;
   --font-family-header-cn: "FSIndustrieCondensedBold", sans-serif;
@@ -168,4 +163,10 @@ body {
     width: 43px;
     height: 43px;
   }
+}
+
+h2.jdgm-carousel-title {
+  font-family: var(--font-family-script);
+  font-weight: normal;
+  font-size: 60px;
 }

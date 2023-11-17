@@ -34,7 +34,10 @@ h2 {
 
         .jdgm-carousel-item__review-content {
             order:1;
-            
+            .jdgm-carousel-item__review-body {
+                -webkit-line-clamp:4 !important;
+                line-clamp: 4 !important;
+            }
             .jdgm-carousel-item__review-title {
                 font-size:21px;
                 font-family: var(--font-family-header-ex);

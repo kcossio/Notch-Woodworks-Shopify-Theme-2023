@@ -215,10 +215,12 @@ section .jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__rev
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-weight: normal;
+  margin-bottom: 1em;
 }
 section .jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__review-rating {
   order: 2;
   font-size: 90%;
+  margin-top: 12px;
 }
 section .jdgm-carousel-item .jdgm-carousel-item__reviewer-name {
   font-family: var(--font-family-script);

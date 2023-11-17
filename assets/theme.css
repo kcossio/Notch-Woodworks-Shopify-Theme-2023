@@ -199,10 +199,12 @@ h2.jdgm-carousel-title, h2.jdgm-rev-widg__title {
   font-size: 14px;
 }
 .jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__review-content .jdgm-carousel-item__review-title {
+  color: var(--color-main);
   font-size: 21px;
   font-family: var(--font-family-header-ex);
   text-transform: uppercase;
   letter-spacing: 0.12em;
+  font-weight: normal;
 }
 .jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__review-rating {
   order: 2;

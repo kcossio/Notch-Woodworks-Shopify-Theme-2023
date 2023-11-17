@@ -43,10 +43,12 @@ h2 {
                 }
             }
             .jdgm-carousel-item__review-title {
+                color:var(--color-main);
                 font-size:21px;
                 font-family: var(--font-family-header-ex);
                 text-transform: uppercase;
                 letter-spacing:.12em;
+                font-weight: normal;
             }
         }
         .jdgm-carousel-item__review-rating {

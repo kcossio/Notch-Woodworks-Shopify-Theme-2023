@@ -139,4 +139,14 @@ body {
   color: var(--color-main);
   text-decoration: none;
   position: relative;
+  display: inline-flex;
+  text-transform: uppercase;
+}
+.insta-feed-title a::before {
+  content: "";
+  content: url("logo-notch-woodworks.svg");
+  display: inline-flex;
+  width: 29px;
+  height: 29px;
+  margin-right: 0.5em;
 }

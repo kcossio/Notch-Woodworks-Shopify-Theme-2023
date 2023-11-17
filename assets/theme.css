@@ -38,6 +38,11 @@ EASING
   font-weight: normal;
   font-style: normal;
 }
+h2 .jdgm-carousel-title {
+  font-family: var(--font-family-script);
+  font-weight: normal;
+  font-size: 60px;
+}
 :root {
   --font-family-script: "Buinton", cursive;
   --font-family-header-cn: "FSIndustrieCondensedBold", sans-serif;
@@ -131,7 +136,7 @@ body {
 .insta-feed-title {
   text-align: center;
   font-family: var(--font-family-header-cn);
-  margin: 2em 0px;
+  margin: 2em 0px 0.5em 0px;
   position: relative;
   color: var(--color-main);
 }
@@ -143,7 +148,7 @@ body {
   text-transform: uppercase;
   font-size: 33px;
   align-items: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
 .insta-feed-title a::before {
   content: "";

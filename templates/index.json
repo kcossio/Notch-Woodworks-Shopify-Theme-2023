@@ -117,6 +117,15 @@
         "include_margins": false
       }
     },
+    "c58ce215-9cc0-452c-aa7a-7dffed5eff43": {
+      "type": "custom_html",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "html_code": "<h2 class=\"insta-feed-title\"><a href=\"https:\/\/instagram.com\/Notchwoodworks\" target=\"_blank\">Follow the Journey.<\/a><\/h2>"
+      }
+    },
     "1696371259dfbcc728": {
       "type": "apps",
       "blocks": {
@@ -140,6 +149,7 @@
         "template--21136916676903__081c888d-402d-4203-a0d3-aa799a4370d1-heading-1": {
           "type": "heading",
           "settings": {
+            "heading_style": "blue_w_notch_underline",
             "heading": "Reclaimed Texas Pecan"
           }
         },
@@ -169,6 +179,7 @@
     "d753ca8b-3fba-48d2-a998-c30262ca2719",
     "c248c849-563a-4ae6-a63c-0f127069fe90",
     "169698618623113ade",
+    "c58ce215-9cc0-452c-aa7a-7dffed5eff43",
     "1696371259dfbcc728",
     "081c888d-402d-4203-a0d3-aa799a4370d1"
   ]

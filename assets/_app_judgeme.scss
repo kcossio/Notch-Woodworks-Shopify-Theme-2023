@@ -1,7 +1,7 @@
 // Judge.Me Styling overrides
 
 h2 {
-    &.jdgm-carousel-title
+    &.jdgm-carousel-title,
     &.jdgm-rev-widg__title {
         font-family: var(--font-family-script);
         font-weight: normal;
@@ -21,5 +21,27 @@ h2 {
 
     & > * {
         width: 100%;
+    }
+
+    .jdgm-carousel-item__review {
+        display:flex;
+
+        & > * {
+            width: 100%;
+        }
+
+        .jdgm-carousel-item__review-content {
+            order:1;
+            .jdgm-carousel-item__review-title {
+                font-size:21px;
+                font-family: var(--font-family-header-ex);
+                text-transform: uppercase;
+                letter-spacing:.12em;
+            }
+        }
+        .jdgm-carousel-item__review-rating {
+            order:2;
+
+        }
     }
 }

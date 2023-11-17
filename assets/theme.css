@@ -127,3 +127,16 @@ body {
   background: #004356 url("bg-chevron-blue.svg") center center repeat;
   background-size: 23374.6px 1740.6px;
 }
+
+.insta-feed-title {
+  text-align: center;
+  font-family: var(--font-family-header-cn);
+  margin: 2em 0px;
+  position: relative;
+  color: var(--color-main);
+}
+.insta-feed-title a {
+  color: var(--color-main);
+  text-decoration: none;
+  position: relative;
+}

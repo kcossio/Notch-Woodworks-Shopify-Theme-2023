@@ -195,6 +195,9 @@ h2.jdgm-carousel-title, h2.jdgm-rev-widg__title {
   -webkit-line-clamp: 4 !important;
   line-clamp: 4 !important;
 }
+.jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__review-content .jdgm-carousel-item__review-body p {
+  font-size: 14px;
+}
 .jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__review-content .jdgm-carousel-item__review-title {
   font-size: 21px;
   font-family: var(--font-family-header-ex);

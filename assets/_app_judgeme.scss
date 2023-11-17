@@ -37,6 +37,10 @@ h2 {
             .jdgm-carousel-item__review-body {
                 -webkit-line-clamp:4 !important;
                 line-clamp: 4 !important;
+
+                p {
+                    font-size:14px;
+                }
             }
             .jdgm-carousel-item__review-title {
                 font-size:21px;

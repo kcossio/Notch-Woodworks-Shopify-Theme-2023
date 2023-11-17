@@ -118,11 +118,12 @@ body {
 
         &::before {
             content:"";
-            content: url('icon-instagram.svg');
             display:inline-flex;
             width:29px;
             height:29px;
             margin-right:.5em;
+            background:url('icon-instagram.svg') center center no-repeat;
+            background-size: cover;
         }
 
 

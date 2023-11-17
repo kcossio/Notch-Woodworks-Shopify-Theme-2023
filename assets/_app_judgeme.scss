@@ -12,6 +12,9 @@ section {
             }
         }
     }
+    .jdgm-carousel__item-container {
+        height:auto !important;
+    }
     .jdgm-carousel-wrapper {
     
         width:100%;
@@ -22,6 +25,7 @@ section {
     .jdgm-carousel-item {
         display:inline-flex;
         flex-wrap:wrap;
+        align-items: flex-start;
     
         & > * {
             width: 100%;
@@ -30,6 +34,7 @@ section {
         .jdgm-carousel-item__review {
             display:inline-flex;
             flex-wrap: wrap;
+            align-items: flex-start;
     
             & > * {
                 width: 100%;

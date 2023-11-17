@@ -1,0 +1,33 @@
+{%- ########################################################################## 
+# Label: HTML Code
+# Returns: a string or an empty object(if nothing has been entered)
+# Filters: https://shopify.dev/api/liquid/objects#string 
+########################################################################## -%}
+{{ section.settings.html_code }} 
+
+{% schema %}
+  {
+  "name": "Custom HTML",
+  "class": "section section-custom-html",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "html",
+      "id": "html_code",
+      "label": "HTML Code",
+      "info": "Add any custom HTML code to this section"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom HTML"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

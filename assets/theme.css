@@ -220,3 +220,9 @@ section .jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__rev
   order: 2;
   font-size: 90%;
 }
+section .jdgm-carousel-item .jdgm-carousel-item__reviewer-name {
+  font-family: var(--font-family-script);
+  font-weight: normal;
+  font-size: 27px;
+  color: var(--color-main);
+}

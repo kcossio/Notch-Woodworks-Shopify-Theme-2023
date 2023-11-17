@@ -68,6 +68,13 @@ section {
                 font-size:90%;
             }
         }
+
+        .jdgm-carousel-item__reviewer-name {
+            font-family: var(--font-family-script);
+            font-weight: normal;
+            font-size:27px;
+            color:var(--color-main);
+        }
     }
     
 }

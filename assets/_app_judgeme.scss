@@ -13,7 +13,7 @@ h2 {
 }
 .jdgm-carousel-wrapper {
     .jdgm-all-reviews-rating-wrapper {
-        display:none;
+        display:none !important;
     }
 }
 .jdgm-carousel-item {
@@ -34,6 +34,7 @@ h2 {
 
         .jdgm-carousel-item__review-content {
             order:1;
+            
             .jdgm-carousel-item__review-title {
                 font-size:21px;
                 font-family: var(--font-family-header-ex);

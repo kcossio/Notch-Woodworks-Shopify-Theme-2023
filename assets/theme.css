@@ -171,7 +171,7 @@ h2.jdgm-carousel-title, h2.jdgm-rev-widg__title {
   font-size: 60px;
 }
 .jdgm-carousel-wrapper .jdgm-all-reviews-rating-wrapper {
-  display: none;
+  display: none !important;
 }
 
 .jdgm-carousel-item {

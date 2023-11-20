@@ -238,14 +238,19 @@ section .jdgm-carousel__left-arrow {
 }
 section .jdgm-carousel__right-arrow::before,
 section .jdgm-carousel__left-arrow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0p;
+  top: 0px;
   width: 100%;
   height: 100%;
   background-color: red;
   transform: rotate(45deg);
 }
-section .jdgm-carousel__right-arrow {
+section .jdgm-carousel__right-arrow::before {
   transform-origin: center right;
 }
-section .jdgm-carousel__left-arrow {
+section .jdgm-carousel__left-arrow::before {
   transform-origin: center left;
 }

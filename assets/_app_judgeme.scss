@@ -90,6 +90,7 @@ section {
 
         position: relative;
         overflow:hidden;
+        transform:rotate(0deg);
         
         &::before {
             content:"";

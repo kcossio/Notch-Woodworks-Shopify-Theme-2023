@@ -236,6 +236,7 @@ section .jdgm-carousel__left-arrow {
   border: 0px;
   position: relative;
   overflow: hidden;
+  transform: rotate(0deg);
 }
 section .jdgm-carousel__right-arrow::before,
 section .jdgm-carousel__left-arrow::before {

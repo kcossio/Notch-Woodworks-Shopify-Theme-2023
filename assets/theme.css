@@ -233,6 +233,7 @@ section .jdgm-carousel-item .jdgm-carousel-item__reviewer-name {
 section .jdgm-carousel__right-arrow,
 section .jdgm-carousel__left-arrow {
   background-color: #e4e4e4;
+  border: 0px;
   position: relative;
   overflow: hidden;
 }
@@ -244,13 +245,14 @@ section .jdgm-carousel__left-arrow::before {
   left: 0p;
   top: 0px;
   width: 100%;
-  height: 100%;
+  height: 200%;
   background-color: red;
-  transform: rotate(45deg);
 }
 section .jdgm-carousel__right-arrow::before {
   transform-origin: center right;
+  transform: rotate(45deg);
 }
 section .jdgm-carousel__left-arrow::before {
   transform-origin: center left;
+  transform: rotate(45deg);
 }

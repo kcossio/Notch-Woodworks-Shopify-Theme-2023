@@ -2386,7 +2386,9 @@ product-info .loading-overlay:not(.hidden) ~ *,
   overflow-y: visible;
   overflow-x: revert;
 }
-
+sticky-header {
+  width:100%;
+}
 .section-header ~ .shopify-section-group-header-group {
   z-index: initial;
 }

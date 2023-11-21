@@ -2354,6 +2354,10 @@ product-info .loading-overlay:not(.hidden) ~ *,
   overflow-x: revert;
 }
 
+sticky-header {
+  width: 100%;
+}
+
 .section-header ~ .shopify-section-group-header-group {
   z-index: initial;
 }

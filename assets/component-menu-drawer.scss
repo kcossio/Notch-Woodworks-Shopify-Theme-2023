@@ -37,9 +37,8 @@ menu-drawer > details[open] > summary::before {
   width: 100vw;
   padding: 0 0px 0px 20vw;
   background-color: rgba(255,255,255,.5);
-  //overflow-y:visible;
   overflow-x: hidden;
-  //filter: drop-shadow(var(--drawer-shadow-horizontal-offset) var(--drawer-shadow-vertical-offset) var(--drawer-shadow-blur-radius) rgba(var(--color-shadow), var(--drawer-shadow-opacity)));
+  filter: drop-shadow(var(--drawer-shadow-horizontal-offset) var(--drawer-shadow-vertical-offset) var(--drawer-shadow-blur-radius) rgba(var(--color-shadow), var(--drawer-shadow-opacity)));
 
   &:before {
     content:"";
@@ -105,6 +104,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   grid-template-rows: 1fr auto;
   align-content: space-between;
   overflow-y: auto;
+  overflow-x: hidden;
   height: 100%;
 }
 

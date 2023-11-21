@@ -2562,6 +2562,10 @@ product-info .loading-overlay:not(.hidden) ~ *,
   width: 24.6px;
 }
 
+.header__icon--menu {
+  width: 30.5px;
+  height: 30.5px;
+}
 .header__icon--menu .icon {
   width: 30.5px;
 }

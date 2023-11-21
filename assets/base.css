@@ -2570,6 +2570,10 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .header__icon--menu .icon {
   width: 30.5px;
 }
+.header__icon--menu .icon.icon-close {
+  width: 24px;
+  height: 24px;
+}
 
 .header__icon--cart {
   position: relative;

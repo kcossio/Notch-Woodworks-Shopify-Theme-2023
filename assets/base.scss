@@ -2627,6 +2627,11 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
   .icon {
     width:30.5px;
+
+    &.icon-close {
+      width:24px;
+      height:24px;
+    }
   }
 }
 

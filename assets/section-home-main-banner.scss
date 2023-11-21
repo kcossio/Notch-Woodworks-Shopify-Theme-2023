@@ -39,6 +39,10 @@
         max-width:100%;
     }
 
+    .inner {
+        z-index:2;
+    }
+
     .home-hero-products {
         position:absolute;
         z-index:1;

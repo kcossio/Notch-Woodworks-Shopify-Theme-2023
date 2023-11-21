@@ -2351,7 +2351,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .shopify-section-group-header-group {
   z-index: 4;
   overflow-y: visible;
-  overflow-x: clip;
+  overflow-x: revert;
 }
 
 .section-header ~ .shopify-section-group-header-group {
@@ -2805,7 +2805,7 @@ details[open] > .header__submenu {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 21px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 .header__menu-item:hover {
   color: rgb(var(--color-foreground));

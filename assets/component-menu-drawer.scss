@@ -1,7 +1,7 @@
 @import "mixins";
 
 .header__icon--menu {
-  position: initial;
+  position: relative;
 }
 
 .js menu-drawer > details > summary::before,

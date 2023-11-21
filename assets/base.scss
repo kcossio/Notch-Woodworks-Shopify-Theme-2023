@@ -2632,6 +2632,10 @@ product-info .loading-overlay:not(.hidden) ~ *,
     &.icon-close {
       width:24px;
       height:24px;
+
+      path {
+        fill:var(--color-main);
+      }
     }
   }
 }

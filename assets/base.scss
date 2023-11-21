@@ -2616,12 +2616,15 @@ sticky-header {
 
 .header__icon--account {
 
+  width:19px;
   margin-right:20px;
 
-  .icon {
-    width:24.6px;
-  }
+}
 
+.header__icon--cart {
+  position: relative;
+  width:24px;
+  //margin-right: -1.2rem;
 }
 
 .header__icon--menu {
@@ -2645,11 +2648,7 @@ sticky-header {
   }
 }
 
-.header__icon--cart {
-  position: relative;
-  width:30.25px;
-  //margin-right: -1.2rem;
-}
+
 
 .header__icon--menu[aria-expanded='true']::before {
   content: '';

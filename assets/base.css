@@ -2506,6 +2506,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   display: flex;
   grid-area: icons;
   justify-self: end;
+  align-items: center;
   padding-right: 0.8rem;
 }
 

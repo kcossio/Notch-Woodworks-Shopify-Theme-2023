@@ -2810,20 +2810,16 @@ details[open] > .header__submenu {
   text-transform: uppercase;
   font-size: 21px;
   letter-spacing: 0.05em;
+  transition: all var(--duration-short) ease;
 }
 .header__menu-item:hover {
-  color: rgb(var(--color-foreground));
+  color: var(--color-access);
 }
 
 .header__menu-item span {
   transition: -webkit-text-decoration var(--duration-short) ease;
   transition: text-decoration var(--duration-short) ease;
   transition: text-decoration var(--duration-short) ease, -webkit-text-decoration var(--duration-short) ease;
-}
-
-.header__menu-item:hover span {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
 }
 
 details[open] > .header__menu-item {

@@ -8,7 +8,7 @@ EASING
   font-style: normal;
 }
 @font-face {
-  font-family: "Editor Bold";
+  font-family: "Editor";
   src: url("ft-Editor-Bold.woff") format("woff"), url("ft-Editor-Bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;

@@ -9,7 +9,7 @@ EASING
   font-style: normal;
 }
 @font-face {
-  font-family: "Editor Bold";
+  font-family: "Editor";
   src: url("ft-Editor-Bold.woff") format("woff"), url("ft-Editor-Bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -42,7 +42,7 @@ EASING
   --font-family-script: "Buinton", cursive;
   --font-family-header-cn: "FSIndustrieCondensedBold", sans-serif;
   --font-family-header-ex: "FSIndustrieExtendedBlack", sans-serif;
-  --font-family-header-alt: "Editor", sans-serif;
+  --font-family-header-alt: "Editor", serif;
   --font-family-body: "FSKimText", serif;
   --color-text:#121212;
   --color-main:#004356;

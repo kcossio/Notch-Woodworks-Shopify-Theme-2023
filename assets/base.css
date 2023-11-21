@@ -2813,7 +2813,7 @@ details[open] > .header__submenu {
   transition: all var(--duration-short) ease;
 }
 .header__menu-item:hover {
-  color: var(--color-access);
+  color: var(--color-accent);
 }
 
 .header__menu-item span {

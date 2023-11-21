@@ -2558,7 +2558,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   grid-area: icons;
   justify-self: end;
   align-items: center;
-  padding-right: 3rem;
+  padding-right: 0rem;
 }
 
 .header__icons .shopify-app-block {
@@ -2625,6 +2625,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   width:30.5px;
   height:30.5px;
   z-index:6;
+  margin-right:3rem;
 
   .icon {
     width:30.5px;

@@ -2460,7 +2460,7 @@ sticky-header {
 
 .header__heading-link {
   display: inline-block;
-  padding: 0.75rem;
+  padding: 0.75rem 0;
   text-decoration: none;
   word-break: break-word;
 }

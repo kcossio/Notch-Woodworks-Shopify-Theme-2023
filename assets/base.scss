@@ -2383,6 +2383,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 .shopify-section-group-header-group {
   z-index: 4;
+  overflow-y: visible;
+  overflow-x: clip;
 }
 
 .section-header ~ .shopify-section-group-header-group {
@@ -2873,12 +2875,14 @@ details[open] > .header__submenu {
 .header__menu-item {
   padding: 1.2rem;
   text-decoration: none;
+  font-family:var(--font-family-header-ex);
   color: rgba(var(--color-foreground), 0.75);
+
+  &:hover {
+    color: rgb(var(--color-foreground));
+  }
 }
 
-.header__menu-item:hover {
-  color: rgb(var(--color-foreground));
-}
 
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;

@@ -38,7 +38,7 @@ menu-drawer > details[open] > summary::before {
   width: 100vw;
   padding: 0 0px 0px 20vw;
   background-color: rgba(255, 255, 255, 0.5);
-  overflow-y: visible;
+  overflow-x: hidden;
 }
 .menu-drawer:before {
   content: "";

@@ -36,9 +36,8 @@ menu-drawer > details[open] > summary::before {
   right: 0;
   top: 100%;
   width: 100vw;
-  padding-left: 20vw;
-  padding: 0;
-  background-color: #ffffff;
+  padding: 0 0px 0px 20vw;
+  background-color: rgba(255, 255, 255, 0.5);
   overflow-y: visible;
 }
 .menu-drawer:before {
@@ -48,8 +47,7 @@ menu-drawer > details[open] > summary::before {
   position: absolute;
   bottom: 100%;
   left: 0px;
-  background: #ffffff;
-  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.5);
   z-index: 1;
 }
 .menu-drawer .link--text {

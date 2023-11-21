@@ -2397,7 +2397,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   }
   .header--middle-left {
     grid-template-areas: "heading navigation icons";
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto 1fr;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }
@@ -2578,6 +2578,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 .header__icon--cart {
   position: relative;
+  width: 30.25px;
 }
 
 .header__icon--menu[aria-expanded=true]::before {

@@ -34,7 +34,8 @@ menu-drawer > details[open] > summary::before {
   z-index: 3;
   right: 0;
   top: 100%;
-  width: 80vw;
+  width: 100vw;
+  padding-left:20vw;
   padding: 0;
   background-color: #ffffff;
   overflow-y:visible;
@@ -96,7 +97,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   }
 }
 .menu-drawer__inner-container {
-  position: relative;
+  position: relative;;
   height: 100%;
 }
 

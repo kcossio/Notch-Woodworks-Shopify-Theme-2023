@@ -2435,7 +2435,17 @@ sticky-header {
 .header__heading {
   margin: 0;
   line-height: 0;
-  width: 148px;
+  width: 14.8rem;
+}
+@media (min-width: 1280px) {
+  .header__heading {
+    width: 16.4rem;
+  }
+}
+@media (min-width: 1680px) {
+  .header__heading {
+    width: 21.8rem;
+  }
 }
 
 .header > .header__heading-link {

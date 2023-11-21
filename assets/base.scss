@@ -2477,7 +2477,14 @@ sticky-header {
 .header__heading {
   margin: 0;
   line-height: 0;
-  width:148px;
+  width:14.8rem;
+
+  @include breakpoint(laptop) {
+    width:16.4rem;
+  }
+  @include breakpoint(desktopwide) {
+    width:21.8rem;
+  }
 }
 
 .header > .header__heading-link {

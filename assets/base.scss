@@ -2579,6 +2579,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 .header__icon span {
   height: 100%;
+  width: 100%;
 }
 
 .header__icon::after {
@@ -2775,7 +2776,7 @@ details[open] .modal-overlay::after {
 /* Header menu drawer */
 .header__icon--menu .icon {
   display: block;
-  position: relative;
+  position: absolute;
   opacity: 1;
   transform: scale(1);
   transition: transform 150ms ease, opacity 150ms ease;

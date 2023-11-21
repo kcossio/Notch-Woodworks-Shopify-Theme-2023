@@ -2601,10 +2601,16 @@ product-info .loading-overlay:not(.hidden) ~ *,
   width: 30px;
   padding: 0;
 }
-.header__icon--account .icon {
-  width:24.6px;
+.header__icon--account {
+
   margin-right:20px;
+
+  .icon {
+    width:24.6px;
+  }
+
 }
+
 
 .header__icon--cart {
   position: relative;

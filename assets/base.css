@@ -2551,9 +2551,11 @@ product-info .loading-overlay:not(.hidden) ~ *,
   padding: 0;
 }
 
+.header__icon--account {
+  margin-right: 20px;
+}
 .header__icon--account .icon {
   width: 24.6px;
-  margin-right: 20px;
 }
 
 .header__icon--cart {

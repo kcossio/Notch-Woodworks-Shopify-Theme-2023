@@ -2109,7 +2109,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
   font-family: var(--font-family-header-ex);
   bottom: 2.2rem;
   left: 2.2rem;
-  line-height: calc(1 + 0.1 / var(--font-body-scale));
+  line-height: 2.2rem;
+  padding-top: 0.1rem;
 }
 
 /* utility-bar */

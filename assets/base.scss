@@ -2624,6 +2624,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
   width:30.5px;
   height:30.5px;
+  z-index:5;
 
   .icon {
     width:30.5px;

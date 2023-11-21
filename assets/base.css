@@ -2539,18 +2539,19 @@ product-info .loading-overlay:not(.hidden) ~ *,
   transform: scale(1.07);
 }
 
+.header__icon {
+  height: auto;
+  width: auto;
+  max-width: 40px;
+  padding: 0;
+}
 .header__icon .icon {
   height: auto;
-  width: 2rem;
+  width: 100%;
+  padding: 0;
+  height: auto;
   fill: none;
   vertical-align: middle;
-}
-
-.header__icon,
-.header__icon--cart .icon {
-  height: auto;
-  width: 30px;
-  padding: 0;
 }
 
 .header__icon--account {
@@ -2558,6 +2559,10 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 .header__icon--account .icon {
   width: 24.6px;
+}
+
+.header__icon--menu .icon {
+  width: 30.5px;
 }
 
 .header__icon--cart {

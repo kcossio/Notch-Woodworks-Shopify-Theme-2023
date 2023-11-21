@@ -2590,19 +2590,24 @@ product-info .loading-overlay:not(.hidden) ~ *,
   transform: scale(1.07);
 }
 
-.header__icon .icon {
+
+.header__icon {
   height: auto;
-  width: 2rem;
-  fill: none;
-  vertical-align: middle;
+  width: auto;
+  max-width:40px;
+  padding: 0;
+
+  .icon {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    fill: none;
+    vertical-align: middle;
+  }
+
 }
 
-.header__icon,
-.header__icon--cart .icon {
-  height: auto;
-  width: 30px;
-  padding: 0;
-}
 .header__icon--account {
 
   margin-right:20px;
@@ -2613,6 +2618,12 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 }
 
+.header__icon--menu {
+
+  .icon {
+    width:30.5px;
+  }
+}
 
 .header__icon--cart {
   position: relative;

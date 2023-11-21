@@ -2587,7 +2587,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
   width: 100%;
   display: block;
   position: absolute;
-  background: rgba(var(--color-main), 0.5);
+  background: var(--color-main);
+  opacity: 0;
 }
 
 /* Search */

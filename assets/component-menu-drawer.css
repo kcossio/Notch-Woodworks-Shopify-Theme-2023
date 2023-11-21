@@ -32,7 +32,7 @@ menu-drawer > details[open] > summary::before {
   position: absolute;
   transform: translateX(100%);
   visibility: hidden;
-  z-index: 7;
+  z-index: 5;
   right: 0;
   top: 100%;
   width: 100vw;

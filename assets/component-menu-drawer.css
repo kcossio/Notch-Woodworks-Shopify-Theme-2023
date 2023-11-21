@@ -32,7 +32,7 @@ menu-drawer > details[open] > summary::before {
   position: absolute;
   transform: translateX(100%);
   visibility: hidden;
-  z-index: 3;
+  z-index: 7;
   right: 0;
   top: 100%;
   width: 100vw;
@@ -94,6 +94,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__inner-container {
   position: relative;
   height: 100%;
+  background-color: #ffffff;
 }
 
 .menu-drawer__navigation-container {

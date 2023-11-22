@@ -559,7 +559,12 @@ EASING
 .collection-card-wrapper h3.card__heading a {
   color: var(--color-main);
   text-decoration: none;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
+}
+@media (min-width: 1280px) {
+  .collection-card-wrapper h3.card__heading a {
+    font-size: 2.2rem;
+  }
 }
 @media (min-width: 1440px) {
   .collection-card-wrapper h3.card__heading a {

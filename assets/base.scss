@@ -1295,7 +1295,7 @@ button.shopify-payment-button__button--unbranded,
   font-family:var(--font-family-header-ex);
   text-transform:uppercase;
   letter-spacing:.35em;
-  font-size:14px;
+  font-size:1.4rem;
   color:var(--color-main);
   border-radius: 0px;
   position: relative;
@@ -1307,7 +1307,10 @@ button.shopify-payment-button__button--unbranded,
     border-color:var(--color-accent);
   }
   @include breakpoint(tablet) {
-    font-size:17.25px;
+    font-size:1.7rem;
+  }
+  @include breakpoint(tablet) {
+    font-size:2.3rem;
   }
 }
 

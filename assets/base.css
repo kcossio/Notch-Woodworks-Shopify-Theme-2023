@@ -1252,7 +1252,7 @@ button.shopify-payment-button__button--unbranded,
   font-family: var(--font-family-header-ex);
   text-transform: uppercase;
   letter-spacing: 0.35em;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: var(--color-main);
   border-radius: 0px;
   position: relative;
@@ -1277,7 +1277,18 @@ button.shopify-payment-button__button--unbranded:hover,
   .shopify-payment-button [role=button],
   .cart__dynamic-checkout-buttons [role=button],
   .cart__dynamic-checkout-buttons iframe {
-    font-size: 17.25px;
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 768px) {
+  .button,
+  .shopify-challenge__button,
+  .customer button,
+  button.shopify-payment-button__button--unbranded,
+  .shopify-payment-button [role=button],
+  .cart__dynamic-checkout-buttons [role=button],
+  .cart__dynamic-checkout-buttons iframe {
+    font-size: 2.3rem;
   }
 }
 

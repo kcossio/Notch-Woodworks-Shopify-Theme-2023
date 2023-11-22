@@ -1277,7 +1277,7 @@ button.shopify-payment-button__button--unbranded:hover,
   .shopify-payment-button [role=button],
   .cart__dynamic-checkout-buttons [role=button],
   .cart__dynamic-checkout-buttons iframe {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 1440px) {

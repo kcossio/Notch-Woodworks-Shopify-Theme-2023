@@ -21,13 +21,13 @@ EASING
 }
 
 .rich-text__text {
-  width: 5.4rem;
+  width: 54rem;
   max-width: 100%;
   margin: 0px auto;
 }
 @media (min-width: 1440px) {
   .rich-text__text {
-    ewidth: 7.6rem;
+    width: 76rem;
   }
 }
 

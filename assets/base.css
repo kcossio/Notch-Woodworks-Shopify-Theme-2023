@@ -98,24 +98,25 @@ EASING
 }
 
 .inner {
-  width: 1312px;
   max-width: 100%;
-  padding: 0px 40px;
-  margin: 0px auto;
   position: relative;
   z-index: 1;
+  width: var(--page-width);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
 }
 .inner.narrow {
-  width: 780px;
+  width: 78rem;
 }
 .inner.center {
   text-align: center;
 }
 
 .wide {
-  width: 1320px;
+  width: var(--page-width);
   max-width: 100%;
-  padding: 0px 40px;
+  padding: 0px 3rem;
   margin: 0px auto;
 }
 

@@ -154,8 +154,8 @@
       {
         "type": "range",
         "id": "page_width",
-        "min": 1000,
-        "max": 1600,
+        "min": 1200,
+        "max": 1650,
         "step": 50,
         "default": 1200,
         "unit": "px",

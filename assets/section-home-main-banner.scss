@@ -35,9 +35,17 @@
     }
 
     .section-content {
-        width:416px;
+        width:42rem;
         max-width:100%;
+
+        @include breakpoint(laptop) {
+            width:42rem;
+        }
+        @include breakpoint(desktopwide) {
+            width:52rem;
+        }
     }
+    
 
     .inner {
         z-index:2;

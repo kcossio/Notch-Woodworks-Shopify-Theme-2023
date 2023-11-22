@@ -64,8 +64,18 @@ EASING
   color: #D5D5D5;
 }
 .section-home-banner .section-content {
-  width: 416px;
+  width: 42rem;
   max-width: 100%;
+}
+@media (min-width: 1280px) {
+  .section-home-banner .section-content {
+    width: 42rem;
+  }
+}
+@media (min-width: 1680px) {
+  .section-home-banner .section-content {
+    width: 52rem;
+  }
 }
 .section-home-banner .inner {
   z-index: 2;

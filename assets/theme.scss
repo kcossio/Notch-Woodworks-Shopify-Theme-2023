@@ -86,12 +86,15 @@ body {
 .block-header-v2 {
     font-family: var(--font-family-header-cn);
     color:var(--color-accent);
-    font-size:30px;
+    font-size:3rem;
     letter-spacing:.1em;
     text-transform: uppercase;
 
     @include breakpoint(tablet) {
-        font-size:45px;
+        font-size:4.5rem;
+    }
+    @include breakpoint(tablet) {
+        font-size:6rem;
     }
 }
 

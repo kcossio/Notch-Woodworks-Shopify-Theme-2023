@@ -75,6 +75,15 @@ body {
   overflow-x: clip;
 }
 
+p {
+  font-size: 1.6rem;
+}
+@media (min-width: 1440px) {
+  p {
+    font-size: 2.2rem;
+  }
+}
+
 .block-header-v1 {
   font-family: var(--font-family-header-alt);
   color: var(--color-main);

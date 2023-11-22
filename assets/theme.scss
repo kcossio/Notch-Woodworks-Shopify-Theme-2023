@@ -51,6 +51,15 @@ body {
 
 }
 
+// ----- General Styles ----- //
+
+p {
+    font-size:1.6rem;
+
+    @include breakpoint(desktop) {
+        font-size:2.2rem;
+    }
+}
 // ---- Misc. Headlines --- //
 
 .block-header-v1 {

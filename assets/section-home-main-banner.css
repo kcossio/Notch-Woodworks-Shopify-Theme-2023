@@ -65,8 +65,13 @@ EASING
   }
 }
 .section-home-banner p {
-  font-size: 16.5px;
+  font-size: 1.6rem;
   color: #D5D5D5;
+}
+@media (min-width: 1440px) {
+  .section-home-banner p {
+    font-size: 2.2rem;
+  }
 }
 .section-home-banner .section-content {
   width: 42rem;
@@ -79,7 +84,7 @@ EASING
 }
 @media (min-width: 1440px) {
   .section-home-banner .section-content {
-    width: 52rem;
+    width: 54rem;
   }
 }
 .section-home-banner .inner {

@@ -1280,7 +1280,7 @@ button.shopify-payment-button__button--unbranded:hover,
     font-size: 1.7rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .button,
   .shopify-challenge__button,
   .customer button,

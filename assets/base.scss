@@ -1309,7 +1309,7 @@ button.shopify-payment-button__button--unbranded,
   @include breakpoint(tablet) {
     font-size:1.7rem;
   }
-  @include breakpoint(tablet) {
+  @include breakpoint(desktop) {
     font-size:2.3rem;
   }
 }

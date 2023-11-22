@@ -23,8 +23,10 @@
             color:var(--color-white);
 
             @include breakpoint(tablet) {
-                font-size:36px;
-
+                font-size:3.6rem;
+            }
+            @include breakpoint(desktop) {
+                font-size:4.8rem;
             }
         }
     }
@@ -41,7 +43,7 @@
         @include breakpoint(laptop) {
             width:42rem;
         }
-        @include breakpoint(desktopwide) {
+        @include breakpoint(desktop) {
             width:52rem;
         }
     }

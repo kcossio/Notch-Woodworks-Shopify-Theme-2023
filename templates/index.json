@@ -172,6 +172,62 @@
         "padding_top": 92,
         "padding_bottom": 92
       }
+    },
+    "c5737676-dbc6-43bc-b597-f01023beac81": {
+      "type": "slideshow_full-width",
+      "blocks": {
+        "a273c311-c964-47c0-8757-87bbb56ab1a3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/newsletter-hero-cutting-board.jpg"
+          }
+        },
+        "bd97a77a-9101-46d4-9e5a-cab0a2b24bc2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fpo-home-slide-3.jpg"
+          }
+        },
+        "a293b1e1-7e8b-460d-bfb2-8158972bca65": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fpo-home-slide-2.jpg"
+          }
+        },
+        "3c5cded9-261a-47d2-bb71-9eb0fa3ade63": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fpo-home-slide.jpg"
+          }
+        },
+        "5c585e0c-984e-482a-ae45-5a30e7735dcd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collection-thumb-boards.jpg"
+          }
+        },
+        "c5f5b6fe-e33c-47db-992b-d03afe817c31": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "a273c311-c964-47c0-8757-87bbb56ab1a3",
+        "bd97a77a-9101-46d4-9e5a-cab0a2b24bc2",
+        "a293b1e1-7e8b-460d-bfb2-8158972bca65",
+        "3c5cded9-261a-47d2-bb71-9eb0fa3ade63",
+        "5c585e0c-984e-482a-ae45-5a30e7735dcd",
+        "c5f5b6fe-e33c-47db-992b-d03afe817c31"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -181,6 +237,7 @@
     "169698618623113ade",
     "c58ce215-9cc0-452c-aa7a-7dffed5eff43",
     "1696371259dfbcc728",
-    "081c888d-402d-4203-a0d3-aa799a4370d1"
+    "081c888d-402d-4203-a0d3-aa799a4370d1",
+    "c5737676-dbc6-43bc-b597-f01023beac81"
   ]
 }

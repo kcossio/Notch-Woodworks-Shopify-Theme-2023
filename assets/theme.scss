@@ -138,8 +138,8 @@ p {
         &::before {
             content:"";
             display:inline-flex;
-            width:29px;
-            height:29px;
+            width:2.9rem;
+            height:2.9rem;
             margin-right:.5em;
             background:url('icon-instagram.svg') center center no-repeat;
             background-size: cover;
@@ -147,11 +147,20 @@ p {
         }
 
         @include breakpoint(tablet) {
-            font-size:45px;
+            font-size:4.5rem;
 
             &::before {
-                width:43px;
-                height: 43px;
+                width:4.3rem;
+                height: 4.3rem;
+            }
+        }
+
+        @include breakpoint(desktop) {
+            font-size:6rem;
+
+            &::before {
+                width:5.6rem;
+                height: 5.6rem;
             }
         }
 

@@ -1,0 +1,49 @@
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+
+    {%- when 'slide' -%}
+      {%- ########################################################################## 
+      # Label: Image
+      # Returns: an image object or nil(if no selection has been made)
+      # Image Properties: https://shopify.dev/api/liquid/objects#image
+      # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
+      ########################################################################## -%}
+      {%- assign image = block.settings.image -%}
+      {{ image | image_url: width: image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+  {
+  "name": "Slideshow (full-width)",
+  "class": "section slideshow-full",
+  "tag": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Slide",
+      "type": "slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Upload/choose an image for the slide"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slideshow (full-width)"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

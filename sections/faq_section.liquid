@@ -1,0 +1,82 @@
+{%- ########################################################################## 
+# Label: Heading
+# Returns: a string or an empty object(if nothing has been entered)
+# Filters: https://shopify.dev/api/liquid/objects#string 
+########################################################################## -%}
+{{ section.settings.heading }} 
+
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+
+    {%- when 'block_0' -%}
+    {%- when 'faq' -%}
+      {%- ########################################################################## 
+      # Label: Question
+      # Returns: a string or an empty object(if nothing has been entered)
+      # Filters: https://shopify.dev/api/liquid/objects#string 
+      ########################################################################## -%}
+      {{ block.settings.question }} 
+
+      {%- ########################################################################## 
+      # Label: Answer
+      # Returns: a string or an empty object(if nothing has been entered)
+      # Filters: https://shopify.dev/api/liquid/objects#string 
+      ########################################################################## -%}
+      {{ block.settings.answer }} 
+
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+  {
+  "name": "FAQ Section",
+  "class": "section faqs",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Frequently Asked Questions",
+      "info": "Add a title for the FAQ section"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Block 0",
+      "type": "block_0",
+      "settings": []
+    },
+    {
+      "name": "FAQ",
+      "type": "faq",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "placeholder": "How does this work?",
+          "info": "Enter a question here"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "info": "Add an answer to the question here"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Section"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

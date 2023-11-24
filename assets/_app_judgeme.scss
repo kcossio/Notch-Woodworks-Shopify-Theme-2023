@@ -54,12 +54,20 @@ section {
                     -webkit-line-clamp:4 !important;
     
                     p {
-                        font-size:14px;
+                        font-size:1.24rem;
+
+                        @include breakpoint(laptop) {
+                            font-size:1.6rem;
+                        }
+
+                        @include breakpoint(desktop) {
+                            font-size:1.8rem;
+                        }
                     }
                 }
                 .jdgm-carousel-item__review-title {
                     color:var(--color-main);
-                    font-size:15px;
+                    font-size:1.5rem;
                     line-height:1.1em;
                     font-family: var(--font-family-header-ex);
                     text-transform: uppercase;

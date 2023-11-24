@@ -230,11 +230,21 @@ section .jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__rev
   -webkit-line-clamp: 4 !important;
 }
 section .jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__review-content .jdgm-carousel-item__review-body p {
-  font-size: 14px;
+  font-size: 1.24rem;
+}
+@media (min-width: 1280px) {
+  section .jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__review-content .jdgm-carousel-item__review-body p {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1440px) {
+  section .jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__review-content .jdgm-carousel-item__review-body p {
+    font-size: 1.8rem;
+  }
 }
 section .jdgm-carousel-item .jdgm-carousel-item__review .jdgm-carousel-item__review-content .jdgm-carousel-item__review-title {
   color: var(--color-main);
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 1.1em;
   font-family: var(--font-family-header-ex);
   text-transform: uppercase;

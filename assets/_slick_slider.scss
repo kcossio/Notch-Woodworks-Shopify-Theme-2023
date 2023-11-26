@@ -162,8 +162,9 @@
 .studio-slider .slick-next {
     right:auto;
     left:0px;
-    top:50%;
-    transform:translateX(50%);
+    top:auto;
+    bottom:3rem;
+    transform:translate(50% 0%);
     width:36px;
     height:72px;
     font-size:0px;
@@ -188,15 +189,6 @@
 	{
 		right: 25px;
 	}
-    .studio-slider .slick-prev {
-        left:8px;
-    }
-    .studio-slider .slick-next {
-        right:8px;
-    }
-    .studio-gallery-slide {
-        padding:0px 8px;
-    }
     
 }
 /*-- Studio Gallery Slider ---- */

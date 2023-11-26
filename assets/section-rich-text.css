@@ -65,7 +65,6 @@ EASING
   flex-wrap: wrap;
   gap: 1rem;
   width: 100%;
-  max-width: 45rem;
   word-break: break-word;
 }
 

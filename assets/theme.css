@@ -167,7 +167,7 @@ EASING
 }
 
 .studio-slider .slick-prev {
-  left: calc(10.88vw - 40px);
+  left: auto;
 }
 
 .studio-slider .slick-next {
@@ -175,32 +175,18 @@ EASING
   left: 0px;
   top: auto;
   bottom: 3rem;
-  transform: translate(50% 0%);
-  width: 36px;
-  height: 72px;
+  transform: translate(0% 0%);
+  width: 3.6rem;
+  height: 7.2rem;
   font-size: 0px;
   display: block;
   background: url("triangle-notch-right.svg") center center no-repeat;
   background-size: cover;
 }
 
-@media screen and (max-width: 500px) {
-  .slick-prev,
-  .slick-next {
-    font-size: 10px;
-    width: 10px;
-    height: 48px;
-  }
-  .slick-prev {
-    left: 25px;
-  }
-  .slick-next {
-    right: 25px;
-  }
-}
 /*-- Studio Gallery Slider ---- */
 .studio-slider {
-  width: 100%;
+  width: 100vw;
   padding: 0px;
   margin: 5rem 0px;
 }

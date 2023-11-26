@@ -238,16 +238,16 @@ EASING
 /*-- Studio Gallery Slider ---- */
 .studio-slider {
   width: 100%;
-  padding: 0px 10.88vw;
-  margin: 152px 0px 0px 0px;
+  padding: 0px;
+  margin: 5rem 0px;
 }
 
 .studio-gallery-slide {
-  padding: 0px 30px;
+  padding: 0px 3rem;
 }
 
 .studio-gallery-slide img {
-  height: 882px;
+  height: 61rem;
   width: auto;
   max-height: 80vh;
   max-width: 100%;
@@ -397,10 +397,6 @@ EASING
     max-width: 59.73vw;
     margin: 100px -30px 0px auto;
     order: 3;
-  }
-  .studio-slider {
-    margin-top: 76px;
-    padding: 0px 27px;
   }
   .studio-gallery-slide img {
     height: 220px;

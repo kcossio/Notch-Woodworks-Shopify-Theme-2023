@@ -166,34 +166,21 @@ EASING
   right: 45px;
 }
 
-.team-slider .slick-prev {
-  left: calc(21vw - 45px);
-  top: calc(100% - 192px);
-  transform: translate(0, 0);
-}
-
-.team-slider .slick-next {
-  right: auto;
-  left: calc(21vw - 45px);
-  top: calc(100% - 300px);
-  transform: translate(0, 0);
-}
-
-.team-slider .slick-next::after {
-  content: "-";
-  font-size: 16px;
-  display: block;
-  position: absolute;
-  bottom: -26px;
-  left: 1px;
-}
-
 .studio-slider .slick-prev {
   left: calc(10.88vw - 40px);
 }
 
 .studio-slider .slick-next {
-  right: calc(10.88vw - 40px);
+  right: auto;
+  left: 0px;
+  top: 50%;
+  transform: translateX(50%);
+  width: 36px;
+  height: 72px;
+  font-size: 0px;
+  display: block;
+  background: url("triangle-notch-right.svg") center center no-repeat;
+  background-size: cover;
 }
 
 @media screen and (max-width: 500px) {
@@ -208,22 +195,6 @@ EASING
   }
   .slick-next {
     right: 25px;
-  }
-  .team-slider .slick-prev {
-    left: calc(15.7vw - 22px);
-    top: calc(100% - 110px);
-    transform: translate(0, 0);
-  }
-  .team-slider .slick-next {
-    right: auto;
-    left: calc(15.7vw - 22px);
-    top: calc(100% - 180px);
-    transform: translate(0, 0);
-  }
-  .team-slider .slick-next::after {
-    font-size: 10px;
-    bottom: -16px;
-    left: 1px;
   }
   .studio-slider .slick-prev {
     left: 8px;
@@ -247,161 +218,17 @@ EASING
 }
 
 .studio-gallery-slide img {
-  height: 61rem;
+  height: 50rem;
   width: auto;
-  max-height: 80vh;
+  max-height: 60vh;
   max-width: 100%;
 }
-
-@media screen and (max-width: 1440px) {
-  .studio-intro-section {
-    margin-top: -140px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .studio-intro-section {
-    margin-top: -110px;
-  }
-  .studio-hero-1 {
-    margin-top: -103px;
-  }
-  .studio-intro p,
-  .studio-intro-text p {
-    line-height: 1.6em;
-    font-size: 28px;
-    margin-bottom: 18px;
-  }
-  .studio-team-section {
-    height: 843px;
-  }
-  .team-slide {
-    width: 330px;
-    padding-right: 24px;
-  }
-  .team-ind-image {
-    margin-bottom: 32px;
-  }
-  .team-ind-title h3 {
-    font-size: 28px;
-  }
-  .studio-gallery-slide {
-    padding: 0px 20px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .studio-intro p,
-  .studio-intro-text p {
-    line-height: 1.6em;
-    font-size: 22px;
-    margin-bottom: 18px;
-  }
-  .studio-hero-2 {
-    max-width: 31.6vw;
-    margin: 0px 3.18vw 0px auto;
-    top: -40px;
-  }
-  .studio-intro-text {
-    width: 100vw;
-    order: 1;
-    padding: 0px 30px;
-  }
-  .studio-gallery-hero-1 {
-    margin: 50px 0px 0px 0px;
-  }
-  .studio-gallery-hero-2 {
-    max-width: 40.24vw;
-    margin: -6vw -30px 0px auto;
-  }
-}
-@media screen and (max-width: 500px) {
-  #studio-top::before {
-    height: 388px;
-  }
-  .studio-intro p {
-    line-height: 1.6em;
-    font-size: 16px;
-    margin-bottom: 18px;
-  }
-  .studio-hero-1 {
-    margin: 34px 0px 0px auto;
-    max-width: 83.2vw;
-  }
-  .studio-hero-1::before {
-    padding-top: 74%;
-  }
-  .studio-hero-2 {
-    max-width: 52.53vw;
-    margin: 0px 20px 0px auto;
-    top: -42px;
-  }
-  .studio-intro-section {
-    margin-top: 70px;
-  }
-  .studio-team-section::before {
-    height: 213px;
-  }
-  .studio-intro {
-    width: 100vw;
-    padding: 0px 42px;
-  }
-  .studio-intro-section h2 {
-    padding: 72px 27px 0px 28.25vw;
-  }
-  .studio-team-section {
-    padding-top: 45px;
-    height: 478px;
-  }
-  .team-section-title {
-    margin-bottom: 38px;
-  }
-  .team-slider {
-    padding-left: 15.7vw;
-  }
-  .team-ind-title h3 {
-    font-size: 20px;
-    margin-bottom: 0px;
-  }
-  .team-slide {
-    width: 206px;
-    padding-right: 16px;
-  }
-  .team-ind-image {
-    margin-bottom: 16px;
-  }
-  .team-ind-title em {
-    font-size: 13px;
-    line-height: 1.2em;
-  }
-  .studio-gallery-section {
-    margin-top: 120px;
-  }
-  .studio-intro-text {
-    order: 1;
-    width: 100vw;
-    padding: 0px 28px;
-  }
-  .studio-intro-text p {
-    line-height: 1.6em;
-    font-size: 16px;
-    margin-bottom: 18px;
-  }
-  .studio-gallery-hero-1 {
-    max-width: 59.2vw;
-  }
-  .studio-gallery-hero-1 {
-    margin-top: 100px;
-    left: 28px;
-    order: 2;
-  }
-  .studio-gallery-hero-2 {
-    max-width: 59.73vw;
-    margin: 100px -30px 0px auto;
-    order: 3;
-  }
+@media (min-width: 1280px) {
   .studio-gallery-slide img {
-    height: 220px;
+    height: 61rem;
   }
 }
+
 :root {
   --font-family-script: "Buinton", cursive;
   --font-family-header-cn: "FSIndustrieCondensedBold", sans-serif;

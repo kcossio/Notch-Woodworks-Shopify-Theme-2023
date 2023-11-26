@@ -22,7 +22,7 @@
     
       {%- when 'button' -%}
         <div
-          class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          class="rich-text__buttons center {% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {{ block.shopify_attributes }}
           {% if settings.animations_reveal_on_scroll %}
             data-cascade

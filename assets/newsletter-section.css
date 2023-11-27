@@ -73,10 +73,12 @@ EASING
 }
 .newsletter__wrapper .newsletter-right {
   width: 100%;
+  display: none;
 }
 @media (min-width: 1024px) {
   .newsletter__wrapper .newsletter-right {
     width: 56.85%;
+    display: block;
   }
 }
 

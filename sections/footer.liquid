@@ -181,6 +181,9 @@
       </div>
     </div>
 
+     {%- comment -%}
+      Localization Section
+     {%- endcomment -%}
       <div class="footer__column footer__localization isolate">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <noscript>
@@ -261,6 +264,10 @@
           </localization-form>
         {%- endif -%}
       </div>
+      {%- comment -%}
+      End Localization Section
+     {%- endcomment -%}
+     
       <div class="footer__column footer__column--info">
         {%- if section.settings.payment_enable -%}
           <div class="footer__payment">

@@ -7,6 +7,9 @@ EASING
   color: var(--color-grey);
   position: relative;
 }
+.footer a {
+  color: var(--color-grey);
+}
 .footer::before {
   content: "";
   display: block;

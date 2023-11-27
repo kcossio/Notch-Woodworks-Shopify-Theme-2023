@@ -6,6 +6,9 @@
   color:var(--color-grey);  
   position: relative;
 
+  a {
+    color:var(--color-grey);
+  }
     &::before {
         content:"";
         display:block;

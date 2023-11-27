@@ -167,8 +167,11 @@
     justify-content: center;
     color:var(--color-grey);
 
+    .list-social__link {
+      color:var(--color-grey);
+    }
     .icon-go-texan {
-      width:3.9em;
+      width:3.9rem;
     }
   }
 

@@ -249,6 +249,7 @@ EASING
 .footer__copyright {
   text-align: center;
   margin-top: 1.5rem;
+  color: var(--color-white);
 }
 
 @media screen and (min-width: 750px) {

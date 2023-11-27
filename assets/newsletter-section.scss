@@ -2,7 +2,13 @@
 @import "mixins";
 @import "fonts";
 
+.section-newsletter {
+  padding:0px 3.4rem;
 
+  @include breakpoint(laptop) {
+    padding:0px 0px;
+  }
+}
 .newsletter__wrapper {
   display:flex;
   flex-wrap:wrap;

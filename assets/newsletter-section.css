@@ -37,6 +37,15 @@ EASING
   font-weight: normal;
   font-style: normal;
 }
+.section-newsletter {
+  padding: 0px 3.4rem;
+}
+@media (min-width: 1280px) {
+  .section-newsletter {
+    padding: 0px 0px;
+  }
+}
+
 .newsletter__wrapper {
   display: flex;
   flex-wrap: wrap;

@@ -271,6 +271,9 @@ EASING
   text-align: center;
   color: var(--color-grey);
 }
+.footer__copyright p {
+  margin: 0px;
+}
 @media (min-width: 768px) {
   .footer__copyright {
     text-align: left;

@@ -307,6 +307,10 @@
     text-align: center;
     color:var(--color-grey);
 
+    p {
+      margin:0px;
+    }
+
     @include breakpoint(tablet) {
       text-align: left;
     }

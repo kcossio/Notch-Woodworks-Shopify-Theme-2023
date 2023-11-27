@@ -183,7 +183,11 @@
 .full-width-slider {
     width:100vw;
     padding:0px;
-    margin:0rem 0px 6rem 0px;
+    margin:0rem 0px 7rem 0px;
+
+    @include breakpoint(laptop) {
+        margin:0rem 0px 11rem 0px;
+    }
 }
 .studio-gallery-slide {
     padding:0px 1.2rem;

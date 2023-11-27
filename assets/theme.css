@@ -197,7 +197,12 @@ EASING
 .full-width-slider {
   width: 100vw;
   padding: 0px;
-  margin: 0rem 0px 6rem 0px;
+  margin: 0rem 0px 7rem 0px;
+}
+@media (min-width: 1280px) {
+  .full-width-slider {
+    margin: 0rem 0px 11rem 0px;
+  }
 }
 
 .studio-gallery-slide {

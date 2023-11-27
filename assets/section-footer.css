@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*-----------------------
 EASING 
 ---------------------- */
@@ -273,6 +272,7 @@ EASING
 }
 .footer__copyright p {
   margin: 0px;
+  font-size: inherit;
 }
 @media (min-width: 768px) {
   .footer__copyright {
@@ -431,9 +431,12 @@ EASING
   align-items: center;
 }
 
-.policies li::before {
-  content: "·";
+.policies li::after {
+  content: "|";
   padding: 0 0.8rem;
+}
+.policies li:last-child::after {
+  content: none;
 }
 
 .policies li a {

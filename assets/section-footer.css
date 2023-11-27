@@ -149,6 +149,9 @@ EASING
   justify-content: center;
   color: var(--color-grey);
 }
+.footer__list-social .list-social_go_texan {
+  margin-right: 1.8rem;
+}
 .footer__list-social .list-social__link {
   color: var(--color-grey);
 }

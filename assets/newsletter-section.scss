@@ -2,7 +2,7 @@
 @import "mixins";
 @import "fonts";
 
-.section-newsletter {
+.section-newsletter .newsletter {
   padding:0px 3.4rem;
 
   @include breakpoint(laptop) {

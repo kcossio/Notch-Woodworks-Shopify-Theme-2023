@@ -135,29 +135,15 @@
     display: none;
   }
   
-  .footer-block--newsletter {
-    display: flex;
-    align-items: flex-end;
-    margin-top: 3rem;
-    gap: 1rem;
-  }
-  
-  .footer-block--newsletter:only-child {
-    margin-top: 0;
-  }
+
+
   
   @media screen and (max-width: 749px) {
     .footer-block.footer-block--menu:only-child {
       text-align: left;
     }
   }
-  
-  @media screen and (min-width: 750px) {
-    .footer-block--newsletter {
-      flex-wrap: nowrap;
-      justify-content: center;
-    }
-  }
+
   
   .footer-block__heading {
     margin-bottom: 2rem;
@@ -171,10 +157,6 @@
   
   
   
-  .footer__list-social:empty,
-  .footer-block--newsletter:empty {
-    display: none;
-  }
   
   .footer__follow-on-shop {
     display: flex;
@@ -231,17 +213,7 @@
   }
   
   @media screen and (max-width: 749px) {
-    /*
-      On a small screen we want all the items to be centered
-      because they will be stacked.
-     */
-    .footer-block--newsletter {
-      display: flex;
-      flex-direction: column;
-      flex: 1 1 100%;
-      align-items: center;
-      gap: 3rem;
-    }
+    
   
     .footer__list-social.list-social,
     .footer__follow-on-shop,

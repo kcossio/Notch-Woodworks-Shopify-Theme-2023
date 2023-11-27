@@ -1,7 +1,11 @@
 @import "mixins";
 
 .footer {
-    position: relative;
+
+  background:var(--color-main);
+  color:var(--color-grey);  
+  position: relative;
+
     &::before {
         content:"";
         display:block;

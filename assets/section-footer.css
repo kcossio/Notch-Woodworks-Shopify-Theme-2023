@@ -3,6 +3,8 @@
 EASING 
 ---------------------- */
 .footer {
+  background: var(--color-main);
+  color: var(--color-grey);
   position: relative;
 }
 .footer::before {

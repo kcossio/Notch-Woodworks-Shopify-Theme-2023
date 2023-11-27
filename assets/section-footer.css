@@ -262,16 +262,10 @@ EASING
 }
 
 .footer__copyright {
-  text-align: center;
-  margin-top: 1.5rem;
-  color: var(--color-white);
+  text-align: left;
+  color: var(--color-grey);
 }
 
-@media screen and (min-width: 750px) {
-  .footer__content-bottom-wrapper:not(.footer__content-bottom-wrapper--center) .footer__copyright {
-    text-align: right;
-  }
-}
 @keyframes appear-down {
   0% {
     opacity: 0;

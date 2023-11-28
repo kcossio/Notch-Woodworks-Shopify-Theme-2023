@@ -10,6 +10,7 @@ EASING
 .footer .footer__blocks-wrapper {
   width: 1086px;
   max-width: 100%;
+  margin: 0px auto;
 }
 @media (min-width: 768px) {
   .footer {

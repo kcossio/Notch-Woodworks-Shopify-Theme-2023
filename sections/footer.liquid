@@ -9,7 +9,7 @@
  
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }}">
+<footer class="footer">
   {%- liquid
     assign has_social_icons = true
     if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
@@ -108,18 +108,6 @@
                 data-cascade
               {% endif %}
             >
-          
-                <div
-                    class="footer-social {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                    {% if settings.animations_reveal_on_scroll %}
-                      data-cascade
-                    {% endif %}
-                  >
-                  {%- if section.settings.show_social and has_social_icons -%}
-                    {%- render 'social-icons', class: 'footer__list-social' -%}
-                  {%- endif -%}
-                </div>
-
                 <div class="footer__copyright caption">
                   <p>
                     <small class="copyright__content"
@@ -140,6 +128,17 @@
                     </ul>
                   {%- endif -%}
                   <p><small class="copyright__content">{{ powered_by_link }}</small></p>
+                </div>
+
+                <div
+                  class="footer-social {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                  {% endif %}
+                >
+                {%- if section.settings.show_social and has_social_icons -%}
+                  {%- render 'social-icons', class: 'footer__list-social' -%}
+                {%- endif -%}
                 </div>
 
               </div><!--End footer__content-bottom-->
@@ -332,12 +331,6 @@
     }
   ],
   "settings": [
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "background-1"
-    },
     {
       "type": "header",
       "content": "t:sections.footer.settings.header__9.content",

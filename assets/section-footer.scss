@@ -35,8 +35,7 @@
 
     .footer__content-meta {
       width:100%;
-      border-color: #175E72;
-      border-top: solid 0.1rem;
+      border-top: solid 0.1rem #175E72;
       padding-top: 3rem;
       justify-content: space-between;
 
@@ -373,6 +372,9 @@
     }
   }
   
+  .footer-block__details-content .list-menu__item--link {
+    padding:0px;
+  }
   .footer-block__details-content .list-menu__item--link,
   .copyright__content a {
     color: rgba(var(--color-grey), 1);

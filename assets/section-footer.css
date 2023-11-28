@@ -157,10 +157,10 @@ EASING
   }
 }
 .footer-block__heading {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   margin-top: 0;
   color: rgba(255, 255, 255, 0.84);
-  font-size: 1em;
+  font-size: 1.5rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   font-family: var(--font-family-header-ex);

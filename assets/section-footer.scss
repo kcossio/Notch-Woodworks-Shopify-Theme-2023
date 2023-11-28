@@ -35,8 +35,10 @@
 
     .footer__content-meta {
       width:100%;
-      border-top: solid 0.1rem rgba(var(--color-grey), 1);
+      border-color: var(--color-grey);
+      border-top: solid 0.1rem;
       padding-top: 3rem;
+      justify-content: space-between;
 
       display: flex;
       flex-wrap: wrap;

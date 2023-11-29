@@ -47,6 +47,13 @@
         margin-left:auto;
       }
     }
+
+    .footer-social {
+
+      @include breakpoint(tablet) {
+        width:33%;
+      }
+    }
 }
 
 
@@ -201,7 +208,6 @@
 
 
     @include breakpoint(tablet) {
-      width:33%;
       justify-content: flex-start;
     }
     

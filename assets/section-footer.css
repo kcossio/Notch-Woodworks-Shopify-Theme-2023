@@ -46,6 +46,11 @@ EASING
     margin-left: auto;
   }
 }
+@media (min-width: 768px) {
+  .footer .footer-social {
+    width: 33%;
+  }
+}
 
 .footer__content-top {
   padding-bottom: 5rem;
@@ -177,7 +182,6 @@ EASING
 }
 @media (min-width: 768px) {
   .footer__list-social {
-    width: 33%;
     justify-content: flex-start;
   }
 }

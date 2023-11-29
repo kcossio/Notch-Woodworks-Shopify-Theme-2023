@@ -63,7 +63,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Product Details",
-            "icon": "banana",
+            "icon": "none",
             "content": "<p>{{ product.metafields.custom.product_details | metafield_tag }}<\/p>",
             "page": ""
           }
@@ -72,7 +72,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping Info",
-            "icon": "check_mark",
+            "icon": "none",
             "content": "<p>{{ product.metafields.custom.shipping_info | metafield_tag }}<\/p>",
             "page": ""
           }

@@ -73,7 +73,7 @@
           "settings": {
             "heading": "Shipping Info",
             "icon": "check_mark",
-            "content": "",
+            "content": "<p>{{ product.metafields.custom.shipping_info | metafield_tag }}<\/p>",
             "page": ""
           }
         }

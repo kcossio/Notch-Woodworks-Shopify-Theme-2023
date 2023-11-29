@@ -197,17 +197,25 @@
   .footer__list-social {
     justify-content: center;
     color:var(--color-grey);
+    
 
-    .list-social_go_texan {
-      margin-right:1.8rem;
-    }
 
-    .list-social__link {
-      color:var(--color-grey);
+    @include breakpoint(tablet) {
+      width:33%;
+      justify-content: flex-start;
     }
-    .icon-go-texan {
-      width:3.9rem;
-    }
+    
+
+      .list-social_go_texan {
+        margin-right:1.8rem;
+      }
+
+      .list-social__link {
+        color:var(--color-grey);
+      }
+      .icon-go-texan {
+        width:3.9rem;
+      }
   }
 
   

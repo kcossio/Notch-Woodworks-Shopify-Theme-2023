@@ -175,6 +175,12 @@ EASING
   justify-content: center;
   color: var(--color-grey);
 }
+@media (min-width: 768px) {
+  .footer__list-social {
+    width: 33%;
+    justify-content: flex-start;
+  }
+}
 .footer__list-social .list-social_go_texan {
   margin-right: 1.8rem;
 }

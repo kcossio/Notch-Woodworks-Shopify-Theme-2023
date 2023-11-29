@@ -64,6 +64,15 @@
           "settings": {
             "heading": "Product Details",
             "icon": "banana",
+            "content": "<p>{{ product.metafields.custom.product_details | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "bcd297c2-00d5-440f-bd45-5ea5e1cf308d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping Info",
+            "icon": "check_mark",
             "content": "",
             "page": ""
           }
@@ -80,7 +89,8 @@
         "description",
         "share",
         "bd2f840e-623e-4ff0-8ca1-0cdecf670930",
-        "994837d1-afe4-450e-a8a0-78b4d8a08232"
+        "994837d1-afe4-450e-a8a0-78b4d8a08232",
+        "bcd297c2-00d5-440f-bd45-5ea5e1cf308d"
       ],
       "settings": {
         "enable_sticky_info": true,

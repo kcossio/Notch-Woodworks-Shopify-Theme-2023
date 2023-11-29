@@ -58,6 +58,15 @@
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
+        },
+        "994837d1-afe4-450e-a8a0-78b4d8a08232": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product Details",
+            "icon": "banana",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -70,7 +79,8 @@
         "buy_buttons",
         "description",
         "share",
-        "bd2f840e-623e-4ff0-8ca1-0cdecf670930"
+        "bd2f840e-623e-4ff0-8ca1-0cdecf670930",
+        "994837d1-afe4-450e-a8a0-78b4d8a08232"
       ],
       "settings": {
         "enable_sticky_info": true,

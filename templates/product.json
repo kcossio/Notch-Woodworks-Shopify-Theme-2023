@@ -3,13 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "body"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -23,6 +16,13 @@
         "price": {
           "type": "price",
           "settings": {
+          }
+        },
+        "2c504b54-5f4f-4ba3-86e9-22b4157ce0a6": {
+          "type": "text",
+          "settings": {
+            "text": "Shipping calculated at checkout.",
+            "text_style": "body"
           }
         },
         "variant_picker": {
@@ -79,10 +79,10 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "rating",
         "price",
+        "2c504b54-5f4f-4ba3-86e9-22b4157ce0a6",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",

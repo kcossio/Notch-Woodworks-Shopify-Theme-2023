@@ -546,6 +546,23 @@
               {% render 'icon-with-text',
                 block: block
               %}
+              {%- when 'notch_icons' -%}
+                <div class="icon-row">
+                  {%- if block.settings.icon_1 != blank -%}
+                    {%- assign icon_1 = block.settings.icon_1 -%}
+                    <div class="icon-item" data-num="1">{{ icon_1 | image_url: width: icon_1.width | image_tag: class: 'icon-row-img', loading: 'lazy' }}</div>
+                  {%- endif -%}
+                  {%- if block.settings.icon_2 != blank -%}
+                    <div class="dots-divider"></div>
+                    {%- assign icon_2 = block.settings.icon_2 -%}
+                    <div class="icon-item" data-num="2">{{ icon_2 | image_url: width: icon_2.width | image_tag: class: 'icon-row-img', loading: 'lazy' }}</div>
+                  {%- endif -%}
+                  {%- if block.settings.icon_3 != blank -%}
+                    <div class="dots-divider"></div>
+                    {%- assign icon_3 = block.settings.icon_3 -%}
+                    <div class="icon-item" data-num="3">{{ icon_3 | image_url: width: icon_3.width | image_tag: class: 'icon-row-img', loading: 'lazy' }}</div>
+                  {%- endif -%}
+                </div>
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">

@@ -104,6 +104,7 @@
                   show_badges: true,
                   price_class: 'price--large'
                 -%}
+                <p class="price-shipping-text">{{ block.settings.shipping_text }}</p>
               </div>
               {%- if product.quantity_price_breaks_configured? -%}
                 <div class="volume-pricing-note">
@@ -731,7 +732,16 @@
     {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "shipping_text",
+          "label": "Shipping Text",
+          "default": "Shipping calculated at checkout",
+          "info": "Enter shipping text that should go below the price"
+        }
+      ]
     },
     {
       "type": "sku",

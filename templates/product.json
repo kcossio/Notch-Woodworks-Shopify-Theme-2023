@@ -149,6 +149,38 @@
     },
     "7d2c50cb-25cf-45a7-832b-8089ade81cda": {
       "type": "product-details",
+      "blocks": {
+        "0207a6fa-95e9-411e-a3a3-3745cd455c4f": {
+          "type": "key_details",
+          "settings": {
+            "key_detail": "Hand crafted"
+          }
+        },
+        "96c2c400-a98c-4479-9dd7-dd5fc018a27e": {
+          "type": "key_details",
+          "settings": {
+            "key_detail": "Reclaimed"
+          }
+        },
+        "4b367f87-f6c0-4516-81b1-ba7e5d4773d3": {
+          "type": "key_details",
+          "settings": {
+            "key_detail": "Food Safe"
+          }
+        },
+        "dd5e0096-48a1-405e-9e71-015ed18f020f": {
+          "type": "key_details",
+          "settings": {
+            "key_detail": "Durable Hardwood"
+          }
+        }
+      },
+      "block_order": [
+        "0207a6fa-95e9-411e-a3a3-3745cd455c4f",
+        "96c2c400-a98c-4479-9dd7-dd5fc018a27e",
+        "4b367f87-f6c0-4516-81b1-ba7e5d4773d3",
+        "dd5e0096-48a1-405e-9e71-015ed18f020f"
+      ],
       "settings": {
         "associated_product": "board-no-1",
         "heading": "Product Details",

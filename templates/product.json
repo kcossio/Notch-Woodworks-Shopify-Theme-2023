@@ -146,11 +146,21 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "7d2c50cb-25cf-45a7-832b-8089ade81cda": {
+      "type": "product-details",
+      "settings": {
+        "associated_product": "board-no-1",
+        "heading": "Product Details",
+        "hero_image": "shopify:\/\/shop_images\/product-board-dimensons-fpo.jpg",
+        "main_details": "<p>{{ section.settings.associated_product.metafields.custom.product_details | metafield_tag }}<\/p>"
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "1700257961a6f4236e"
+    "1700257961a6f4236e",
+    "7d2c50cb-25cf-45a7-832b-8089ade81cda"
   ]
 }

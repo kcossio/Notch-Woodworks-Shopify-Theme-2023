@@ -16,6 +16,7 @@
         "price": {
           "type": "price",
           "settings": {
+            "shipping_text": "Shipping calculated at checkout"
           }
         },
         "variant_picker": {
@@ -34,6 +35,11 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
+          }
+        },
+        "3fbb5fcc-1cdd-4ce3-9ff0-71883a5b4a54": {
+          "type": "notch_icons",
+          "settings": {
           }
         },
         "description": {
@@ -78,6 +84,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "3fbb5fcc-1cdd-4ce3-9ff0-71883a5b4a54",
         "description",
         "share",
         "bd2f840e-623e-4ff0-8ca1-0cdecf670930",

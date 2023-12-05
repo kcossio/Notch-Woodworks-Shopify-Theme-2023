@@ -40,6 +40,9 @@
         "3fbb5fcc-1cdd-4ce3-9ff0-71883a5b4a54": {
           "type": "notch_icons",
           "settings": {
+            "icon_1": "shopify:\/\/shop_images\/hand-crafted.svg",
+            "icon_2": "shopify:\/\/shop_images\/made-in-usa.svg",
+            "icon_3": "shopify:\/\/shop_images\/texas-pecan.svg"
           }
         },
         "description": {

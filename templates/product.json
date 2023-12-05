@@ -131,22 +131,6 @@
         "padding_bottom": 60
       }
     },
-    "1700257961a6f4236e": {
-      "type": "apps",
-      "blocks": {
-        "7122121d-fcf5-4323-8257-634c50b92e30": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "7122121d-fcf5-4323-8257-634c50b92e30"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "7d2c50cb-25cf-45a7-832b-8089ade81cda": {
       "type": "product-details",
       "blocks": {
@@ -187,12 +171,48 @@
         "hero_image": "shopify:\/\/shop_images\/product-board-dimensons-fpo.jpg",
         "main_details": "<p>{{ section.settings.associated_product.metafields.custom.product_details | metafield_tag }}<\/p>"
       }
+    },
+    "1700257961a6f4236e": {
+      "type": "apps",
+      "blocks": {
+        "7122121d-fcf5-4323-8257-634c50b92e30": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "7122121d-fcf5-4323-8257-634c50b92e30"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "24b50a05-3a7b-44ec-acc8-0f048e0f4689": {
+      "type": "product-faq",
+      "blocks": {
+        "3cbe462c-9837-4490-a14b-cc0fe35489c8": {
+          "type": "qa",
+          "settings": {
+            "question": "How do you clean the board?",
+            "answer": "<p>Sed id lobortis dui, at vulputate eros. Morbi posuere vel libero vitae cursus. Cras ante elit, luctus quis risus in, facilisis interdum enim. Sed felis ligula, venenatis nec facilisis in, eleifend vulputate nunc. Duis pellentesque odio lacus, at pharetra arcu varius sed.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "3cbe462c-9837-4490-a14b-cc0fe35489c8"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "associated_product": ""
+      }
     }
   },
   "order": [
     "main",
     "related-products",
+    "7d2c50cb-25cf-45a7-832b-8089ade81cda",
     "1700257961a6f4236e",
-    "7d2c50cb-25cf-45a7-832b-8089ade81cda"
+    "24b50a05-3a7b-44ec-acc8-0f048e0f4689"
   ]
 }

@@ -8,8 +8,8 @@
           "settings": {
           }
         },
-        "rating": {
-          "type": "rating",
+        "bd2f840e-623e-4ff0-8ca1-0cdecf670930": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         },
@@ -56,11 +56,6 @@
             "share_label": "Share"
           }
         },
-        "bd2f840e-623e-4ff0-8ca1-0cdecf670930": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        },
         "994837d1-afe4-450e-a8a0-78b4d8a08232": {
           "type": "collapsible_tab",
           "settings": {
@@ -78,11 +73,20 @@
             "content": "<p>{{ product.metafields.custom.shipping_info | metafield_tag }}<\/p>",
             "page": ""
           }
+        },
+        "5f57f620-9a13-4727-9166-dd017e29585f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Warranty Info",
+            "icon": "none",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae vehicula nisl. Aliquam in feugiat felis. Maecenas nisi dolor, ultrices non quam a, sollicitudin rutrum lectus. Phasellus eu orci sit amet lacus viverra commodo vitae sed felis. <\/p><p>Nam semper nec dolor non condimentum. In efficitur lorem et turpis scelerisque, non pellentesque enim mattis. Vivamus ac lacus ligula. Quisque augue leo, scelerisque eu est at, tincidunt aliquet est.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "title",
-        "rating",
+        "bd2f840e-623e-4ff0-8ca1-0cdecf670930",
         "price",
         "variant_picker",
         "quantity_selector",
@@ -90,9 +94,9 @@
         "3fbb5fcc-1cdd-4ce3-9ff0-71883a5b4a54",
         "description",
         "share",
-        "bd2f840e-623e-4ff0-8ca1-0cdecf670930",
         "994837d1-afe4-450e-a8a0-78b4d8a08232",
-        "bcd297c2-00d5-440f-bd45-5ea5e1cf308d"
+        "bcd297c2-00d5-440f-bd45-5ea5e1cf308d",
+        "5f57f620-9a13-4727-9166-dd017e29585f"
       ],
       "settings": {
         "enable_sticky_info": true,

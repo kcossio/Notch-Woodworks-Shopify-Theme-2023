@@ -16,13 +16,7 @@
         "price": {
           "type": "price",
           "settings": {
-          }
-        },
-        "2c504b54-5f4f-4ba3-86e9-22b4157ce0a6": {
-          "type": "text",
-          "settings": {
-            "text": "Shipping calculated at checkout.",
-            "text_style": "body"
+            "shipping_text": "Shipping calculated at checkout"
           }
         },
         "variant_picker": {
@@ -41,6 +35,11 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
+          }
+        },
+        "3fbb5fcc-1cdd-4ce3-9ff0-71883a5b4a54": {
+          "type": "notch_icons",
+          "settings": {
           }
         },
         "description": {
@@ -82,10 +81,10 @@
         "title",
         "rating",
         "price",
-        "2c504b54-5f4f-4ba3-86e9-22b4157ce0a6",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "3fbb5fcc-1cdd-4ce3-9ff0-71883a5b4a54",
         "description",
         "share",
         "bd2f840e-623e-4ff0-8ca1-0cdecf670930",

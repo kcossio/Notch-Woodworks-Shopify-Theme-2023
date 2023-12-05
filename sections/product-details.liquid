@@ -1,7 +1,7 @@
 {%- # Label: Associated Product -%}
 {%- assign associated_product = section.settings.associated_product -%}
 
-{%- if section.settings.product_name == product.handle -%}
+{%- if section.settings.associated_product == product.handle -%}
 
     {{ associated_product.title }}
     {{ associated_product.description }}

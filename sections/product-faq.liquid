@@ -1,0 +1,74 @@
+{%- # Label: Heading -%}
+{{ section.settings.heading }} 
+
+{%- # Label: Associated Product -%}
+{%- assign associated_product = section.settings.associated_product -%}
+{{ associated_product.title }}
+{{ associated_product.description }}
+
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+
+    {%- when 'qa' -%}
+      {%- # Label: Question -%}
+      {{ block.settings.question }} 
+
+      {%- # Label: Answer -%}
+      {{ block.settings.answer }} 
+
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+  {
+  "name": "Product FAQs",
+  "class": "section section-faqs",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Frequently Asked Questions",
+      "info": "Enter the title of this FAQs section"
+    },
+    {
+      "type": "product",
+      "id": "associated_product",
+      "label": "Associated Product",
+      "info": "Choose the product that this FAQs section should appear on"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Q&A",
+      "type": "qa",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "info": "Enter a question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "info": "Enter an answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product FAQs"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

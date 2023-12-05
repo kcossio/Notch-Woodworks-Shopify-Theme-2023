@@ -1,0 +1,41 @@
+{%- # Label: Associated Product -%}
+{%- assign associated_product = section.settings.associated_product -%}
+{{ associated_product.title }}
+{{ associated_product.description }}
+
+{%- # Label: Banner Image -%}
+{%- assign banner_image = section.settings.banner_image -%}
+{{ banner_image | image_url: width: banner_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+
+{% schema %}
+  {
+  "name": "Product Hero Banner",
+  "class": "section section-hero-banner ",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "product",
+      "id": "associated_product",
+      "label": "Associated Product",
+      "info": "Choose a Product that this banner will be associated with. If no product is selected, this will appear on all products."
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image",
+      "info": "Upload an image to use as a banner"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Hero Banner"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

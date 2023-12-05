@@ -1,0 +1,82 @@
+{%- # Label: Heading -%}
+{{ section.settings.heading }} 
+
+{%- # Label: Subheading -%}
+{{ section.settings.subheading }} 
+
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+
+    {%- when 'slide' -%}
+      {%- # Label: Title -%}
+      {{ block.settings.title }} 
+
+      {%- # Label: Description -%}
+      {{ block.settings.description }} 
+
+      {%- # Label: Hero Image -%}
+      {%- assign hero_image = block.settings.hero_image -%}
+      {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+  {
+  "name": "Product - Our Method",
+  "class": "section section-our-method",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Frequently Asked Questions",
+      "info": "Enter the title of this FAQs section"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "info": "Add a subheading for this section"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Slide",
+      "type": "slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "info": "Enter the title/heading for this slide/item"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "info": "Enter a description for this slide/item"
+        },
+        {
+          "type": "image_picker",
+          "id": "hero_image",
+          "label": "Hero Image",
+          "info": "Add a hero image for this slide/item"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product - Our Method"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

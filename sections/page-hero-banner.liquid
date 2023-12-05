@@ -1,0 +1,30 @@
+{%- # Label: Banner Image -%}
+{%- assign banner_image = section.settings.banner_image -%}
+{{ banner_image | image_url: width: banner_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+
+{% schema %}
+  {
+  "name": "Hero Banner",
+  "class": "section section-hero-banner ",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image",
+      "info": "Upload an image to use as a banner for this page"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Banner"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,59 @@
+{%- # Label: Heading -%}
+{{ section.settings.heading }} 
+
+{%- # Label: Subheading -%}
+{{ section.settings.subheading }} 
+
+{%- # Label: Content -%}
+{{ section.settings.content }} 
+
+{%- # Label: Hero Image -%}
+{%- assign hero_image = section.settings.hero_image -%}
+{{ hero_image | image_url: width: hero_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+
+{% schema %}
+  {
+  "name": "Product General Info",
+  "class": "section section-product-general",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "CHARACTER INGRAINED™",
+      "info": "Add a heading to this section"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Each peace is hand selected for grain and pattern",
+      "info": "Add a subheading for this section"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "info": "Add some copy/content to this section"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image",
+      "info": "Upload a hero image for this section "
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product General Info"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

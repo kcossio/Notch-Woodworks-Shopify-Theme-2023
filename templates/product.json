@@ -240,6 +240,19 @@
     },
     "31849e1d-eb5b-4e7e-b8cd-db8c367a89fe": {
       "type": "product-our-method",
+      "blocks": {
+        "7737f6a9-fe5e-404f-80cc-a42c16d4ecf3": {
+          "type": "slide",
+          "settings": {
+            "title": "Reclaim",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing <br\/>elit, sed do eiusmod tempor incididunt ut labore et <br\/>dolore magna aliqua. Risus in hendrerit gravida rutrum quisque tellus. Elementum tempus egestas sed sed risus pretium quam vulputate. Proin libero nunc consequat interdum varius sit amet mattis.<\/p>",
+            "hero_image": "shopify:\/\/shop_images\/board-1-fpo-4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "7737f6a9-fe5e-404f-80cc-a42c16d4ecf3"
+      ],
       "settings": {
         "heading": "Our Method",
         "subheading": "From towering Texas Pecan tree to Notch kitchen essential. These are the steps we take:"

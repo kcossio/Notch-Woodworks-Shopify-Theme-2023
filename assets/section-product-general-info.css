@@ -2,7 +2,7 @@
 EASING 
 ---------------------- */
 .section-product-general-info {
-  background: var(--color-grey);
+  background: var(--color-light-grey);
 }
 .section-product-general-info .general-info-inner {
   width: 108.8rem;

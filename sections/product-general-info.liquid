@@ -12,13 +12,16 @@
         {{ section.settings.content }} 
     </div>
 
-</div>
-
-{%- # Label: Hero Image -%}
+    {%- # Label: Hero Image -%}
 {%- assign hero_image = section.settings.hero_image -%}
 {%- if hero_image != blank -%}
-{{ hero_image | image_url: width: hero_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+{{ hero_image | image_url: width: hero_image.width | image_tag: class: 'product-general-hero', sizes: '(min-width: 980px) 50vw, 100vw', loading: 'lazy' }}
 {%- endif -%}
+
+</div>
+
+
+
 {% schema %}
   {
   "name": "Product General Info",

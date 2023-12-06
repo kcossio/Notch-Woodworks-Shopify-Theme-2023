@@ -8,4 +8,5 @@ EASING
   width: 108.8rem;
   max-width: 100%;
   margin: 0px auto;
+  display: flex;
 }

@@ -119,7 +119,7 @@
         "heading": "You may also like",
         "heading_size": "h2",
         "products_to_show": 4,
-        "columns_desktop": 4,
+        "columns_desktop": 2,
         "color_scheme": "background-1",
         "image_ratio": "portrait",
         "image_shape": "default",
@@ -129,6 +129,47 @@
         "columns_mobile": "2",
         "padding_top": 0,
         "padding_bottom": 60
+      }
+    },
+    "7d2c50cb-25cf-45a7-832b-8089ade81cda": {
+      "type": "product-details",
+      "blocks": {
+        "0207a6fa-95e9-411e-a3a3-3745cd455c4f": {
+          "type": "key_details",
+          "settings": {
+            "key_detail": "Hand crafted"
+          }
+        },
+        "96c2c400-a98c-4479-9dd7-dd5fc018a27e": {
+          "type": "key_details",
+          "settings": {
+            "key_detail": "Reclaimed"
+          }
+        },
+        "4b367f87-f6c0-4516-81b1-ba7e5d4773d3": {
+          "type": "key_details",
+          "settings": {
+            "key_detail": "Food Safe"
+          }
+        },
+        "dd5e0096-48a1-405e-9e71-015ed18f020f": {
+          "type": "key_details",
+          "settings": {
+            "key_detail": "Durable Hardwood"
+          }
+        }
+      },
+      "block_order": [
+        "0207a6fa-95e9-411e-a3a3-3745cd455c4f",
+        "96c2c400-a98c-4479-9dd7-dd5fc018a27e",
+        "4b367f87-f6c0-4516-81b1-ba7e5d4773d3",
+        "dd5e0096-48a1-405e-9e71-015ed18f020f"
+      ],
+      "settings": {
+        "associated_product": "board-no-1",
+        "heading": "Product Details",
+        "hero_image": "shopify:\/\/shop_images\/product-board-dimensons-fpo.jpg",
+        "main_details": "<p>{{ section.settings.associated_product.metafields.custom.product_details | metafield_tag }}<\/p>"
       }
     },
     "1700257961a6f4236e": {
@@ -147,20 +188,31 @@
         "include_margins": true
       }
     },
-    "7d2c50cb-25cf-45a7-832b-8089ade81cda": {
-      "type": "product-details",
+    "24b50a05-3a7b-44ec-acc8-0f048e0f4689": {
+      "type": "product-faq",
+      "blocks": {
+        "3cbe462c-9837-4490-a14b-cc0fe35489c8": {
+          "type": "qa",
+          "settings": {
+            "question": "How do you clean the board?",
+            "answer": "<p>Sed id lobortis dui, at vulputate eros. Morbi posuere vel libero vitae cursus. Cras ante elit, luctus quis risus in, facilisis interdum enim. Sed felis ligula, venenatis nec facilisis in, eleifend vulputate nunc. Duis pellentesque odio lacus, at pharetra arcu varius sed.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "3cbe462c-9837-4490-a14b-cc0fe35489c8"
+      ],
       "settings": {
-        "associated_product": "board-no-1",
-        "heading": "Product Details",
-        "hero_image": "shopify:\/\/shop_images\/product-board-dimensons-fpo.jpg",
-        "main_details": "<p>{{ section.settings.associated_product.metafields.custom.product_details | metafield_tag }}<\/p>"
+        "heading": "Frequently Asked Questions",
+        "associated_product": ""
       }
     }
   },
   "order": [
     "main",
     "related-products",
+    "7d2c50cb-25cf-45a7-832b-8089ade81cda",
     "1700257961a6f4236e",
-    "7d2c50cb-25cf-45a7-832b-8089ade81cda"
+    "24b50a05-3a7b-44ec-acc8-0f048e0f4689"
   ]
 }

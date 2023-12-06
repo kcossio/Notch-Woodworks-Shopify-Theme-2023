@@ -237,6 +237,13 @@
         "heading": "Frequently Asked Questions",
         "associated_product": ""
       }
+    },
+    "31849e1d-eb5b-4e7e-b8cd-db8c367a89fe": {
+      "type": "product-our-method",
+      "settings": {
+        "heading": "Our Method",
+        "subheading": "From towering Texas Pecan tree to Notch kitchen essential. These are the steps we take:"
+      }
     }
   },
   "order": [
@@ -245,6 +252,7 @@
     "7d2c50cb-25cf-45a7-832b-8089ade81cda",
     "1700257961a6f4236e",
     "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3",
-    "24b50a05-3a7b-44ec-acc8-0f048e0f4689"
+    "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
+    "31849e1d-eb5b-4e7e-b8cd-db8c367a89fe"
   ]
 }

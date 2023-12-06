@@ -1,0 +1,10 @@
+@import "mixins";
+
+.section-product-details {
+    .product-details {
+        display:flex;
+        width:108.8rem;
+        max-width:100%;
+        margin:0px auto;
+    }
+}

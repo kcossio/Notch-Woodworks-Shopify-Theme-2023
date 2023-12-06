@@ -1,30 +1,43 @@
+{{ 'section-product-details.css' | asset_url | stylesheet_tag }}
+
 {%- # Label: Associated Product -%}
 {%- assign associated_product = section.settings.associated_product -%}
 
 {%- if section.settings.associated_product == product.handle -%}
 
+<div class="product-details">
   
+    <div class="product-details-image">
+        {%- # Label: Hero Image -%}
+        {%- assign hero_image = section.settings.hero_image -%}
+        {%- if hero_image != blank -%}
+        {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+        {%- endif -%}
+    </div>
 
-    {%- # Label: Heading -%}
-    {{ section.settings.heading }} 
+    <div class="product-details-content">
 
-    {%- # Label: Hero Image -%}
-    {%- assign hero_image = section.settings.hero_image -%}
-    {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+        {%- # Label: Heading -%}
+        <h2>{{ section.settings.heading }}</h2>
 
-    {%- # Label: Main Details -%}
-    {{ section.settings.main_details }} 
+    
+        {%- # Label: Main Details -%}
+        {{ section.settings.main_details }} 
 
-    {%- for block in section.blocks -%}
-        {%- case block.type -%}
-      
-          {%- when 'key_details' -%}
-            {%- # Label: Key Detail -%}
-            {{ block.settings.key_detail }} 
-      
-        {%- endcase -%}
-      {%- endfor -%}
+        {%- for block in section.blocks -%}
+            {%- case block.type -%}
+        
+            {%- when 'key_details' -%}
+                {%- # Label: Key Detail -%}
+                {{ block.settings.key_detail }} 
+        
+            {%- endcase -%}
+        {%- endfor -%}
 
+    </div>
+
+    
+</div>
 {%- endif -%}
 
 

@@ -1,12 +1,12 @@
 /*-----------------------
 EASING 
 ---------------------- */
-.section-product-faq .faqs-wrap {
+.section-product-faq .faq-wrap {
   display: block;
   width: 108.8rem;
   max-width: 100%;
   margin: 0px auto;
 }
-.section-product-faq .faqs-wrap h2 {
+.section-product-faq .faq-wrap h2 {
   text-align: center;
 }

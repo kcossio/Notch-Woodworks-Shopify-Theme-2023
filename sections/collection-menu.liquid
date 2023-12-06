@@ -1,0 +1,32 @@
+{%- # Label: Collections Menu -%}
+{%- assign collections_menu = section.settings.collections_menu.links -%}
+{%- for link in collections_menu -%}
+  {{ link.title | link_to: link.url }}
+{%- endfor -%}
+
+{% schema %}
+  {
+  "name": "Collection Navigation",
+  "class": "section section-collection-nav",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "collections_menu",
+      "label": "Collections Menu",
+      "info": "Choose a menu to show at the top of all Collections"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Navigation"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

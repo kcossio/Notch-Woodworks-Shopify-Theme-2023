@@ -204,15 +204,38 @@
             "title": "How do you wax the board?",
             "answer": "<p>Morbi posuere vel libero vitae cursus. Cras ante elit, luctus quis risus in, facilisis interdum enim. Sed felis ligula, venenatis nec facilisis in, eleifend vulputate nunc. Duis pellentesque odio lacus, at pharetra arcu varius sed.<\/p>"
           }
+        },
+        "84bd2b53-69f9-403b-b17a-a5d2d928c991": {
+          "type": "qa",
+          "settings": {
+            "title": "How do you care for the board?",
+            "answer": "<p>Nunc magna augue, ultricies eu dignissim non, pulvinar eget nunc. Morbi rhoncus purus velit, sit amet hendrerit leo tristique ac. Nulla aliquam ex a nunc tempus mollis.<\/p>"
+          }
+        },
+        "c5afba9b-c4b9-480c-bb99-7deb2dd23d4e": {
+          "type": "qa",
+          "settings": {
+            "title": "",
+            "answer": ""
+          }
         }
       },
       "block_order": [
         "3cbe462c-9837-4490-a14b-cc0fe35489c8",
-        "ae797196-2e1f-4a5d-997d-a6b0fe39525e"
+        "ae797196-2e1f-4a5d-997d-a6b0fe39525e",
+        "84bd2b53-69f9-403b-b17a-a5d2d928c991",
+        "c5afba9b-c4b9-480c-bb99-7deb2dd23d4e"
       ],
       "settings": {
         "heading": "Frequently Asked Questions",
         "associated_product": ""
+      }
+    },
+    "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3": {
+      "type": "product-hero-banner",
+      "settings": {
+        "associated_product": "board-no-1",
+        "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg"
       }
     }
   },
@@ -221,6 +244,7 @@
     "related-products",
     "7d2c50cb-25cf-45a7-832b-8089ade81cda",
     "1700257961a6f4236e",
-    "24b50a05-3a7b-44ec-acc8-0f048e0f4689"
+    "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
+    "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3"
   ]
 }

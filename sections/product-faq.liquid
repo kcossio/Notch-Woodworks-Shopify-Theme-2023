@@ -7,7 +7,7 @@
 {%- if section.settings.associated_product == product.handle -%}
 <div class="faq-wrap">
   {%- # Label: Heading -%}
-  {{ section.settings.heading }} 
+  <h2>{{ section.settings.heading }}</h2>
 
   {%- for block in section.blocks -%}
     {%- case block.type -%}
@@ -38,7 +38,7 @@
 {% schema %}
   {
   "name": "Product FAQs",
-  "class": "section section-product-faq",
+  "class": "section section-product-faq section-faq",
   "tag": "section",
   "settings": [
     {

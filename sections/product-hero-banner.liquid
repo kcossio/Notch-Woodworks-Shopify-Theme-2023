@@ -8,7 +8,7 @@
     {%- # Label: Banner Image -%}
     {%- assign banner_image = section.settings.banner_image -%}
     {%- if banner_image != blank -%}
-    {{ banner_image | image_url: width: banner_image.width | image_tag: class: 'bg', sizes: '100vw', loading: 'lazy' }}
+    {{ banner_image | image_url: width: banner_image.width | image_tag: class: 'bg', alt: banner_image.alt, sizes: '100vw', loading: 'lazy' }}
     {%- endif -%}
 {%- endif -%}
 {% schema %}

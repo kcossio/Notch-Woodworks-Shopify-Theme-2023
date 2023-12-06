@@ -5,10 +5,11 @@
 
 {%- if section.settings.associated_product == product.handle -%}
 
-{%- # Label: Banner Image -%}
-{%- assign banner_image = section.settings.banner_image -%}
-{{ banner_image | image_url: width: banner_image.width | image_tag: class: 'bg', sizes: '100vw', loading: 'lazy' }}
-
+    {%- # Label: Banner Image -%}
+    {%- assign banner_image = section.settings.banner_image -%}
+    {%- if banner_image != blank -%}
+    {{ banner_image | image_url: width: banner_image.width | image_tag: class: 'bg', sizes: '100vw', loading: 'lazy' }}
+    {%- endif -%}
 {%- endif -%}
 {% schema %}
   {

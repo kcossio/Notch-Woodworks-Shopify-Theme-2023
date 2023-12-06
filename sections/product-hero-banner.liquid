@@ -1,16 +1,19 @@
+{{ 'section-hero-banner.css' | asset_url | stylesheet_tag }}
+
 {%- # Label: Associated Product -%}
 {%- assign associated_product = section.settings.associated_product -%}
-{{ associated_product.title }}
-{{ associated_product.description }}
+
+{%- if section.settings.associated_product == product.handle -%}
 
 {%- # Label: Banner Image -%}
 {%- assign banner_image = section.settings.banner_image -%}
-{{ banner_image | image_url: width: banner_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+{{ banner_image | image_url: width: banner_image.width | image_tag: class: 'bg', sizes: '100vw', loading: 'lazy' }}
 
+{%- endif -%}
 {% schema %}
   {
   "name": "Product Hero Banner",
-  "class": "section section-hero-banner ",
+  "class": "section section-hero-banner has-bg",
   "tag": "section",
   "settings": [
     {

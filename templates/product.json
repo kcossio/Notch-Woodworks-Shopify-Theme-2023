@@ -113,6 +113,15 @@
         "padding_bottom": 60
       }
     },
+    "9b0b4eb4-feda-4a4a-b695-5c6c1e21383c": {
+      "type": "product-general-info",
+      "settings": {
+        "heading": "CHARACTER INGRAINED™",
+        "subheading": "Each peace is hand selected for grain and pattern",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque tellus. Elementum tempus egestas sed sed risus pretium quam vulputate. Proin libero nunc consequat interdum varius sit amet mattis vulputate. <\/p>",
+        "hero_image": "shopify:\/\/shop_images\/product-general-info-hero.png"
+      }
+    },
     "31849e1d-eb5b-4e7e-b8cd-db8c367a89fe": {
       "type": "product-our-method",
       "blocks": {
@@ -257,24 +266,16 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "9b0b4eb4-feda-4a4a-b695-5c6c1e21383c": {
-      "type": "product-general-info",
-      "settings": {
-        "heading": "CHARACTER INGRAINED™",
-        "subheading": "Each peace is hand selected for grain and pattern",
-        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque tellus. Elementum tempus egestas sed sed risus pretium quam vulputate. Proin libero nunc consequat interdum varius sit amet mattis vulputate. <\/p>"
-      }
     }
   },
   "order": [
     "main",
+    "9b0b4eb4-feda-4a4a-b695-5c6c1e21383c",
     "31849e1d-eb5b-4e7e-b8cd-db8c367a89fe",
     "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3",
     "7d2c50cb-25cf-45a7-832b-8089ade81cda",
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
     "related-products",
-    "1700257961a6f4236e",
-    "9b0b4eb4-feda-4a4a-b695-5c6c1e21383c"
+    "1700257961a6f4236e"
   ]
 }

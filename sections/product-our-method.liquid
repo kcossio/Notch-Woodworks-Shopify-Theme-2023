@@ -1,3 +1,5 @@
+{{ 'section-product-our-method.css' | asset_url | stylesheet_tag }}
+
 {%- # Label: Heading -%}
 {{ section.settings.heading }} 
 
@@ -19,7 +21,7 @@
       {%- if hero_image != blank -%}
       {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
       {%- endif -%}
-      
+
   {%- endcase -%}
 {%- endfor -%}
 

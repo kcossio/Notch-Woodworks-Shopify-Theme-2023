@@ -1,0 +1,11 @@
+/*-----------------------
+EASING 
+---------------------- */
+.section-product-faq .faqs-wrap {
+  display: block;
+  width: 108.8rem;
+  max-width: 100%;
+}
+.section-product-faq .faqs-wrap h2 {
+  text-align: center;
+}

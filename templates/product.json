@@ -197,10 +197,18 @@
             "question": "How do you clean the board?",
             "answer": "<p>Sed id lobortis dui, at vulputate eros. Morbi posuere vel libero vitae cursus. Cras ante elit, luctus quis risus in, facilisis interdum enim. Sed felis ligula, venenatis nec facilisis in, eleifend vulputate nunc. Duis pellentesque odio lacus, at pharetra arcu varius sed.<\/p>"
           }
+        },
+        "ae797196-2e1f-4a5d-997d-a6b0fe39525e": {
+          "type": "qa",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
         }
       },
       "block_order": [
-        "3cbe462c-9837-4490-a14b-cc0fe35489c8"
+        "3cbe462c-9837-4490-a14b-cc0fe35489c8",
+        "ae797196-2e1f-4a5d-997d-a6b0fe39525e"
       ],
       "settings": {
         "heading": "Frequently Asked Questions",

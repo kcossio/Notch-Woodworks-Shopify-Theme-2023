@@ -188,6 +188,13 @@
         "include_margins": true
       }
     },
+    "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3": {
+      "type": "product-hero-banner",
+      "settings": {
+        "associated_product": "board-no-1",
+        "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg"
+      }
+    },
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689": {
       "type": "product-faq",
       "blocks": {
@@ -230,13 +237,6 @@
         "heading": "Frequently Asked Questions",
         "associated_product": ""
       }
-    },
-    "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3": {
-      "type": "product-hero-banner",
-      "settings": {
-        "associated_product": "board-no-1",
-        "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg"
-      }
     }
   },
   "order": [
@@ -244,7 +244,7 @@
     "related-products",
     "7d2c50cb-25cf-45a7-832b-8089ade81cda",
     "1700257961a6f4236e",
-    "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
-    "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3"
+    "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3",
+    "24b50a05-3a7b-44ec-acc8-0f048e0f4689"
   ]
 }

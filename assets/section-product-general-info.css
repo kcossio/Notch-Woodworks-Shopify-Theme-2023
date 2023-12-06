@@ -1,0 +1,11 @@
+/*-----------------------
+EASING 
+---------------------- */
+.section-product-general-info {
+  background: var(--color-grey);
+}
+.section-product-general-info .general-info-inner {
+  width: 108.8rem;
+  max-width: 100%;
+  margin: 0px auto;
+}

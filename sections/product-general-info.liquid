@@ -1,22 +1,28 @@
-{{ 'section-general-info.css' | asset_url | stylesheet_tag }}
+{{ 'section-product-general-info.css' | asset_url | stylesheet_tag }}
 
-{%- # Label: Heading -%}
-{{ section.settings.heading }} 
+<div class="general-info-inner">
+    <div class="general-info-content">
+        {%- # Label: Heading -%}
+        {{ section.settings.heading }} 
+        
+        {%- # Label: Subheading -%}
+        {{ section.settings.subheading }} 
+        
+        {%- # Label: Content -%}
+        {{ section.settings.content }} 
+    </div>
 
-{%- # Label: Subheading -%}
-{{ section.settings.subheading }} 
-
-{%- # Label: Content -%}
-{{ section.settings.content }} 
+</div>
 
 {%- # Label: Hero Image -%}
 {%- assign hero_image = section.settings.hero_image -%}
+{%- if hero_image != blank -%}
 {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
-
+{%- endif -%}
 {% schema %}
   {
   "name": "Product General Info",
-  "class": "section section-product-general",
+  "class": "section section-product-general-info",
   "tag": "section",
   "settings": [
     {

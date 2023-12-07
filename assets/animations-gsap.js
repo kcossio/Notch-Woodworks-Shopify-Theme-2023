@@ -11,6 +11,18 @@
         //markers:true
     });
 
-// Run jQuery functions
+    // Simple Parallax BG
+    gsap.to(".parallax-img", {
+        yPercent: -50,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".parallax-container",
+          // start: "top bottom", // the default values
+          // end: "bottom top",
+          scrub: true
+        }, 
+      });
+
+// Run jQuery-specific functions
 (function( $ ) {
-});
+})( jQuery );

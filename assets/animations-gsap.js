@@ -19,6 +19,7 @@
            var pos_end = "100% 100%";
        }
        else {
+            // Start at bottom and scroll to top
            var pos_start = "50% 100%";
            var pos_end = "50% 0%";
        }
@@ -29,11 +30,11 @@
                trigger: box, // start the animation when ".box" enters the viewport (once),
                start: "top bottom",
                end: "bottom top",
-               scrub: 1, 
+               scrub: .5, 
                toggleClass: "onscreen"
            },        
            objectPosition: pos_end,
-           scale: 1.5,
+           scale: 1.25,
            ease: "none"
        
        })

@@ -136,8 +136,8 @@
         "template--21600956252455__c62ecada-e9c5-476f-8510-a6becf9c50cb-button-1": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/all",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",

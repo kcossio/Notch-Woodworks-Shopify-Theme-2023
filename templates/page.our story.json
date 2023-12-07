@@ -196,7 +196,13 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 96,
-        "padding_bottom": 160
+        "padding_bottom": 50
+      }
+    },
+    "c54dcd98-8460-486a-9c47-17775ca37336": {
+      "type": "custom_html",
+      "settings": {
+        "html_code": "<h2 class=\"insta-feed-title\"><a href=\"https:\/\/instagram.com\/Notchwoodworks\" target=\"_blank\">Follow the Journey.<\/a><\/h2>"
       }
     },
     "1701909639e65222b8": {
@@ -226,6 +232,7 @@
     "c62ecada-e9c5-476f-8510-a6becf9c50cb",
     "b7102f6e-b501-4d1c-9a64-8744c84a374e",
     "b9848565-ff2b-423e-9c04-6efefea7c992",
+    "c54dcd98-8460-486a-9c47-17775ca37336",
     "1701909639e65222b8"
   ]
 }

@@ -46,13 +46,14 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 96,
-        "padding_bottom": 100
+        "padding_bottom": 160
       }
     },
     "f0df8e6e-a5b2-4182-8877-9bbbd921223d": {
       "type": "page-hero-banner",
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg",
+        "enable_parallax_scrolling": true,
         "show_notch": true
       }
     },
@@ -95,13 +96,14 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 96,
-        "padding_bottom": 100
+        "padding_bottom": 160
       }
     },
     "854331b1-4278-4cd2-ac1c-79f3a87a02a1": {
       "type": "page-hero-banner",
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg",
+        "enable_parallax_scrolling": true,
         "show_notch": true
       }
     },
@@ -144,13 +146,14 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 96,
-        "padding_bottom": 100
+        "padding_bottom": 160
       }
     },
     "b7102f6e-b501-4d1c-9a64-8744c84a374e": {
       "type": "page-hero-banner",
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg",
+        "enable_parallax_scrolling": true,
         "show_notch": true
       }
     },
@@ -193,7 +196,7 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 96,
-        "padding_bottom": 100
+        "padding_bottom": 160
       }
     }
   },

@@ -156,7 +156,10 @@ section {
   min-height: 100%;
   width: 100%;
   display: block;
-  position: absolute;
+}
+.bg-img img.parallax-img, .bg-img picture.parallax-img, .bg-img svg.parallax-img, .has-bg img.parallax-img, .has-bg picture.parallax-img, .has-bg svg.parallax-img {
+  -o-object-position: top center;
+     object-position: top center;
 }
 .bg-img.cover, .has-bg.cover {
   -o-object-fit: cover;

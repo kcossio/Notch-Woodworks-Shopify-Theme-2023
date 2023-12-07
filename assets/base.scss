@@ -113,7 +113,7 @@ position:relative;
   position:relative;
   z-index:1;
   overflow:hidden;
-
+  
   &.bg-hero {
     z-index:0;
   }
@@ -131,7 +131,10 @@ position:relative;
       min-height:100%;
       width:100%;
       display:block;
-      position: absolute;
+      //position: absolute;
+    }
+    &.parallax-img {
+      object-position:top center;
     }
     
   }

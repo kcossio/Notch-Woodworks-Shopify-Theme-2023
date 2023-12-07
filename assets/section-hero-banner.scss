@@ -3,5 +3,28 @@
 .section-hero-banner {
  width: 100vw;
  height:82.4rem;
- max-height:60vh;
+ max-height:80vh;
+ position:relative;
+
+  &.w-notch {
+    &::before {
+        content:"";
+        display:block;
+        position:absolute;
+        z-index:3;
+        top:0px;
+        left:50%;
+        transform:translateX(-50%);
+        background:url('triangle-notch-down.svg') center center no-repeat;
+        background-size:cover;
+        width:4.2rem;
+        height:2.1rem;
+
+        @include breakpoint(tablet) {
+            width:7.2rem;
+            height:3.6rem;
+
+        }
+    }
+  }
 }

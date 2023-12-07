@@ -1,8 +1,18 @@
 {
   "sections": {
+    "8a8ead53-4ff6-4024-af8f-e008e63ba187": {
+      "type": "page-hero-banner-top",
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/bg-hero-our-story-top.jpg",
+        "enable_parallax_scrolling": true,
+        "show_notch": false
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "show_page_heading": false,
         "padding_top": 36,
         "padding_bottom": 28
       }
@@ -224,6 +234,7 @@
     }
   },
   "order": [
+    "8a8ead53-4ff6-4024-af8f-e008e63ba187",
     "main",
     "641d84c2-c04a-43be-bcc5-de0c65a98abf",
     "f0df8e6e-a5b2-4182-8877-9bbbd921223d",

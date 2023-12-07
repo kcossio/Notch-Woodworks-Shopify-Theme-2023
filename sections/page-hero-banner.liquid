@@ -12,11 +12,13 @@
     {{ banner_image | image_url: width: banner_image.width | image_tag: class: 'bg', alt: banner_image.alt, sizes: '100vw', loading: 'lazy' }}
     {%- endif -%}
 
-{% javascript %}
+
 {%- if section.settings.show_notch -%}
+  <script>
 jQuery('.section-{{ section.id }}').addClass('w-notch');
+  </script>
 {%- endif -%}
-{% endjavascript %}
+
 
 {% schema %}
   {
@@ -56,3 +58,5 @@ jQuery('.section-{{ section.id }}').addClass('w-notch');
 {% stylesheet %}
 {% endstylesheet %}
 
+{% javascript %}
+{% endjavascript %}

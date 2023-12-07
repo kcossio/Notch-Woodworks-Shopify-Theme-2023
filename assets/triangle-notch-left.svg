@@ -3,7 +3,7 @@
 <svg version="1.1" id="notch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 36 72" style="enable-background:new 0 0 36 72;" xml:space="preserve">
 <style type="text/css">
-	.notch-triangle{fill:#FFFFFF;}
+	.st0{fill:#FFFFFF;}
 </style>
-<polygon id="triangle" class="triangle" points="36,72 36,0 0,36 "/>
+<polygon id="triangle" class="st0" points="36,72 36,0 0,36 "/>
 </svg>

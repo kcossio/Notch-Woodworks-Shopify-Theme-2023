@@ -20,7 +20,7 @@
         "template--21600956252455__641d84c2-c04a-43be-bcc5-de0c65a98abf-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The most beautiful things are a long time coming. When they find us, they bring forwardour own history, and remind us what we love.<br\/><br\/>Like when a spent Texas pecan came down outside our woodshop. Beneath its grayed bark we found striking whites and reds, and Notch was born. From this densest hardwood, its character offers its purpose.<\/p>"
+            "text": "<p>The most beautiful things are a long time coming. When they find us, they bring forward our own history, and remind us what we love.<br\/><br\/>Like when a spent Texas pecan came down outside our woodshop. Beneath its grayed bark we found striking whites and reds, and Notch was born. From this densest hardwood, its character offers its purpose.<\/p>"
           }
         },
         "7fd8a3d3-99cd-455a-a22e-72d518d90549": {
@@ -46,13 +46,14 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 96,
-        "padding_bottom": 100
+        "padding_bottom": 160
       }
     },
     "f0df8e6e-a5b2-4182-8877-9bbbd921223d": {
       "type": "page-hero-banner",
       "settings": {
-        "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg",
+        "banner_image": "shopify:\/\/shop_images\/bg-hero-our-story-1.jpg",
+        "enable_parallax_scrolling": true,
         "show_notch": true
       }
     },
@@ -95,13 +96,14 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 96,
-        "padding_bottom": 100
+        "padding_bottom": 160
       }
     },
     "854331b1-4278-4cd2-ac1c-79f3a87a02a1": {
       "type": "page-hero-banner",
       "settings": {
-        "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg",
+        "banner_image": "shopify:\/\/shop_images\/bg-hero-our-story-2.jpg",
+        "enable_parallax_scrolling": true,
         "show_notch": true
       }
     },
@@ -144,13 +146,14 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 96,
-        "padding_bottom": 100
+        "padding_bottom": 160
       }
     },
     "b7102f6e-b501-4d1c-9a64-8744c84a374e": {
       "type": "page-hero-banner",
       "settings": {
-        "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg",
+        "banner_image": "shopify:\/\/shop_images\/bg-hero-our-story-3.jpg",
+        "enable_parallax_scrolling": true,
         "show_notch": true
       }
     },
@@ -193,7 +196,30 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 96,
-        "padding_bottom": 100
+        "padding_bottom": 50
+      }
+    },
+    "c54dcd98-8460-486a-9c47-17775ca37336": {
+      "type": "custom_html",
+      "settings": {
+        "html_code": "<h2 class=\"insta-feed-title\"><a href=\"https:\/\/instagram.com\/Notchwoodworks\" target=\"_blank\">Follow the Journey.<\/a><\/h2>"
+      }
+    },
+    "1701909639e65222b8": {
+      "type": "apps",
+      "blocks": {
+        "acc24a2d-70d6-4a2e-bc42-d4bf0a399939": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "acc24a2d-70d6-4a2e-bc42-d4bf0a399939"
+      ],
+      "settings": {
+        "include_margins": false
       }
     }
   },
@@ -205,6 +231,8 @@
     "854331b1-4278-4cd2-ac1c-79f3a87a02a1",
     "c62ecada-e9c5-476f-8510-a6becf9c50cb",
     "b7102f6e-b501-4d1c-9a64-8744c84a374e",
-    "b9848565-ff2b-423e-9c04-6efefea7c992"
+    "b9848565-ff2b-423e-9c04-6efefea7c992",
+    "c54dcd98-8460-486a-9c47-17775ca37336",
+    "1701909639e65222b8"
   ]
 }

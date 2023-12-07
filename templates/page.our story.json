@@ -213,7 +213,7 @@
         "acc24a2d-70d6-4a2e-bc42-d4bf0a399939"
       ],
       "settings": {
-        "include_margins": true
+        "include_margins": false
       }
     }
   },

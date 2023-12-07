@@ -158,8 +158,12 @@ section {
   display: block;
 }
 .bg-img img.parallax-img, .bg-img picture.parallax-img, .bg-img svg.parallax-img, .has-bg img.parallax-img, .has-bg picture.parallax-img, .has-bg svg.parallax-img {
-  -o-object-position: top center;
-     object-position: top center;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+}
+.bg-img img.top-banner, .bg-img picture.top-banner, .bg-img svg.top-banner, .has-bg img.top-banner, .has-bg picture.top-banner, .has-bg svg.top-banner {
+  -o-object-position: center top;
+     object-position: center top;
 }
 .bg-img.cover, .has-bg.cover {
   -o-object-fit: cover;

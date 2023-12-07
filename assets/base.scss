@@ -134,7 +134,10 @@ position:relative;
       //position: absolute;
     }
     &.parallax-img {
-      object-position:top center;
+      object-position:center bottom;
+    }
+    &.top-banner {
+      object-position: center top;
     }
     
   }

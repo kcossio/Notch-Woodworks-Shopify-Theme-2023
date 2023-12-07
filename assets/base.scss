@@ -131,10 +131,10 @@ position:relative;
       min-height:100%;
       width:100%;
       display:block;
-      position: relative;
+      //position: absolute;
     }
     &.parallax-img {
-      object-position:bottom center;
+      object-position:top center;
     }
     
   }

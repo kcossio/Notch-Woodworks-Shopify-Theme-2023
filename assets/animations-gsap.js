@@ -20,8 +20,8 @@
        }
        else {
             // Start at bottom and scroll to top
-           var pos_start = "center bottom";
-           var pos_end = "center top";
+           var pos_start = "50% 100%";
+           var pos_end = "50% 0%";
        }
        gsap.set(box, {objectPosition: pos_start});
        gsap.to(box, { 
@@ -34,7 +34,6 @@
                toggleClass: "onscreen"
            },        
            objectPosition: pos_end,
-           scale: 1.25,
            ease: "none"
        
        })

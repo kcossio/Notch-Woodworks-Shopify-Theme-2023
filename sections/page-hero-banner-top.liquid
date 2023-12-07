@@ -1,0 +1,64 @@
+{{ 'section-hero-banner.css' | asset_url | stylesheet_tag }}
+{%- # Label: Enable parallax scrolling -%}
+{%- if section.settings.enable_parallax_scrolling -%}
+  {%- # Write your logic here -%} 
+{%- endif -%}
+
+<h1 class="hidden">
+  {{ page.title | escape }}
+</h1>
+
+{%- # Label: Banner Image -%}
+    {%- assign banner_image = section.settings.banner_image -%}
+    {%- if banner_image != blank -%}
+    {{ banner_image | image_url: width: banner_image.width | image_tag: class: 'bg', alt: banner_image.alt, sizes: '100vw', loading: 'lazy' }}
+    {%- endif -%}
+
+
+{%- if section.settings.show_notch -%}
+  <script>
+jQuery('#shopify-section-{{ section.id }}').addClass('w-notch');
+  </script>
+{%- endif -%}
+
+
+{% schema %}
+  {
+  "name": "Hero Banner (Page Top)",
+  "class": "section section-hero-banner hero-banner-top has-bg",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image",
+      "info": "Upload an image to use as a banner for this page"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_parallax_scrolling",
+      "label": "Enable parallax scrolling",
+      "default": true,
+      "info": "Enable parallax scrolling for the banner image. Note: the degree of scrolling is based on how tall the hero image is (a taller image will scroll more than a narrower one)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_notch",
+      "label": "Show notch",
+      "default": true,
+      "info": "Shows a small notch triangle at the top of the banner if enabled"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Banner (Page Top)"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

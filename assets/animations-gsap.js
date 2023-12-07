@@ -19,8 +19,8 @@
            var pos_end = "100% 100%";
        }
        else {
-           var pos_start = "50% 0%";
-           var pos_end = "50% 100%";
+           var pos_start = "50% 100%";
+           var pos_end = "50% 0%";
        }
        gsap.set(box, {objectPosition: pos_start});
        gsap.to(box, { 
@@ -29,7 +29,7 @@
                trigger: box, // start the animation when ".box" enters the viewport (once),
                start: "top bottom",
                end: "bottom top",
-               scrub: true, 
+               scrub: 1, 
                toggleClass: "onscreen"
            },        
            objectPosition: pos_end,

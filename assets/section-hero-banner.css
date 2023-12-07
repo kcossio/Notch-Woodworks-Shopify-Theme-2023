@@ -7,6 +7,9 @@ EASING
   max-height: 80vh;
   position: relative;
 }
+.section-hero-banner.hero-banner-top {
+  height: 89.8rem;
+}
 .section-hero-banner.w-notch::before {
   content: "";
   display: block;

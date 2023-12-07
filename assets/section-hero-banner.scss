@@ -6,6 +6,10 @@
  max-height:80vh;
  position:relative;
 
+ &.hero-banner-top {
+    height:89.8rem;
+ }
+
   &.w-notch {
     &::before {
         content:"";

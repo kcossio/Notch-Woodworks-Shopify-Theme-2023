@@ -12,6 +12,11 @@ ul.menu-collections {
     justify-content: center;
   }
 }
+ul.menu-collections li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
 ul.menu-collections li a {
   text-transform: uppercase;
   font-weight: 600;

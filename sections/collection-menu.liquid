@@ -1,8 +1,16 @@
+{{ 'section-collection-menu.css' | asset_url | stylesheet_tag }}
+
 {%- # Label: Collections Menu -%}
 {%- assign collections_menu = section.settings.collections_menu.links -%}
-{%- for link in collections_menu -%}
-  {{ link.title | link_to: link.url }}
-{%- endfor -%}
+{%- if collections_menu != blank -%}
+    <div class='page-width'>
+        <ul class="menu-collections">
+            {%- for link in collections_menu -%}
+            {{ link.title | link_to: link.url }}
+            {%- endfor -%}
+        </ul><!--End menu-collections-->
+    </div>
+{%- endif -%}
 
 {% schema %}
   {

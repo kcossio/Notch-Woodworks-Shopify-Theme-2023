@@ -23,7 +23,7 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
 
-{{ assign product_hero = product.metafields.custom.hero_image_for_collection }}
+{%- assign product_hero = product.metafields.custom.hero_image_for_collection -%}
 
 {%- if card_product and card_product != empty -%}
   {%- liquid

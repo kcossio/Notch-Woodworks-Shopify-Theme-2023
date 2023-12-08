@@ -1,3 +1,19 @@
 /*-----------------------
 EASING 
 ---------------------- */
+ul.menu-collections {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1280px) {
+  ul.menu-collections {
+    gap: 9rem;
+    justify-content: center;
+  }
+}
+ul.menu-collections li a {
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+}

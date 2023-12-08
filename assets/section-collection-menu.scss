@@ -2,10 +2,21 @@
 
 ul.menu-collections {
 
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+
+    @include breakpoint(laptop) {
+        gap: 9rem;
+        justify-content: center;
+    }
+
     li {
 
         a {
-            
+            text-transform: uppercase;
+            font-weight: 600;
+            position:relative;
         }
     }
 }

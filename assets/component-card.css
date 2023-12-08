@@ -558,6 +558,11 @@ EASING
   display: flex;
   width: 100%;
 }
+.card-product-collection .card__content .card__information {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .card-product-collection .card__product-info-top {
   display: flex;
   z-index: 2;

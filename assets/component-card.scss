@@ -570,6 +570,12 @@
     .card__content {
       display:flex;
       width:100%;
+
+      .card__information {
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+      }
     }
     .card__product-info-top {
       display:flex;

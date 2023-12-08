@@ -24,7 +24,6 @@ ul.menu-collections li a {
   font-weight: normal;
   position: relative;
   text-decoration: none;
-  font-weight: normal;
 }
 @media (min-width: 768px) {
   ul.menu-collections li {

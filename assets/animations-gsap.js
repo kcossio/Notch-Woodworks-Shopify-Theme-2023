@@ -17,7 +17,7 @@
        if(jQuery(box).hasClass('top-banner')) {
 
            var ann_banner_height = jQuery('.announcement-bar').height();
-           if (ann_banner_height > 0) 
+           if (ann_banner_height > 0) {
                 var percent_from_top = ( ann_banner_height / window.height ) * 100;
                 console.log('Percent from top = ' + percent_from_top);
                 var pos_start = "50% " + percent_from_top + "%";
@@ -26,7 +26,7 @@
            }
            var pos_end = "50% 100%";
            var trigger_start = "top top";
-           var trigger_end = "bottom top"
+           var trigger_end = "bottom top";
        }
        else {
           

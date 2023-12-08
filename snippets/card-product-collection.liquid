@@ -26,17 +26,7 @@
 {%- assign product_hero = card_product.metafields.custom.hero_image_for_collection -%}
 
 {%- if card_product and card_product != empty -%}
-  {%- liquid
-    assign ratio = 1
-    if product_hero and media_aspect_ratio == 'portrait'
-      assign ratio = 0.8
-    elsif product_hero and media_aspect_ratio == 'adapt'
-      assign ratio = product_hero.aspect_ratio
-    endif
-    if ratio == 0 or ratio == null
-      assign ratio = 1
-    endif
-  -%}
+  
   <div class="card-wrapper product-card-wrapper card-product-collection">
     <div
       class="
@@ -312,14 +302,9 @@
       class="
         card card--{{ settings.card_style }}
         {% if extend_height %} card--extend-height{% endif %}
-        {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
       "
-      style="--ratio-percent: 100%;"
     >
-      <div
-        class="card__inner{% if settings.card_style == 'standard' %} color-{{ settings.card_color_scheme }} gradient{% endif %} ratio"
-        style="--ratio-percent: 100%;"
-      >
+      
         <div class="card__media">
           <div class="media media--transparent">
             {%- if placeholder_image -%}
@@ -329,7 +314,6 @@
             {% endif %}
           </div>
         </div>
-      </div>
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading card__heading--placeholder{% if settings.card_style == 'standard' %} h5{% endif %}">

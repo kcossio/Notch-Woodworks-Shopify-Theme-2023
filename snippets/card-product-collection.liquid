@@ -50,9 +50,11 @@
 
           </div>
       {%- endif -%}
+
+      
       
         
-        <div class="card__content">
+        <div class="card__content card__product-info-top">
           <div class="card__information">
             <h3
               class="card__heading"
@@ -69,6 +71,12 @@
                 {{ card_product.title | escape }}
               </a>
             </h3>
+            {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
+            {%- if card_product.quantity_price_breaks_configured? -%}
+              <div class="card__information-volume-pricing-note">
+                <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
+              </div>
+            {%- endif -%}
           </div>
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
@@ -89,7 +97,7 @@
           </div>
         </div><!--End card__content-->
      
-      <div class="card__content">
+      <div class="card__content card__product-info-bottom">
         <div class="card__information">
           <h3
             class="card__heading{% if product_hero or settings.card_style == 'standard' %} h5{% endif %}"
@@ -149,14 +157,7 @@
                 </span>
               </p>
             {%- endif -%}
-
-            {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
-            {%- if card_product.quantity_price_breaks_configured? -%}
-              <div class="card__information-volume-pricing-note">
-                <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
-              </div>
-            {%- endif -%}
-          </div>
+          </div><!--End card-information-->
         </div>
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">

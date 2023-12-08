@@ -15,17 +15,9 @@
    const bgParallax = gsap.utils.toArray('.parallax-img');
    bgParallax.forEach(box => {
        if(jQuery(box).hasClass('top-banner')) {
-
-           var ann_banner_height = jQuery('.announcement-bar').height();
-           console.log('Announcement Banner Height = ' + ann_banner_height);
-           if (ann_banner_height) {
-                var percent_from_top = ( ann_banner_height / window.innerHeight ) * 100;
-                console.log('Percent from top = ' + percent_from_top);
-                var pos_start = "50% " + percent_from_top + "%"; // Test
-           } else {
-            var pos_start = "50% 0%";
-           }
-           var pos_end = "50% 100%";
+           
+           var pos_start = "50% 100%";           
+           var pos_end = "50% 0%";
            var trigger_start = "top top";
            var trigger_end = "bottom top";
        }

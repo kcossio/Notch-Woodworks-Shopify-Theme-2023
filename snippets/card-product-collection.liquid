@@ -45,7 +45,7 @@
           <div class="media card-collection-product-media media--hover-effect has-bg">
             {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
             
-              {{ product_hero | image_url: width: product_hero.width | image_tag: class: 'bg motion-reduce', alt: product_hero.alt, sizes: '(min-width:600px) 50vw, (min-width:990px) 33vw, 100vw', loading: 'lazy' }}
+              {{ product_hero | image_url: width: product_hero.width | image_tag: class: 'bg motion-reduce', alt: product_hero.alt, sizes: '(min-width:600px) 50vw, 100vw', loading: 'lazy' }}
             {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
 
           </div>

@@ -40,21 +40,18 @@
       "
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
-      <div
-        class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if product_hero or settings.card_style == 'standard' %} ratio{% endif %}"
-        style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
-      >
-        {%- if product_hero -%}
-          <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-            <div class="media media--transparent media--hover-effect">
-              {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-              
-                {{ product_hero | image_url: width: product_hero.width | image_tag: class: 'motion-reduce', alt: product_hero.alt, sizes: '(min-width:600px) 50vw, (min-width:990px) 33vw, 100vw', loading: 'lazy' }}
-              {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
 
-            </div>
+      {%- if product_hero -%}
+          <div class="media card-collection-product-media media--hover-effect has-bg">
+            {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+            
+              {{ product_hero | image_url: width: product_hero.width | image_tag: class: 'bg motion-reduce', alt: product_hero.alt, sizes: '(min-width:600px) 50vw, (min-width:990px) 33vw, 100vw', loading: 'lazy' }}
+            {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+
           </div>
-        {%- endif -%}
+      {%- endif -%}
+      
+        
         <div class="card__content">
           <div class="card__information">
             <h3
@@ -90,8 +87,8 @@
               </span>
             {%- endif -%}
           </div>
-        </div>
-      </div>
+        </div><!--End card__content-->
+     
       <div class="card__content">
         <div class="card__information">
           <h3
@@ -293,7 +290,7 @@
             </span>
           {%- endif -%}
         </div>
-      </div>
+      </div><!--End card__content-->
     </div>
   </div>
 {%- else -%}

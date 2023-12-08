@@ -21,7 +21,7 @@
            if (ann_banner_height) {
                 var percent_from_top = ( ann_banner_height / window.innerHeight ) * 100;
                 console.log('Percent from top = ' + percent_from_top);
-                var pos_start = "50% " + percent_from_top + "%";
+                var pos_start = "50% " + percent_from_top + "%"; // Test
            } else {
             var pos_start = "50% 0%";
            }

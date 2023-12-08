@@ -25,6 +25,7 @@ ul.menu-collections {
             font-weight: normal;
             position:relative;
             text-decoration: none;
+            letter-spacing:none;
         }
 
         @include breakpoint(tablet) {

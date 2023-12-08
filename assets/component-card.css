@@ -543,6 +543,7 @@ EASING
   aspect-ratio: 812/650;
   border: 0px;
   flex-wrap: wrap;
+  background-color: var(--color-lightgrey);
 }
 .card-product-collection .card-collection-product-media {
   position: absolute;

@@ -35,7 +35,7 @@
                trigger: box, // start the animation when ".box" enters the viewport (once),
                start: trigger_start,
                end: trigger_end,
-               scrub: .5, 
+               scrub: true, 
                toggleClass: "onscreen"
            },        
            objectPosition: pos_end,

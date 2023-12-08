@@ -14,20 +14,20 @@ ul.menu-collections {
 }
 ul.menu-collections li {
   font-family: var(--font-family-header-ex);
-  font-size: 1.4rem;
   list-style: none;
   margin: 0px;
   padding: 0px;
-}
-@media (min-width: 768px) {
-  ul.menu-collections li {
-    font-size: 3rem;
-  }
 }
 ul.menu-collections li a {
   text-transform: uppercase;
   font-weight: normal;
   position: relative;
   text-decoration: none;
-  letter-spacing: none;
+  letter-spacing: 0px;
+  font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  ul.menu-collections li a {
+    font-size: 3rem;
+  }
 }

@@ -7,6 +7,10 @@ ul.menu-collections {
     justify-content: space-between;
 
     @include breakpoint(tablet) {
+        gap: 6rem;
+        justify-content: center;
+    }
+    @include breakpoint(laptop) {
         gap: 9rem;
         justify-content: center;
     }
@@ -31,6 +35,9 @@ ul.menu-collections {
             font-size:1.4rem;
 
             @include breakpoint(tablet) {
+                font-size:2rem;
+            }
+            @include breakpoint(laptop) {
                 font-size:3rem;
             }
         }

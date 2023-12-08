@@ -8,6 +8,12 @@ ul.menu-collections {
 }
 @media (min-width: 768px) {
   ul.menu-collections {
+    gap: 6rem;
+    justify-content: center;
+  }
+}
+@media (min-width: 1280px) {
+  ul.menu-collections {
     gap: 9rem;
     justify-content: center;
   }
@@ -27,6 +33,11 @@ ul.menu-collections li a {
   font-size: 1.4rem;
 }
 @media (min-width: 768px) {
+  ul.menu-collections li a {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1280px) {
   ul.menu-collections li a {
     font-size: 3rem;
   }

@@ -23,20 +23,9 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
 
-{%- assign product_hero = product.metafields.custom.hero_image_for_collection -%}
+{%- assign product_hero = card_product.metafields.custom.hero_image_for_collection -%}
 
-{%- if card_product and card_product != empty -%}
-  {%- liquid
-    assign ratio = 1
-    if product_hero and media_aspect_ratio == 'portrait'
-      assign ratio = 0.8
-    elsif product_hero and media_aspect_ratio == 'adapt'
-      assign ratio = product_hero.aspect_ratio
-    endif
-    if ratio == 0 or ratio == null
-      assign ratio = 1
-    endif
-  -%}
+
   <div class="card-wrapper product-card-wrapper card-product-collection">
     <div
       class="

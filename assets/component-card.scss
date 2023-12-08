@@ -485,7 +485,7 @@
   }
   
 
-  // Collection Card Overrides
+  // Slider Product Collection Card Overrides
 
   .collection-card-wrapper {
 
@@ -548,4 +548,11 @@
       z-index:4;
     }
 
+  }
+
+  // Collections Page - Product Card Overrides
+
+  .card-product-collection {
+    aspect-ratio: 812 / 650;
+    border:0px;
   }

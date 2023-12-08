@@ -538,3 +538,8 @@ EASING
 .collection-card-wrapper .button {
   z-index: 4;
 }
+
+.card-product-collection {
+  aspect-ratio: 812/650;
+  border: 0px;
+}

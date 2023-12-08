@@ -6,7 +6,14 @@
     <div class='page-width'>
         <ul class="menu-collections">
             {%- for link in collections_menu -%}
-            {{ link.title | link_to: link.url }}
+            <li>
+                <a
+                    href="{{ link.url }}"
+                    class="link link--text {% if link.active %} list-menu__item--active{% endif %}"
+                  >
+                    {{ link.title }}
+                  </a>
+            </li>
             {%- endfor -%}
         </ul><!--End menu-collections-->
     </div>

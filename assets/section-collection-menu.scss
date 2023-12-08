@@ -6,7 +6,7 @@ ul.menu-collections {
     display:flex;
     justify-content: space-between;
 
-    @include breakpoint(laptop) {
+    @include breakpoint(tablet) {
         gap: 9rem;
         justify-content: center;
     }

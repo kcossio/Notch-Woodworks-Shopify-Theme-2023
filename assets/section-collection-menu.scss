@@ -13,7 +13,8 @@ ul.menu-collections {
 
     li {
 
-        @extend .header-ex !optional;
+        font-family: var(--font-family-header-ex);
+        font-size:1.4em;
 
         list-style:none;
         margin:0px;
@@ -21,8 +22,13 @@ ul.menu-collections {
 
         a {
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: normal;
             position:relative;
+            text-decoration: none;
+        }
+
+        @include breakpoint(tablet) {
+            font-size:3rem;
         }
     }
 }

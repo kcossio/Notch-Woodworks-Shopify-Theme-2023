@@ -567,6 +567,12 @@ EASING
   display: flex;
   z-index: 2;
 }
+.card-product-collection .card__product-info-top .card__heading {
+  font-family: var(--font-family-script);
+  color: var(--color-white);
+  font-size: 60px;
+  font-weight: normal;
+}
 .card-product-collection .card__product-info-bottom {
   display: flex;
   z-index: 2;

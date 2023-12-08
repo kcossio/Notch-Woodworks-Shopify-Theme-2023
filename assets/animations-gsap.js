@@ -19,7 +19,7 @@
            var ann_banner_height = jQuery('.announcement-bar').height();
            console.log('Announcement Banner Height = ' + ann_banner_height);
            if (ann_banner_height) {
-                var percent_from_top = ( ann_banner_height / window.height() ) * 100;
+                var percent_from_top = ( ann_banner_height / window.innerHeight ) * 100;
                 console.log('Percent from top = ' + percent_from_top);
                 var pos_start = "50% " + percent_from_top + "%";
            } else {

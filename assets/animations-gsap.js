@@ -47,7 +47,7 @@
                toggleClass: "onscreen"
            },        
            objectPosition: pos_end,
-           scale: 1.1,
+           //scale: 1.1,
            ease: "none"
        
        })

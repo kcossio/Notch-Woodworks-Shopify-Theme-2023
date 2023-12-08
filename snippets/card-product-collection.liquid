@@ -29,16 +29,7 @@
   
   <div class="card-wrapper product-card-wrapper card-product-collection">
     <div
-      class="
-        card card--{{ settings.card_style }}
-        {% if product_hero %} card--media{% else %} card--text{% endif %}
-        {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
-        {% if image_shape and image_shape != 'default' %} card--shape{% endif %}
-        {% if extend_height %} card--extend-height{% endif %}
-        {% if product_hero == nil and settings.card_style == 'card' %} ratio{% endif %}
-        {% if horizontal_class %} card--horizontal{% endif %}
-      "
-      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+      class="card card--media"
     >
 
       {%- if product_hero -%}

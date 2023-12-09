@@ -70,6 +70,7 @@
                   {{ compare_at_price | money_with_currency }}
                 {% else %}
                   {%- if hide_cents -%}
+                    paa
                     {{ compare_at_price | money_without_currency | replace:',','.'}}
                   {%- else -%}
                     {{ compare_at_price | money }}
@@ -99,6 +100,7 @@
               {{ compare_at_price | money_with_currency }}
             {% else %}
               {%- if hide_cents -%}
+                poo
                 {{ compare_at_price | money_without_currency | replace:',','.'}}
               {%- else -%}
                 {{ compare_at_price | money }}

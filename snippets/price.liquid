@@ -70,10 +70,8 @@
                   {{ compare_at_price | money_with_currency }}
                 {% else %}
                   {%- if hide_cents -%}
-                    paa
                     {{ compare_at_price | money_without_currency | replace:',','.'}}
                   {%- else -%}
-                  pooo
                     {{ compare_at_price | money }}
                   {%- endif -%}
                 {% endif %}
@@ -88,7 +86,7 @@
       {%- else -%}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
         <span class="price-item price-item--regular">
-          {{ money_price }}
+          {{ money_price | money_without_currency | replace:',','.' }}
         </span>
       {%- endif -%}
     </div>
@@ -101,10 +99,8 @@
               {{ compare_at_price | money_with_currency }}
             {% else %}
               {%- if hide_cents -%}
-                poo
                 {{ compare_at_price | money_without_currency | replace:',','.'}}
               {%- else -%}
-              paaa
                 {{ compare_at_price | money }}
               {%- endif -%}
             {% endif %}

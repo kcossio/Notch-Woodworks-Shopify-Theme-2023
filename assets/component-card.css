@@ -582,11 +582,11 @@ EASING
 .card-product-collection .card__product-info-top .product-card-details {
   font-size: 2.2rem;
   color: var(--color-white);
+  font-family: var(--font-family-header-alt);
+  font-weight: normal;
 }
 .card-product-collection .card__product-info-top .product-card-details p {
   margin: 0px;
-  font-family: var(--font-family-header-alt);
-  font-weight: normal;
 }
 .card-product-collection .card__product-info-top .price__container {
   display: flex;
@@ -594,8 +594,6 @@ EASING
 }
 .card-product-collection .card__product-info-top .price {
   color: var(--color-white);
-  font-family: var(--font-family-header-alt);
-  font-weight: normal;
 }
 .card-product-collection .card__product-info-bottom {
   display: flex;

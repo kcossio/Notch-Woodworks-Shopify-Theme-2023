@@ -64,8 +64,8 @@
             </h3>
 
             <div class="product-card-details">
-              {%- if card_product.metafields.custom.size != '0' -%}
-              <p>Size:{{ card_product.metafields.custom.size }}</p>
+              {%- if card_product.metafields.custom.size -%}
+              <p>Size: {{ card_product.metafields.custom.size }}</p>
               {%- endif -%}
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
             {%- if card_product.quantity_price_breaks_configured? -%}

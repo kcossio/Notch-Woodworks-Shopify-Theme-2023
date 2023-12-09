@@ -583,9 +583,14 @@
 
       .card__heading {
         font-family:var(--font-family-script);
-        color:var(--color-white);
-        font-size:60px;
+        color:var(--color-main);
+        font-size:4.5rem;
         font-weight:normal;
+
+        @include breakpoint(tablet) {
+          color:var(--color-white);
+          font-size:6rem;
+        }
       }
     }
     .card__product-info-bottom {

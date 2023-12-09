@@ -582,6 +582,10 @@ EASING
 .card-product-collection .card__product-info-top .product-card-details {
   color: var(--color-white);
 }
+.card-product-collection .card__product-info-top .price__container {
+  display: flex;
+  gap: 6px;
+}
 .card-product-collection .card__product-info-top .price {
   color: var(--color-white);
 }

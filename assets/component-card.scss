@@ -595,8 +595,10 @@
       .product-card-details {
         font-size:2.2rem;
         color:var(--color-white);
-        font-family: var(--font-family-header-alt);
-        font-weight:normal;
+        & * {
+          font-family: var(--font-family-header-alt);
+          font-weight:normal;
+        }
 
         p {
           margin: 0px;

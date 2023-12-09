@@ -598,4 +598,8 @@ EASING
 .card-product-collection .card__product-info-bottom {
   display: flex;
   z-index: 2;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }

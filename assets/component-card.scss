@@ -580,6 +580,7 @@
     .card__product-info-top {
       display:flex;
       z-index:2;
+      
 
       .card__heading {
         font-family:var(--font-family-script);
@@ -614,5 +615,9 @@
     .card__product-info-bottom {
       display:flex;
       z-index:2;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
     }
   }

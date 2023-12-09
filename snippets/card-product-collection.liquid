@@ -64,7 +64,7 @@
             </h3>
 
             <div class="product-card-details">
-              {%- if card_product.metafields.custom.size -%}
+              {%- if card_product.metafields.custom.size.value -%}
               <p>Size: {{ card_product.metafields.custom.size }}</p>
               {%- endif -%}
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}

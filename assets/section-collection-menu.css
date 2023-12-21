@@ -34,8 +34,12 @@ ul.menu-collections li a {
   letter-spacing: 0px;
   font-size: 1.4rem;
   color: var(--color-main);
+  transition: color 0.25s ease 0s;
   min-width: 124px;
   text-align: center;
+}
+ul.menu-collections li a:hover {
+  color: var(--color-accent);
 }
 @media (min-width: 768px) {
   ul.menu-collections li a {

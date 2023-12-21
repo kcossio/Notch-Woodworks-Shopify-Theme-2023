@@ -587,6 +587,7 @@ EASING
 }
 .card-product-collection .card__product-info-top .product-card-details p {
   margin: 0px;
+  font-size: inherit;
 }
 @media (min-width: 768px) {
   .card-product-collection .card__product-info-top .product-card-details {

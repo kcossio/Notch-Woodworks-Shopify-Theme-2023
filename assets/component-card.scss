@@ -601,6 +601,7 @@
 
         p {
           margin: 0px;
+          font-size:inherit;
         }
 
         @include breakpoint(tablet) {

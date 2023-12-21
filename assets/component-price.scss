@@ -1,3 +1,6 @@
+// ------ Include Partials ------- //
+@import "mixins";
+
 .price {
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
@@ -8,7 +11,7 @@
         font-size:1.8rem;
     }
 
-    @include breakpoint(desktop) {
+    @include breakpoint(desktopwide) {
         font-size:2.2rem;
     }
   }

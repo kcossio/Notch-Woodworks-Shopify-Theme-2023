@@ -607,7 +607,7 @@
           font-size:1.8rem;
         }
 
-        @include breakpoint(desktop) {
+        @include breakpoint(desktopwide) {
           fdnt-size:2.2rem;
         }
       }

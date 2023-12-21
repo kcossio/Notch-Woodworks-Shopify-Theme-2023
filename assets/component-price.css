@@ -1,8 +1,21 @@
+/*-----------------------
+EASING 
+---------------------- */
 .price {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   letter-spacing: 0.1rem;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
   color: rgb(var(--color-foreground));
+}
+@media (min-width: 768px) {
+  .price {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1680px) {
+  .price {
+    font-size: 2.2rem;
+  }
 }
 
 .price > * {

@@ -593,7 +593,7 @@ EASING
     font-size: 1.8rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1680px) {
   .card-product-collection .card__product-info-top .product-card-details {
     fdnt-size: 2.2rem;
   }

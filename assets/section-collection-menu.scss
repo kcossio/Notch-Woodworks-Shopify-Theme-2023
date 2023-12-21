@@ -9,10 +9,12 @@ ul.menu-collections {
     @include breakpoint(tablet) {
         gap: 6rem;
         justify-content: center;
+        margin:4rem 0rem;
     }
-    @include breakpoint(laptop) {
+    @include breakpoint(desktopwide) {
         gap: 9rem;
         justify-content: center;
+        margin:6rem 0rem;
     }
 
     li {

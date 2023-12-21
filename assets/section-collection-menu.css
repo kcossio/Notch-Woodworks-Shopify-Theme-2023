@@ -10,12 +10,14 @@ ul.menu-collections {
   ul.menu-collections {
     gap: 6rem;
     justify-content: center;
+    margin: 4rem 0rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1680px) {
   ul.menu-collections {
     gap: 9rem;
     justify-content: center;
+    margin: 6rem 0rem;
   }
 }
 ul.menu-collections li {

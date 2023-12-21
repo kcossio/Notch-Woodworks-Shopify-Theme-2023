@@ -45,9 +45,12 @@ ul.menu-collections {
 
             &.list-menu__item--active {
                 span {
-                    content:"";
                     display:block;
                     position: absolute;
+                    bottom:0px;
+                    left:50%;
+                    transform:translateX(-50%);
+                    transform-origin: center;
                     width: 100%;
                     height: 6px;
                     background:url("menu-highlight-notch.svg") center no-repeat;

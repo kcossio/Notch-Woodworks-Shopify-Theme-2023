@@ -12,6 +12,7 @@
                     class="link link--text {% if link.active %} list-menu__item--active{% endif %}"
                   >
                     {{ link.title }}
+                    {% if link.active %}<span></span>{% endif %}
                   </a>
             </li>
             {%- endfor -%}

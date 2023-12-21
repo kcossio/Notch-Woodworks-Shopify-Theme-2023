@@ -580,13 +580,23 @@ EASING
   }
 }
 .card-product-collection .card__product-info-top .product-card-details {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: var(--color-white);
   font-family: var(--font-family-header-alt);
   font-weight: normal;
 }
 .card-product-collection .card__product-info-top .product-card-details p {
   margin: 0px;
+}
+@media (min-width: 768px) {
+  .card-product-collection .card__product-info-top .product-card-details {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1440px) {
+  .card-product-collection .card__product-info-top .product-card-details {
+    fdnt-size: 2.2rem;
+  }
 }
 .card-product-collection .card__product-info-top .price__container {
   display: flex;

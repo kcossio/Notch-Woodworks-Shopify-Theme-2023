@@ -36,7 +36,6 @@
     margin-bottom: 0;
   }
 }
-
 .price--large {
   font-size: 1.6rem;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
@@ -48,7 +47,6 @@
     font-size: 1.8rem;
   }
 }
-
 .price--sold-out .price__availability,
 .price__regular {
   display: block;

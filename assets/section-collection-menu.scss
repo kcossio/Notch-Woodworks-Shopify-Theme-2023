@@ -35,9 +35,9 @@ ul.menu-collections {
             font-size:1.4rem;
 
             @include breakpoint(tablet) {
-                font-size:2rem;
+                font-size:2.4rem;
             }
-            @include breakpoint(laptop) {
+            @include breakpoint(desktopwide) {
                 font-size:3rem;
             }
         }

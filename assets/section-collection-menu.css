@@ -34,10 +34,10 @@ ul.menu-collections li a {
 }
 @media (min-width: 768px) {
   ul.menu-collections li a {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1680px) {
   ul.menu-collections li a {
     font-size: 3rem;
   }

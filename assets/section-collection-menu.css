@@ -33,6 +33,7 @@ ul.menu-collections li a {
   font-size: 1.4rem;
   color: var(--color-main);
   min-width: 124px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   ul.menu-collections li a {
@@ -51,8 +52,20 @@ ul.menu-collections li a.list-menu__item--active span {
   left: 50%;
   transform: translateX(-50%);
   transform-origin: center;
-  width: 100%;
+  width: 0%;
   height: 6px;
   background: url("menu-highlight-notch.svg") center no-repeat;
   background-size: auto 100%;
+  animation: menuActive 1s ease-out 1s 1 normal forwards;
+}
+
+@keyframes menuActive {
+  0% {
+    width: 0%;
+    transform-origin: center;
+  }
+  100% {
+    width: 100%;
+    transform-origin: center;
+  }
 }

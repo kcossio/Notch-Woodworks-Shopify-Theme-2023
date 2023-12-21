@@ -59,7 +59,7 @@ ul.menu-collections {
                     background:url("menu-highlight-notch.svg") center no-repeat;
                     background-size: auto 100%;
 
-                    animation: menuActive 2s cubic-bezier(0.85, 0, 0.15, 1) .25s 1 normal forwards;
+                    animation: menuActive 1.5s cubic-bezier(.25,0,.15,1) .25s 1 normal forwards;
                 }
             }
         }

@@ -32,6 +32,7 @@ ul.menu-collections li a {
   letter-spacing: 0px;
   font-size: 1.4rem;
   color: var(--color-main);
+  min-width: 124px;
 }
 @media (min-width: 768px) {
   ul.menu-collections li a {

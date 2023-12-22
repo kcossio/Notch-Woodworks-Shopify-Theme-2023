@@ -4,7 +4,8 @@ ul.menu-collections {
 
     width:100%;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding:0px 1rem;
 
     @include breakpoint(tablet) {
         gap: 6rem;
@@ -38,6 +39,7 @@ ul.menu-collections {
             color:var(--color-main);
             transition:color .25s ease 0s;
             text-align: center;
+            padding:0px .6rem;
 
             &:hover {
                 color:var(--color-accent);

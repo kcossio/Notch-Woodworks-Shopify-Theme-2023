@@ -554,11 +554,16 @@ EASING
 .card-product-collection .card-collection-product-media {
   position: absolute;
   width: 100%;
-  height: 100%;
   display: block;
   top: 0px;
   left: 0px;
   z-index: 1;
+  height: calc(100% - 8rem);
+}
+@media (min-width: 768px) {
+  .card-product-collection .card-collection-product-media {
+    height: 100%;
+  }
 }
 .card-product-collection .card__content {
   display: flex;

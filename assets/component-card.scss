@@ -576,17 +576,20 @@
         width:100%;
         display:flex;
         justify-content: space-between;
+        align-items:flex-start;
+
+        padding:0px;
+
+        @include breakpoint(tablet) {
+          padding: 1rem;
+        }
+
       }
     }
     .card__product-info-top {
       display:flex;
       z-index:2;
 
-      padding:0px;
-
-      @include breakpoint(tablet) {
-        padding: 1rem;
-      }
       
 
       .card__heading {

@@ -679,7 +679,7 @@ EASING
   }
 }
 .card-product-collection .card__product-info-bottom .product-details-bottom p {
-  font-size: inherit;
+  font-size: 1.8rem;
 }
 .card-product-collection .card__product-info-bottom .product-details-bottom p::after {
   content: " | ";

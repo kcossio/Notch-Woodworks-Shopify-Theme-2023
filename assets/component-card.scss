@@ -632,6 +632,11 @@
       padding-bottom:3.6rem;
       position: relative;
 
+      .card__information {
+        position: relative;
+        z-index: 2;
+      }
+
       &::after {
         content:"";
         display:block;
@@ -652,7 +657,6 @@
         align-items:center;
         justify-content: center;
         color:var(--color-main);
-        z-index:2;
 
         p {
           &::after {

@@ -617,6 +617,10 @@ EASING
   padding-bottom: 3.6rem;
   position: relative;
 }
+.card-product-collection .card__product-info-bottom .card__information {
+  position: relative;
+  z-index: 2;
+}
 .card-product-collection .card__product-info-bottom::after {
   content: "";
   display: block;
@@ -636,7 +640,6 @@ EASING
   align-items: center;
   justify-content: center;
   color: var(--color-main);
-  z-index: 2;
 }
 .card-product-collection .card__product-info-bottom .product-details-bottom p::after {
   content: " | ";

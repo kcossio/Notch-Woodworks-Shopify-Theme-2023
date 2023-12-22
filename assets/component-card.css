@@ -571,11 +571,17 @@ EASING
     padding: 1rem;
   }
 }
-.card-product-collection .card__product-info-top {
+.card-product-collection .card__content.card__product-info-top {
   display: flex;
   z-index: 2;
+  padding: 0px;
 }
-.card-product-collection .card__product-info-top .card__heading {
+@media (min-width: 768px) {
+  .card-product-collection .card__content.card__product-info-top {
+    padding: 1rem;
+  }
+}
+.card-product-collection .card__content.card__product-info-top .card__heading {
   font-family: var(--font-family-script);
   color: var(--color-main);
   font-size: 4.5rem;
@@ -585,7 +591,7 @@ EASING
   background: var(--color-white);
 }
 @media (min-width: 768px) {
-  .card-product-collection .card__product-info-top .card__heading {
+  .card-product-collection .card__content.card__product-info-top .card__heading {
     color: var(--color-white);
     font-size: 6rem;
     width: auto;
@@ -593,33 +599,33 @@ EASING
     background: none;
   }
 }
-.card-product-collection .card__product-info-top .product-card-details {
+.card-product-collection .card__content.card__product-info-top .product-card-details {
   font-size: 1.8rem;
   color: var(--color-white);
   font-family: var(--font-family-header-alt);
   font-weight: normal;
   display: none;
 }
-.card-product-collection .card__product-info-top .product-card-details p {
+.card-product-collection .card__content.card__product-info-top .product-card-details p {
   margin: 0px;
   font-size: inherit;
 }
 @media (min-width: 768px) {
-  .card-product-collection .card__product-info-top .product-card-details {
+  .card-product-collection .card__content.card__product-info-top .product-card-details {
     font-size: 1.8rem;
     display: block;
   }
 }
 @media (min-width: 1680px) {
-  .card-product-collection .card__product-info-top .product-card-details {
+  .card-product-collection .card__content.card__product-info-top .product-card-details {
     fdnt-size: 2.2rem;
   }
 }
-.card-product-collection .card__product-info-top .price__container {
+.card-product-collection .card__content.card__product-info-top .price__container {
   display: flex;
   gap: 6px;
 }
-.card-product-collection .card__product-info-top .price {
+.card-product-collection .card__content.card__product-info-top .price {
   color: var(--color-white);
 }
 .card-product-collection .card__product-info-bottom {

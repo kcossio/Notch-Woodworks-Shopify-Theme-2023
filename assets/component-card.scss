@@ -643,6 +643,7 @@
       }
 
       &::after {
+       
         content:"";
         display:block;
         width:100%;
@@ -652,6 +653,10 @@
         left:0px;
         background:var(--color-white);
         z-index:1;
+
+        @include breakpoint(tablet) {
+          display:none;
+        }
       }
 
       .quick-add {

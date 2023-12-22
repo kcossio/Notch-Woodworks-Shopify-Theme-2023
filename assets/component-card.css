@@ -638,6 +638,11 @@ EASING
   background: var(--color-white);
   z-index: 1;
 }
+@media (min-width: 768px) {
+  .card-product-collection .card__product-info-bottom::after {
+    display: none;
+  }
+}
 .card-product-collection .card__product-info-bottom .quick-add {
   z-index: 2;
 }

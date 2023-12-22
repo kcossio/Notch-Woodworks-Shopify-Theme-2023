@@ -680,10 +680,11 @@ EASING
 }
 .card-product-collection .card__product-info-bottom .product-details-bottom p {
   font-size: 1.8rem;
+  margin: 0px;
 }
 .card-product-collection .card__product-info-bottom .product-details-bottom p::after {
   content: " | ";
-  margin: 0px 10px;
+  margin: 0px 8px;
 }
 .card-product-collection .card__product-info-bottom .product-details-bottom .price__regular {
   display: inline-block;

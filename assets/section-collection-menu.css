@@ -57,7 +57,7 @@ ul.menu-collections li a:hover {
 ul.menu-collections li a.list-menu__item--active span {
   display: block;
   position: absolute;
-  bottom: 0px;
+  bottom: -0.2rem;
   left: 50%;
   transform: translateX(-50%);
   transform-origin: center;

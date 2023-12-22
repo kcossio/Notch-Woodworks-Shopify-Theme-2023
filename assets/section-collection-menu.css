@@ -35,7 +35,6 @@ ul.menu-collections li a {
   font-size: 1.4rem;
   color: var(--color-main);
   transition: color 0.25s ease 0s;
-  min-width: 124px;
   text-align: center;
 }
 ul.menu-collections li a:hover {
@@ -44,6 +43,7 @@ ul.menu-collections li a:hover {
 @media (min-width: 768px) {
   ul.menu-collections li a {
     font-size: 2.4rem;
+    min-width: 124px;
   }
 }
 @media (min-width: 1680px) {

@@ -618,10 +618,14 @@
 
         @include breakpoint(tablet) {
           color:var(--color-white);
-          font-size:6rem;
+          font-size:4rem;
           width: auto;
           text-align: left;
           background:none;
+        }
+
+        @include breakpoint(laptop) {
+          font-size:6rem;
         }
       }
       .product-card-details {

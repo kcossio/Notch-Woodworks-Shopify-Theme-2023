@@ -141,8 +141,18 @@
                 </span>
               </p>
             {%- endif -%}
+
+            <div class="product-card-details product-details-bottom">
+              <p>
+                {%- if card_product.metafields.custom.size.value -%}
+                Size: {{ card_product.metafields.custom.size }}
+                {%- endif -%}
+              {% render 'price', product: card_product, price_class: '', show_compare_at_price: true, show_price_text: true, hide_cents: true %}
+              </p>            
+            </div><!--End product-card-details-->
+
           </div><!--End card-information-->
-        </div>
+        </div><!--End card__information-->
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
             {%- liquid

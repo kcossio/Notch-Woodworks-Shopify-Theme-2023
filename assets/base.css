@@ -1378,7 +1378,9 @@ button.shopify-payment-button__button--unbranded {
 .customer button.disabled,
 .quantity__button.disabled {
   cursor: not-allowed;
-  opacity: 0.5;
+  opacity: 1;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .button--full-width {

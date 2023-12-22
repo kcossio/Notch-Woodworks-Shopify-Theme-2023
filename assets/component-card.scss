@@ -655,7 +655,7 @@
       align-items: center;
       align-content: flex-end;
       position: relative;
-      padding:0px;
+      padding:0px 0px 2rem 0px;
 
       @include breakpoint(tablet) {
         padding-bottom:3.6rem;
@@ -692,6 +692,7 @@
         align-items:center;
         justify-content: center;
         color:var(--color-main);
+        margin-top:1.6rem !important;
 
         @include breakpoint(tablet) {
           display: none;

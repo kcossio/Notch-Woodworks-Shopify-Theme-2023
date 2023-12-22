@@ -636,7 +636,7 @@ EASING
   align-items: center;
   align-content: flex-end;
   position: relative;
-  padding: 0px;
+  padding: 0px 0px 2rem 0px;
 }
 @media (min-width: 768px) {
   .card-product-collection .card__product-info-bottom {
@@ -672,6 +672,7 @@ EASING
   align-items: center;
   justify-content: center;
   color: var(--color-main);
+  margin-top: 1.6rem !important;
 }
 @media (min-width: 768px) {
   .card-product-collection .card__product-info-bottom .product-details-bottom {

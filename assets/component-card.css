@@ -614,8 +614,13 @@ EASING
   justify-content: center;
   align-items: center;
   align-content: flex-end;
-  padding-bottom: 3.6rem;
   position: relative;
+  padding: 0px;
+}
+@media (min-width: 768px) {
+  .card-product-collection .card__product-info-bottom {
+    padding-bottom: 3.6rem;
+  }
 }
 .card-product-collection .card__product-info-bottom .card__information {
   position: relative;
@@ -641,6 +646,11 @@ EASING
   align-items: center;
   justify-content: center;
   color: var(--color-main);
+}
+@media (min-width: 768px) {
+  .card-product-collection .card__product-info-bottom .product-details-bottom {
+    display: none;
+  }
 }
 .card-product-collection .card__product-info-bottom .product-details-bottom p::after {
   content: " | ";

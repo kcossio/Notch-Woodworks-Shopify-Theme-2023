@@ -629,8 +629,12 @@
       justify-content: center;
       align-items: center;
       align-content: flex-end;
-      padding-bottom:3.6rem;
       position: relative;
+      padding:0px;
+
+      @include breakpoint(tablet) {
+        padding-bottom:3.6rem;
+      }
 
       .card__information {
         position: relative;
@@ -658,6 +662,10 @@
         align-items:center;
         justify-content: center;
         color:var(--color-main);
+
+        @include breakpoint(tablet) {
+          display: none;
+        }
 
         p {
           &::after {

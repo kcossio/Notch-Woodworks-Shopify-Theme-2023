@@ -620,6 +620,7 @@ EASING
 .card-product-collection .card__product-info-bottom .card__information {
   position: relative;
   z-index: 2;
+  padding: 0px;
 }
 .card-product-collection .card__product-info-bottom::after {
   content: "";

@@ -616,3 +616,9 @@ EASING
   align-content: flex-end;
   padding-bottom: 3.6rem;
 }
+.card-product-collection .card__product-info-bottom .product-details-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-main);
+}

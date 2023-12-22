@@ -630,5 +630,12 @@
       align-items: center;
       align-content: flex-end;
       padding-bottom:3.6rem;
+
+      .product-details-bottom {
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        color:var(--color-main);
+      }
     }
   }

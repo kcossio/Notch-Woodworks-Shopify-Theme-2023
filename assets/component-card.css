@@ -541,10 +541,15 @@ EASING
 }
 
 .card-product-collection {
-  aspect-ratio: 812/650;
+  aspect-ratio: 812/778;
   border: 0px;
   flex-wrap: wrap;
   background-color: var(--color-light-grey);
+}
+@media (min-width: 768px) {
+  .card-product-collection {
+    aspect-ratio: 812/650;
+  }
 }
 .card-product-collection .card-collection-product-media {
   position: absolute;

@@ -554,10 +554,13 @@
   // Collections Page - Product Card Overrides
 
   .card-product-collection {
-    aspect-ratio: 812 / 650;
+    aspect-ratio: 812 / 778;
     border:0px;
     flex-wrap: wrap;
     background-color:var(--color-light-grey);
+    @include breakpoint(tablet) {
+      aspect-ratio: 812 / 650;
+    }
 
     .card-collection-product-media {
       position:absolute;

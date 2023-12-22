@@ -6,6 +6,7 @@ ul.menu-collections {
     display:flex;
     justify-content: center;
     padding:0px 1rem;
+    gap:.5rem 0;
 
     @include breakpoint(tablet) {
         gap: 6rem;

@@ -567,17 +567,29 @@ EASING
 .card-product-collection .card__product-info-top {
   display: flex;
   z-index: 2;
+  padding: 0px;
+}
+@media (min-width: 768px) {
+  .card-product-collection .card__product-info-top {
+    padding: 1rem;
+  }
 }
 .card-product-collection .card__product-info-top .card__heading {
   font-family: var(--font-family-script);
   color: var(--color-main);
   font-size: 4.5rem;
   font-weight: normal;
+  width: 100%;
+  text-align: center;
+  background: var(--color-white);
 }
 @media (min-width: 768px) {
   .card-product-collection .card__product-info-top .card__heading {
     color: var(--color-white);
     font-size: 6rem;
+    width: auto;
+    text-align: left;
+    background: none;
   }
 }
 .card-product-collection .card__product-info-top .product-card-details {

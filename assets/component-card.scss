@@ -581,6 +581,12 @@
     .card__product-info-top {
       display:flex;
       z-index:2;
+
+      padding:0px;
+
+      @include breakpoint(tablet) {
+        padding: 1rem;
+      }
       
 
       .card__heading {
@@ -589,9 +595,17 @@
         font-size:4.5rem;
         font-weight:normal;
 
+        width: 100%;
+        text-align: center;
+
+        background:var(--color-white);
+
         @include breakpoint(tablet) {
           color:var(--color-white);
           font-size:6rem;
+          width: auto;
+          text-align: left;
+          background:none;
         }
       }
       .product-card-details {

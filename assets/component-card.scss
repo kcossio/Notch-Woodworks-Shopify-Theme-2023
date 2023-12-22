@@ -599,6 +599,7 @@
         color:var(--color-white);
         font-family: var(--font-family-header-alt);
         font-weight:normal;
+        display:none;
 
         p {
           margin: 0px;
@@ -607,6 +608,7 @@
 
         @include breakpoint(tablet) {
           font-size:1.8rem;
+          display: block;
         }
 
         @include breakpoint(desktopwide) {

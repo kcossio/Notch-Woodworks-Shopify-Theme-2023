@@ -585,6 +585,7 @@ EASING
   color: var(--color-white);
   font-family: var(--font-family-header-alt);
   font-weight: normal;
+  display: none;
 }
 .card-product-collection .card__product-info-top .product-card-details p {
   margin: 0px;
@@ -593,6 +594,7 @@ EASING
 @media (min-width: 768px) {
   .card-product-collection .card__product-info-top .product-card-details {
     font-size: 1.8rem;
+    display: block;
   }
 }
 @media (min-width: 1680px) {

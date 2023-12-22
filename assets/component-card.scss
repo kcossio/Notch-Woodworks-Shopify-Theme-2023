@@ -629,7 +629,7 @@
         }
       }
       .product-card-details {
-        font-size:1.8rem;
+        font-size:1.6rem;
         color:var(--color-white);
         font-family: var(--font-family-header-alt);
         font-weight:normal;
@@ -641,12 +641,16 @@
         }
 
         @include breakpoint(tablet) {
+          display: block;
+        }
+
+        @include breakpoint(laptop) {
           font-size:1.8rem;
           display: block;
         }
 
         @include breakpoint(desktopwide) {
-          fdnt-size:2.2rem;
+          font-size:2.2rem;
         }
       }
 

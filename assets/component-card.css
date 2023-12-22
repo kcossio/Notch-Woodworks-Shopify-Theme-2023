@@ -678,8 +678,12 @@ EASING
     display: none;
   }
 }
+.card-product-collection .card__product-info-bottom .product-details-bottom p {
+  font-size: inherit;
+}
 .card-product-collection .card__product-info-bottom .product-details-bottom p::after {
   content: " | ";
+  margin: 0px 10px;
 }
 .card-product-collection .card__product-info-bottom .product-details-bottom .price__regular {
   display: inline-block;

@@ -698,8 +698,11 @@
         }
 
         p {
+          font-size:inherit;
+
           &::after {
             content:" | ";
+            margin:0px 10px;
           }
         }
 

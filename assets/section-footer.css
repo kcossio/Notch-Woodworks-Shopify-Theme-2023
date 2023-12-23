@@ -36,7 +36,7 @@ EASING
   width: 100%;
   border-top: solid 0.1rem #175E72;
   padding-top: 3rem;
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
@@ -44,6 +44,7 @@ EASING
   .footer .footer__content-meta {
     width: 75%;
     margin-left: auto;
+    justify-content: space-between;
   }
 }
 @media (min-width: 768px) {
@@ -295,6 +296,8 @@ EASING
 .footer__copyright {
   text-align: center;
   color: var(--color-grey);
+  width: 100%;
+  margin: 0px 0px 2rem 0px;
 }
 .footer__copyright p {
   margin: 0px;
@@ -303,6 +306,8 @@ EASING
 @media (min-width: 768px) {
   .footer__copyright {
     text-align: left;
+    width: auto;
+    margin: 0px;
   }
 }
 

@@ -37,7 +37,7 @@
       width:100%;
       border-top: solid 0.1rem #175E72;
       padding-top: 3rem;
-      justify-content: space-between;
+      justify-content:  center;
 
       display: flex;
       flex-wrap: wrap;
@@ -45,6 +45,7 @@
       @include breakpoint(tablet) {
         width:75%;
         margin-left:auto;
+        justify-content: space-between;
       }
     }
 
@@ -339,6 +340,8 @@
   .footer__copyright {
     text-align: center;
     color:var(--color-grey);
+    width:100%;
+    margin:0px 0px 2rem 0px;
 
     p {
       margin:0px;
@@ -347,6 +350,8 @@
 
     @include breakpoint(tablet) {
       text-align: left;
+      width:auto;
+      margin:0px;
     }
   }
   

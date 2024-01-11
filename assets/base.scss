@@ -2341,10 +2341,17 @@ product-info .loading-overlay:not(.hidden) ~ *,
   text-align: center;
   padding: 1rem 0;
   margin: 0;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0;
   min-height: 3.8rem;
   color:var(--color-white);
   font-family: var(--font-family-body);
+  font-weight:400;
+  font-size:1.2rem;
+
+  @include breakpoint(tablet) {
+    font-size:1.725rem;
+  }
+
 }
 
 .announcement-bar-slider--fade-in-next .announcement-bar__message,

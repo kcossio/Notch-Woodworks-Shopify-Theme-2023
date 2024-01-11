@@ -2608,7 +2608,10 @@ sticky-header {
   align-items: center;
   padding-right: 0rem;
   gap:20px;
-  margin-left:3.4rem;
+
+  @include breakpoint(tablet) {
+    margin-left:3.4rem;
+  }
 }
 
 .header__icons .shopify-app-block {
@@ -2678,17 +2681,17 @@ sticky-header {
 
 .header__icon--menu {
 
-  width:30.5px;
-  height:30.5px;
+  width:3.05rem;
+  height:3.05rem;
   z-index:6;
-  margin-right:3rem;
+  margin-right:1.6rem;
 
   .icon {
-    width:30.5px;
+    width:3.05rem;
 
     &.icon-close {
-      width:24px;
-      height:24px;
+      width:2.4rem;
+      height:2.4rem;
 
       path {
         fill:var(--color-main);

@@ -2568,7 +2568,11 @@ sticky-header {
   align-items: center;
   padding-right: 0rem;
   gap: 20px;
-  margin-left: 3.4rem;
+}
+@media (min-width: 768px) {
+  .header__icons {
+    margin-left: 3.4rem;
+  }
 }
 
 .header__icons .shopify-app-block {
@@ -2633,17 +2637,17 @@ sticky-header {
 }
 
 .header__icon--menu {
-  width: 30.5px;
-  height: 30.5px;
+  width: 3.05rem;
+  height: 3.05rem;
   z-index: 6;
-  margin-right: 3rem;
+  margin-right: 1.6rem;
 }
 .header__icon--menu .icon {
-  width: 30.5px;
+  width: 3.05rem;
 }
 .header__icon--menu .icon.icon-close {
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 .header__icon--menu .icon.icon-close path {
   fill: var(--color-main);

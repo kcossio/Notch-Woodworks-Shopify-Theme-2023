@@ -2571,6 +2571,7 @@ sticky-header {
   justify-self: end;
   align-items: center;
   padding-right: 0rem;
+  gap: 20px;
 }
 
 .header__icons .shopify-app-block {
@@ -2620,13 +2621,12 @@ sticky-header {
 }
 
 .header__icon--account {
-  width: 19px;
-  margin-right: 20px;
+  width: 1.85rem;
 }
 
 .header__icon--cart {
   position: relative;
-  width: 24px;
+  width: 2.268rem;
 }
 
 .header__icon--menu {

@@ -2847,7 +2847,7 @@ details[open] > .header__submenu {
   font-family: var(--font-family-header-ex);
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 21px;
+  font-size: 2.1rem;
   letter-spacing: 0.05em;
   transition: all var(--duration-short) ease;
 }

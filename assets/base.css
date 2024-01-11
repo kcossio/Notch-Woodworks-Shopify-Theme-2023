@@ -2624,7 +2624,12 @@ sticky-header {
 
 .header__icon--cart {
   position: relative;
-  width: 2.268rem;
+  width: 3.025rem;
+}
+@media (min-width: 768px) {
+  .header__icon--cart {
+    width: 2.268rem;
+  }
 }
 
 .header__icon--menu {

@@ -37,18 +37,18 @@ menu-drawer > details[open] > summary::before {
   top: 0px;
   width: 100vw;
   padding: 0 0px 0px 11.8rem;
-  background: none;
+  background-color: rgba(0, 67, 86, 0.5);
   max-width: 100vw !important;
   filter: drop-shadow(var(--drawer-shadow-horizontal-offset) var(--drawer-shadow-vertical-offset) var(--drawer-shadow-blur-radius) rgba(var(--color-shadow), var(--drawer-shadow-opacity)));
 }
 .menu-drawer:before {
   content: "";
-  width: 11.8rem;
-  height: 100vh;
+  width: 100%;
+  height: 100px;
   position: absolute;
-  top: -10rem;
+  bottom: 100%;
   left: 0px;
-  background-color: rgba(0, 67, 86, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   z-index: 1;
   pointer-events: none;
 }

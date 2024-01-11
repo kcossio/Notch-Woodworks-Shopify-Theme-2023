@@ -2581,10 +2581,6 @@ sticky-header {
 }
 
 @media screen and (min-width: 990px) {
-  .header--middle-left .header__heading-link,
-  .header--top-left .header__heading-link {
-    margin-left: -0.75rem;
-  }
 
   .header__heading,
   .header__heading-link {
@@ -2652,6 +2648,7 @@ sticky-header {
   width: auto;
   max-width:40px;
   padding: 0;
+  transition:all var(--duration-medium) ease 0s;
 
   .icon {
     height: auto;

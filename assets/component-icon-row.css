@@ -1,0 +1,57 @@
+/*-----------------------
+EASING 
+---------------------- */
+.product-top-icons .icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 780px;
+  max-width: 100%;
+  margin: 3em auto 3em auto;
+}
+.product-top-icons .icon-row .icon-item {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.product-top-icons .icon-row .icon-item[data-num="1"] img {
+  width: 70px;
+}
+@media (min-width: 768px) {
+  .product-top-icons .icon-row .icon-item[data-num="1"] img {
+    width: 124px;
+  }
+}
+.product-top-icons .icon-row .icon-item[data-num="2"] img {
+  width: 56px;
+}
+@media (min-width: 768px) {
+  .product-top-icons .icon-row .icon-item[data-num="2"] img {
+    width: 98px;
+  }
+}
+.product-top-icons .icon-row .icon-item[data-num="3"] img {
+  width: 58px;
+}
+@media (min-width: 768px) {
+  .product-top-icons .icon-row .icon-item[data-num="3"] img {
+    width: 102px;
+  }
+}
+.product-top-icons .icon-row .dots-divider {
+  display: block;
+  width: 3.5px;
+  height: 67.5px;
+  background: url("divider-vert-red-dots.svg") center center no-repeat;
+  background-size: auto 100%;
+}
+@media (min-width: 768px) {
+  .product-top-icons .icon-row .dots-divider {
+    width: 5px;
+    height: 82px;
+  }
+}

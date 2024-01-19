@@ -1,0 +1,64 @@
+@import "mixins";
+
+
+  // ----- Icon Rows- ------ //
+
+  .product-top-icons {
+    .icon-row {
+      display:flex;
+      flex-wrap:wrap;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      width:780px;
+      max-width: 100%;
+      margin:3em auto 3em auto;
+
+      .icon-item {
+        width:30%;
+        display:flex;
+        align-items:center;
+        align-content:center;
+        justify-content: center;
+
+        &[data-num="1"] {
+          img {
+            width:70px;
+            @include breakpoint(tablet) {
+              width:124px;
+            }
+          }          
+        }
+        &[data-num="2"] {
+          img {
+            width:56px;
+            @include breakpoint(tablet) {
+              width:98px;
+            }
+          }
+        }
+        &[data-num="3"] {
+          img {
+            width:58px;
+            @include breakpoint(tablet) {
+              width:102px;
+            }
+          }
+        }
+
+        
+      }
+      .dots-divider {
+        display: block;
+        width:3.5px;
+        height:67.5px;
+        background:url('divider-vert-red-dots.svg') center center no-repeat;
+        background-size:auto 100%;
+
+        @include breakpoint(tablet) {
+          width:5px;
+          height: 82px;
+        }
+      }
+    }
+  }

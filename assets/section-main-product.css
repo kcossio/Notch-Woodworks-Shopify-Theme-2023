@@ -338,10 +338,12 @@ a.product__text {
   font-family: var(--font-family-header-ex);
   font-size: 2.7rem;
   color: var(--color-black);
+  letter-spacing: 0.2rem;
 }
 @media (min-width: 768px) {
   .product__title h1 {
     font-size: 2.7rem;
+    letter-spacing: 0.2rem;
   }
 }
 @media (min-width: 1280px) {

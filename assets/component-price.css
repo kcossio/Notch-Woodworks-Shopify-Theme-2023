@@ -9,12 +9,7 @@ EASING
 }
 @media (min-width: 768px) {
   .product-price .price {
-    font-size: 1.8rem;
-  }
-}
-@media (min-width: 1680px) {
-  .product-price .price {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
   }
 }
 .product-price p.price-shipping-text {

@@ -96,6 +96,8 @@
                   </h2>
                 </a>
               </div>
+            {%- when 'breadcrumbs' -%}
+              {% render 'breadcrumbs' %}
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
@@ -747,6 +749,11 @@
     {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
+      "limit": 1
+    },
+    {
+      "type": "breadcrumbs",
+      "name": "Breadcrumb Navigation",
       "limit": 1
     },
     {

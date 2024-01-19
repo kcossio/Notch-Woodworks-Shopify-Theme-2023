@@ -3,6 +3,11 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "breadcrumbs_NHTanr": {
+          "type": "breadcrumbs",
+          "settings": {
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -85,6 +90,7 @@
         }
       },
       "block_order": [
+        "breadcrumbs_NHTanr",
         "title",
         "bd2f840e-623e-4ff0-8ca1-0cdecf670930",
         "price",

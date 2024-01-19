@@ -1335,6 +1335,15 @@ button.shopify-payment-button__button--unbranded.product-form__submit:hover,
   color: var(--color-white) !important;
   background-color: var(--color-accent);
 }
+.button.product-form__submit:hover span,
+.shopify-challenge__button.product-form__submit:hover span,
+.customer button.product-form__submit:hover span,
+button.shopify-payment-button__button--unbranded.product-form__submit:hover span,
+.shopify-payment-button [role=button].product-form__submit:hover span,
+.cart__dynamic-checkout-buttons [role=button].product-form__submit:hover span,
+.cart__dynamic-checkout-buttons iframe.product-form__submit:hover span {
+  color: var(--color-white);
+}
 
 .button,
 .shopify-challenge__button,

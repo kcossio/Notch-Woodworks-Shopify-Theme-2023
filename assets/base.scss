@@ -1346,6 +1346,10 @@ button.shopify-payment-button__button--unbranded,
     &:hover {
       color:var(--color-white) !important;
       background-color:var(--color-accent);
+
+      span {
+        color:var(--color-white);
+      }
     }
   }
 }

@@ -337,6 +337,7 @@ a.product__text {
 .product__title h1 {
   font-family: var(--font-family-header-ex);
   font-size: 2.7rem;
+  color: var(--color-black);
 }
 @media (min-width: 768px) {
   .product__title h1 {

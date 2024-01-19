@@ -267,6 +267,12 @@
         "include_margins": true
       }
     },
+    "custom_html_ktGgGw": {
+      "type": "custom_html",
+      "settings": {
+        "html_code": "<h2 class=\"insta-feed-title\"><a href=\"https:\/\/instagram.com\/Notchwoodworks\" target=\"_blank\">Follow the Journey.<\/a><\/h2>"
+      }
+    },
     "17056887694753c171": {
       "type": "apps",
       "blocks": {
@@ -297,6 +303,7 @@
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
     "related-products",
     "1700257961a6f4236e",
+    "custom_html_ktGgGw",
     "17056887694753c171"
   ]
 }

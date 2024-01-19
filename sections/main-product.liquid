@@ -100,7 +100,7 @@
               {{ 'component-breadcrumbs.css' | asset_url | stylesheet_tag }}
               {% render 'breadcrumbs' %}
             {%- when 'price' -%}
-              <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+              <div class="no-js-hidden product-price" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
                   product: product,
                   use_variant: true,

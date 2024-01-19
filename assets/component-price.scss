@@ -1,10 +1,12 @@
 // ------ Include Partials ------- //
 @import "mixins";
 
-.price {
-    font-size: 1.8rem;
+.product-price {
+  
+  .price {
+    font-size: 3.2rem;
     letter-spacing: 0.1rem;
-    line-height: calc(1 + 0.5 / var(--font-body-scale));
+    line-height: 1em;
     color: inherit;
 
     @include breakpoint(tablet) {
@@ -15,6 +17,14 @@
         font-size:2.2rem;
     }
   }
+
+  p.price-shipping-text {
+    font-size:1.6rem;
+    margin:0;
+  }
+
+}
+
   
   .price > * {
     display: inline-block;

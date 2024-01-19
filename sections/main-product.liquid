@@ -97,6 +97,7 @@
                 </a>
               </div>
             {%- when 'breadcrumbs' -%}
+              {{ ' breadcrumbs.css' | asset_url | stylesheet_tag }}
               {% render 'breadcrumbs' %}
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>

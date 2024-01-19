@@ -24,13 +24,16 @@
         {% endif %}
 
         {% if product.collections[1] %}
-        <li>
-          {{ product.collections[1].title | link_to: product.collections[1].url }}            
+          <li>
+            {{ product.collections[1].title | link_to: product.collections[1].url }}  
+          </li> 
+        {% else %}         
+          <li>
+            <a href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
+          </li>
         {% endif %}
 
-        <li class="hidden invisible">
-          <a href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
-        </li>
+        
     
       {% when 'collection' and collection.handle %}
     

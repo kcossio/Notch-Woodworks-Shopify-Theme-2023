@@ -23,9 +23,12 @@
           </li>
         {% endif %}
 
+        {% if product.collections[1] %}
         <li>
           {{ product.collections[1].title | link_to: product.collections[1].url }}    
         <li>
+        {% endif %}
+
           <a href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
         </li>
     

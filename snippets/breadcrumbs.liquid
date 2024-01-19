@@ -25,10 +25,10 @@
 
         {% if product.collections[1] %}
         <li>
-          {{ product.collections[1].title | link_to: product.collections[1].url }}    
-        <li>
+          {{ product.collections[1].title | link_to: product.collections[1].url }}            
         {% endif %}
 
+        <li class="hidden">
           <a href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
         </li>
     

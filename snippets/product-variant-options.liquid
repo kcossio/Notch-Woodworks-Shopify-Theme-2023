@@ -51,7 +51,8 @@
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
       name="{{ option.name }}"
       value="{{ value | escape }}"
-      form="{{ product_form_id }}"
+      form="{{ product_form_id }}" 
+      data-variant-image="{{ variant.metafields.product_variant.swatch_image }}"
       {% if option.selected_value == value %}
         checked
       {% endif %}

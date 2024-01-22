@@ -23,7 +23,7 @@
   assign product_form_id = 'product-form-' | append: section.id
 -%}
 <div>
-  Product Options w/values: {{ product.options_with_values | json }}
+  Product Variants: {{ product.variants | json }}
 </div>
 {%- for value in option.values -%}
   {%- liquid

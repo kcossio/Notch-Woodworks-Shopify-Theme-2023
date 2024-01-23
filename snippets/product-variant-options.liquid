@@ -58,8 +58,12 @@
         class="disabled"
       {% endif %}
     >
+      {%- assign swatch_img = product.variants[forloop.index0].metafields.color.swatch -%}
+      
     <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-img="">
-      {{ product.variants[forloop.index0].metafields.color.swatch -}}
+      {%- if swatch_img != blank -%}
+        {{ swatch_img | image_url: width: swatch_img.width | image_tag: class: 'swatch-img', alt: swatch_img.alt, sizes: '100px', loading: 'lazy' }}
+        {%- endif -%}
       {{ value -}}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>

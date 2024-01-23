@@ -203,11 +203,17 @@ fieldset.product-form__input .form__label {
 }
 .product-form__input input[type=radio] + label.has-swatch {
   border: 0px;
-  width: 96px;
+  width: 9.6rem;
   background-color: var(--color-white);
   color: var(--color-text);
   border-radius: 0px;
   padding: 0px;
+  vertical-align: top;
+}
+.product-form__input input[type=radio] + label.has-swatch img {
+  padding: 1rem;
+  transition: border var(--duration-short) ease;
+  border: 1px solid var(--color-black);
 }
 
 .product-form__input input[type=radio] + label:before {

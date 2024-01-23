@@ -214,11 +214,18 @@ fieldset.product-form__input .form__label {
 
   &.has-swatch {
     border:0px;
-    width:96px;
+    width:9.6rem;
     background-color:var(--color-white);
     color:var(--color-text);
     border-radius:0px;
     padding:0px;
+    vertical-align:top;
+
+    img {
+      padding:1rem;
+      transition: border var(--duration-short) ease;
+      border:1px solid var(--color-black);
+    }
   }
 }
 

@@ -213,7 +213,7 @@ fieldset.product-form__input .form__label {
 .product-form__input input[type=radio] + label.has-swatch img {
   padding: 1rem;
   transition: border var(--duration-short) ease;
-  border: 1px solid var(--color-black);
+  border: 1px solid #707070;
 }
 
 .product-form__input input[type=radio] + label:before {
@@ -251,6 +251,18 @@ fieldset.product-form__input .form__label {
 }
 .product-form__input input[type=radio]:checked + label::selection {
   background-color: rgba(var(--color-background), 0.3);
+}
+.product-form__input input[type=radio]:checked + label::-moz-selection.has-swatch {
+  background-color: var(--color-white);
+}
+.product-form__input input[type=radio]:checked + label::selection.has-swatch {
+  background-color: var(--color-white);
+}
+.product-form__input input[type=radio]:checked + label::-moz-selection.has-swatch img {
+  border-color: var(--color-accent);
+}
+.product-form__input input[type=radio]:checked + label::selection.has-swatch img {
+  border-color: var(--color-accent);
 }
 
 .product-form__input input[type=radio]:disabled + label,

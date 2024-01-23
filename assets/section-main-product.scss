@@ -173,6 +173,11 @@
 variant-radios,
 variant-selects {
   display: block;
+
+  .product-form__input {
+    display:inline-flex;
+    gap:1rem;
+  }
 }
 
 .product-form__input--dropdown {
@@ -223,10 +228,14 @@ fieldset.product-form__input .form__label {
     padding:0;
     vertical-align:top;
     color:var(--color-main);
+
+    @include breakpoint(tablet) {
+      width:12.2rem;
+    }
     
 
     img {
-      padding:.6rem;
+      padding:.4rem;
       transition: border var(--duration-short) ease;
       border:1px solid #707070;
       margin-bottom:6px;

@@ -59,7 +59,7 @@
       {% endif %}
     >
       {%- assign swatch_img = product.variants[forloop.index0].metafields.color.swatch -%}
-      {%- if swatch_img != blank -%}
+      {%- if swatch_img != blank and option.name == "Grain Type" -%}
         <label class="has-swatch" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
           {{ swatch_img | image_url: width: swatch_img.width | image_tag: class: 'swatch-img', alt: swatch_img.alt, sizes: '100px', loading: 'lazy' }}
           {{ value -}}

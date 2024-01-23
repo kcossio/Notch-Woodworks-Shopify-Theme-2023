@@ -58,10 +58,9 @@
         class="disabled"
       {% endif %}
     >
-      
-      {%- if product.variants[forloop.index0].metafields.color.swatch and option.name == "Grain Type" -%}
+      {%- assign swatch_img = product.variants[forloop.index0].metafields.color.swatch -%}
+      {%- if swatch_img != blank -%}
         <label class="has-swatch" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-          {%- assign swatch_img = product.variants[forloop.index0].metafields.color.swatch -%}
           {{ swatch_img | image_url: width: swatch_img.width | image_tag: class: 'swatch-img', alt: swatch_img.alt, sizes: '100px', loading: 'lazy' }}
           {{ value -}}
           <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>

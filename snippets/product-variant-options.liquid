@@ -59,8 +59,12 @@
       {% endif %}
     >
       {%- assign swatch_img = product.variants[forloop.index0].metafields.color.swatch -%}
-      
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-img="">
+      {%- if swatch_img != blank -%}
+        {%- assign variant_class = ' has-swatch' %}
+      {% else %}
+      {%- assign variant_class = ' no-swatch' %}
+      {%- endif -%}
+    <label class="{{ variant_class }}" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
       {%- if swatch_img != blank -%}
         {{ swatch_img | image_url: width: swatch_img.width | image_tag: class: 'swatch-img', alt: swatch_img.alt, sizes: '100px', loading: 'lazy' }}
         {%- endif -%}

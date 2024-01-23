@@ -22,9 +22,6 @@
 
   assign product_form_id = 'product-form-' | append: section.id
 -%}
-<div>
-  Product Variants: {{ product.variants | json }}
-</div>
 {%- for value in option.values -%}
   {%- liquid
     assign option_disabled = true
@@ -61,7 +58,8 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-img="{{ product.variants.[forloop.index0].metafields.color.swatch }}">
+    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-img="">
+      {{ product.variants[forloop.index0].metafields.color.swatch -}}
       {{ value -}}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>

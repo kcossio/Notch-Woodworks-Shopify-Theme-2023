@@ -60,17 +60,18 @@
     >
       {%- assign swatch_img = product.variants[forloop.index0].metafields.color.swatch -%}
       {%- if swatch_img != blank -%}
-        {%- assign variant_class = ' has-swatch' %}
+        <label class="has-swatch" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+          {{ swatch_img | image_url: width: swatch_img.width | image_tag: class: 'swatch-img', alt: swatch_img.alt, sizes: '100px', loading: 'lazy' }}
+          {{ value -}}
+          <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+        </label>
       {% else %}
-      {%- assign variant_class = ' no-swatch' %}
+        <label class="no-swatch" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+          {{ value -}}
+          <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+        </label>
       {%- endif -%}
-    <label class="{{ variant_class }}" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-      {%- if swatch_img != blank -%}
-        {{ swatch_img | image_url: width: swatch_img.width | image_tag: class: 'swatch-img', alt: swatch_img.alt, sizes: '100px', loading: 'lazy' }}
-        {%- endif -%}
-      {{ value -}}
-      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-    </label>
+      
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"

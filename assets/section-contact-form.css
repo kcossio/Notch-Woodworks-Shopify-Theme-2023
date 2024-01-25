@@ -1,6 +1,3 @@
-/*-----------------------
-EASING 
----------------------- */
 .contact img {
   max-width: 100%;
 }
@@ -22,6 +19,7 @@ EASING
     margin-bottom: 2rem;
   }
 }
+
 .contact__button {
   margin-top: 3rem;
 }
@@ -31,6 +29,7 @@ EASING
     margin-top: 4rem;
   }
 }
+
 @media screen and (min-width: 750px) {
   .contact__fields {
     display: grid;

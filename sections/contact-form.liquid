@@ -77,7 +77,7 @@
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
             placeholder="{{ 'templates.contact.form.name' | t }}" 
             required="required" 
-            oninvalid="this.setCustomValidity('Please enter your name')" oninput="setCustomValidity('')
+            oninvalid="this.setCustomValidity('Please enter your name')" oninput="setCustomValidity('')"
           >
           <label class="field__label" for="ContactForm-name">
             {{ 'templates.contact.form.name' | t }}

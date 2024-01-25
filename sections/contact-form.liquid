@@ -53,6 +53,22 @@
       {%- endif -%}
       <div class="contact__fields">
         <div class="field">
+          <div class="control-group">
+            <label class="control control-radio">
+              General Inquiries
+                    <input type="radio" name="request_type" value="General Inquiries" />
+            </label>
+            <label class="control control-radio">
+              Wholesale Request
+                    <input type="radio" name="request_type" value="Wholesale Request" />
+            </label>
+            <label class="control control-radio">
+              Custom Orders
+                  <input type="radio" name="request_type" value="Custom Orders" />
+          </label>            
+          </div>
+        </div>
+        <div class="field">
           <input
             class="field__input"
             autocomplete="name"
@@ -62,7 +78,10 @@
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
             placeholder="{{ 'templates.contact.form.name' | t }}"
           >
-          <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+          <label class="field__label" for="ContactForm-name">
+            {{ 'templates.contact.form.name' | t }}
+            <span aria-hidden="true">*</span>
+          </label>
         </div>
         <div class="field field--with-error">
           <input
@@ -79,7 +98,8 @@
               aria-invalid="true"
               aria-describedby="ContactForm-email-error"
             {% endif %}
-            placeholder="{{ 'templates.contact.form.email' | t }}"
+            placeholder="{{ 'templates.contact.form.email' | t }}" 
+            required="required"
           >
           <label class="field__label" for="ContactForm-email">
             {{- 'templates.contact.form.email' | t }}
@@ -116,12 +136,14 @@
           id="ContactForm-body"
           class="text-area field__input"
           name="contact[{{ 'templates.contact.form.comment' | t }}]"
-          placeholder="{{ 'templates.contact.form.comment' | t }}"
+          placeholder="{{ 'templates.contact.form.comment' | t }}" 
+          required="required"
         >
           {{- form.body -}}
         </textarea>
         <label class="form__label field__label" for="ContactForm-body">
           {{- 'templates.contact.form.comment' | t -}}
+          <span aria-hidden="true">*</span>
         </label>
       </div>
       <div class="contact__button">

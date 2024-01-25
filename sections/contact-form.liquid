@@ -51,7 +51,7 @@
           </li>
         </ul>
       {%- endif -%}
-      <div class="inquiry-type-group">
+      <div class="control-group">
         <label class="control control-radio">
           General Inquiries
                 <input type="radio" name="request_type" value="General Inquiries" />
@@ -75,8 +75,7 @@
             id="ContactForm-name"
             name="contact[{{ 'templates.contact.form.name' | t }}]"
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-            placeholder="{{ 'templates.contact.form.name' | t }}" 
-            required="required"
+            placeholder="{{ 'templates.contact.form.name' | t }}"
           >
           <label class="field__label" for="ContactForm-name">
             {{ 'templates.contact.form.name' | t }}
@@ -99,8 +98,7 @@
               aria-describedby="ContactForm-email-error"
             {% endif %}
             placeholder="{{ 'templates.contact.form.email' | t }}" 
-            required="required" 
-            oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="setCustomValidity('')
+            required="required"
           >
           <label class="field__label" for="ContactForm-email">
             {{- 'templates.contact.form.email' | t }}

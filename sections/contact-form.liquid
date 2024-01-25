@@ -51,23 +51,22 @@
           </li>
         </ul>
       {%- endif -%}
+      <div class="inquiry-type-group">
+        <label class="control control-radio">
+          General Inquiries
+                <input type="radio" name="request_type" value="General Inquiries" />
+        </label>
+        <label class="control control-radio">
+          Wholesale Request
+                <input type="radio" name="request_type" value="Wholesale Request" />
+        </label>
+        <label class="control control-radio">
+          Custom Orders
+              <input type="radio" name="request_type" value="Custom Orders" />
+      </label>            
+      </div>
       <div class="contact__fields">
-        <div class="field">
-          <div class="control-group">
-            <label class="control control-radio">
-              General Inquiries
-                    <input type="radio" name="request_type" value="General Inquiries" />
-            </label>
-            <label class="control control-radio">
-              Wholesale Request
-                    <input type="radio" name="request_type" value="Wholesale Request" />
-            </label>
-            <label class="control control-radio">
-              Custom Orders
-                  <input type="radio" name="request_type" value="Custom Orders" />
-          </label>            
-          </div>
-        </div>
+        
         <div class="field">
           <input
             class="field__input"

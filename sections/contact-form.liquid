@@ -101,6 +101,7 @@
             {% endif %}
             placeholder="{{ 'templates.contact.form.email' | t }}" 
             required="required"
+            oninvalid="this.setCustomValidity('Please enter your email address')" oninput="setCustomValidity('')"
           >
           <label class="field__label" for="ContactForm-email">
             {{- 'templates.contact.form.email' | t }}
@@ -139,6 +140,7 @@
           name="contact[{{ 'templates.contact.form.comment' | t }}]"
           placeholder="{{ 'templates.contact.form.comment' | t }}" 
           required="required"
+          oninvalid="this.setCustomValidity('Please enter your message')" oninput="setCustomValidity('')"
         >
           {{- form.body -}}
         </textarea>

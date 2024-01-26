@@ -1,6 +1,12 @@
 /*-----------------------
 EASING 
 ---------------------- */
+.page-contact {
+  width: 136.4rem;
+  max-width: 100%;
+  background-color: --color-light-grey;
+}
+
 .contact img {
   max-width: 100%;
 }

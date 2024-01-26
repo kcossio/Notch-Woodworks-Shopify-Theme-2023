@@ -10,6 +10,7 @@ EASING
   font-family: var(--font-family-script);
   text-align: center;
   font-size: 6rem;
+  font-weight: normal;
 }
 @media (min-width: 768px) {
   .main-page-title {

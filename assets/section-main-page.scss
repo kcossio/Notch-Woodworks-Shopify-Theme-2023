@@ -10,6 +10,7 @@
     font-family:var(--font-family-script);
     text-align:center;
     font-size:6rem;
+    font-weight:normal;
 
     @include breakpoint(tablet) {
         font-size:8rem;

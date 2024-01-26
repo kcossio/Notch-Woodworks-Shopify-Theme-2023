@@ -39,7 +39,26 @@
             letter-spacing:.4rem;
         }
     }
-    
+
+    .inquiry-type-group {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        gap:20px;
+
+        label {
+            width: 100%;
+        }
+
+        @include breakpoint(tablet) {
+            flex-wrap: nowrap;
+
+            label {
+                width: auto;
+            }
+        }
+    }
+
 }
 .contact .form__message {
   align-items: flex-start;

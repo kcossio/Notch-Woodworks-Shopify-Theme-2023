@@ -41,6 +41,23 @@ EASING
     letter-spacing: 0.4rem;
   }
 }
+.contact .inquiry-type-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.contact .inquiry-type-group label {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .contact .inquiry-type-group {
+    flex-wrap: nowrap;
+  }
+  .contact .inquiry-type-group label {
+    width: auto;
+  }
+}
 
 .contact .form__message {
   align-items: flex-start;

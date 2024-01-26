@@ -3,7 +3,20 @@
 .page-contact-container {
     width:136.4rem;
     max-width:100%;
-    background-color:var(--color-light-grey);
+    padding:5.6rem 2.5rem;
+
+    @include breakpoint(tablet) {
+        padding:7rem 2.5rem;
+    }
+
+    @include breakpoint(laptop) {
+        padding:8.6rem 2.5rem;
+    }
+
+    .contact {
+        width:108.9rem;
+        max-width:100%;
+    }
 }
 .contact img {
   max-width: 100%;

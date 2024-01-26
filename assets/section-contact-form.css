@@ -4,7 +4,21 @@ EASING
 .page-contact-container {
   width: 136.4rem;
   max-width: 100%;
-  background-color: var(--color-light-grey);
+  padding: 5.6rem 2.5rem;
+}
+@media (min-width: 768px) {
+  .page-contact-container {
+    padding: 7rem 2.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .page-contact-container {
+    padding: 8.6rem 2.5rem;
+  }
+}
+.page-contact-container .contact {
+  width: 108.9rem;
+  max-width: 100%;
 }
 
 .contact img {

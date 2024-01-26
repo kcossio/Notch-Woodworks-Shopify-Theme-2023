@@ -8,7 +8,7 @@
   <div class="contact page-width page-width--narrow">
     {%- if section.settings.heading != blank -%}
       <h2 class="title contact-form-title header-cn {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        {{ section.settings.heading }}
+        <span>{{ section.settings.heading }}</span>
       </h2>
     {%- else -%}
       <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
@@ -23,7 +23,7 @@
       {%- if form.posted_successfully? -%}
         <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
           {% render 'icon-success' %}
-          {{ 'templates.contact.form.post_success' | t }}
+          <span>{{ 'templates.contact.form.post_success' | t }}</span>
         </h2>
       {%- elsif form.errors -%}
         <div class="form__message">

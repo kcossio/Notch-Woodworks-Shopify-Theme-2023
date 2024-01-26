@@ -33,6 +33,18 @@ EASING
   font-size: 3.3rem;
   margin: 0 0 3.3rem 0;
   font-weight: normal;
+  line-height: 1em;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact-form-title span {
+  display: inline-block;
+  padding: 0px 1.5rem 2.6rem 1.5rem;
+  border-width: 0 0 5px 0;
+  -o-border-image: url("assets/icon-dot-red.svg") 33% round;
+     border-image: url("assets/icon-dot-red.svg") 33% round;
 }
 @media (min-width: 768px) {
   .contact .contact-form-title {

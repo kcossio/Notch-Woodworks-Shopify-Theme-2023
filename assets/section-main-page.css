@@ -1,9 +1,25 @@
+/*-----------------------
+EASING 
+---------------------- */
 .page-title {
   margin-top: 0;
 }
 
 .main-page-title {
   margin-bottom: 3rem;
+  font-family: var(--font-family-script);
+  text-align: center;
+  font-size: 6rem;
+}
+@media (min-width: 768px) {
+  .main-page-title {
+    font-size: 8rem;
+  }
+}
+@media (min-width: 1280px) {
+  .main-page-title {
+    font-size: 10rem;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -11,7 +27,6 @@
     margin-bottom: 4rem;
   }
 }
-
 .page-placeholder-wrapper {
   display: flex;
   justify-content: center;

@@ -41,8 +41,12 @@
         span {
             display:inline-block;
             padding:0px 1.5rem 2.6rem 1.5rem;
+            border-style: dotted;
             border-width: 0 0 5px 0;
-            border-image: url('border-dot-red.svg') 33% round;
+            border-color: var(--color-accent);
+            border-image-source: url('border-dot-red.svg');
+            border-image-slice: 33% 33%;
+            border-image-repeat: round;
         }
 
         @include breakpoint(tablet) {

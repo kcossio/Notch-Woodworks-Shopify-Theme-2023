@@ -4,6 +4,7 @@
     width:136.4rem;
     max-width:100%;
     padding:5.6rem 2.5rem;
+    margin:0px auto;
 
     @include breakpoint(tablet) {
         padding:7rem 2.5rem;
@@ -22,6 +23,13 @@
   max-width: 100%;
 }
 
+.contact {
+    .contact-form-title {
+        text-align:center;
+        text-transform:uppercase;
+        letter-spacing:.2rem;
+    }
+}
 .contact .form__message {
   align-items: flex-start;
 }

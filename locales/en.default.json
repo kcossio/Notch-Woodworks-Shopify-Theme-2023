@@ -244,13 +244,13 @@
     },
     "contact": {
       "form": {
-        "title": "Contact form",
+        "title": "Request Form",
         "name": "Name",
         "email": "Email",
         "phone": "Phone number",
-        "comment": "Comment",
-        "send": "Send",
-        "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
+        "comment": "Message",
+        "send": "Submit",
+        "post_success": "We’ll be in touch with the next 48hrs to respond to your request.",
         "error_heading": "Please adjust the following:"
       }
     },

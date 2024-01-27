@@ -31,7 +31,7 @@ EASING
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: 3.3rem;
-  margin: 0 0 3.3rem 0;
+  margin: 0 0 2.4rem 0;
   font-weight: normal;
   line-height: 1em;
   display: inline-flex;
@@ -41,7 +41,7 @@ EASING
 }
 .contact .contact-form-title span {
   display: inline-block;
-  padding: 0px 1.5rem 2.6rem 1.5rem;
+  padding: 0px 1.5rem 2.6rem 1rem;
   border-style: dotted;
   border-width: 0 0 6px 0;
   border-color: var(--color-accent);
@@ -52,7 +52,7 @@ EASING
 @media (min-width: 768px) {
   .contact .contact-form-title {
     font-size: 6rem;
-    margin: 0 0 6rem 0;
+    margin: 0 0 2.4rem 0;
     letter-spacing: 0.4rem;
   }
 }
@@ -64,6 +64,12 @@ EASING
 }
 .contact .inquiry-type-group label {
   width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.contact .inquiry-type-group label input {
+  margin: 0px;
 }
 @media (min-width: 768px) {
   .contact .inquiry-type-group {

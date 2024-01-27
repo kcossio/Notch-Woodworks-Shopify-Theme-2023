@@ -41,7 +41,7 @@ EASING
 }
 .contact .contact-form-title span {
   display: inline-block;
-  padding: 0px 1.5rem 2.6rem 1rem;
+  padding: 0px 1.5rem 1rem 1.5rem;
   border-style: dotted;
   border-width: 0 0 6px 0;
   border-color: var(--color-accent);
@@ -61,6 +61,7 @@ EASING
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin-bottom: 3rem;
 }
 .contact .inquiry-type-group label {
   width: 100%;
@@ -74,6 +75,7 @@ EASING
 @media (min-width: 768px) {
   .contact .inquiry-type-group {
     flex-wrap: nowrap;
+    margin-bottom: 5.6rem;
   }
   .contact .inquiry-type-group label {
     width: auto;

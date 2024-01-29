@@ -1791,6 +1791,7 @@ details[open] > .share-button__fallback {
   position: relative;
   width: 100%;
   display: flex;
+  flex-wrap:wrap;
   transition: box-shadow var(--duration-short) ease;
 }
 

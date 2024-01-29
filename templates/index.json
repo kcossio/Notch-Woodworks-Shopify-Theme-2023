@@ -117,32 +117,6 @@
         "include_margins": false
       }
     },
-    "c58ce215-9cc0-452c-aa7a-7dffed5eff43": {
-      "type": "custom_html",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "html_code": "<h2 class=\"insta-feed-title\"><a href=\"https:\/\/instagram.com\/Notchwoodworks\" target=\"_blank\">Follow the Journey.<\/a><\/h2>"
-      }
-    },
-    "1696371259dfbcc728": {
-      "type": "apps",
-      "blocks": {
-        "719485e8-d773-44b0-8720-7bb6d7a58e8f": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "719485e8-d773-44b0-8720-7bb6d7a58e8f"
-      ],
-      "settings": {
-        "include_margins": false
-      }
-    },
     "081c888d-402d-4203-a0d3-aa799a4370d1": {
       "type": "rich-text",
       "blocks": {
@@ -235,8 +209,6 @@
     "d753ca8b-3fba-48d2-a998-c30262ca2719",
     "c248c849-563a-4ae6-a63c-0f127069fe90",
     "169698618623113ade",
-    "c58ce215-9cc0-452c-aa7a-7dffed5eff43",
-    "1696371259dfbcc728",
     "081c888d-402d-4203-a0d3-aa799a4370d1",
     "c5737676-dbc6-43bc-b597-f01023beac81"
   ]

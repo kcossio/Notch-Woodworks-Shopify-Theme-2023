@@ -2,6 +2,32 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_html_FRHdkY": {
+      "type": "custom_html",
+      "settings": {
+        "html_code": "<h2 class=\"insta-feed-title\"><a href=\"https:\/\/instagram.com\/Notchwoodworks\" target=\"_blank\">Follow the Journey.<\/a><\/h2>"
+      }
+    },
+    "1706570200db9174e1": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_tgVKq9": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_tgVKq9"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
     "newsletter": {
       "type": "newsletter",
       "blocks": {
@@ -76,6 +102,8 @@
     }
   },
   "order": [
+    "custom_html_FRHdkY",
+    "1706570200db9174e1",
     "newsletter",
     "footer"
   ]

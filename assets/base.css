@@ -1315,33 +1315,51 @@ button.shopify-payment-button__button--unbranded:hover,
     font-size: 2.3rem;
   }
 }
-.button.product-form__submit,
+.button.product-form__submit, .button.form__submit,
 .shopify-challenge__button.product-form__submit,
+.shopify-challenge__button.form__submit,
 .customer button.product-form__submit,
+.customer button.form__submit,
 button.shopify-payment-button__button--unbranded.product-form__submit,
+button.shopify-payment-button__button--unbranded.form__submit,
 .shopify-payment-button [role=button].product-form__submit,
+.shopify-payment-button [role=button].form__submit,
 .cart__dynamic-checkout-buttons [role=button].product-form__submit,
-.cart__dynamic-checkout-buttons iframe.product-form__submit {
+.cart__dynamic-checkout-buttons [role=button].form__submit,
+.cart__dynamic-checkout-buttons iframe.product-form__submit,
+.cart__dynamic-checkout-buttons iframe.form__submit {
   color: var(--color-white);
   background-color: var(--color-main);
 }
-.button.product-form__submit:hover,
+.button.product-form__submit:hover, .button.form__submit:hover,
 .shopify-challenge__button.product-form__submit:hover,
+.shopify-challenge__button.form__submit:hover,
 .customer button.product-form__submit:hover,
+.customer button.form__submit:hover,
 button.shopify-payment-button__button--unbranded.product-form__submit:hover,
+button.shopify-payment-button__button--unbranded.form__submit:hover,
 .shopify-payment-button [role=button].product-form__submit:hover,
+.shopify-payment-button [role=button].form__submit:hover,
 .cart__dynamic-checkout-buttons [role=button].product-form__submit:hover,
-.cart__dynamic-checkout-buttons iframe.product-form__submit:hover {
+.cart__dynamic-checkout-buttons [role=button].form__submit:hover,
+.cart__dynamic-checkout-buttons iframe.product-form__submit:hover,
+.cart__dynamic-checkout-buttons iframe.form__submit:hover {
   color: var(--color-white) !important;
   background-color: var(--color-accent);
 }
-.button.product-form__submit:hover span,
+.button.product-form__submit:hover span, .button.form__submit:hover span,
 .shopify-challenge__button.product-form__submit:hover span,
+.shopify-challenge__button.form__submit:hover span,
 .customer button.product-form__submit:hover span,
+.customer button.form__submit:hover span,
 button.shopify-payment-button__button--unbranded.product-form__submit:hover span,
+button.shopify-payment-button__button--unbranded.form__submit:hover span,
 .shopify-payment-button [role=button].product-form__submit:hover span,
+.shopify-payment-button [role=button].form__submit:hover span,
 .cart__dynamic-checkout-buttons [role=button].product-form__submit:hover span,
-.cart__dynamic-checkout-buttons iframe.product-form__submit:hover span {
+.cart__dynamic-checkout-buttons [role=button].form__submit:hover span,
+.cart__dynamic-checkout-buttons iframe.product-form__submit:hover span,
+.cart__dynamic-checkout-buttons iframe.form__submit:hover span {
   color: var(--color-white);
 }
 

@@ -1662,20 +1662,22 @@ details[open] > .share-button__fallback {
   border: 0;
 }
 
+/*
 .field:before,
 .select:before,
 .customer .field:before,
 .customer select:before,
 .localization-form__select:before {
   pointer-events: none;
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   border-radius: var(--inputs-radius-outset);
-  box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius) rgba(var(--color-shadow), var(--inputs-shadow-opacity));
+  box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset)
+    var(--inputs-shadow-blur-radius) rgba(var(--color-shadow), var(--inputs-shadow-opacity));
   z-index: -1;
 }
 
@@ -1685,7 +1687,7 @@ details[open] > .share-button__fallback {
 .customer select:after,
 .localization-form__select:after {
   pointer-events: none;
-  content: "";
+  content: '';
   position: absolute;
   top: var(--inputs-border-width);
   right: var(--inputs-border-width);
@@ -1697,7 +1699,7 @@ details[open] > .share-button__fallback {
   transition: box-shadow var(--duration-short) ease;
   z-index: 1;
 }
-
+*/
 .select__select {
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
@@ -1796,17 +1798,14 @@ details[open] > .share-button__fallback {
 .field__label,
 .customer .field label {
   font-size: 1.6rem;
-  left: calc(var(--inputs-border-width) + 2rem);
-  top: calc(1rem + var(--inputs-border-width));
   margin-bottom: 0;
   pointer-events: none;
-  position: absolute;
-  transition: top var(--duration-short) ease, font-size var(--duration-short) ease;
   color: rgba(var(--color-foreground), 0.75);
   letter-spacing: 0.1rem;
   line-height: 1.5;
 }
 
+/*
 .field__input:focus ~ .field__label,
 .field__input:not(:placeholder-shown) ~ .field__label,
 .field__input:-webkit-autofill ~ .field__label,
@@ -1818,7 +1817,7 @@ details[open] > .share-button__fallback {
   left: calc(var(--inputs-border-width) + 2rem);
   letter-spacing: 0.04rem;
 }
-
+*/
 .field__input:focus,
 .field__input:not(:placeholder-shown),
 .field__input:-webkit-autofill,

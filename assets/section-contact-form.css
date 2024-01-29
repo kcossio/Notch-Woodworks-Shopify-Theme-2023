@@ -67,6 +67,7 @@ EASING
   width: 100%;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.6rem;
 }
 .contact .inquiry-type-group label input {
@@ -80,7 +81,7 @@ EASING
 }
 @media (min-width: 768px) {
   .contact .inquiry-type-group {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-bottom: 5.6rem;
   }
   .contact .inquiry-type-group label {

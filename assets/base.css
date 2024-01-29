@@ -1798,10 +1798,11 @@ details[open] > .share-button__fallback {
 
 .field__label,
 .customer .field label {
-  font-size: 1.6rem;
-  margin-bottom: 0;
-  pointer-events: none;
-  color: rgba(var(--color-foreground), 0.75);
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: var(--color-main);
   letter-spacing: 0.1rem;
   line-height: 1.5;
 }

@@ -81,14 +81,6 @@ EASING
     width: auto;
   }
 }
-.contact .contact-field label {
-  display: block;
-  width: 100%;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: var(--color-main);
-}
-
 .contact .form__message {
   align-items: flex-start;
 }

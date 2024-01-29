@@ -72,6 +72,12 @@ EASING
 .contact .inquiry-type-group label input {
   margin: 0px;
 }
+.contact .inquiry-type-group p {
+  text-align: center;
+  width: 100%;
+  font-style: italic;
+  margin: 0.8rem 0 0 0;
+}
 @media (min-width: 768px) {
   .contact .inquiry-type-group {
     flex-wrap: nowrap;

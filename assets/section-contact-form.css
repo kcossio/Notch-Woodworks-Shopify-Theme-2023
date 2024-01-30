@@ -1,6 +1,10 @@
 /*-----------------------
 EASING 
 ---------------------- */
+.section-contact {
+  padding: 0px 3.7rem;
+}
+
 .page-contact-container {
   width: 136.4rem;
   max-width: 100%;

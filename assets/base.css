@@ -1825,7 +1825,7 @@ details[open] > .share-button__fallback {
   letter-spacing: 0.1rem;
   line-height: 1.5;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .field__label,
   .customer .field label {
     font-size: 2.7rem;

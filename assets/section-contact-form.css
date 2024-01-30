@@ -77,7 +77,7 @@ EASING
   text-align: center;
   width: 100%;
   font-style: italic;
-  margin: 0.8rem 0 0 0;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .contact .inquiry-type-group {

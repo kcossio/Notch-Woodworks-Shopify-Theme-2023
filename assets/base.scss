@@ -1827,7 +1827,7 @@ details[open] > .share-button__fallback {
   letter-spacing: 0.1rem;
   line-height: 1.5;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     font-size:2.7rem;
   }
 

@@ -63,6 +63,10 @@
         gap:20px;
         margin-bottom:3rem;
 
+        &.required-notice {
+            margin:0;
+        }
+
         label {
             width: 100%;
             display:inline-flex;

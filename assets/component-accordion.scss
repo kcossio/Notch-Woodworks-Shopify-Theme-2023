@@ -20,15 +20,6 @@
 
     height: calc(var(--font-heading-scale) * 0.6rem);
   }
-  .accordion .summary__title + .icon-close {
-    height: 13rem;
-
-    .section-product-faq & {
-        height:1.95rem;
-    }
-
-
-  }
   
   .accordion + .accordion {
     margin-top: 0;
@@ -90,9 +81,33 @@
     transform: rotate(180deg);
   }
   
-  .accordion details[open] > summary .icon-close {
-    transform: rotate(45deg);
+
+  .accordion .summary__title + .icon-close {
+    height: 13rem;
+
+    .section-product-faq & {
+        height:1.95rem;
+        transform: rotate(45deg);
+        transition: all .3s ease 0s;
+
+        path {
+            fill: var(--color-main);
+        }
+    }
+
+
   }
+
+  .accordion details[open] > summary .icon-close {
+    transform: rotate(0deg);
+
+    .section-product-faq & {
+        path {
+            fill: var(--color-accent);
+        }
+    }
+  }
+
   .accordion__content {
     margin-bottom: 1.5rem;
     word-break: break-word;

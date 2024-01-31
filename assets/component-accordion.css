@@ -22,7 +22,7 @@ EASING
 }
 
 .accordion .summary__title + .icon-close {
-  height: calc(var(--font-heading-scale) * 0.6rem);
+  height: 2.6rem;
 }
 
 .accordion + .accordion {
@@ -78,7 +78,7 @@ EASING
 }
 
 .accordion details[open] > summary .icon-close {
-  transform: rotate(180deg);
+  transform: rotate(45deg);
 }
 
 .accordion__content {

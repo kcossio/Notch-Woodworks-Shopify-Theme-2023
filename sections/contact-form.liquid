@@ -21,16 +21,16 @@
     -%}
     {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
       {%- if form.posted_successfully? -%}
-        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
-          {% render 'icon-success' %}
-          <span>{{ 'templates.contact.form.post_success' | t }}</span>
+        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>Thank You!       
         </h2>
+        {% render 'icon-success' %}
+        <p>{{ 'templates.contact.form.post_success' | t }}</p>
       {%- elsif form.errors -%}
         <div class="form__message">
-          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
-            {% render 'icon-error' %}
-            {{ 'templates.contact.form.error_heading' | t }}
+          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>Uh Oh.           
           </h2>
+          {% render 'icon-error' %}
+          {{ 'templates.contact.form.error_heading' | t }}
         </div>
         <ul class="form-status-list caption-large" role="list">
           <li>

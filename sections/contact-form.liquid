@@ -21,16 +21,24 @@
     -%}
     {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
       {%- if form.posted_successfully? -%}
-        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>Thank You!       
+        <h2 class="title contact-form-title header-cn {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" tabindex="-1" autofocus>
+          <span>Thank You!</span>
         </h2>
-        {% render 'icon-success' %}
-        <p>{{ 'templates.contact.form.post_success' | t }}</p>
+        <p class="center">{{ 'templates.contact.form.post_success' | t }}</p>
+        <script>
+          jQuery('.inquiry-type-group, .contact__fields, .contact-field, .contact__button').hide();
+        </script>
+        {%- style -%}
+          .inquiry-type-group, .contact__fields, .contact-field, .contact__button {
+            display:none;
+          }
+        {%- endstyle -%}
       {%- elsif form.errors -%}
         <div class="form__message">
-          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>Uh Oh.           
-          </h2>
+          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus> 
           {% render 'icon-error' %}
-          {{ 'templates.contact.form.error_heading' | t }}
+          {{ 'templates.contact.form.error_heading' | t }}        
+          </h2>
         </div>
         <ul class="form-status-list caption-large" role="list">
           <li>

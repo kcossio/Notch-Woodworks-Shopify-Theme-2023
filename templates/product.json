@@ -219,20 +219,12 @@
             "title": "How do you care for the board?",
             "answer": "<p>Nunc magna augue, ultricies eu dignissim non, pulvinar eget nunc. Morbi rhoncus purus velit, sit amet hendrerit leo tristique ac. Nulla aliquam ex a nunc tempus mollis.<\/p>"
           }
-        },
-        "c5afba9b-c4b9-480c-bb99-7deb2dd23d4e": {
-          "type": "qa",
-          "settings": {
-            "title": "",
-            "answer": ""
-          }
         }
       },
       "block_order": [
         "3cbe462c-9837-4490-a14b-cc0fe35489c8",
         "ae797196-2e1f-4a5d-997d-a6b0fe39525e",
-        "84bd2b53-69f9-403b-b17a-a5d2d928c991",
-        "c5afba9b-c4b9-480c-bb99-7deb2dd23d4e"
+        "84bd2b53-69f9-403b-b17a-a5d2d928c991"
       ],
       "settings": {
         "heading": "Frequently Asked Questions",

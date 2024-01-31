@@ -64,12 +64,13 @@
         display:flex;
         flex-wrap:wrap;
         justify-content: center;
-        gap:20px;
+        gap:.4rem;
         margin-bottom:3rem;
 
         @include breakpoint(tablet) {
             flex-wrap: wrap;
             margin-bottom:5.6rem;
+            gap:2rem;
         }
 
         &.required-notice {
@@ -80,7 +81,7 @@
             width: 100%;
             display:inline-flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             gap:.6rem;
             padding-left:20%;
 
@@ -91,6 +92,7 @@
             @include breakpoint(tablet) {
                 width:auto;
                 padding-left:0px;
+                justify-content: center;
             }
         }
 

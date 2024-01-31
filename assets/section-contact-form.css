@@ -65,13 +65,14 @@ EASING
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 0.4rem;
   margin-bottom: 3rem;
 }
 @media (min-width: 768px) {
   .contact .inquiry-type-group {
     flex-wrap: wrap;
     margin-bottom: 5.6rem;
+    gap: 2rem;
   }
 }
 .contact .inquiry-type-group.required-notice {
@@ -81,7 +82,7 @@ EASING
   width: 100%;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.6rem;
   padding-left: 20%;
 }
@@ -92,6 +93,7 @@ EASING
   .contact .inquiry-type-group label {
     width: auto;
     padding-left: 0px;
+    justify-content: center;
   }
 }
 .contact .inquiry-type-group p {

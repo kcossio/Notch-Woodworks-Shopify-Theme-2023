@@ -25,7 +25,7 @@ EASING
   height: 13rem;
 }
 .section-product-faq .accordion .summary__title + .icon-close {
-  height: 19.5rem;
+  height: 1.95rem;
 }
 
 .accordion + .accordion {

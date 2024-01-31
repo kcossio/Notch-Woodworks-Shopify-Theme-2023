@@ -12,6 +12,16 @@ EASING
   margin: 0px auto;
   position: relative;
 }
+@media (min-width: 768px) {
+  .page-contact-container {
+    padding: 7rem 2.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .page-contact-container {
+    padding: 9.6rem 2.5rem;
+  }
+}
 .page-contact-container::before {
   content: "";
   position: absolute;
@@ -24,19 +34,9 @@ EASING
   background: url("triangle-notch-down.svg") top center no-repeat;
   background-repeat: no-repeat;
 }
-@media (min-width: tabet) {
+@media (min-width: 768px) {
   .page-contact-container::before {
     width: 6.4rem;
-  }
-}
-@media (min-width: 768px) {
-  .page-contact-container {
-    padding: 7rem 2.5rem;
-  }
-}
-@media (min-width: 1280px) {
-  .page-contact-container {
-    padding: 8.6rem 2.5rem;
   }
 }
 .page-contact-container .contact {

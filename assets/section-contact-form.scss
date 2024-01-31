@@ -10,6 +10,14 @@
     margin:0px auto;
     position: relative;
 
+    @include breakpoint(tablet) {
+        padding:7rem 2.5rem;
+    }
+
+    @include breakpoint(laptop) {
+        padding:9.6rem 2.5rem;
+    }
+
     &::before {
         content:"";
         position: absolute;
@@ -22,17 +30,9 @@
         background:url('triangle-notch-down.svg') top center no-repeat;
         background-repeat: no-repeat;
 
-        @include breakpoint(tabet) {
+        @include breakpoint(tablet) {
             width:6.4rem;
         }
-    }
-
-    @include breakpoint(tablet) {
-        padding:7rem 2.5rem;
-    }
-
-    @include breakpoint(laptop) {
-        padding:8.6rem 2.5rem;
     }
 
     .contact {

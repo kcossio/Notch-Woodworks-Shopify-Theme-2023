@@ -14,6 +14,14 @@ EASING
 }
 
 .accordion .summary__title + .icon-caret {
+  position: absolute;
+  height: 0.6rem;
+  right: 1.5rem;
+  top: calc(50% - 0.2rem);
+  height: calc(var(--font-heading-scale) * 0.6rem);
+}
+
+.accordion .summary__title + .icon-close {
   height: calc(var(--font-heading-scale) * 0.6rem);
 }
 
@@ -66,6 +74,10 @@ EASING
 }
 
 .accordion details[open] > summary .icon-caret {
+  transform: rotate(180deg);
+}
+
+.accordion details[open] > summary .icon-close {
   transform: rotate(180deg);
 }
 

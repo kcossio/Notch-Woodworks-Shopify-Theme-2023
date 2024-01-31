@@ -22,7 +22,10 @@ EASING
 }
 
 .accordion .summary__title + .icon-close {
-  height: 2.6rem;
+  height: 13rem;
+}
+.section-product-faq .accordion .summary__title + .icon-close {
+  height: 19.5rem;
 }
 
 .accordion + .accordion {

@@ -21,7 +21,13 @@
     height: calc(var(--font-heading-scale) * 0.6rem);
   }
   .accordion .summary__title + .icon-close {
-    height: 2.6rem;
+    height: 13rem;
+
+    .section-product-faq & {
+        height:19.5rem;
+    }
+
+
   }
   
   .accordion + .accordion {

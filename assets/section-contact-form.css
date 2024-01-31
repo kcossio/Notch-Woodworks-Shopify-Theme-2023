@@ -19,10 +19,15 @@ EASING
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  width: 6.4rem;
+  width: 3rem;
   aspect-ratio: 2/1;
   background: url("triangle-notch-down.svg") top center no-repeat;
   background-repeat: no-repeat;
+}
+@media (min-width: tabet) {
+  .page-contact-container::before {
+    width: 6.4rem;
+  }
 }
 @media (min-width: 768px) {
   .page-contact-container {

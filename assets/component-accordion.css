@@ -36,7 +36,7 @@ EASING
 }
 .section-product-faq .accordion {
   border-top: 0.15rem solid var(--color-accent);
-  border-bottom: 0.15rem solid var(--color-accent);
+  border-bottom: 0;
 }
 
 .accordion__title {

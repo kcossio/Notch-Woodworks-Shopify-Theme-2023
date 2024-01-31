@@ -112,7 +112,20 @@ p {
         font-size:6rem;
     }
 }
+.block-header-v3 {
+    font-family: var(--font-family-header-alt);
+    color:var(--color-text);
+    position:relative;
+    font-size:45px;
+    padding-bottom:1em;
+    line-height:1.15em;
 
+    @include breakpoint(tablet) {
+        font-size:45px;
+        padding-bottom:1em;
+    }
+
+}
 // ---- General/Misc Items ------ //
 
 .bg-chevron-white {

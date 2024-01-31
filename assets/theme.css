@@ -319,6 +319,21 @@ p {
   }
 }
 
+.block-header-v3 {
+  font-family: var(--font-family-header-alt);
+  color: var(--color-text);
+  position: relative;
+  font-size: 45px;
+  padding-bottom: 1em;
+  line-height: 1.15em;
+}
+@media (min-width: 768px) {
+  .block-header-v3 {
+    font-size: 45px;
+    padding-bottom: 1em;
+  }
+}
+
 .bg-chevron-white {
   background: #F2F2F2 url("bg-chevron-white.svg") center center repeat;
   background-size: 23374.6px 1740.6px;

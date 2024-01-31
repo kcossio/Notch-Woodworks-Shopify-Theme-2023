@@ -67,6 +67,11 @@
         gap:20px;
         margin-bottom:3rem;
 
+        @include breakpoint(tablet) {
+            flex-wrap: wrap;
+            margin-bottom:5.6rem;
+        }
+
         &.required-notice {
             margin:0;
         }
@@ -77,9 +82,15 @@
             align-items: center;
             justify-content: center;
             gap:.6rem;
+            padding-left:20%;
 
             input {
                 margin:0px;
+            }
+
+            @include breakpoint(tablet) {
+                width:auto;
+                padding-left:0px;
             }
         }
 
@@ -88,17 +99,17 @@
             width: 100%;
             font-style: italic;
             margin:0;
-        }
 
-        @include breakpoint(tablet) {
-            flex-wrap: wrap;
-            margin-bottom:5.6rem;
+            &.type {
+                margin-top:1rem;
 
-
-            label {
-                width: auto;
+                @include breakpoint(tablet) {
+                    margin-top:0;
+                }
             }
         }
+
+       
     }
 
     .contact-field {

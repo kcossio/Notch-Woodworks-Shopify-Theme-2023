@@ -68,6 +68,12 @@ EASING
   gap: 20px;
   margin-bottom: 3rem;
 }
+@media (min-width: 768px) {
+  .contact .inquiry-type-group {
+    flex-wrap: wrap;
+    margin-bottom: 5.6rem;
+  }
+}
 .contact .inquiry-type-group.required-notice {
   margin: 0;
 }
@@ -77,9 +83,16 @@ EASING
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
+  padding-left: 20%;
 }
 .contact .inquiry-type-group label input {
   margin: 0px;
+}
+@media (min-width: 768px) {
+  .contact .inquiry-type-group label {
+    width: auto;
+    padding-left: 0px;
+  }
 }
 .contact .inquiry-type-group p {
   text-align: center;
@@ -87,13 +100,12 @@ EASING
   font-style: italic;
   margin: 0;
 }
+.contact .inquiry-type-group p.type {
+  margin-top: 1rem;
+}
 @media (min-width: 768px) {
-  .contact .inquiry-type-group {
-    flex-wrap: wrap;
-    margin-bottom: 5.6rem;
-  }
-  .contact .inquiry-type-group label {
-    width: auto;
+  .contact .inquiry-type-group p.type {
+    margin-top: 0;
   }
 }
 .contact .form__message {

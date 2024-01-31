@@ -49,6 +49,9 @@ EASING
   border-top: 0.15rem solid var(--color-accent);
   border-bottom: 0;
 }
+.section-product-faq .accordion:first-child {
+  border-top: 0;
+}
 
 .accordion__title {
   display: inline-block;

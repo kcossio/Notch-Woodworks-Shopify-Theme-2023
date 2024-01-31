@@ -79,6 +79,9 @@ EASING
 .accordion .summary__title + .icon-close {
   height: 13rem;
 }
+.accordion .summary__title + .icon-close path {
+  transition: all 0.3s ease 0s;
+}
 .section-product-faq .accordion .summary__title + .icon-close {
   height: 1.95rem;
   transform: rotate(45deg);
@@ -89,6 +92,9 @@ EASING
 }
 
 .accordion details[open] > summary .icon-close {
+  transform: rotate(0deg);
+}
+.section-product-faq .accordion details[open] > summary .icon-close {
   transform: rotate(0deg);
 }
 .section-product-faq .accordion details[open] > summary .icon-close path {

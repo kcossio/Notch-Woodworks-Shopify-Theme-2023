@@ -4,6 +4,14 @@
   
 
   <ul class="om-slides">
+
+    {%- assign starting_image = section.settings.starting_image -%}
+    <li class="staff" data-img="img-00">
+    {%- if hero_image != blank -%}
+    {{ starting_image | image_url: width: starting_image.width | image_tag: class: 'bg om-hero-img', loading: 'lazy' }}
+    {%- endif -%}
+    </li>
+
     {%- for block in section.blocks -%}
       {%- case block.type -%}
   
@@ -30,6 +38,8 @@
       {{ section.settings.subheading }} 
 
       <ul class="method-list">
+
+        
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -157,6 +167,12 @@
       "id": "subheading",
       "label": "Subheading",
       "info": "Add a subheading for this section"
+    },
+    {
+      "type": "image_picker",
+      "id": "starting_image",
+      "label": "Starting Image",
+      "info": "Choose or upload an image to use as the first/starting image for this section (before any items are clicked)"
     }
   ],
   "blocks": [

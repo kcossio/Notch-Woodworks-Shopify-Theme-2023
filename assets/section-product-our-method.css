@@ -26,7 +26,7 @@ EASING
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .section-our-method .our-method .our-method-content {
@@ -40,7 +40,7 @@ EASING
 }
 .section-our-method ul.om-slides {
   overflow: hidden;
-  display: block;
+  display: none;
   overflow: hidden;
   position: relative;
   margin: 0;
@@ -50,6 +50,7 @@ EASING
 @media (min-width: 768px) {
   .section-our-method ul.om-slides {
     width: 50%;
+    display: block;
   }
 }
 .section-our-method ul.om-slides li {

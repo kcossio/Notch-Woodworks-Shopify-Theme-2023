@@ -8,6 +8,17 @@ EASING
   width: 100%;
   max-width: 100%;
   margin: 0px auto;
+  padding: 4rem 0;
+}
+@media (min-width: 768px) {
+  .section-our-method .our-method {
+    padding: 8rem 0;
+  }
+}
+@media (min-width: 1280px) {
+  .section-our-method .our-method {
+    padding: 19rem 0;
+  }
 }
 .section-our-method .our-method .our-method-content {
   width: 100%;
@@ -58,8 +69,7 @@ EASING
   flex-direction: column;
   margin-bottom: 12px;
   width: 100%;
-  border-top: 0.1rem solid var(--color-grey);
-  border-bottom: 0.11rem solid var(--color-grey);
+  border-bottom: 0.15rem solid var(--color-grey);
 }
 .section-our-method ul.method-list li.staff:last-child {
   border-bottom: 0;
@@ -76,7 +86,7 @@ EASING
   width: 100%;
   position: relative;
   font-family: var(--font-family-header-cn);
-  font-size: 1.7rem;
+  font-size: 3rem;
   font-weight: normal;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -84,7 +94,7 @@ EASING
 }
 @media (min-width: 768px) {
   .section-our-method ul.method-list li.staff h2 {
-    font-size: 1.7rem;
+    font-size: 3rem;
   }
 }
 .section-our-method ul.method-list li.staff h2 .icon-close {

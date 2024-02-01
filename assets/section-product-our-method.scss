@@ -9,6 +9,15 @@
         width:100%;
         max-width:100%;
         margin:0px auto;
+        padding:4rem 0;
+
+        @include breakpoint(tablet) {
+            padding:8rem 0;
+        }
+
+        @include breakpoint(laptop) {
+            padding:19rem 0;
+        }
 
         .our-method-content {
             width:100%;
@@ -69,8 +78,7 @@
             width:100%;
 
 
-            border-top: 0.1rem solid var(--color-grey);
-            border-bottom: 0.11rem solid var(--color-grey);
+            border-bottom: 0.15rem solid var(--color-grey);
 
             &:last-child {
                 border-bottom:0;
@@ -90,14 +98,14 @@
                 position: relative;
 
                 font-family:var(--font-family-header-cn);
-                font-size:1.7rem;
+                font-size:3rem;
                 font-weight: normal;
                 letter-spacing:.2rem;
                 text-transform: uppercase;
                 color:var(--color-main);
 
                 @include breakpoint(tablet) {
-                    font-size:1.7rem;
+                    font-size:3rem;
                 }
 
                 .icon-close {

@@ -1,7 +1,7 @@
 @import "mixins";
 
 .section-product-general-info {
-    background:var(--color-light-grey);
+
     .general-info-inner {
         width:133.5rem;
         max-width:100%;
@@ -19,6 +19,24 @@
         @include breakpoint(tablet) {
             width: 33%;
             order:1;
+        }
+
+        h2 {
+            font-size:3.3rem;
+            letter-spacing:.1rem;
+            margin:0;
+
+            @include breakpoint(tablet) {
+                font-size:3.6rem;
+            }
+        }
+        h3 {
+            font-size:2.2rem;
+            margin:0;
+
+            @include breakpoint(tablet) {
+                font-size:2.475rem;
+            }
         }
     }
 

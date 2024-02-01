@@ -1,9 +1,6 @@
 /*-----------------------
 EASING 
 ---------------------- */
-.section-product-general-info {
-  background: var(--color-light-grey);
-}
 .section-product-general-info .general-info-inner {
   width: 133.5rem;
   max-width: 100%;
@@ -21,6 +18,25 @@ EASING
   .section-product-general-info .general-info-content {
     width: 33%;
     order: 1;
+  }
+}
+.section-product-general-info .general-info-content h2 {
+  font-size: 3.3rem;
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .section-product-general-info .general-info-content h2 {
+    font-size: 3.6rem;
+  }
+}
+.section-product-general-info .general-info-content h3 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .section-product-general-info .general-info-content h3 {
+    font-size: 2.475rem;
   }
 }
 .section-product-general-info .product-general-hero {

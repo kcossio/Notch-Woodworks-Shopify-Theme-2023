@@ -18,11 +18,75 @@ EASING
     padding: 0 5rem;
   }
 }
-.section-our-method .om-slides {
+.section-our-method ul.om-slides {
+  overflow: hidden;
+  display: block;
+  overflow: hidden;
+  position: relative;
   width: 100%;
 }
 @media (min-width: 768px) {
-  .section-our-method .om-slides {
+  .section-our-method ul.om-slides {
     width: 50%;
   }
+}
+.section-our-method ul.om-slides li {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.section-our-method ul.om-slides li.current {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+.section-our-method ul.method-list {
+  width: 53.8%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-our-method ul.method-list li.staff {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  width: 100%;
+}
+.section-our-method ul.method-list li.staff h2 {
+  font-size: 48px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-our-method ul.method-list li.staff h2 span.arrow {
+  display: inline-block;
+  width: 24px;
+  height: 14px;
+  cursor: pointer;
+  background-size: cover;
+  transition: all 0.3s ease 0s;
+  order: 2;
+}
+.section-our-method ul.method-list li.staff.active h2 span.arrow {
+  transform: rotate(180deg);
+}
+.section-our-method ul.method-list li.staff h3 {
+  font-size: 16px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+.section-our-method ul.method-list li.staff .info {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 0px;
+}
+.section-our-method ul.method-list li.staff .info .content {
+  margin: 0;
+  padding-bottom: 0.1rem;
 }

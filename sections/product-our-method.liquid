@@ -3,7 +3,7 @@
 
   
 
-  <div class="om-slides">
+  <ul class="om-slides">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
   
@@ -12,12 +12,14 @@
           {%- # Label: Hero Image -%}
           {%- assign hero_image = block.settings.hero_image -%}
           {%- if hero_image != blank -%}
-          {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'om-hero-img', loading: 'lazy' }}
+          <li class="photo has-bg" id="img-{{ forloop.index0 }}">
+          {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'bg om-hero-img', loading: 'lazy' }}
+          </li>
           {%- endif -%}
   
       {%- endcase -%}
     {%- endfor -%}
-  </div>
+  </ul>
 
   <div class="our-method-content">
     {%- # Label: Heading -%}
@@ -26,26 +28,108 @@
     {%- # Label: Subheading -%}
     {{ section.settings.subheading }} 
 
-    <div class="slider-controls">
+    <ul class="method-list">
 
       {%- for block in section.blocks -%}
         {%- case block.type -%}
     
           {%- when 'slide' -%}
-            {%- # Label: Title -%}
-            {{ block.settings.title }} 
-    
-            {%- # Label: Description -%}
-            {{ block.settings.description }} 
+
+            <li class="staff" data-img="img-<?php echo $i; ?>">
+                    <h2 class="name">
+                      {{ block.settings.title }}
+                      <span class="arrow toggle-arrow" role="button"></span>
+                    </h2>
+                    <div class="info">
+                        <div class="content">
+                          {{ block.settings.description }} 
+                        </div>
+                    </div>
+                </li>
     
     
         {%- endcase -%}
       {%- endfor -%}
-    </div> <!--End slider-controls-->
+    </ul> <!--End method-list-->
   </div>
 
   
-</div>
+</div><!--End our-method-->
+
+
+<script>
+  const items = gsap.utils.toArray(".method-list .staff");
+
+  let lastItem;
+
+   items.forEach((item, i) => {
+
+
+      var item_image = '#' + jQuery(item).attr('data-img');
+
+      item.tl = gsap.timeline({
+          paused: true,
+          onStart: () => item.classList.add("active")
+      })
+      .to(item.querySelector(".info"), {
+          ease: "Strong.easeInOut",
+          duration: 1,
+          height: item.querySelector(".content").scrollHeight,
+      })
+      .from(item.querySelectorAll(".content > p"), {
+          duration: 0.5,
+          x: -40,
+          opacity: 0,
+          stagger: 0.25,
+          ease: "expo"
+      }, 0.5)
+      .to(item_image, {zIndex: 10}, 0)
+      .from(item_image, {
+          duration: 0.5,
+          scale: 1.1,
+          opacity: 0,
+          ease: "expo" 
+      }, .4);
+
+
+      var image_tl = gsap.timeline({paused: true})        
+      
+      
+      item.addEventListener("click", e => {
+
+          // Reverse the other animations
+          //items.forEach(myItem => myItem.tl.reverse());
+
+          if(lastItem) {
+              lastItem.classList.remove("active");
+              //jQuery('li.photo').removeClass('current');
+              //jQuery(item_image).addClass('current');
+              
+          } 
+
+          
+
+          console.log(item_image);
+          
+          if(typeof lastItem === "undefined"
+          || (lastItem && !lastItem.isSameNode(item))) {
+          // Play the clicked item's animation
+          items.forEach(myItem => myItem.tl.reverse());
+          item.tl.play();
+          lastItem = item;
+          console.log('Opened new staff');
+          } else {
+              
+          lastItem = undefined;
+          console.log('Same staff');
+          }
+          console.log(lastItem);
+
+      });
+  });
+  jQuery(".staff:first-child"). trigger("click");
+
+</script>
 
 {% schema %}
   {

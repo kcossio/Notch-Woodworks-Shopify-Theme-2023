@@ -22,10 +22,94 @@
     }
 
     .om-slides {
+        
+    }
+
+    ul.om-slides {
+        overflow:hidden;
+        display:block;
+        overflow:hidden;
+        position:relative;
+
         width: 100%;
 
         @include breakpoint(tablet) {
             width: 50%;
+        }
+
+        li {
+            display:block;
+            position:absolute;
+            top:0px;
+            left:0px;
+            width:100%;
+            height:100%;
+            z-index:1;
+
+            &.current {
+                opacity:1 !important;
+                transform:scale(1) !important;
+            }
+        }
+
+    }
+
+    ul.method-list {
+        width:53.8%;
+        display:flex;
+        flex-wrap:wrap;
+
+        li.staff {
+            display:flex;
+            flex-direction: column;
+            margin-bottom:12px;
+            width:100%;
+
+            h2 {
+                font-size:48px;
+                margin-bottom:8px;
+                cursor:pointer;
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+
+                span.arrow {
+                    display:inline-block;
+                    width:24px;
+                    height:14px;
+                    cursor:pointer;
+                    //background: url("#{$loc_images}select-arrow.svg") center center no-repeat;
+                    background-size:cover;
+                    transition:all .3s ease 0s;
+                    order:2;
+                }
+            }
+
+            &.active {
+                h2 {
+                    span.arrow {
+                        transform:rotate(180deg);
+                    }
+                }
+            }
+            h3 {
+                font-size:16px;
+                letter-spacing:.75px;
+                text-transform:uppercase;
+                margin-bottom:34px;
+            }
+
+            .info {
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                height: 0px;
+
+                .content {
+                    margin: 0;
+                    padding-bottom: .1rem;
+                }
+            }
         }
     }
 }

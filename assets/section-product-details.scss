@@ -5,14 +5,14 @@
     padding:5rem 0;
 
     @include breakpoint(tablet) {
-        padding:18.2rem 0;
+        padding:12.2rem 0;
     }
     .product-details {
         display:flex;
         flex-wrap:wrap;
         align-items: center;
         justify-content: space-between;
-        width:1033.5rem;
+        width:133.5rem;
         padding:0 3rem;
         max-width:100%;
         margin:0px auto;
@@ -23,6 +23,7 @@
 
             @include breakpoint(tablet) {
                 width:51%;
+                order:1;
             }
         }
 
@@ -32,6 +33,7 @@
 
             @include breakpoint(tablet) {
                 width:30%;
+                order:2;
             }
         }
 

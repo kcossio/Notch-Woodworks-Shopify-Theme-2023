@@ -79,9 +79,11 @@ EASING
 .section-product-details .product-details .product-key-details p {
   display: block;
   margin: 0.5rem 0;
+  font-family: var(--font-family-header-ex);
+  font-size: 1.8rem;
+  color: var(--color-main);
 }
 .section-product-details .product-details .product-key-details p .icon-close {
-  transform: rotate(45deg);
   height: 1.6rem;
   display: inline-block;
   margin: 0 0.5rem 0 0;

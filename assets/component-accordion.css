@@ -86,10 +86,10 @@ EASING
   position: absolute;
   right: 0;
   top: calc(50% - 0.65rem);
+  transform: rotate(45deg);
 }
 .accordion .summary__title + .icon-close path {
   transition: all 0.3s ease 0s;
-  transform: rotate(45deg);
   fill: var(--color-accent);
 }
 .section-product-faq .accordion .summary__title + .icon-close {

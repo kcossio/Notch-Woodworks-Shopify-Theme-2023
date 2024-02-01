@@ -94,10 +94,10 @@
     position: absolute;
     right: 0;
     top: calc(50% - .65rem);
+    transform: rotate(45deg);
 
     path {
         transition: all .3s ease 0s;
-        transform: rotate(45deg);
         fill: var(--color-accent);
     }
 

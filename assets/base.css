@@ -2021,9 +2021,10 @@ input[type=checkbox] {
 }
 
 .quantity__input {
-  color: currentColor;
+  color: var(--color-text);
+  font-family: var(--font-family-header-ex);
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: normal;
   opacity: 0.85;
   text-align: center;
   background-color: transparent;

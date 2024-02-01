@@ -82,6 +82,12 @@ EASING
   font-family: var(--font-family-header-ex);
   font-size: 1.8rem;
   color: var(--color-main);
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .section-product-details .product-details .product-key-details p {
+    font-size: 2.025rem;
+  }
 }
 .section-product-details .product-details .product-key-details p .icon-close {
   height: 1.6rem;

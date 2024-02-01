@@ -87,6 +87,11 @@
                 font-family:var(--font-family-header-ex);
                 font-size:1.8rem;
                 color:var(--color-main);
+                text-transform: uppercase;
+
+                @include breakpoint(tablet) {
+                    font-size:2.025rem;
+                }
 
                 .icon-close {
                     height:1.6rem;

@@ -25,7 +25,7 @@ EASING
 }
 @media (min-width: 768px) {
   .section-product-details .product-details .product-details-image {
-    width: 51%;
+    width: 55%;
     order: 1;
   }
 }
@@ -45,12 +45,14 @@ EASING
   text-transform: uppercase;
   font-size: 3.3rem;
   text-align: center;
-  margin: 0 0 3rem 0;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.2rem;
 }
 @media (min-width: 768px) {
   .section-product-details .product-details h2 {
     font-size: 4.5rem;
     text-align: left;
+    letter-spacing: 0.4rem;
   }
 }
 .section-product-details .product-details .product-main-details {
@@ -76,6 +78,9 @@ EASING
 .section-product-details .product-details .product-main-details ul strong {
   font-family: var(--font-family-header-ex);
 }
+.section-product-details .product-details .product-key-details {
+  margin: 3rem 0 0 0;
+}
 .section-product-details .product-details .product-key-details p {
   display: block;
   margin: 0.5rem 0;
@@ -90,9 +95,10 @@ EASING
   }
 }
 .section-product-details .product-details .product-key-details p .icon-close {
-  height: 1.6rem;
+  height: 1.4rem;
   display: inline-block;
-  margin: 0 0.5rem 0 0;
+  vertical-align: middle;
+  margin: 0 1.4rem 0 0;
 }
 .section-product-details .product-details .product-key-details p .icon-close path {
   fill: var(--color-accent);

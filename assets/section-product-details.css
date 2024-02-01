@@ -40,7 +40,7 @@ EASING
   }
 }
 .section-product-details .product-details h2 {
-  font-family: var(--font-family-script);
+  font-family: var(--font-family-header-cn);
   font-weight: 400;
   font-size: 6rem;
   text-align: center;
@@ -61,4 +61,7 @@ EASING
   border-image-source: url("border-dot-red.svg?v=1");
   border-image-slice: 24% 24% 24% 24%;
   border-image-repeat: round;
+}
+.section-product-details .product-details .product-main-details p strong {
+  font-family: var(--font-family-header-ex);
 }

@@ -55,11 +55,13 @@ EASING
   font-family: var(--font-family-body);
   font-size: 1.5rem;
   font-weight: bold;
+  color: var(--color-text);
 }
 .section-product-faq .accordion__title {
   font-family: var(--font-family-header-ex);
   font-size: 1.8rem;
   text-transform: uppercase;
+  color: var(--color-main);
 }
 @media (min-width: 768px) {
   .section-product-faq .accordion__title {
@@ -87,6 +89,8 @@ EASING
 }
 .accordion .summary__title + .icon-close path {
   transition: all 0.3s ease 0s;
+  transform: rotate(45deg);
+  fill: var(--color-accent);
 }
 .section-product-faq .accordion .summary__title + .icon-close {
   height: 1.5rem;
@@ -99,6 +103,9 @@ EASING
 
 .accordion details[open] > summary .icon-close {
   transform: rotate(0deg);
+}
+.accordion details[open] > summary .icon-close path {
+  fill: var(--color-main);
 }
 .section-product-faq .accordion details[open] > summary .icon-close {
   transform: rotate(0deg);

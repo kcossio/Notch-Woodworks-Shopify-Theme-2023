@@ -60,11 +60,14 @@
     font-family:var(--font-family-body);
     font-size:1.5rem;
     font-weight: bold;
+    color:var(--color-text);
+    
 
     .section-product-faq & {
         font-family:var(--font-family-header-ex);
         font-size:1.8rem;
         text-transform: uppercase;
+        color:var(--color-main);
 
         @include breakpoint(tablet) {
             font-size:2.25rem;
@@ -94,6 +97,8 @@
 
     path {
         transition: all .3s ease 0s;
+        transform: rotate(45deg);
+        fill: var(--color-accent);
     }
 
     .section-product-faq & {
@@ -111,6 +116,9 @@
 
   .accordion details[open] > summary .icon-close {
     transform: rotate(0deg);
+    path {
+        fill: var(--color-main);
+    }
     
 
     .section-product-faq & {

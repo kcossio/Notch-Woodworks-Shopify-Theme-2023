@@ -439,7 +439,7 @@ h2.script-lg {
     font-size: 7.5rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1680px) {
   h2.script-lg {
     font-size: 10rem;
   }

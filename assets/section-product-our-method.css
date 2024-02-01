@@ -82,12 +82,12 @@ EASING
   flex-direction: column;
   margin: 0;
   width: 100%;
-  padding: 1.2rem 0;
-  border-bottom: 0.15rem solid var(--color-grey);
+  padding: 1.2rem 0 1rem 0;
+  border-bottom: 0.15rem solid var(--color-text);
 }
 @media (min-width: 768px) {
   .section-our-method ul.method-list li.staff {
-    padding: 2rem 0;
+    padding: 1.6rem 0 1.2rem 0;
   }
 }
 .section-our-method ul.method-list li.staff:last-child {

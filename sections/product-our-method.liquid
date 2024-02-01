@@ -99,12 +99,12 @@
         item.addEventListener("click", e => {
 
             // Reverse the other animations
-            //items.forEach(myItem => myItem.tl.reverse());
+            items.forEach(myItem => myItem.tl.reverse());
 
             if(lastItem) {
                 lastItem.classList.remove("active");
-                //jQuery('li.photo').removeClass('current');
-                //jQuery(item_image).addClass('current');
+                jQuery('li.photo').removeClass('current');
+                jQuery(item_image).addClass('current');
                 
             } 
 

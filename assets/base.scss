@@ -417,6 +417,20 @@ h2,
 .h2 {
   font-size: calc(var(--font-heading-scale) * 2rem);
 }
+h2 {
+  &.script-lg {
+      font-family: var(--font-family-script);
+      font-weight: normal;
+      font-size:6rem;
+
+      @include breakpoint(laptop) {
+          font-size:7.5rem;
+      }
+      @include breakpoint(desktop) {
+          font-size:10rem;
+      }
+  }
+}
 
 @media only screen and (min-width: 750px) {
   h2,

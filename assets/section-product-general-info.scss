@@ -9,6 +9,7 @@
         display:flex;
         flex-wrap:wrap;
         padding:0 3rem;
+        justify-content: space-between;
     }
 
     .general-info-content {
@@ -16,7 +17,21 @@
         order:2;
 
         @include breakpoint(tablet) {
+            width: 33%;
+            order:1;
+        }
+    }
 
+    .product-general-hero {
+        width:100%;
+        height:auto;
+        order:1;
+        margin-bottom:3rem;
+
+        @include breakpoint(tablet) {
+            width:59%;
+            order:2;
+            margin:0;
         }
     }
 }

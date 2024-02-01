@@ -11,8 +11,28 @@ EASING
   display: flex;
   flex-wrap: wrap;
   padding: 0 3rem;
+  justify-content: space-between;
 }
 .section-product-general-info .general-info-content {
   width: 100%;
   order: 2;
+}
+@media (min-width: 768px) {
+  .section-product-general-info .general-info-content {
+    width: 33%;
+    order: 1;
+  }
+}
+.section-product-general-info .product-general-hero {
+  width: 100%;
+  height: auto;
+  order: 1;
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .section-product-general-info .product-general-hero {
+    width: 59%;
+    order: 2;
+    margin: 0;
+  }
 }

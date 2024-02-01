@@ -422,6 +422,8 @@ h2 {
       font-family: var(--font-family-script);
       font-weight: normal;
       font-size:6rem;
+      line-height: 1em;
+      margin:0 0 1.5rem 0;
 
       @include breakpoint(laptop) {
           font-size:7.5rem;

@@ -6,7 +6,7 @@ EASING
 }
 @media (min-width: 768px) {
   .section-product-general-info {
-    padding: 3.6rem 0 10.1rem 0;
+    padding: 7.6rem 0;
   }
 }
 .section-product-general-info .general-info-inner {
@@ -47,6 +47,7 @@ EASING
 @media (min-width: 768px) {
   .section-product-general-info .general-info-content h3 {
     font-size: 2.475rem;
+    margin: 2.2rem 0;
   }
 }
 .section-product-general-info .general-info-content p:last-child {

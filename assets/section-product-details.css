@@ -41,14 +41,15 @@ EASING
 }
 .section-product-details .product-details h2 {
   font-family: var(--font-family-header-cn);
-  font-weight: 400;
-  font-size: 6rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 3.3rem;
   text-align: center;
   margin: 0 0 3rem 0;
 }
 @media (min-width: 768px) {
   .section-product-details .product-details h2 {
-    font-size: 7.5rem;
+    font-size: 4.5rem;
     text-align: left;
   }
 }

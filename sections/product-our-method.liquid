@@ -22,36 +22,38 @@
   </ul>
 
   <div class="our-method-content">
-    {%- # Label: Heading -%}
-    <h2 class="script-lg">{{ section.settings.heading }}</h2>
-  
-    {%- # Label: Subheading -%}
-    {{ section.settings.subheading }} 
-
-    <ul class="method-list">
-
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
+    <div class="om-content-inner">
+      {%- # Label: Heading -%}
+      <h2 class="script-lg">{{ section.settings.heading }}</h2>
     
-          {%- when 'slide' -%}
+      {%- # Label: Subheading -%}
+      {{ section.settings.subheading }} 
 
-            <li class="staff" data-img="img-{{ forloop.index0 }}">
-                    <h2 class="name">
-                      {{ block.settings.title }}
-                      {% render 'icon-close' %}
-                    </h2>
-                    <div class="info">
-                        <div class="content">
-                          {{ block.settings.description }} 
-                        </div>
-                    </div>
-                </li>
-    
-    
-        {%- endcase -%}
-      {%- endfor -%}
-    </ul> <!--End method-list-->
-  </div>
+      <ul class="method-list">
+
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+      
+            {%- when 'slide' -%}
+
+              <li class="staff" data-img="img-{{ forloop.index0 }}">
+                      <h2 class="name">
+                        {{ block.settings.title }}
+                        {% render 'icon-close' %}
+                      </h2>
+                      <div class="info">
+                          <div class="content">
+                            {{ block.settings.description }} 
+                          </div>
+                      </div>
+                  </li>
+      
+      
+          {%- endcase -%}
+        {%- endfor -%}
+      </ul> <!--End method-list-->
+    </div><!--End om-content-inner-->
+  </div><!--End our-method-content-->
 
   
 </div><!--End our-method-->

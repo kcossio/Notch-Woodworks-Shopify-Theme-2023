@@ -30,6 +30,10 @@ EASING
     padding: 8rem 5rem;
   }
 }
+.section-our-method .our-method .our-method-content .om-content-inner {
+  max-width: 100%;
+  width: 40.8rem;
+}
 .section-our-method ul.om-slides {
   overflow: hidden;
   display: block;

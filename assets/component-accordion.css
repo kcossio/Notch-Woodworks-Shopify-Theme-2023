@@ -77,7 +77,10 @@ EASING
 }
 
 .accordion .summary__title + .icon-close {
-  height: 13rem;
+  height: 1.3rem;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 0.65rem);
 }
 .accordion .summary__title + .icon-close path {
   transition: all 0.3s ease 0s;

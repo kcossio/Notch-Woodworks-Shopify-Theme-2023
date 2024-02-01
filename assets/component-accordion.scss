@@ -83,7 +83,11 @@
   
 
   .accordion .summary__title + .icon-close {
-    height: 13rem;
+    height: 1.3rem;
+
+    position: absolute;
+    right: 0;
+    top: calc(50% - .65rem);
 
     path {
         transition: all .3s ease 0s;
@@ -104,6 +108,7 @@
 
   .accordion details[open] > summary .icon-close {
     transform: rotate(0deg);
+    
 
     .section-product-faq & {
         transform: rotate(0deg);

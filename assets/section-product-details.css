@@ -63,6 +63,14 @@ EASING
   border-image-slice: 24% 24% 24% 24%;
   border-image-repeat: round;
 }
-.section-product-details .product-details .product-main-details p strong {
+.section-product-details .product-details .product-main-details ul {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+.section-product-details .product-details .product-main-details ul li {
+  margin: 0.5rem 0;
+}
+.section-product-details .product-details .product-main-details ul strong {
   font-family: var(--font-family-header-ex);
 }

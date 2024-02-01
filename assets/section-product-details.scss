@@ -62,7 +62,15 @@
             border-image-slice: 24% 24% 24% 24%;
             border-image-repeat: round;
 
-            p {
+            ul {
+
+                margin:0;
+                padding:0;
+                line-height: 1em;
+
+                li {
+                    margin:.5rem 0;
+                }
 
                 strong {
                     font-family:var(--font-family-header-ex);

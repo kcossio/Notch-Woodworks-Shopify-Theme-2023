@@ -400,10 +400,10 @@ a.product__text {
 
     @include breakpoint(tablet) {
       font-size:2.7rem;
-      letter-spacing:.2rem;
+      letter-spacing:.1rem;
     }
     @include breakpoint(laptop) {
-      font-size:3.6rem;
+      font-size:2.7rem;
     }
   }
 }
@@ -1454,7 +1454,7 @@ a.product__text {
 /* Product-thumbnail snippet */
 
 .product-media-container {
-  --aspect-ratio: var(--preview-ratio);
+  --aspect-ratio: 892 / 839;
   --ratio-percent: calc(1 / var(--aspect-ratio) * 100%);
   position: relative;
   width: 100%;

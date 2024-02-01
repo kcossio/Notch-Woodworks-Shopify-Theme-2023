@@ -155,13 +155,22 @@
             "description": "<p>Maecenas nec arcu leo. Pellentesque est ligula, condimentum non aliquam <br\/>semper, placerat eu elit. Cras justo leo, rhoncus tristique massa vel, <br\/>rutrum egestas tortor.<\/p>",
             "hero_image": "shopify:\/\/shop_images\/bg-hero-our-story-1.jpg"
           }
+        },
+        "slide_UmJ9fJ": {
+          "type": "slide",
+          "settings": {
+            "title": "Finish",
+            "description": "<p>Quisque tempus vel velit at commodo. Aenean faucibus dignissim justo. Nam a fermentum quam, sit amet mollis augue.<\/p>",
+            "hero_image": "shopify:\/\/shop_images\/bg-hero-our-story-2.jpg"
+          }
         }
       },
       "block_order": [
         "7737f6a9-fe5e-404f-80cc-a42c16d4ecf3",
         "slide_LdkpQH",
         "slide_kG978G",
-        "slide_yQc48t"
+        "slide_yQc48t",
+        "slide_UmJ9fJ"
       ],
       "settings": {
         "heading": "Our Method",

@@ -12,11 +12,11 @@
 
         .our-method-content {
             width:100%;
-            padding:4rem 0;
+            padding:8rem 5rem;
 
             @include breakpoint(tablet) {
                 width: 50%;
-                padding:0 5rem;
+                padding:8rem 5rem;
             }
         }
         

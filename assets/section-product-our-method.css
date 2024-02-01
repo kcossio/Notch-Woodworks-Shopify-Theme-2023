@@ -11,12 +11,12 @@ EASING
 }
 .section-our-method .our-method .our-method-content {
   width: 100%;
-  padding: 4rem 0;
+  padding: 8rem 5rem;
 }
 @media (min-width: 768px) {
   .section-our-method .our-method .our-method-content {
     width: 50%;
-    padding: 0 5rem;
+    padding: 8rem 5rem;
   }
 }
 .section-our-method ul.om-slides {

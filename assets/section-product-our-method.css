@@ -4,13 +4,14 @@ EASING
 .section-our-method .our-method {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
   max-width: 100%;
   margin: 0px auto;
 }
 .section-our-method .our-method .our-method-content {
   width: 100%;
+  padding: 4rem 0;
 }
 @media (min-width: 768px) {
   .section-our-method .our-method .our-method-content {

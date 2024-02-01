@@ -118,17 +118,19 @@
             items.forEach(myItem => myItem.tl.reverse());
             item.tl.play();
             lastItem = item;
-            console.log('Opened new staff');
+            console.log('Opened new item');
             } else {
                 
             lastItem = undefined;
-            console.log('Same staff');
+            console.log('Same item');
             }
             console.log(lastItem);
 
         });
     });
     //jQuery(".staff:first-child"). trigger("click");
+
+    jQuery("ul.om-slides li:first-child").css('opacity', 1);
 
 
   });

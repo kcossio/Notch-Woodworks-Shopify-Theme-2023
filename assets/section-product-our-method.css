@@ -24,6 +24,8 @@ EASING
   display: block;
   overflow: hidden;
   position: relative;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 @media (min-width: 768px) {

@@ -8,11 +8,6 @@
       {%- case block.type -%}
   
         {%- when 'slide' -%}
-          {%- # Label: Title -%}
-          {{ block.settings.title }} 
-  
-          {%- # Label: Description -%}
-          {{ block.settings.description }} 
   
           {%- # Label: Hero Image -%}
           {%- assign hero_image = block.settings.hero_image -%}
@@ -30,6 +25,28 @@
   
     {%- # Label: Subheading -%}
     {{ section.settings.subheading }} 
+
+    <div class="slider-controls">
+
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+    
+          {%- when 'slide' -%}
+            {%- # Label: Title -%}
+            {{ block.settings.title }} 
+    
+            {%- # Label: Description -%}
+            {{ block.settings.description }} 
+    
+            {%- # Label: Hero Image -%}
+            {%- assign hero_image = block.settings.hero_image -%}
+            {%- if hero_image != blank -%}
+            {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+            {%- endif -%}
+    
+        {%- endcase -%}
+      {%- endfor -%}
+    </div> <!--End slider-controls-->
   </div>
 
   

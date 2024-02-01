@@ -9,3 +9,20 @@ EASING
   max-width: 100%;
   margin: 0px auto;
 }
+.section-our-method .our-method .our-method-content {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .section-our-method .our-method .our-method-content {
+    width: 50%;
+    padding: 0 5rem;
+  }
+}
+.section-our-method .om-slides {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .section-our-method .om-slides {
+    width: 50%;
+  }
+}

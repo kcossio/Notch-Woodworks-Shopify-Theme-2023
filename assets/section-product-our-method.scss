@@ -9,6 +9,23 @@
         width:100%;
         max-width:100%;
         margin:0px auto;
+
+        .our-method-content {
+            width:100%;
+
+            @include breakpoint(tablet) {
+                width: 50%;
+                padding:0 5rem;
+            }
+        }
         
+    }
+
+    .om-slides {
+        width: 100%;
+
+        @include breakpoint(tablet) {
+            width: 50%;
+        }
     }
 }

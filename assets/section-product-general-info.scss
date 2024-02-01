@@ -10,6 +10,7 @@
         flex-wrap:wrap;
         padding:0 3rem;
         justify-content: space-between;
+        align-items:center;
     }
 
     .general-info-content {
@@ -33,9 +34,15 @@
         h3 {
             font-size:2.2rem;
             margin:0;
+            color:var(--color-text);
 
             @include breakpoint(tablet) {
                 font-size:2.475rem;
+            }
+        }
+        p {
+            &:last-child {
+                margin:0;
             }
         }
     }

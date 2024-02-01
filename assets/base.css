@@ -1312,7 +1312,7 @@ button.shopify-payment-button__button--unbranded:hover,
   .shopify-payment-button [role=button],
   .cart__dynamic-checkout-buttons [role=button],
   .cart__dynamic-checkout-buttons iframe {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
 }
 .button.product-form__submit, .button.form__submit,

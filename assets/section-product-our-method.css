@@ -23,6 +23,10 @@ EASING
 .section-our-method .our-method .our-method-content {
   width: 100%;
   padding: 8rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .section-our-method .our-method .our-method-content {

@@ -78,7 +78,7 @@ EASING
   border-top: 0;
 }
 .section-our-method ul.method-list li.staff h2 {
-  margin-bottom: 8px;
+  margin: 1.2rem 0;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -95,6 +95,7 @@ EASING
 @media (min-width: 768px) {
   .section-our-method ul.method-list li.staff h2 {
     font-size: 3rem;
+    margin: 2rem 0;
   }
 }
 .section-our-method ul.method-list li.staff h2 .icon-close {

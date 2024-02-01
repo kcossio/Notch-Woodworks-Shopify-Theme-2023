@@ -55,12 +55,6 @@
           "settings": {
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
         "994837d1-afe4-450e-a8a0-78b4d8a08232": {
           "type": "collapsible_tab",
           "settings": {
@@ -99,7 +93,6 @@
         "buy_buttons",
         "3fbb5fcc-1cdd-4ce3-9ff0-71883a5b4a54",
         "description",
-        "share",
         "994837d1-afe4-450e-a8a0-78b4d8a08232",
         "bcd297c2-00d5-440f-bd45-5ea5e1cf308d",
         "5f57f620-9a13-4727-9166-dd017e29585f"

@@ -139,11 +139,29 @@
             "description": "<p>Lorem Ipsum Dolor Sit amet, obsequiem mundus vilago.<\/p>",
             "hero_image": "shopify:\/\/shop_images\/bg-hero-our-story-3.jpg"
           }
+        },
+        "slide_kG978G": {
+          "type": "slide",
+          "settings": {
+            "title": "Stack & Age",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis tortor vitae ipsum scelerisque egestas. Maecenas quis cursus tortor. Integer quis lectus non est aliquet rutrum at quis dolor.<\/p>",
+            "hero_image": "shopify:\/\/shop_images\/fpo-home-slide-2.jpg"
+          }
+        },
+        "slide_yQc48t": {
+          "type": "slide",
+          "settings": {
+            "title": "Select",
+            "description": "<p>Maecenas nec arcu leo. Pellentesque est ligula, condimentum non aliquam <br\/>semper, placerat eu elit. Cras justo leo, rhoncus tristique massa vel, <br\/>rutrum egestas tortor.<\/p>",
+            "hero_image": "shopify:\/\/shop_images\/bg-hero-our-story-1.jpg"
+          }
         }
       },
       "block_order": [
         "7737f6a9-fe5e-404f-80cc-a42c16d4ecf3",
-        "slide_LdkpQH"
+        "slide_LdkpQH",
+        "slide_kG978G",
+        "slide_yQc48t"
       ],
       "settings": {
         "heading": "Our Method",

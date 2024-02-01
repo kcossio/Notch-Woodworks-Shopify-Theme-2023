@@ -19,11 +19,30 @@ EASING
   max-width: 100%;
   margin: 0px auto;
 }
+.section-product-details .product-details .product-details-image {
+  order: 2;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .section-product-details .product-details .product-details-image {
+    width: 51%;
+  }
+}
+.section-product-details .product-details .product-details-content {
+  order: 1;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .section-product-details .product-details .product-details-content {
+    width: 30%;
+  }
+}
 .section-product-details .product-details h2 {
   font-family: var(--font-family-script);
   font-weight: 400;
   font-size: 6rem;
   text-align: center;
+  margin: 0 0 3rem 0;
 }
 @media (min-width: 768px) {
   .section-product-details .product-details h2 {

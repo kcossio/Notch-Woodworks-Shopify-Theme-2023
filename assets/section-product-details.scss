@@ -17,12 +17,31 @@
         max-width:100%;
         margin:0px auto;
 
+        .product-details-image {
+            order:2;
+            width:100%;
+
+            @include breakpoint(tablet) {
+                width:51%;
+            }
+        }
+
+        .product-details-content {
+            order:1;
+            width: 100%;
+
+            @include breakpoint(tablet) {
+                width:30%;
+            }
+        }
+
 
         h2 {
             font-family: var(--font-family-script);
             font-weight: 400;
             font-size:6rem;
             text-align:center;
+            margin:0 0 3rem 0;
 
             @include breakpoint(tablet) {
                 font-size:7.5rem;

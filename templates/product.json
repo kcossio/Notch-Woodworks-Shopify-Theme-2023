@@ -131,10 +131,19 @@
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque tellus. Elementum tempus egestas sed sed risus pretium quam vulputate. Proin libero nunc consequat interdum varius sit amet mattis.<\/p>",
             "hero_image": "shopify:\/\/shop_images\/board-1-fpo-4.jpg"
           }
+        },
+        "slide_LdkpQH": {
+          "type": "slide",
+          "settings": {
+            "title": "Mill",
+            "description": "<p>Lorem Ipsum Dolor Sit amet, obsequiem mundus vilago.<\/p>",
+            "hero_image": "shopify:\/\/shop_images\/bg-hero-our-story-3.jpg"
+          }
         }
       },
       "block_order": [
-        "7737f6a9-fe5e-404f-80cc-a42c16d4ecf3"
+        "7737f6a9-fe5e-404f-80cc-a42c16d4ecf3",
+        "slide_LdkpQH"
       ],
       "settings": {
         "heading": "Our Method",

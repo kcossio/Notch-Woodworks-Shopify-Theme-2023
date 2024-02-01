@@ -72,7 +72,7 @@
 
   .product--medium:not(.product--no-media) .product__media-wrapper,
   .product--small:not(.product--no-media) .product__info-wrapper {
-    max-width: 65%;
+    max-width: 35%;
     width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 

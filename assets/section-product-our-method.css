@@ -67,9 +67,15 @@ EASING
 .section-our-method ul.method-list li.staff {
   display: flex;
   flex-direction: column;
-  margin-bottom: 12px;
+  margin: 0;
   width: 100%;
+  padding: 1.2rem 0;
   border-bottom: 0.15rem solid var(--color-grey);
+}
+@media (min-width: 768px) {
+  .section-our-method ul.method-list li.staff {
+    padding: 2rem 0;
+  }
 }
 .section-our-method ul.method-list li.staff:last-child {
   border-bottom: 0;
@@ -78,7 +84,6 @@ EASING
   border-top: 0;
 }
 .section-our-method ul.method-list li.staff h2 {
-  margin: 1.2rem 0;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -95,7 +100,6 @@ EASING
 @media (min-width: 768px) {
   .section-our-method ul.method-list li.staff h2 {
     font-size: 3rem;
-    margin: 2rem 0;
   }
 }
 .section-our-method ul.method-list li.staff h2 .icon-close {
@@ -133,4 +137,10 @@ EASING
 .section-our-method ul.method-list li.staff .info .content {
   margin: 0;
   padding-bottom: 0.1rem;
+}
+.section-our-method ul.method-list li.staff .info p {
+  margin: 0 0 2rem 0;
+}
+.section-our-method ul.method-list li.staff .info p:last-child {
+  margin: 0;
 }

@@ -74,11 +74,15 @@
         li.staff {
             display:flex;
             flex-direction: column;
-            margin-bottom:12px;
+            margin:0;
             width:100%;
-
+            padding:1.2rem 0;
 
             border-bottom: 0.15rem solid var(--color-grey);
+
+            @include breakpoint(tablet) {
+                padding:2rem 0;
+            }
 
             &:last-child {
                 border-bottom:0;
@@ -88,8 +92,8 @@
                 border-top:0;
             }
 
+
             h2 {
-                margin:1.2rem 0;
                 cursor:pointer;
                 display:flex;
                 justify-content:space-between;
@@ -106,7 +110,6 @@
 
                 @include breakpoint(tablet) {
                     font-size:3rem;
-                    margin:2rem 0;
                 }
 
                 .icon-close {
@@ -154,6 +157,14 @@
                 .content {
                     margin: 0;
                     padding-bottom: .1rem;
+                }
+
+                p {
+                    margin:0 0 2rem 0;
+
+                    &:last-child {
+                        margin:0;
+                    }
                 }
             }
         }

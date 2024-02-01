@@ -1369,7 +1369,7 @@ a.product__text {
 
 /* Product-thumbnail snippet */
 .product-media-container {
-  --aspect-ratio: 892 / 839;
+  --aspect-ratio: var(--preview-ratio);
   --ratio-percent: calc(1 / var(--aspect-ratio) * 100%);
   position: relative;
   width: 100%;

@@ -25,7 +25,7 @@
           img {
             width:70px;
             @include breakpoint(tablet) {
-              width:76px;
+              width:124px;
             }
           }          
         }
@@ -33,7 +33,7 @@
           img {
             width:56px;
             @include breakpoint(tablet) {
-              width:55px;
+              width:82px;
             }
           }
         }
@@ -41,7 +41,7 @@
           img {
             width:58px;
             @include breakpoint(tablet) {
-              width:58px;
+              width:102px;
             }
           }
         }

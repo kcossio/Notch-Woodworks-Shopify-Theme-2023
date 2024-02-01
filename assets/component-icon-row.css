@@ -23,7 +23,7 @@ EASING
 }
 @media (min-width: 768px) {
   .product-top-icons .icon-row .icon-item[data-num="1"] img {
-    width: 76px;
+    width: 124px;
   }
 }
 .product-top-icons .icon-row .icon-item[data-num="2"] img {
@@ -31,7 +31,7 @@ EASING
 }
 @media (min-width: 768px) {
   .product-top-icons .icon-row .icon-item[data-num="2"] img {
-    width: 55px;
+    width: 82px;
   }
 }
 .product-top-icons .icon-row .icon-item[data-num="3"] img {
@@ -39,7 +39,7 @@ EASING
 }
 @media (min-width: 768px) {
   .product-top-icons .icon-row .icon-item[data-num="3"] img {
-    width: 58px;
+    width: 102px;
   }
 }
 .product-top-icons .icon-row .dots-divider {

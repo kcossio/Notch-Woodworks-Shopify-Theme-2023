@@ -74,22 +74,32 @@
                 justify-content:space-between;
                 align-items:center;
 
-                span.arrow {
+                .icon-close {
                     display:inline-block;
-                    width:24px;
-                    height:14px;
                     cursor:pointer;
-                    //background: url("#{$loc_images}select-arrow.svg") center center no-repeat;
-                    background-size:cover;
-                    transition:all .3s ease 0s;
                     order:2;
+
+                    height: 1.3rem;
+
+                    position: absolute;
+                    right: 0;
+                    top: calc(50% - .65rem);
+                    transform: rotate(45deg);
+                
+                    path {
+                        transition: all .3s ease 0s;
+                        fill: var(--color-accent);
+                    }
                 }
             }
 
             &.active {
                 h2 {
-                    span.arrow {
-                        transform:rotate(180deg);
+                    .icon-close {
+                        transform: rotate(0deg);
+                        path {
+                            fill: var(--color-main);
+                        }
                     }
                 }
             }

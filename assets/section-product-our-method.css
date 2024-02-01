@@ -65,17 +65,25 @@ EASING
   justify-content: space-between;
   align-items: center;
 }
-.section-our-method ul.method-list li.staff h2 span.arrow {
+.section-our-method ul.method-list li.staff h2 .icon-close {
   display: inline-block;
-  width: 24px;
-  height: 14px;
   cursor: pointer;
-  background-size: cover;
-  transition: all 0.3s ease 0s;
   order: 2;
+  height: 1.3rem;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 0.65rem);
+  transform: rotate(45deg);
 }
-.section-our-method ul.method-list li.staff.active h2 span.arrow {
-  transform: rotate(180deg);
+.section-our-method ul.method-list li.staff h2 .icon-close path {
+  transition: all 0.3s ease 0s;
+  fill: var(--color-accent);
+}
+.section-our-method ul.method-list li.staff.active h2 .icon-close {
+  transform: rotate(0deg);
+}
+.section-our-method ul.method-list li.staff.active h2 .icon-close path {
+  fill: var(--color-main);
 }
 .section-our-method ul.method-list li.staff h3 {
   font-size: 16px;

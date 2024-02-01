@@ -75,14 +75,16 @@ EASING
   align-items: center;
   width: 100%;
   position: relative;
-  font-family: var(--font-family-header-ex);
-  font-size: 1.8rem;
+  font-family: var(--font-family-header-cn);
+  font-size: 1.7rem;
+  font-weight: normal;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   color: var(--color-main);
 }
 @media (min-width: 768px) {
   .section-our-method ul.method-list li.staff h2 {
-    font-size: 2.25rem;
+    font-size: 1.7rem;
   }
 }
 .section-our-method ul.method-list li.staff h2 .icon-close {

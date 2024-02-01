@@ -35,7 +35,7 @@
     
           {%- when 'slide' -%}
 
-            <li class="staff" data-img="img-<?php echo $i; ?>">
+            <li class="staff" data-img="img-{{ forloop.index0 }}">
                     <h2 class="name">
                       {{ block.settings.title }}
                       <span class="arrow toggle-arrow" role="button"></span>

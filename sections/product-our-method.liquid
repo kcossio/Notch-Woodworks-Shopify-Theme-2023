@@ -1,30 +1,38 @@
 {{ 'section-product-our-method.css' | asset_url | stylesheet_tag }}
 <div class="our-method">
 
-  {%- # Label: Heading -%}
-  {{ section.settings.heading }} 
+  
 
-  {%- # Label: Subheading -%}
-  {{ section.settings.subheading }} 
+  <div class="om-slides">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+  
+        {%- when 'slide' -%}
+          {%- # Label: Title -%}
+          {{ block.settings.title }} 
+  
+          {%- # Label: Description -%}
+          {{ block.settings.description }} 
+  
+          {%- # Label: Hero Image -%}
+          {%- assign hero_image = block.settings.hero_image -%}
+          {%- if hero_image != blank -%}
+          {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+          {%- endif -%}
+  
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
 
-  {%- for block in section.blocks -%}
-    {%- case block.type -%}
+  <div class="our-method-content">
+    {%- # Label: Heading -%}
+    <h2 class="script">{{ section.settings.heading }}</h2>
+  
+    {%- # Label: Subheading -%}
+    {{ section.settings.subheading }} 
+  </div>
 
-      {%- when 'slide' -%}
-        {%- # Label: Title -%}
-        {{ block.settings.title }} 
-
-        {%- # Label: Description -%}
-        {{ block.settings.description }} 
-
-        {%- # Label: Hero Image -%}
-        {%- assign hero_image = block.settings.hero_image -%}
-        {%- if hero_image != blank -%}
-        {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
-        {%- endif -%}
-
-    {%- endcase -%}
-  {%- endfor -%}
+  
 </div>
 
 {% schema %}

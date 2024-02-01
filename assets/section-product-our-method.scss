@@ -3,8 +3,10 @@
 .section-our-method {
 
     .our-method {
-        display:block;
-        width:108.8rem;
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width:100%;
         max-width:100%;
         margin:0px auto;
         

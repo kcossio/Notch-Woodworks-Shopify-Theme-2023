@@ -3,10 +3,20 @@
 .section-product-general-info {
     background:var(--color-light-grey);
     .general-info-inner {
-        width:108.8rem;
+        width:133.5rem;
         max-width:100%;
         margin:0px auto;
         display:flex;
         flex-wrap:wrap;
+        padding:0 3rem;
+    }
+
+    .general-info-content {
+        width:100%;
+        order:2;
+
+        @include breakpoint(tablet) {
+
+        }
     }
 }

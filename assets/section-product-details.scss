@@ -69,11 +69,30 @@
                 line-height: 1em;
 
                 li {
-                    margin:.5rem 0;
+                    margin:1.5rem 0;
+                    list-style: none;
+                    display: block;
                 }
 
                 strong {
                     font-family:var(--font-family-header-ex);
+                }
+            }
+        }
+        .product-key-details {
+
+            p {
+                display: block;
+                margin:.5rem 0;
+
+                .icon-close {
+                    transform:rotate(45deg);
+                    height:1.6rem;
+                    display:inline-block;
+                    margin:0 .5rem 0 0;
+                    path {
+                        fill: var(--color-accent);
+                    }
                 }
             }
         }

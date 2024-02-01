@@ -69,8 +69,23 @@ EASING
   line-height: 1em;
 }
 .section-product-details .product-details .product-main-details ul li {
-  margin: 0.5rem 0;
+  margin: 1.5rem 0;
+  list-style: none;
+  display: block;
 }
 .section-product-details .product-details .product-main-details ul strong {
   font-family: var(--font-family-header-ex);
+}
+.section-product-details .product-details .product-key-details p {
+  display: block;
+  margin: 0.5rem 0;
+}
+.section-product-details .product-details .product-key-details p .icon-close {
+  transform: rotate(45deg);
+  height: 1.6rem;
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+}
+.section-product-details .product-details .product-key-details p .icon-close path {
+  fill: var(--color-accent);
 }

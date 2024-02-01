@@ -26,15 +26,17 @@
         {{ section.settings.main_details }} 
         </div><!--End producty-main-details-->
 
+        <div class="product-key-details">
         {%- for block in section.blocks -%}
             {%- case block.type -%}
         
             {%- when 'key_details' -%}
                 {%- # Label: Key Detail -%}
-                {{ block.settings.key_detail }} 
+                <p class="product-key-detail">{% render 'icon-close' %} {{ block.settings.key_detail }}</p>
         
             {%- endcase -%}
         {%- endfor -%}
+        </div>
 
     </div>
 

@@ -193,7 +193,7 @@
         "associated_product": "board-no-1",
         "heading": "Product Details",
         "hero_image": "shopify:\/\/shop_images\/product-board-dimensons-fpo.jpg",
-        "main_details": "<p>{{ section.settings.associated_product.metafields.custom.product_details | metafield_tag }}<\/p>"
+        "main_details": "{{ section.settings.associated_product.metafields.custom.product_details | metafield_tag }}"
       }
     },
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689": {
@@ -264,32 +264,6 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "custom_html_ktGgGw": {
-      "type": "custom_html",
-      "settings": {
-        "html_code": "<h2 class=\"insta-feed-title\"><a href=\"https:\/\/instagram.com\/Notchwoodworks\" target=\"_blank\">Follow the Journey.<\/a><\/h2>"
-      }
-    },
-    "17056887694753c171": {
-      "type": "apps",
-      "blocks": {
-        "instafeed_app_block_Rn84Dg": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "title": "",
-            "title_color": "",
-            "alignment": "center",
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "instafeed_app_block_Rn84Dg"
-      ],
-      "settings": {
-        "include_margins": false
-      }
     }
   },
   "order": [
@@ -300,8 +274,6 @@
     "7d2c50cb-25cf-45a7-832b-8089ade81cda",
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
     "related-products",
-    "1700257961a6f4236e",
-    "custom_html_ktGgGw",
-    "17056887694753c171"
+    "1700257961a6f4236e"
   ]
 }

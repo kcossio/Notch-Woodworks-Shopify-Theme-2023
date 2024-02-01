@@ -64,6 +64,11 @@ EASING
   margin: 0;
   padding: 0;
 }
+@media (min-width: 768px) {
+  .section-our-method ul.method-list {
+    margin: 5.2rem 0 0 0;
+  }
+}
 .section-our-method ul.method-list li.staff {
   display: flex;
   flex-direction: column;
@@ -90,6 +95,7 @@ EASING
   align-items: center;
   width: 100%;
   position: relative;
+  margin: 0;
   font-family: var(--font-family-header-cn);
   font-size: 3rem;
   font-weight: normal;

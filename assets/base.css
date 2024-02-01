@@ -2047,9 +2047,7 @@ input[type=checkbox] {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-text);
-  font-family: var(--font-family-header-ex);
-  font-weight: normal;
+  color: var(--color-main);
   padding: 0;
 }
 

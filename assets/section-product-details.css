@@ -35,7 +35,7 @@ EASING
 }
 @media (min-width: 768px) {
   .section-product-details .product-details .product-details-content {
-    width: 30%;
+    width: 35%;
     order: 2;
   }
 }
@@ -51,4 +51,14 @@ EASING
     font-size: 7.5rem;
     text-align: left;
   }
+}
+.section-product-details .product-details .product-main-details {
+  display: block;
+  padding: 1.5rem 0;
+  border-style: dotted;
+  border-width: 0.6rem 0 0.6rem 0;
+  border-color: var(--color-accent);
+  border-image-source: url("border-dot-red.svg?v=1");
+  border-image-slice: 24% 24% 24% 24%;
+  border-image-repeat: round;
 }

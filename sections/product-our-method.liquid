@@ -12,7 +12,7 @@
           {%- # Label: Hero Image -%}
           {%- assign hero_image = block.settings.hero_image -%}
           {%- if hero_image != blank -%}
-          {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+          {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'om-hero-img', loading: 'lazy' }}
           {%- endif -%}
   
       {%- endcase -%}
@@ -38,11 +38,6 @@
             {%- # Label: Description -%}
             {{ block.settings.description }} 
     
-            {%- # Label: Hero Image -%}
-            {%- assign hero_image = block.settings.hero_image -%}
-            {%- if hero_image != blank -%}
-            {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
-            {%- endif -%}
     
         {%- endcase -%}
       {%- endfor -%}

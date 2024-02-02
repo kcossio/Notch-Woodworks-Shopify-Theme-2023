@@ -10,7 +10,7 @@ EASING
   left: 0;
   z-index: 9999;
   width: 100%;
-  background: var(--color-light-grey);
+  background: #f4f4f4;
   transform: translateY(100%);
   transition: 0.4s ease-in-out;
   padding: 2rem;
@@ -34,6 +34,7 @@ EASING
 @media (min-width: 768px) {
   .product-sticky-add-cart-new.custom-sticky-form ul.sticky-product-menu {
     display: inline-flex;
+    list-style: none;
   }
 }
 .product-sticky-add-cart-new.custom-sticky-form ul.sticky-product-menu li {
@@ -41,10 +42,14 @@ EASING
   padding: 0;
 }
 .product-sticky-add-cart-new.custom-sticky-form ul.sticky-product-menu li a {
-  color: var(--color-grey);
+  color: var(--color-dark-grey);
+  text-decoration: none;
   font-size: 1.5rem;
   font-weight: normal;
   font-style: italic;
+}
+.product-sticky-add-cart-new.custom-sticky-form ul.sticky-product-menu li a:hover {
+  color: var(--color-main);
 }
 
 .sticky-cart2 .custom-sticky-form {

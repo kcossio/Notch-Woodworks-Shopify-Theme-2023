@@ -29,7 +29,7 @@ EASING
   display: none;
   margin: 0;
   padding: 0;
-  gap: 1rem;
+  gap: 3rem;
 }
 @media (min-width: 768px) {
   .product-sticky-add-cart-new.custom-sticky-form ul.sticky-product-menu {

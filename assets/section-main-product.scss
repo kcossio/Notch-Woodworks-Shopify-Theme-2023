@@ -527,6 +527,19 @@ a.product__text {
   display:inline-flex;
   width: 100%;
   gap:1rem;
+
+  .product-form__input {
+    flex:0;
+    margin: 0;
+    flex-basis:30%;
+    
+    label {
+      display: none;
+    }
+  }
+  .buy-button-wrap {
+    flex:auto;
+  }
 }
 .product--no-media fieldset.product-form__input {
   flex-wrap: wrap;

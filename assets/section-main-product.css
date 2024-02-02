@@ -515,6 +515,17 @@ a.product__text {
   width: 100%;
   gap: 1rem;
 }
+.qty-price-wrap .product-form__input {
+  flex: 0;
+  margin: 0;
+  flex-basis: 30%;
+}
+.qty-price-wrap .product-form__input label {
+  display: none;
+}
+.qty-price-wrap .buy-button-wrap {
+  flex: auto;
+}
 
 .product--no-media fieldset.product-form__input {
   flex-wrap: wrap;

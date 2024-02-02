@@ -525,6 +525,9 @@ a.product__text {
 .qty-price-wrap .product-form__input label {
   display: none;
 }
+.qty-price-wrap .product-form__input .quantity {
+  width: auto;
+}
 .qty-price-wrap .buy-button-wrap {
   flex: auto;
 }

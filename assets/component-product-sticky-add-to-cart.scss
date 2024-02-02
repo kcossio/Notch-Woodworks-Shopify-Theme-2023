@@ -13,6 +13,11 @@
     transform: translateY(100%);
     transition: .4s ease-in-out;
     padding:2rem;
+
+    button.product-form__submit {
+        font-size:1.4rem;
+        letter-spacing:.2rem;
+    }
 }
 .sticky-cart2 .custom-sticky-form {
     transform:translateY(0) !important;

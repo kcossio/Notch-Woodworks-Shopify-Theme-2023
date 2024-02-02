@@ -542,9 +542,13 @@ a.product__text {
   .buy-button-wrap {
     flex:auto;
 
+    .product-form {
+      margin: 0;
+    }
+
     button {
       letter-spacing:.15rem;
-      padding:1rem;
+      padding:1.2rem 1rem;
       margin:0;
     }
   }

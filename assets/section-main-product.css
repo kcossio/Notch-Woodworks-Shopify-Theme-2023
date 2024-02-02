@@ -528,9 +528,12 @@ a.product__text {
 .qty-price-wrap .buy-button-wrap {
   flex: auto;
 }
+.qty-price-wrap .buy-button-wrap .product-form {
+  margin: 0;
+}
 .qty-price-wrap .buy-button-wrap button {
   letter-spacing: 0.15rem;
-  padding: 1rem;
+  padding: 1.2rem 1rem;
   margin: 0;
 }
 

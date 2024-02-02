@@ -50,18 +50,17 @@ EASING
 .section-our-method ul.om-slides::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 13%;
   right: 0;
-  transform: translateY(-50%);
   z-index: 100;
-  width: 4.2rem;
+  width: 3.4rem;
   aspect-ratio: 1/2;
   background: url("triangle-notch-left.svg") top center no-repeat;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .section-our-method ul.om-slides::before {
-    width: 6.4rem;
+    width: 3.4rem;
   }
 }
 @media (min-width: 768px) {

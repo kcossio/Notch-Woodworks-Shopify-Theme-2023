@@ -20,10 +20,15 @@ EASING
   letter-spacing: 0.2rem;
 }
 .product-sticky-add-cart-new.custom-sticky-form ul.sticky-product-menu {
-  display: inline-flex;
+  display: none;
   margin: 0;
   padding: 0;
   gap: 1rem;
+}
+@media (min-width: 768px) {
+  .product-sticky-add-cart-new.custom-sticky-form ul.sticky-product-menu {
+    display: inline-flex;
+  }
 }
 .product-sticky-add-cart-new.custom-sticky-form ul.sticky-product-menu li {
   margin: 0;

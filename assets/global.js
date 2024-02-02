@@ -1093,7 +1093,7 @@ class VariantSelects extends HTMLElement {
         const source = html.getElementById(
           `price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
         );
-        const destinationSticky = document.getElementById(`price-${this.dataset.section}`);
+        const destinationSticky = document.getElementById(`sticky-price-${this.dataset.section}`);
         const sourceSticky = html.getElementById(
           `sticky-price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
         );

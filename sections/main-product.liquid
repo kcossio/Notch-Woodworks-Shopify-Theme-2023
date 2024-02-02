@@ -663,6 +663,15 @@
 
   <div class="product-sticky-add-cart-new custom-sticky-form">
     {{ 'component-product-sticky-add-to-cart.css' | asset_url | stylesheet_tag }}
+    <ul class="sticky-product-menu">
+      <li><a href="#MainProduct-{{ section.id }}">Overview</a></li>
+      <li><a href="">Our Method</a></li>
+      <li><a href="">Details</a></li>
+      <li><a href="">Guarantee</a></li>
+      <li><a href="">FAQs</a></li>
+      <li><a href="">Reviews</a></li>
+    </ul>
+    <div class="sticky-buy">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'price' -%}          
@@ -671,6 +680,7 @@
             {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
       {%- endcase -%}
     {%- endfor -%}
+  </div><!--End sticky-buy-->
   </div>
 
   <script type="application/ld+json">

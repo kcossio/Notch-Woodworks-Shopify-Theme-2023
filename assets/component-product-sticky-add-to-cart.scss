@@ -3,7 +3,7 @@
 .product-sticky-add-cart-new.custom-sticky-form {
     position: fixed;
     display:flex;
-    justify-content:flex-end;
+    justify-content:space-between;
     align-items:center;
     bottom: 0;
     left:0;
@@ -17,6 +17,26 @@
     button.product-form__submit {
         font-size:1.4rem;
         letter-spacing:.2rem;
+    }
+
+    ul.sticky-product-menu {
+        display:inline-flex;
+        margin:0;
+        padding:0;
+        gap:1rem;
+
+        li {
+
+            margin:0;
+            padding:0;
+
+            a {
+                color:var(--color-grey);
+                font-size:1.5rem;
+                font-weight: normal;
+                font-style: italic;
+            }
+        }
     }
 }
 .sticky-cart2 .custom-sticky-form {

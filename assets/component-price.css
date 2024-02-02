@@ -6,6 +6,7 @@ EASING
   letter-spacing: 0.1rem;
   line-height: 1em;
   color: inherit;
+  font-style: italic;
 }
 @media (min-width: 768px) {
   .product-price .price {

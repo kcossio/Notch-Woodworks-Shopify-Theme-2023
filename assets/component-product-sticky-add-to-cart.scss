@@ -14,9 +14,18 @@
     transition: .4s ease-in-out;
     padding:2rem;
 
-    button.product-form__submit {
-        font-size:1.4rem;
-        letter-spacing:.2rem;
+    
+
+    .sticky-buy {
+        display:inline-flex;
+        align-items:center;
+        gap:1rem;
+
+        button.product-form__submit {
+            font-size:1.4rem;
+            letter-spacing:.2rem;
+            margin:0;
+        }
     }
 
     ul.sticky-product-menu {

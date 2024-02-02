@@ -15,9 +15,15 @@ EASING
   transition: 0.4s ease-in-out;
   padding: 2rem;
 }
-.product-sticky-add-cart-new.custom-sticky-form button.product-form__submit {
+.product-sticky-add-cart-new.custom-sticky-form .sticky-buy {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+.product-sticky-add-cart-new.custom-sticky-form .sticky-buy button.product-form__submit {
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
+  margin: 0;
 }
 .product-sticky-add-cart-new.custom-sticky-form ul.sticky-product-menu {
   display: none;

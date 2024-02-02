@@ -1093,10 +1093,12 @@ class VariantSelects extends HTMLElement {
         const source = html.getElementById(
           `price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
         );
+        // Added a duplicate for sticky price bar
         const destinationSticky = document.getElementById(`sticky-price-${this.dataset.section}`);
         const sourceSticky = html.getElementById(
           `sticky-price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
         );
+
         const skuSource = html.getElementById(
           `Sku-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
         );
@@ -1116,6 +1118,7 @@ class VariantSelects extends HTMLElement {
         const volumePricingDestination = document.getElementById(`Volume-${this.dataset.section}`);
 
         if (source && destination) destination.innerHTML = source.innerHTML;
+        // Added duplicate for sticky price bar
         if (sourceSticky && destinationSticky) destinationSticky.innerHTML = sourceSticky.innerHTML;
 
         if (inventorySource && inventoryDestination) inventoryDestination.innerHTML = inventorySource.innerHTML;

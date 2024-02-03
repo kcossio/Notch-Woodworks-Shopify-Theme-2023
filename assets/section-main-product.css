@@ -210,7 +210,8 @@ fieldset.product-form__input .form__label {
 }
 .product-form__input input[type=radio] + label.has-swatch {
   border: 0px;
-  width: 9.6rem;
+  width: 30%;
+  max-width: 9.6rem;
   background-color: var(--color-white);
   color: var(--color-text);
   border-radius: 0px;
@@ -220,7 +221,7 @@ fieldset.product-form__input .form__label {
 }
 @media (min-width: 768px) {
   .product-form__input input[type=radio] + label.has-swatch {
-    width: 12.2rem;
+    max-width: 12.2rem;
   }
 }
 .product-form__input input[type=radio] + label.has-swatch img {

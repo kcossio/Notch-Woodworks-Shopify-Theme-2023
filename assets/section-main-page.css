@@ -1,15 +1,6 @@
 /*-----------------------
 EASING 
 ---------------------- */
-.section-page {
-  padding: 0 0 8.6rem 0;
-}
-@media (min-width: 1280px) {
-  .section-page {
-    padding: 0 0 11.2rem 0;
-  }
-}
-
 .page-title {
   margin-top: 0;
 }

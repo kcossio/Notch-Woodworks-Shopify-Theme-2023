@@ -60,11 +60,19 @@
         }
 
         p {
-            line-height:1.2rem;
+            line-height:1.4em;
             margin:0 0 1.4rem 0;
-            
+
             &:last-child {
                 margin:0;
+            }
+
+            strong {
+                font-family:var(--font-family-header-ex);
+            }
+
+            @include breakpoint(laptop) {
+                font-size:2.2rem;
             }
         }
     }

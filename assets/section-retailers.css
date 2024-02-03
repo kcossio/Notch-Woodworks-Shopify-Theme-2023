@@ -62,9 +62,17 @@ EASING
   }
 }
 .retailer-grid .retailer p {
-  line-height: 1.2rem;
+  line-height: 1.4em;
   margin: 0 0 1.4rem 0;
 }
 .retailer-grid .retailer p:last-child {
   margin: 0;
+}
+.retailer-grid .retailer p strong {
+  font-family: var(--font-family-header-ex);
+}
+@media (min-width: 1280px) {
+  .retailer-grid .retailer p {
+    font-size: 2.2rem;
+  }
 }

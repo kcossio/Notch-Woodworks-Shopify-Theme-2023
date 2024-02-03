@@ -1,0 +1,54 @@
+@import "mixins";
+
+.retailer-grid {
+
+    grid-template-columns: 1fr;
+    gap:4.2rem;
+
+    @include breakpoint(tablet) {
+        grid-template-columns: 1fr 1fr;
+        gap:1.4rem;
+    }
+
+    .retailer {
+        text-align:center;
+        padding:3.6rem 1.6rem;
+        position: relative;
+
+        &::before {
+            content:"";
+            position: absolute;
+            top:0px;
+            left:50%;
+            transform:translateX(-50%);
+            z-index:1;
+            width:4.2rem;
+            aspect-ratio: 2 / 1;
+            background:url('triangle-notch-down.svg') top center no-repeat;
+            background-repeat: no-repeat;
+    
+            @include breakpoint(tablet) {
+                width:6.4rem;
+            }
+        }
+
+        @include breakpoint(tablet) {
+            padding:8rem 2rem;
+        }
+
+        @include breakpoint(laptop) {
+            padding:13rem 6rem;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color:var(--color-main);
+        }
+
+        p {
+            &:last-child {
+                margin:0;
+            }
+        }
+    }
+}

@@ -1,23 +1,25 @@
-{%- for block in section.blocks -%}
-  {%- case block.type -%}
+{{ 'section-retailers.css' | asset_url | stylesheet_tag }}
 
-    {%- when 'retailer' -%}
-      {%- ########################################################################## 
-      # Label: Name
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.name }} 
+<div class="inner">
 
-      {%- ########################################################################## 
-      # Label: Retailer Info
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.retailer_info }} 
+  <div class="retailer-grid">
 
-  {%- endcase -%}
-{%- endfor -%}
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+
+        {%- when 'retailer' -%}
+
+          <div class="retailer bg-chevron-white">
+            <h2 class="header-ex">{{ block.settings.name }}</h2>          
+            {{ block.settings.retailer_info }} 
+          </div><!--End retailer-->
+
+      {%- endcase -%}
+    {%- endfor -%}
+
+</div><!--End retailer-grid-->
+
+</div><!--End inner-->
 
 {% schema %}
   {

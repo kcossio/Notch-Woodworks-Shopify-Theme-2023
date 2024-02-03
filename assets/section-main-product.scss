@@ -539,7 +539,11 @@ a.product__text {
       display: none;
     }
     .quantity {
-      width: auto;
+      width: 8rem;
+
+      @include breakpoint(tablet) {
+        width:9.1rem;
+      }
     }
   }
   .buy-button-wrap {

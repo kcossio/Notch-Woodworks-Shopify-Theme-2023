@@ -526,7 +526,12 @@ a.product__text {
   display: none;
 }
 .qty-price-wrap .product-form__input .quantity {
-  width: auto;
+  width: 8rem;
+}
+@media (min-width: 768px) {
+  .qty-price-wrap .product-form__input .quantity {
+    width: 9.1rem;
+  }
 }
 .qty-price-wrap .buy-button-wrap {
   flex: auto;

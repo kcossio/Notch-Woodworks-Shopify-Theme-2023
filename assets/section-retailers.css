@@ -20,7 +20,7 @@ EASING
 }
 .retailer-grid .retailer {
   text-align: center;
-  padding: 3.6rem 1.6rem;
+  padding: 4rem 1.6rem 3.6rem 1.6rem;
   position: relative;
 }
 .retailer-grid .retailer::before {
@@ -64,6 +64,7 @@ EASING
 .retailer-grid .retailer p {
   line-height: 1.4em;
   margin: 0 0 1.4rem 0;
+  font-size: 1.7rem;
 }
 .retailer-grid .retailer p:last-child {
   margin: 0;

@@ -1,5 +1,13 @@
 @import "mixins";
 
+
+.section-page {
+  padding:0 0 8.6rem 0;
+
+  @include breakpoint(laptop) {
+    padding:0 0 11.2rem 0;
+  }
+}
 .page-title {
     margin-top: 0;
     

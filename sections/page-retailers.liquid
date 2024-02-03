@@ -1,0 +1,61 @@
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+
+    {%- when 'retailer' -%}
+      {%- ########################################################################## 
+      # Label: Name
+      # Returns: a string or an empty object(if nothing has been entered)
+      # Filters: https://shopify.dev/api/liquid/objects#string 
+      ########################################################################## -%}
+      {{ block.settings.name }} 
+
+      {%- ########################################################################## 
+      # Label: Retailer Info
+      # Returns: a string or an empty object(if nothing has been entered)
+      # Filters: https://shopify.dev/api/liquid/objects#string 
+      ########################################################################## -%}
+      {{ block.settings.retailer_info }} 
+
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+  {
+  "name": "Retailers",
+  "class": "section retailers",
+  "tag": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Retailer",
+      "type": "retailer",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "placeholder": "Retailer Name",
+          "info": "Add the name of this retailer"
+        },
+        {
+          "type": "richtext",
+          "id": "retailer_info",
+          "label": "Retailer Info",
+          "info": "Enter the information for this retailer (Address, Phone number, etc.) here"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Retailers"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -5,6 +5,15 @@ EASING
   margin-top: 0;
 }
 
+.page-top-title {
+  padding: 5.2rem 0;
+}
+@media (min-width: 1280px) {
+  .page-top-title {
+    padding: 13.2rem 0 8.6rem 0;
+  }
+}
+
 .main-page-title {
   margin-bottom: 3rem;
   font-family: var(--font-family-script);

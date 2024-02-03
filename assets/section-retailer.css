@@ -2,6 +2,7 @@
 EASING 
 ---------------------- */
 .retailer-grid {
+  display: grid;
   grid-template-columns: 1fr;
   gap: 4.2rem;
 }

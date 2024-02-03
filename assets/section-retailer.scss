@@ -2,12 +2,14 @@
 
 .retailer-grid {
 
+    display: grid;
     grid-template-columns: 1fr;
     gap:4.2rem;
 
     @include breakpoint(tablet) {
         grid-template-columns: 1fr 1fr;
         gap:1.4rem;
+
     }
 
     .retailer {

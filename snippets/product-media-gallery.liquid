@@ -310,43 +310,43 @@
 
 <script type="text/javascript">
 // Slider Thumbnails - use slick instead
+window.addEventListener("load", (event) => {
 
-jQuery('#Slider-Gallery-{{ section.id }}{{ id_append }}').slick({
-    autoplay: false,
-    autoplaySpeed: 7000,        
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    slidesToShow: 4,
-    vertical: true,
-    verticalSwiping: true,
-    infinite: false,
-    arrows: true,
-    appendArrows: jQuery('.thumbnail-slider'),
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          slidesToShow: 4
+  jQuery('#Slider-Gallery-{{ section.id }}{{ id_append }}').slick({
+      autoplay: false,
+      autoplaySpeed: 7000,        
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      slidesToShow: 4,
+      vertical: true,
+      verticalSwiping: true,
+      infinite: false,
+      arrows: true,
+      appendArrows: jQuery('.thumbnail-slider'),
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: 
+            'unslick'
+            /*{ arrows: true,
+            slidesToShow: 4,
+            vertical: false,
+            verticalSwiping: false
+          }*/
+          
         }
-      },
-      {
-        breakpoint: 500,
-        settings: 
-          'unslick'
-          /*{ arrows: true,
-          slidesToShow: 4,
-          vertical: false,
-          verticalSwiping: false
-        }*/
-        
-      }
-    ]
-  });
-
+      ]
+    });
  
-
+});
 
 
 </script>

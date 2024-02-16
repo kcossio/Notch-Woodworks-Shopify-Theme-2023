@@ -310,8 +310,8 @@
 
 <script type="text/javascript">
 
-  var sliderSlick = jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}');
-  sliderSlick.slick({
+
+jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}').slick({
     autoplay: false,
     autoplaySpeed: 7000,        
     pauseOnFocus: false,
@@ -322,7 +322,7 @@
     infinite: false,
     arrows: true,
     appendArrows: jQuery('.thumbnail-slider'),
-    dots: false,
+    dots: true,
     responsive: [
       {
         breakpoint: 768,

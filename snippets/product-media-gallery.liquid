@@ -313,7 +313,8 @@
 <script type="text/javascript">
 // Slider Thumbnails - use slick instead
 
-jQuery('#Slider-Gallery-{{ section.id }}{{ id_append }}').slick({
+var sliderSlick = jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}');
+  sliderSlick.slick({
     autoplay: false,
     autoplaySpeed: 7000,        
     pauseOnFocus: false,
@@ -324,7 +325,7 @@ jQuery('#Slider-Gallery-{{ section.id }}{{ id_append }}').slick({
     infinite: false,
     arrows: true,
     appendArrows: jQuery('.thumbnail-slider'),
-    dots: true,
+    dots: false,
     responsive: [
       {
         breakpoint: 768,
@@ -346,7 +347,6 @@ jQuery('#Slider-Gallery-{{ section.id }}{{ id_append }}').slick({
       }
     ]
   });
-
  
 
 

@@ -319,19 +319,19 @@ var sliderSlick = jQuery('#Slider-Gallery-{{ section.id }}{{ id_append }}');
     autoplaySpeed: 7000,        
     pauseOnFocus: false,
     pauseOnHover: false,
-    slidesToShow: 4,
+    slidesToShow: 1,
     vertical: false,
     verticalSwiping: false,
     infinite: false,
     arrows: false,
-    appendArrows: jQuery('.thumbnail-slider'),
     dots: true,
+    fade: true,
     responsive: [
       {
         breakpoint: 768,
         settings: {
           arrows: false,
-          slidesToShow: 4
+          slidesToShow: 1
         }
       },
       {

@@ -38,6 +38,11 @@ EASING
   max-width: 100%;
   width: 54rem;
 }
+@media (min-width: 768px) {
+  .section-our-method .our-method .our-method-content p.om-subheading {
+    padding-right: 15%;
+  }
+}
 .section-our-method ul.om-slides {
   overflow: hidden;
   display: none;

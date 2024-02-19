@@ -38,6 +38,11 @@
                 max-width: 100%;
                 width:54rem;
             }
+            p.om-subheading {
+                @include breakpoint(tablet) {
+                    padding-right: 15%;
+                }
+            }
         }
         
     }

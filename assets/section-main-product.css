@@ -184,6 +184,10 @@ variant-selects .product-form__input {
 
 fieldset.product-form__input .form__label {
   margin-bottom: 0.2rem;
+  font-style: italic;
+}
+fieldset.product-form__input .form__label span.lower {
+  text-transform: lowercase;
 }
 
 .product-form__input input[type=radio] {

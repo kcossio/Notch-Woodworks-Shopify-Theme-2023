@@ -185,6 +185,7 @@ variant-selects .product-form__input {
 fieldset.product-form__input .form__label {
   margin-bottom: 0.2rem;
   font-style: italic;
+  font-size: 1.575rem;
 }
 fieldset.product-form__input .form__label span.lower {
   text-transform: lowercase;

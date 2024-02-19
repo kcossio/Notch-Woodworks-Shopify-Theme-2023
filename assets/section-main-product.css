@@ -287,9 +287,11 @@ fieldset.product-form__input .form__label {
 }
 .product-form__input input[type=radio]:checked + label::-moz-selection.has-swatch img {
   border-color: var(--color-accent);
+  border-width: 0.2rem;
 }
 .product-form__input input[type=radio]:checked + label::selection.has-swatch img {
   border-color: var(--color-accent);
+  border-width: 0.2rem;
 }
 
 .product-form__input input[type=radio]:disabled + label,

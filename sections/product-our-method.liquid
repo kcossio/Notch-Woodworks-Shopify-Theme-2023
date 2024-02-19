@@ -46,7 +46,7 @@
       
             {%- when 'slide' -%}
 
-              <li class="staff" data-img="img-{{ forloop.index0 }}">
+              <li class="method-item" data-img="img-{{ forloop.index0 }}">
                       <h2 class="name">
                         <span>{{ block.settings.title }}</span>
                         {% render 'icon-close' %}
@@ -71,7 +71,7 @@
 
 <script>
   window.addEventListener('load', function(event) {
-    const items = gsap.utils.toArray(".method-list .staff");
+    const items = gsap.utils.toArray(".method-list .method-item");
 
     let lastItem;
 
@@ -138,7 +138,7 @@
 
         });
     });
-    //jQuery(".staff:first-child"). trigger("click");
+    //jQuery(".method-item:first-child"). trigger("click");
 
     jQuery("ul.om-slides li:first-child").css('opacity', 1);
 

@@ -94,7 +94,7 @@ EASING
     margin: 5.2rem 0 0 0;
   }
 }
-.section-our-method ul.method-list li.staff {
+.section-our-method ul.method-list li.method-item {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -103,17 +103,17 @@ EASING
   border-bottom: 0.15rem solid var(--color-text);
 }
 @media (min-width: 768px) {
-  .section-our-method ul.method-list li.staff {
+  .section-our-method ul.method-list li.method-item {
     padding: 1.6rem 0 1.2rem 0;
   }
 }
-.section-our-method ul.method-list li.staff:last-child {
+.section-our-method ul.method-list li.method-item:last-child {
   border-bottom: 0;
 }
-.section-our-method ul.method-list li.staff:first-child {
+.section-our-method ul.method-list li.method-item:first-child {
   border-top: 0;
 }
-.section-our-method ul.method-list li.staff h2 {
+.section-our-method ul.method-list li.method-item h2 {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -129,11 +129,11 @@ EASING
   color: var(--color-main);
 }
 @media (min-width: 768px) {
-  .section-our-method ul.method-list li.staff h2 {
+  .section-our-method ul.method-list li.method-item h2 {
     font-size: 3rem;
   }
 }
-.section-our-method ul.method-list li.staff h2 .icon-close {
+.section-our-method ul.method-list li.method-item h2 .icon-close {
   display: inline-block;
   cursor: pointer;
   order: 2;
@@ -143,35 +143,35 @@ EASING
   top: calc(50% - 0.65rem);
   transform: rotate(45deg);
 }
-.section-our-method ul.method-list li.staff h2 .icon-close path {
+.section-our-method ul.method-list li.method-item h2 .icon-close path {
   transition: all 0.3s ease 0s;
   fill: var(--color-accent);
 }
-.section-our-method ul.method-list li.staff.active h2 .icon-close {
+.section-our-method ul.method-list li.method-item.active h2 .icon-close {
   transform: rotate(0deg);
 }
-.section-our-method ul.method-list li.staff.active h2 .icon-close path {
+.section-our-method ul.method-list li.method-item.active h2 .icon-close path {
   fill: var(--color-main);
 }
-.section-our-method ul.method-list li.staff h3 {
+.section-our-method ul.method-list li.method-item h3 {
   font-size: 16px;
   letter-spacing: 0.75px;
   text-transform: uppercase;
   margin-bottom: 34px;
 }
-.section-our-method ul.method-list li.staff .info {
+.section-our-method ul.method-list li.method-item .info {
   overflow: hidden;
   margin: 0;
   padding: 0;
   height: 0px;
 }
-.section-our-method ul.method-list li.staff .info .content {
+.section-our-method ul.method-list li.method-item .info .content {
   margin: 0;
   padding-bottom: 0.1rem;
 }
-.section-our-method ul.method-list li.staff .info p {
+.section-our-method ul.method-list li.method-item .info p {
   margin: 0 0 2rem 0;
 }
-.section-our-method ul.method-list li.staff .info p:last-child {
+.section-our-method ul.method-list li.method-item .info p:last-child {
   margin: 0;
 }

@@ -123,3 +123,97 @@ EASING
 .accordion__content img {
   max-width: 100%;
 }
+
+toggle-element {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  toggle-element {
+    margin: 5.2rem 0 0 0;
+  }
+}
+toggle-element toggle-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  padding: 1.2rem 0 1rem 0;
+  border-bottom: 0.15rem solid var(--color-text);
+}
+@media (min-width: 768px) {
+  toggle-element toggle-item {
+    padding: 1.6rem 0 1.2rem 0;
+  }
+}
+toggle-element toggle-item:last-child {
+  border-bottom: 0;
+}
+toggle-element toggle-item:first-child {
+  border-top: 0;
+}
+toggle-element toggle-item h2 {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  font-family: var(--font-family-header-cn);
+  font-size: 3rem;
+  font-weight: normal;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--color-main);
+}
+@media (min-width: 768px) {
+  toggle-element toggle-item h2 {
+    font-size: 3rem;
+  }
+}
+toggle-element toggle-item h2 .icon-close {
+  display: inline-block;
+  cursor: pointer;
+  order: 2;
+  height: 1.3rem;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 0.65rem);
+  transform: rotate(45deg);
+}
+toggle-element toggle-item h2 .icon-close path {
+  transition: all 0.3s ease 0s;
+  fill: var(--color-accent);
+}
+toggle-element toggle-item.active h2 .icon-close {
+  transform: rotate(0deg);
+}
+toggle-element toggle-item.active h2 .icon-close path {
+  fill: var(--color-main);
+}
+toggle-element toggle-item h3 {
+  font-size: 16px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+toggle-element toggle-item .info {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 0px;
+}
+toggle-element toggle-item .info .content {
+  margin: 0;
+  padding-bottom: 0.1rem;
+}
+toggle-element toggle-item .info p {
+  margin: 0 0 2rem 0;
+}
+toggle-element toggle-item .info p:last-child {
+  margin: 0;
+}

@@ -195,6 +195,22 @@
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
+
+              <toggle-element>
+                <toggle-item>
+                  <h2 class="name">
+                    <span>{{ block.settings.heading | default: block.settings.page.title }}</span>
+                    {% render 'icon-close' %}
+                  </h2>
+                  <div class="info">
+                      <div class="content">
+                        {{ block.settings.content }}
+                        {{ block.settings.page.content }}
+                      </div>
+                  </div>
+                </toggle-item>
+              </toggle-element>
+              
               <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}">
                   <summary>
@@ -238,7 +254,7 @@
                 block: block,
                 share_link: share_url
               %}
-              
+
             {%- when 'quantity_selector' -%}
               <div class="qty-price-wrap">
               <div

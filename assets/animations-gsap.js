@@ -45,6 +45,69 @@
        })
    });
 
+   // ------ Toggle Items (aka Accordions) --------- //
+   window.addEventListener('load', function(event) {
+    const items = gsap.utils.toArray("toggle-element toggle-item");
+
+    let lastItem;
+
+    items.forEach((item, i) => {
+
+
+
+        item.tl = gsap.timeline({
+            paused: true,
+            onStart: () => item.classList.add("active")
+        })
+        .to(item.querySelector(".info"), {
+            ease: "Strong.easeInOut",
+            duration: 1,
+            height: item.querySelector(".content").scrollHeight,
+        })
+        .from(item.querySelectorAll(".content > p, .content > ul, .content > div"), {
+            duration: 0.5,
+            x: -40,
+            opacity: 0,
+            stagger: 0.25,
+            ease: "expo"
+        }, 0.5);
+
+
+        
+        
+        item.addEventListener("click", e => {
+
+            // Reverse the other animations
+            items.forEach(myItem => myItem.tl.reverse());
+
+            if(lastItem) {
+                lastItem.classList.remove("active");
+                
+            } 
+
+            //console.log(item_image);
+            
+            if(typeof lastItem === "undefined"
+            || (lastItem && !lastItem.isSameNode(item))) {
+            // Play the clicked item's animation
+            items.forEach(myItem => myItem.tl.reverse());
+            item.tl.play();
+            lastItem = item;
+            console.log('Opened new item');
+            } else {
+                
+            lastItem = undefined;
+            console.log('Same item');
+            }
+            console.log(lastItem);
+
+        });
+    });
+
+
+  });
+  // End toggle-content
+
 // Run jQuery-specific functions
 (function( $ ) {
 })( jQuery );

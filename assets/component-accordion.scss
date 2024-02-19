@@ -138,4 +138,117 @@
   .accordion__content img {
     max-width: 100%;
   }
+
+  // ------ jQuery Slick Slider Toggle Item (Accordion) ---- //
+
+ toggle-element {
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    margin: 0;
+    padding: 0;
+
+    @include breakpoint(tablet) {
+        margin:5.2rem 0 0 0;
+    }
+
+    toggle-item {
+        display:flex;
+        flex-direction: column;
+        margin:0;
+        width:100%;
+        padding:1.2rem 0 1rem 0;
+
+        border-bottom: 0.15rem solid var(--color-text);
+
+        @include breakpoint(tablet) {
+            padding:1.6rem 0 1.2rem 0;
+        }
+
+        &:last-child {
+            border-bottom:0;
+        }
+
+        &:first-child {
+            border-top:0;
+        }
+
+
+        h2 {
+            cursor:pointer;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            width: 100%;
+            position: relative;
+            margin:0;
+
+            font-family:var(--font-family-header-cn);
+            font-size:3rem;
+            font-weight: normal;
+            letter-spacing:.2rem;
+            text-transform: uppercase;
+            color:var(--color-main);
+
+            @include breakpoint(tablet) {
+                font-size:3rem;
+            }
+
+            .icon-close {
+                display:inline-block;
+                cursor:pointer;
+                order:2;
+
+                height: 1.3rem;
+
+                position: absolute;
+                right: 0;
+                top: calc(50% - .65rem);
+                transform: rotate(45deg);
+            
+                path {
+                    transition: all .3s ease 0s;
+                    fill: var(--color-accent);
+                }
+            }
+        }
+
+        &.active {
+            h2 {
+                .icon-close {
+                    transform: rotate(0deg);
+                    path {
+                        fill: var(--color-main);
+                    }
+                }
+            }
+        }
+        h3 {
+            font-size:16px;
+            letter-spacing:.75px;
+            text-transform:uppercase;
+            margin-bottom:34px;
+        }
+
+        .info {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            height: 0px;
+
+            .content {
+                margin: 0;
+                padding-bottom: .1rem;
+            }
+
+            p {
+                margin:0 0 2rem 0;
+
+                &:last-child {
+                    margin:0;
+                }
+            }
+        }
+    }
+}
   

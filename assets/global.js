@@ -19,14 +19,13 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
 
   summary.addEventListener('click', (event) => {
     event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
-    console.log('accordion clicked open');
+    //console.log('accordion clicked open');
   });
 
   if (summary.closest('header-drawer, menu-drawer')) return;
   summary.parentElement.addEventListener('keyup', onKeyUpEscape);
 });
 */
-
 // ---- End Accordion Details Toggle
 
 const trapFocusHandlers = {};
@@ -382,6 +381,9 @@ class MenuDrawer extends HTMLElement {
       : this.closeSubmenu(openDetailsElement);
   }
 
+  // -- on Summary Click--  //
+
+  /*
   onSummaryClick(event) {
     const summaryElement = event.currentTarget;
     const detailsElement = summaryElement.parentNode;
@@ -412,6 +414,7 @@ class MenuDrawer extends HTMLElement {
       }, 100);
     }
   }
+  */
 
   openMenuDrawer(summaryElement) {
     setTimeout(() => {

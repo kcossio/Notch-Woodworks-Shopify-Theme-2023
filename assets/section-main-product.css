@@ -172,6 +172,8 @@ variant-radios .product-form__input,
 variant-selects .product-form__input {
   display: inline-flex;
   gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .product-form__input--dropdown {
@@ -221,18 +223,13 @@ fieldset.product-form__input .form__label span.lower {
 .product-form__input input[type=radio] + label.has-swatch {
   border: 0px;
   width: 30%;
-  max-width: 9.6rem;
+  margin: 0.1rem 0 0 0;
   background-color: var(--color-white);
   color: var(--color-text);
   border-radius: 0px;
   padding: 0;
   vertical-align: top;
   color: var(--color-main);
-}
-@media (min-width: 768px) {
-  .product-form__input input[type=radio] + label.has-swatch {
-    max-width: 12.2rem;
-  }
 }
 .product-form__input input[type=radio] + label.has-swatch img {
   padding: 0.4rem;

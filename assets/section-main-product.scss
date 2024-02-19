@@ -181,6 +181,8 @@ variant-selects {
   .product-form__input {
     display:inline-flex;
     gap:1rem;
+    width:100%;
+    justify-content: space-between;
   }
 }
 
@@ -232,7 +234,8 @@ fieldset.product-form__input .form__label {
   &.has-swatch {
     border:0px;
     width:30%;
-    max-width:9.6rem;
+    //max-width:9.6rem;
+    margin:.1rem 0 0 0;
     background-color:var(--color-white);
     color:var(--color-text);
     border-radius:0px;
@@ -241,7 +244,7 @@ fieldset.product-form__input .form__label {
     color:var(--color-main);
 
     @include breakpoint(tablet) {
-      max-width:12.2rem;
+      //max-width:12.2rem;
     }
     
 

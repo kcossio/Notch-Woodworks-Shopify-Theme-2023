@@ -77,7 +77,44 @@
     {%- endif -%}
   </noscript>
 
-  
+  <modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" data-modal="#ProductModal-{{ modal_id }}">
+    <span class="product__media-icon motion-reduce quick-add-hidden{% if media.media_type == 'image' %} product__media-icon--{{ section.settings.image_zoom }}{% endif %}" aria-hidden="true">
+      {%- liquid
+        case media.media_type
+        when 'video' or 'external_video'
+          render 'icon-play'
+        when 'model'
+          render 'icon-3d-model'
+        else
+          render 'icon-zoom'
+        endcase
+      -%}
+    </span>
+    <div class="loading-overlay__spinner hidden">
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        class="spinner"
+        viewBox="0 0 66 66"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
+      </svg>
+    </div>
+    <div class="product__media media media--transparent">
+      {{ media.preview_image | image_url: width: 1946 | image_tag:
+        class: image_class,
+        loading: lazy,
+        sizes: sizes,
+        widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
+      }}
+    </div>
+    <button class="product__media-toggle quick-add-hidden product__media-zoom-{{ section.settings.image_zoom }}" type="button" aria-haspopup="dialog" data-media-id="{{ media.id }}">
+      <span class="visually-hidden">
+        {{ 'products.product.media.open_media' | t: index: position }}
+      </span>
+    </button>
+  </modal-opener>
 
   {%- if media.media_type != 'image' -%}
     {%- if media.media_type == 'model' -%}

@@ -175,7 +175,7 @@ EASING
   right: 45px;
 }
 
-/*-- Studio Gallery Slider ---- */
+/*-- Full Width Slider Slider ---- */
 .full-width-slider {
   width: 100vw;
   padding: 0px;
@@ -217,6 +217,10 @@ EASING
   .studio-gallery-slide img {
     height: 61rem;
   }
+}
+
+.product-hero-images .slider__slide img {
+  aspect-ratio: 892/832;
 }
 
 :root {

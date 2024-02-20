@@ -163,7 +163,7 @@
     right: 45px;
 }
 
-/*-- Studio Gallery Slider ---- */
+/*-- Full Width Slider Slider ---- */
 
 .full-width-slider {
     width:100vw;
@@ -202,5 +202,17 @@
     @include breakpoint(laptop) {
         height:61rem;
     }
+}
+
+// Product Hero Slider
+.product-hero-images {
+
+    .slider__slide {
+
+        img {
+            aspect-ratio: 892 / 832;
+        }
+    }
+
 }
 

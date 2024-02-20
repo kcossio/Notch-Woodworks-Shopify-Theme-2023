@@ -41,8 +41,9 @@
   endif
 
   if media.media_type == 'image'
-    assign image_class = 'bg image-magnify-' | append: section.settings.image_zoom | append: ' media-type-' | append media.media_type 
+    assign image_class = 'bg image-magnify-' | append: section.settings.image_zoom 
   endif
+  
 -%}
 
 {%- capture sizes -%}

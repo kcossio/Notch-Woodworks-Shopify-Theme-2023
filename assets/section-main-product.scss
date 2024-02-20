@@ -1109,6 +1109,7 @@ a.product__text {
 
 .js .product__media {
   overflow: hidden !important;
+
 }
 
 .thumbnail[aria-current]:focus-visible {
@@ -1328,6 +1329,7 @@ a.product__text {
 
 .product-media-container .media {
   aspect-ratio: 892 / 839;
+  display: flex;
 }
 
 

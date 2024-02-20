@@ -1236,6 +1236,7 @@ a.product__text {
 
 .product-media-container .media {
   aspect-ratio: 892/839;
+  display: flex;
 }
 
 @media screen and (max-width: 749px) {

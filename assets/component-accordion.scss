@@ -239,6 +239,13 @@
                     transition: all .3s ease 0s;
                     fill: var(--color-accent);
                 }
+
+                .section-product-faq & {
+                  transform: rotate(0deg);
+                  path {
+                      fill: var(--color-accent);
+                  }
+              }
             }
         }
 
@@ -249,6 +256,13 @@
                     path {
                         fill: var(--color-main);
                     }
+                    
+                    .section-product-faq & {
+                      transform: rotate(0deg);
+                      path {
+                          fill: var(--color-accent);
+                      }
+                  }
                 }
             }
         }

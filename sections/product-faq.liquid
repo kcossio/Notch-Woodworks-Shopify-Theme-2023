@@ -13,6 +13,22 @@
     {%- case block.type -%}
 
       {%- when 'qa' -%}
+
+        <toggle-element id="Product-Toggle-{{ block.id }}-{{ section.id }}">
+          <toggle-item>
+            <h2 class="name ">
+              <span>{{ block.settings.title | default: block.settings.page.title }}</span>
+              {% render 'icon-close' %}
+            </h2>
+            <div class="info">
+                <div class="content">
+                  {{ block.settings.answer }}
+              {{ block.settings.page.content }}
+                </div>
+            </div>
+          </toggle-item>
+        </toggle-element>
+
         <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
           <details id="Details-{{ block.id }}-{{ section.id }}">
             <summary>

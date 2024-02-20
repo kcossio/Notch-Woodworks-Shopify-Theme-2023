@@ -207,16 +207,18 @@ toggle-element toggle-item h2 .icon-close {
   right: 0;
   top: calc(50% - 0.65rem);
   transform: rotate(45deg);
+  transition: all 0.3s ease 0s;
 }
 toggle-element toggle-item h2 .icon-close path {
   transition: all 0.3s ease 0s;
   fill: var(--color-accent);
 }
 .section-product-faq toggle-element toggle-item h2 .icon-close {
-  transform: rotate(0deg);
+  transform: rotate(45deg);
+  height: 1.5rem;
 }
 .section-product-faq toggle-element toggle-item h2 .icon-close path {
-  fill: var(--color-accent);
+  fill: var(--color-main);
 }
 toggle-element toggle-item.active h2 .icon-close {
   transform: rotate(0deg);

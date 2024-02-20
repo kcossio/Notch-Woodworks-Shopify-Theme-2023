@@ -234,6 +234,7 @@
                 right: 0;
                 top: calc(50% - .65rem);
                 transform: rotate(45deg);
+                transition:all .3s ease 0s;
             
                 path {
                     transition: all .3s ease 0s;
@@ -241,9 +242,10 @@
                 }
 
                 .section-product-faq & {
-                  transform: rotate(0deg);
+                  transform: rotate(45deg);
+                  height:1.5rem;
                   path {
-                      fill: var(--color-accent);
+                      fill: var(--color-main);
                   }
               }
             }
@@ -256,7 +258,7 @@
                     path {
                         fill: var(--color-main);
                     }
-                    
+
                     .section-product-faq & {
                       transform: rotate(0deg);
                       path {

@@ -72,6 +72,10 @@
     .thumbnail-list {
       height: 100%;
     }
+
+    .slick-list {
+      height: 100%;
+    }
   }
 }
 
@@ -1553,29 +1557,7 @@ a.product__text {
 }
 
 @media (min-width: 1024px) {
-  .product--thumbnail_slider {
-    position: relative;
 
-    .slider-button {
-      display:none !important;
-    }
-
-    ul.thumbnail-list {
-      width:60px;
-      height:306px;
-    }
-    .slick-track {
-     // max-height:100%;
-      //height:306px;
-      max-width:100%;
-    }
-
-    .thumbnail {
-      border:0px !important;
-      box-shadow: none !important;
-      border-radius:14px;
-    }
- }
   .product--thumbnail_slider .slider-mobile-gutter:not(.thumbnail-slider) {
     width: calc(100% - 80px);
  }

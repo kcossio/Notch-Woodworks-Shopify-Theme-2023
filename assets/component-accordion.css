@@ -145,7 +145,7 @@ toggle-element toggle-item {
   margin: 0;
   width: 100%;
   padding: 1.2rem 0 1rem 0;
-  border-bottom: 0.15rem solid var(--color-text);
+  border-bottom: 0.1rem solid #707070;
 }
 @media (min-width: 768px) {
   toggle-element toggle-item {

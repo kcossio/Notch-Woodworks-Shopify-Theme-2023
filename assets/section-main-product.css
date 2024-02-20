@@ -58,6 +58,9 @@ EASING
     flex-direction: column;
   }
 }
+.product-media-gallery .product-thumbnail-slider .thumbnail-list {
+  height: 100%;
+}
 
 @media screen and (min-width: 750px) {
   .product__column-sticky {

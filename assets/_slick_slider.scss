@@ -163,6 +163,54 @@
     right: 45px;
 }
 
+
+.slick-dots {
+    position: absolute;
+    bottom: 45px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index:15;
+    li {
+        position: relative;
+        display: inline-block;
+        height: 14px;
+        width: 14px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+        button {
+            -webkit-appearance:none;
+            border: 0;
+            background: var(--color-light-grey);
+            border:1px solid var(--color-light-grey);
+            display: block;
+            height: 14px;
+            width: 14px;
+            outline: none;
+            line-height: 0px;
+            font-size: 0px;
+            color: transparent;
+            padding: 0px;
+            transition:all .3s ease 0s;
+            cursor: pointer;
+            opacity:1;
+            &:hover, &:focus {
+                
+            }
+           
+        }
+        &.slick-active button {
+            background:transparent !important;
+        
+        }
+    }
+}
+
+
 /*-- Full Width Slider Slider ---- */
 
 .full-width-slider {
@@ -203,6 +251,8 @@
         height:61rem;
     }
 }
+
+
 
 // Product Hero Slider
 .product-hero-images {

@@ -156,6 +156,12 @@
       margin:0;
     }
 
+    &:last-of-type {
+      toggle-item {
+        border:0;
+      }
+    }
+
     toggle-item {
         display:flex;
         flex-direction: column;

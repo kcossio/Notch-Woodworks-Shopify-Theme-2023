@@ -152,6 +152,10 @@
         margin:5.2rem 0 0 0;
     }
 
+    .product__info-container & {
+      margin:0;
+    }
+
     toggle-item {
         display:flex;
         flex-direction: column;
@@ -203,6 +207,8 @@
               font-size:1.5rem;
               font-weight: bold;
               color:var(--color-text);
+              text-transform: none;
+              letter-spacing:.05rem;
             }
 
             .section-product-faq & {

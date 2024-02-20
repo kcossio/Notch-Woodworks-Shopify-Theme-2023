@@ -136,6 +136,9 @@ toggle-element {
     margin: 5.2rem 0 0 0;
   }
 }
+.product__info-container toggle-element {
+  margin: 0;
+}
 toggle-element toggle-item {
   display: flex;
   flex-direction: column;
@@ -184,6 +187,8 @@ product-info toggle-element toggle-item h2 {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--color-text);
+  text-transform: none;
+  letter-spacing: 0.05rem;
 }
 .section-product-faq toggle-element toggle-item h2 {
   font-family: var(--font-family-header-ex);

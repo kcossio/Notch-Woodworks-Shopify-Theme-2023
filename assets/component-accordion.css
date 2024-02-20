@@ -139,6 +139,9 @@ toggle-element {
 .product__info-container toggle-element {
   margin: 0;
 }
+.section-product-faq toggle-element {
+  margin: 0;
+}
 toggle-element:last-of-type toggle-item {
   border: 0;
 }

@@ -157,10 +157,11 @@
     }
 
     &:last-of-type {
-      border:1px solid red;
+
       toggle-item {
         border:0;
       }
+      
     }
 
     toggle-item {

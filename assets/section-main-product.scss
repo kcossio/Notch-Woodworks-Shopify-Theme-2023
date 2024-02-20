@@ -1664,15 +1664,13 @@ a.product__text {
       border-radius:14px;
     }
  }
-  .product--thumbnail_slider media-gallery,
-  .product--thumbnail_slider .MagicToolboxContainer {
+  .product--thumbnail_slider media-gallery {
     display: flex;
     flex-direction: row-reverse;
     align-items:center;
     justify-content: space-between;
  }
-  .product--thumbnail_slider .slider-mobile-gutter:not(.thumbnail-slider),
-  .product--thumbnail_slider .MagicToolboxSlides {
+  .product--thumbnail_slider .slider-mobile-gutter:not(.thumbnail-slider) {
     width: calc(100% - 80px);
  }
   .product--thumbnail_slider .thumbnail-slider {
@@ -1694,18 +1692,4 @@ a.product__text {
     border:0px;
  }
 
- .product--thumbnail_slider .MagicToolboxSelectorsContainer a {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    margin:8px 0px;
-    border:0px;
- }
-
- .product--thumbnail_slider .MagicToolboxSelectorsContainer a img {
-  width: 100%;
-    aspect-ratio: 1 / 1;
-    margin:0px 0px;
-    border-radius: 12px;
-    border:0px;
- }
 }

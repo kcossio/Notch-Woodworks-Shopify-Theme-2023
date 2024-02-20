@@ -47,16 +47,17 @@
 
 <section
   id="MediaGallery-{{ section.id }}{{ id_append }}"
-  role="region"
+  role="region" 
+  class="product-media-gallery 
   {% if section.settings.enable_sticky_info %}
-    class="product__column-sticky"
+    product__column-sticky
   {% endif %}
-  aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
-  data-desktop-layout="{{ section.settings.gallery_layout }}"
+  " 
+  aria-label="{{ 'products.product.media.gallery_viewer' | t }}" 
 >
   <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
   
-  <div id="GalleryViewer-{{ section.id }}{{ id_append }}" class="slider-mobile-gutter">
+  <div id="GalleryViewer-{{ section.id }}{{ id_append }}" class="product-hero">
     {%- unless is_duplicate -%}
       <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
         {{ 'accessibility.skip_to_product_info' | t }}
@@ -154,9 +155,9 @@
     and section.settings.gallery_layout contains 'thumbnail'
     or section.settings.mobile_thumbnails == 'show'
   -%}
-    <slider-component
+    <div 
       id="GalleryThumbnails-{{ section.id }}{{ id_append }}"
-      class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless section.settings.gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if section.settings.mobile_thumbnails != 'show' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
+      class="thumbnail-slider quick-add-hidden{% unless section.settings.gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if section.settings.mobile_thumbnails != 'show' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
     >
       <button
         type="button"
@@ -283,7 +284,7 @@
         {%- endfor -%}
       </ul>
       
-    </slider-component>
+    </div><!--End thumbnail-slider-->
   {%- endif -%}
 </section>
 

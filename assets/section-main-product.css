@@ -31,6 +31,32 @@ EASING
   margin: 0 auto;
 }
 
+.product-media-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.product-media-gallery .product-hero {
+  width: 100%;
+  order: 1;
+}
+@media (min-width: 768px) {
+  .product-media-gallery .product-hero {
+    width: 86%;
+    order: 2;
+  }
+}
+.product-media-gallery .thumbnail-slider {
+  display: none;
+}
+@media (min-width: 768px) {
+  .product-media-gallery .thumbnail-slider {
+    width: 11%;
+    order: 1;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .product__column-sticky {
     display: block;

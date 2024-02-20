@@ -34,11 +34,40 @@
 }
 
 
+
 .product--no-media {
   max-width: 57rem;
   margin: 0 auto;
 }
 
+
+// ------- Media Gallery ------- //
+
+.product-media-gallery {
+  display:flex;
+  flex-wrap:wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .product-hero {
+    width:100%;
+    order:1;
+
+    @include breakpoint(tablet) {
+      width: 86%;
+      order:2;
+    }
+  }
+
+  .thumbnail-slider {
+    display: none;
+
+    @include breakpoint(tablet) {
+      width:11%;
+      order:1;
+    }
+  }
+}
 
 
 @media screen and (min-width: 750px) {

@@ -2,6 +2,34 @@
 
 .product {
   margin: 0;
+
+  display:flex;
+  flex-wrap:wrap;
+
+  justify-content: space-between;
+
+  .product__media-wrapper {
+
+    order:1;
+    width:100%;
+
+    @include breakpoint(tablet) {
+      width:63%;
+    }
+
+  }
+
+  .product__info-wrapper {
+
+    order:2;
+
+    @include breakpoint(tablet) {
+      width:33%;
+    }
+
+  }
+
+
 }
 
 .product.grid {
@@ -13,9 +41,7 @@
   margin: 0 auto;
 }
 
-.product__media-wrapper {
-  padding-left: 0;
-}
+
 
 @media screen and (min-width: 750px) {
   .product__column-sticky {
@@ -25,25 +51,8 @@
     z-index: 2;
   }
 
-  .product--thumbnail .thumbnail-list {
-    padding-right: var(--media-shadow-horizontal-offset);
-  }
+  
 
-  .product__info-wrapper {
-    padding: 0 0 0 5rem;
-  }
-
-  .product__info-wrapper--extra-padding {
-    padding: 0 0 0 8rem;
-  }
-
-  .product--right .product__info-wrapper {
-    padding: 0 5rem 0 0;
-  }
-
-  .product--right .product__info-wrapper--extra-padding {
-    padding: 0 8rem 0 0;
-  }
 
   .product--right .product__media-list {
     margin-bottom: 2rem;
@@ -51,35 +60,6 @@
 
   .product__media-container .slider-buttons {
     display: none;
-  }
-}
-
-@media screen and (min-width: 990px) {
-  .product--large:not(.product--no-media) .product__media-wrapper {
-    max-width: 65%;
-    width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
-  }
-
-  .product--large:not(.product--no-media) .product__info-wrapper {
-    padding: 0 0 0 4rem;
-    max-width: 35%;
-    width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);
-  }
-
-  .product--large:not(.product--no-media).product--right .product__info-wrapper {
-    padding: 0 4rem 0 0;
-  }
-
-  .product--medium:not(.product--no-media) .product__media-wrapper,
-  .product--small:not(.product--no-media) .product__info-wrapper {
-    max-width: 35%;
-    width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
-  }
-
-  .product--medium:not(.product--no-media) .product__info-wrapper,
-  .product--small:not(.product--no-media) .product__media-wrapper {
-    max-width: 65%;
-    width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
 

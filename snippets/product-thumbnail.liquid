@@ -90,7 +90,7 @@
         <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
       </svg>
     </div>
-    <div class="product__media media media--transparent {%- if media.media_type == 'image' -%} has-bg{%- endif -%}">
+    <div class="product__media media media--transparent {%- if media.media_type == 'image' -%}{%- endif -%}">
       {{ media.preview_image | image_url: width: 1946 | image_tag:
         class: image_class,
         loading: lazy,

@@ -34,7 +34,7 @@ EASING
 .product-media-gallery {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
 }
 .product-media-gallery .product-hero {

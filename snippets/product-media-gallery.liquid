@@ -295,19 +295,17 @@ jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}').slick({
     autoplaySpeed: 7000,        
     pauseOnFocus: false,
     pauseOnHover: false,
-    slidesToShow: 4,
     vertical: true,
     verticalSwiping: true,
     infinite: false,
-    arrows: true,
+    arrows: false,
     appendArrows: jQuery('.thumbnail-slider'),
-    dots: true,
+    dots: false,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          arrows: true,
-          slidesToShow: 4
+          arrows: false
         }
       },
       {
@@ -334,7 +332,8 @@ jQuery('#Slider-Gallery-{{ section.id }}{{ id_append }}').slick({
   speed: 500,
   fade: true,
   cssEase: 'linear',
-  dots: true
+  dots: true,
+  slidesToShow: 1
 });
 		
  

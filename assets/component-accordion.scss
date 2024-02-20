@@ -264,11 +264,15 @@
             margin: 0;
             padding: 0;
             height: 0px;
+            
+            :first-child {
+              margin-top:0;
+            }
 
             .content {
                 margin: 0;
                 padding-bottom: .1rem;
-                padding-top:.1rem;
+                padding-top:2rem;
             }
 
             p {

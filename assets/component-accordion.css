@@ -230,10 +230,13 @@ toggle-element toggle-item .info {
   padding: 0;
   height: 0px;
 }
+toggle-element toggle-item .info :first-child {
+  margin-top: 0;
+}
 toggle-element toggle-item .info .content {
   margin: 0;
   padding-bottom: 0.1rem;
-  padding-top: 0.1rem;
+  padding-top: 2rem;
 }
 toggle-element toggle-item .info p {
   margin: 0 0 2rem 0;

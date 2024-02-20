@@ -77,7 +77,7 @@
     {%- endif -%}
   </noscript>
 
-  <modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" data-modal="#ProductModal-{{ modal_id }}">
+  <div class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden">
     
     <div class="loading-overlay__spinner hidden">
       <svg
@@ -98,7 +98,7 @@
         widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
       }}
     </div>
-  </modal-opener>
+  </div>
 
   {%- if media.media_type != 'image' -%}
     {%- if media.media_type == 'model' -%}

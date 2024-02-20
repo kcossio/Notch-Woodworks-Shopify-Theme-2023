@@ -48,11 +48,7 @@
 <section
   id="MediaGallery-{{ section.id }}{{ id_append }}"
   role="region" 
-  class="product-media-gallery 
-  {% if section.settings.enable_sticky_info %}
-    product__column-sticky
-  {% endif %}
-  " 
+  class="product-media-gallery" 
   aria-label="{{ 'products.product.media.gallery_viewer' | t }}" 
 >
   <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
@@ -301,7 +297,6 @@ jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}').slick({
     verticalSwiping: true,
     infinite: false,
     arrows: false,
-    appendArrows: jQuery('.thumbnail-slider'),
     dots: false,
     responsive: [
       {

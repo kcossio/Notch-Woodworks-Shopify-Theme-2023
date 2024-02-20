@@ -1,3 +1,7 @@
+/*
+
+
+
 if (!customElements.get('media-gallery')) {
   customElements.define(
     'media-gallery',
@@ -106,3 +110,5 @@ if (!customElements.get('media-gallery')) {
     }
   );
 }
+
+*/

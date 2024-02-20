@@ -1642,12 +1642,6 @@ a.product__text {
       border-radius:14px;
     }
  }
-  .product--thumbnail_slider media-gallery {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items:center;
-    justify-content: space-between;
- }
   .product--thumbnail_slider .slider-mobile-gutter:not(.thumbnail-slider) {
     width: calc(100% - 80px);
  }

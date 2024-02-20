@@ -1235,11 +1235,7 @@ a.product__text {
 }
 
 .product-media-container .media {
-  padding-top: var(--ratio-percent);
-}
-
-.product-media-container.constrain-height .media {
-  padding-top: min(var(--constrained-height), var(--ratio-percent));
+  aspect-ratio: 892/839;
 }
 
 @media screen and (max-width: 749px) {

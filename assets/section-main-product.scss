@@ -24,7 +24,8 @@
     order:2;
 
     @include breakpoint(tablet) {
-      width:33%;
+      width:37%;
+      padding:0 10.5rem 0 6rem;
     }
 
   }
@@ -32,9 +33,6 @@
 
 }
 
-.product.grid {
-  gap: 0;
-}
 
 .product--no-media {
   max-width: 57rem;

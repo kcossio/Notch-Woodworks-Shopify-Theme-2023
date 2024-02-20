@@ -47,13 +47,15 @@ EASING
     order: 2;
   }
 }
-.product-media-gallery .thumbnail-slider {
+.product-media-gallery .product-thumbnail-slider {
   display: none;
 }
 @media (min-width: 768px) {
-  .product-media-gallery .thumbnail-slider {
+  .product-media-gallery .product-thumbnail-slider {
     width: 11%;
     order: 1;
+    display: flex;
+    flex-direction: column;
   }
 }
 

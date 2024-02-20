@@ -59,12 +59,14 @@
     }
   }
 
-  .thumbnail-slider {
+  .product-thumbnail-slider {
     display: none;
 
     @include breakpoint(tablet) {
       width:11%;
       order:1;
+      display: flex;
+      flex-direction: column;
     }
   }
 }

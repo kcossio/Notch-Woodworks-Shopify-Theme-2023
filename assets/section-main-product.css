@@ -675,7 +675,8 @@ a.product__text {
   left: 12.5%;
   top: 12.5%;
   z-index: 1;
-  transition: color var(--duration-short) ease, opacity var(--duration-short) ease;
+  pointer-events: none;
+  transition: all 0.3s ease 0s;
 }
 
 @media screen and (min-width: 750px) {

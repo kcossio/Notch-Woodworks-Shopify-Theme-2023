@@ -1,0 +1,101 @@
+
+<div class="page-width">
+  
+    {%- if section.settings.heading != blank -%}
+      <header class="section-header">
+        <h2 class="title page-title contact-form-title header-cn scroll-trigger animate--slide-in">
+          <span>{{ section.settings.heading }}</span>
+        </h2>
+      </header>
+    {%- endif -%}
+
+    <div class="additional-products">
+
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+      
+          {%- when 'product' -%}
+            
+            <div class="add-product">
+            {%- assign additional_product = block.settings.additional_product -%}
+
+            {% render 'card-product-additional',
+              card_product: additional_product,
+              media_aspect_ratio: section.settings.image_ratio,
+              image_shape: section.settings.image_shape,
+              show_secondary_image: section.settings.show_secondary_image,
+              show_vendor: section.settings.show_vendor,
+              show_rating: section.settings.show_rating,
+              show_quick_add: true,
+              section_id: section.id
+            %}
+
+            {{ additional_product.title }}
+            {{ additional_product.description }}
+      
+            {%- ########################################################################## 
+            # Label: Custom Description
+            # Returns: a string or an empty object(if nothing has been entered)
+            # Filters: https://shopify.dev/api/liquid/objects#string 
+            ########################################################################## -%}
+            {{ block.settings.custom_description }} 
+
+            </div><!--End add-product-->
+      
+        {%- endcase -%}
+      {%- endfor -%}
+
+    </div><!--End additional-products-->
+
+</div><!--end page-width inner -->
+
+
+
+
+{% schema %}
+  {
+  "name": "Additional Products",
+  "class": "section section-additional-products bg-chevron-white",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "placeholder": "You May Also Like",
+      "info": "Enter a heading/title for the section"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Product",
+      "type": "product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "additional_product",
+          "label": "Additional Product",
+          "info": "Choose a product to add to this section"
+        },
+        {
+          "type": "richtext",
+          "id": "custom_description",
+          "label": "Custom Description",
+          "info": "Add a custom description for this product. Otherwise, the default product text content will be used."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Additional Products"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

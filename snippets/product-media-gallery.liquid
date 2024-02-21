@@ -156,7 +156,7 @@
       class="product-thumbnail-slider"
     >
       
-      <ul
+      <div
         id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
         class="thumbnail-list list-unstyled"
       >
@@ -180,7 +180,7 @@
             endcapture
             assign media_index = media_index | plus: 1
           -%}
-          <li
+          <div 
             id="Slide-Thumbnails-{{ section.id }}-0{{ id_append }}"
             class="thumbnail-list__item {% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}" 
             data-media-position="{{ media_index }}"
@@ -206,7 +206,7 @@
                 | escape
               }}
             </button>
-          </li>
+          </div>
         {%- endif -%}
         {%- for media in product.media -%}
           {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
@@ -222,7 +222,7 @@
               endcapture
               assign media_index = media_index | plus: 1
             -%}
-            <li
+            <div 
               id="Slide-Thumbnails-{{ section.id }}-{{ forloop.index }}{{ id_append }}"
               class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains media.src %} thumbnail-list_item--variant{% endif %}"
               data-target="{{ section.id }}-{{ media.id }}"
@@ -264,10 +264,10 @@
                   | escape
                 }}
               </button>
-            </li>
+            </div>
           {%- endunless -%}
         {%- endfor -%}
-      </ul>
+      </div><!--End thumbnail list-->
       
     </div><!--End thumbnail-slider-->
   {%- endif -%}

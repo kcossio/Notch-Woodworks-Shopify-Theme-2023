@@ -1088,9 +1088,15 @@ a.product__text {
   pointer-events: none;
 }
 
+.thumbnail:hover .thumbnail-badge .icon {
+  opacity: 1;
+}
+
 .thumbnail__badge .icon {
   width: 100%;
   height: 100%;
+  opacity: 0.5;
+  transition: all 0.3s ease 0s;
 }
 
 .thumbnail__badge .icon-3d-model {
@@ -1102,8 +1108,8 @@ a.product__text {
   color: rgb(var(--color-foreground), 0.6);
   width: 50%;
   height: 50%;
-  left: 12.5%;
-  top: 12.5%;
+  left: 25%;
+  top: 25%;
   position: absolute;
 }
 

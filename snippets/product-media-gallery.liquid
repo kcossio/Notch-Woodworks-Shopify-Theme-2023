@@ -290,6 +290,7 @@ jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}').slick({
     arrows: false,
     dots: false,
     slidesToShow: 6,
+    asNavFor: '#Slider-Gallery-{{ section.id }}{{ id_append }}'
     responsive: [
       {
         breakpoint: 768,
@@ -322,7 +323,8 @@ jQuery('#Slider-Gallery-{{ section.id }}{{ id_append }}').slick({
   fade: true,
   cssEase: 'linear',
   dots: true,
-  slidesToShow: 1
+  slidesToShow: 1,
+  asNavFor: '#Slider-Thumbnails-{{ section.id }}{{ id_append }}'
 });
 		
  

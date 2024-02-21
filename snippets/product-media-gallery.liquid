@@ -293,7 +293,7 @@ jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}').slick({
       {
         breakpoint: 768,
         settings: {
-          arrows: false
+          //arrows: false
         }
       },
       {
@@ -327,7 +327,20 @@ jQuery('#Slider-Gallery-{{ section.id }}{{ id_append }}').slick({
   cssEase: 'linear',
   dots: true,
   slidesToShow: 1,
-  asNavFor: '#Slider-Thumbnails-{{ section.id }}{{ id_append }}'
+  asNavFor: '#Slider-Thumbnails-{{ section.id }}{{ id_append }}',
+  responsive: [
+    {
+      breakpoint: 500,
+      settings: 
+      asNavFor: null,
+        /*{ arrows: true,
+        slidesToShow: 4,
+        vertical: false,
+        verticalSwiping: false
+      }*/
+      
+    }
+  ]
 });
 		
  

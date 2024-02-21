@@ -67,8 +67,8 @@
               </div><!--End card-media-->
 
         {%- endif -%}
-        <div class="card__content">
-          <div class="card__information">
+
+        <div class="card-content-">
             <h3
               class="card__heading"
               {% if card_product.featured_media == null and settings.card_style == 'standard' %}
@@ -209,7 +209,9 @@
             {%- endif -%}
 
 
-          </div><!--End card__information-->
+          </div><!--End card-content--->
+
+
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
               <span
@@ -227,7 +229,6 @@
               </span>
             {%- endif -%}
           </div><!--End card__badge-->
-        </div><!--End card__content-->
 
       
   </div><!--End card-product-additional-->

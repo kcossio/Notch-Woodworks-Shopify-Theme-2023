@@ -182,8 +182,7 @@
           -%}
           <li
             id="Slide-Thumbnails-{{ section.id }}-0{{ id_append }}"
-            class="thumbnail-list__item {% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}"
-            data-target="{{ section.id }}-{{ featured_media.id }}"
+            class="thumbnail-list__item {% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}" 
             data-media-position="{{ media_index }}"
           >
             {%- capture thumbnail_id -%}
@@ -192,8 +191,7 @@
             <button
               class="thumbnail global-media-settings global-media-settings--no-shadow"
               aria-label="{%- if featured_media.media_type == 'image' -%}{{ 'products.product.media.load_image' | t: index: media_index }}{%- elsif featured_media.media_type == 'model' -%}{{ 'products.product.media.load_model' | t: index: media_index }}{%- elsif featured_media.media_type == 'video' or featured_media.media_type == 'external_video' -%}{{ 'products.product.media.load_video' | t: index: media_index }}{%- endif -%}"
-              aria-current="true"
-              aria-controls="GalleryViewer-{{ section.id }}{{ id_append }}"
+              aria-current="true" 
               aria-describedby="{{ thumbnail_id }}"
             >
               {{
@@ -289,9 +287,27 @@ jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}').slick({
     infinite: false,
     arrows: false,
     dots: false,
+    asNavFor: '#Slider-Gallery-{{ section.id }}{{ id_append }}',
     slidesToShow: 6,
-    slidesToScroll: 1,
-    asNavFor: '#Slider-Gallery-{{ section.id }}{{ id_append }}'
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: 
+          'unslick'
+          /*{ arrows: true,
+          slidesToShow: 4,
+          vertical: false,
+          verticalSwiping: false
+        }*/
+        
+      }
+    ]
   });
 
 

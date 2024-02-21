@@ -20,9 +20,6 @@
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
 
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
-{{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
-
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
@@ -35,6 +32,9 @@
       assign ratio = 1
     endif
   -%}
+
+
+      
   <div class="card-product-additional">
     
       
@@ -86,10 +86,11 @@
             </h3>
 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
-            {%- if card_product.quantity_price_breaks_configured? -%}
-              <div class="card__information-volume-pricing-note">
-                <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
-              </div>
+            
+            {%- if custom_description and custom_description -%}
+              {{ custom_description }}
+            {%- else -%}
+              {{ card_product.description }}
             {%- endif -%}
 
             {%- if show_quick_add -%}

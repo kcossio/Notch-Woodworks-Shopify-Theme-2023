@@ -1,5 +1,7 @@
 {{ 'section-additional-products.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-rating.css' | asset_url | stylesheet_tag }}
+{{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
 
 <div class="page-width">
   
@@ -28,18 +30,17 @@
               show_vendor: section.settings.show_vendor,
               show_rating: section.settings.show_rating,
               show_quick_add: true,
-              section_id: section.id
+              section_id: section.id,
+              custom_description: block.settings.custom_description 
             %}
 
-            {{ additional_product.title }}
-            {{ additional_product.description }}
       
             {%- ########################################################################## 
             # Label: Custom Description
             # Returns: a string or an empty object(if nothing has been entered)
             # Filters: https://shopify.dev/api/liquid/objects#string 
             ########################################################################## -%}
-            {{ block.settings.custom_description }} 
+            
 
       
         {%- endcase -%}

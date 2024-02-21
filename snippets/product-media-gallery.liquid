@@ -120,18 +120,6 @@
         {%- endunless -%}
       {%- endfor -%}
     </div><!-- End slider gallery -->
-    {%- unless is_duplicate -%}
-      <div class="slider-buttons no-js-hidden quick-add-hidden{% if hide_mobile_slider %} small-hide{% endif %}">
-       
-        <div class="slider-counter caption">
-          <span class="slider-counter--current">1</span>
-          <span aria-hidden="true"> / </span>
-          <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-          <span class="slider-counter--total">{{ media_count }}</span>
-        </div>
-      
-      </div>
-    {%- endunless -%}
   </div>
   {%- if first_3d_model -%}
     <button

@@ -87,10 +87,10 @@
 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
             
-            {%- if custom_description and custom_description -%}
+            {%- if custom_description and custom_description != empty -%}
               {{ custom_description }}
             {%- else -%}
-              {{ card_product.description }}
+              {{ card_product.content }}
             {%- endif -%}
 
             {%- if show_quick_add -%}

@@ -1088,7 +1088,7 @@ a.product__text {
   pointer-events: none;
 }
 
-.thumbnail:hover .thumbnail-badge .icon {
+.thumbnail-list__item:hover .thumbnail-badge .icon {
   opacity: 1;
 }
 

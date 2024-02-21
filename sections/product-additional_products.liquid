@@ -18,7 +18,6 @@
       
           {%- when 'product' -%}
             
-            <div class="add-product">
             {%- assign additional_product = block.settings.additional_product -%}
 
             {% render 'card-product-additional',
@@ -42,7 +41,6 @@
             ########################################################################## -%}
             {{ block.settings.custom_description }} 
 
-            </div><!--End add-product-->
       
         {%- endcase -%}
       {%- endfor -%}

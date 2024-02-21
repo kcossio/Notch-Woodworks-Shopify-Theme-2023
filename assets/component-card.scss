@@ -736,6 +736,8 @@
   .card-product-additional {
 
     width:100%;
+    display:flex;
+    flex-wrap:wrap;
 
     @include breakpoint(tablet) {
       width:50%;

@@ -2,3 +2,15 @@
 
 // Additional Products Section
 
+.additional-product-cards {
+    display:flex;
+    flex-wrap:wrap;
+
+    .card {
+        width:100%;
+
+        @include breakpoint(tablet) {
+            width:50%;
+        }
+    }
+}

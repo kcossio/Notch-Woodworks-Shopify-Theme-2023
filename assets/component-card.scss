@@ -730,3 +730,14 @@
       }
     }
   }
+
+  // Additional Product (e.g. Wax + Oil) Card
+
+  .card-product-additional {
+
+    width:100%;
+
+    @include breakpoint(tablet) {
+      width:50%;
+    }
+  }

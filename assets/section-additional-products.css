@@ -1,3 +1,15 @@
 /*-----------------------
 EASING 
 ---------------------- */
+.additional-product-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.additional-product-cards .card {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .additional-product-cards .card {
+    width: 50%;
+  }
+}

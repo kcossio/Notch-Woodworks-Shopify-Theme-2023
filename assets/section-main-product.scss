@@ -1369,7 +1369,10 @@ a.product__text {
 .product-media-container .media {
   aspect-ratio: 892 / 839;
   display: flex;
-  align-items: center;
+
+  &.deferred-media {
+    align-items: center;
+  }
 }
 
 

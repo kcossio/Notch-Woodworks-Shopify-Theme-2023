@@ -1260,6 +1260,8 @@ a.product__text {
 .product-media-container .media {
   aspect-ratio: 892/839;
   display: flex;
+}
+.product-media-container .media.deferred-media {
   align-items: center;
 }
 

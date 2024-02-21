@@ -390,6 +390,37 @@ p {
   }
 }
 
+.dotted-header {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 3.3rem;
+  margin: 0 0 2.4rem 0;
+  font-weight: normal;
+  line-height: 1em;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.dotted-header span {
+  display: inline-block;
+  padding: 0px 1.5rem 1rem 1.5rem;
+  border-style: dotted;
+  border-width: 0 0 6px 0;
+  border-color: var(--color-accent);
+  border-image-source: url("border-dot-red.svg?v=1");
+  border-image-slice: 24% 24% 24% 24%;
+  border-image-repeat: round;
+}
+@media (min-width: 768px) {
+  .dotted-header {
+    font-size: 6rem;
+    margin: 0 0 2.4rem 0;
+    letter-spacing: 0.4rem;
+  }
+}
+
 .bg-chevron-white {
   background: #F2F2F2 url("bg-chevron-white.svg") center center repeat;
   background-size: 23374.6px 1740.6px;

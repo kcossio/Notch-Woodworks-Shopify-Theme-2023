@@ -76,13 +76,15 @@
   position: absolute;
   left: 50%;
   top: 50%;
+  opacity:.6;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--duration-short) ease, color var(--duration-short) ease;
+  transition: opacity var(--duration-short) ease, transform var(--duration-short) ease, color var(--duration-short) ease;
   z-index: 1;
 }
 
 .deferred-media__poster-button:hover {
   transform: translate(-50%, -50%) scale(1.1);
+  opacity:1;
 }
 
 .deferred-media__poster-button .icon {

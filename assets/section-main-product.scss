@@ -62,7 +62,8 @@
     display: none;
 
     @include breakpoint(tablet) {
-      width:11%;
+      width:14%;
+      padding-right:1.2rem;
       order:1;
       display: flex;
       flex-direction: column;

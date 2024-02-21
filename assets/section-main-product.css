@@ -52,7 +52,8 @@ EASING
 }
 @media (min-width: 768px) {
   .product-media-gallery .product-thumbnail-slider {
-    width: 11%;
+    width: 14%;
+    padding-right: 1.2rem;
     order: 1;
     display: flex;
     flex-direction: column;

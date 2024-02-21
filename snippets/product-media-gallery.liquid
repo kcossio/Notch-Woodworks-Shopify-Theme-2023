@@ -289,27 +289,9 @@ jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}').slick({
     infinite: false,
     arrows: false,
     dots: false,
-    asNavFor: '#Slider-Gallery-{{ section.id }}{{ id_append }}',
     slidesToShow: 6,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false
-        }
-      },
-      {
-        breakpoint: 500,
-        settings: 
-          'unslick'
-          /*{ arrows: true,
-          slidesToShow: 4,
-          vertical: false,
-          verticalSwiping: false
-        }*/
-        
-      }
-    ]
+    slidesToScroll: 1,
+    asNavFor: '#Slider-Gallery-{{ section.id }}{{ id_append }}'
   });
 
 

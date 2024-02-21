@@ -261,24 +261,6 @@
         "associated_product": "board-no-1"
       }
     },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 2,
-        "color_scheme": "background-1",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 0,
-        "padding_bottom": 60
-      }
-    },
     "1700257961a6f4236e": {
       "type": "apps",
       "blocks": {
@@ -329,7 +311,6 @@
     "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3",
     "7d2c50cb-25cf-45a7-832b-8089ade81cda",
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
-    "related-products",
     "1700257961a6f4236e",
     "product_additional_products_p74Baw"
   ]

@@ -294,6 +294,32 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "product_additional_products_p74Baw": {
+      "type": "product-additional_products",
+      "blocks": {
+        "product_UXypAe": {
+          "type": "product",
+          "settings": {
+            "additional_product": "renewal-oil",
+            "custom_description": ""
+          }
+        },
+        "product_XDDEW6": {
+          "type": "product",
+          "settings": {
+            "additional_product": "protective-wax",
+            "custom_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_UXypAe",
+        "product_XDDEW6"
+      ],
+      "settings": {
+        "heading": "Care of Your Board"
+      }
     }
   },
   "order": [
@@ -304,6 +330,7 @@
     "7d2c50cb-25cf-45a7-832b-8089ade81cda",
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
     "related-products",
-    "1700257961a6f4236e"
+    "1700257961a6f4236e",
+    "product_additional_products_p74Baw"
   ]
 }

@@ -29,3 +29,6 @@ EASING
     width: 50%;
   }
 }
+.additional-product-cards .card .card-content .card-heading {
+  color: var(--color-accent);
+}

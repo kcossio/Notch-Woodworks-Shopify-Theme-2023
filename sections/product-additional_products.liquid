@@ -21,6 +21,7 @@
           {%- when 'product' -%}
             
             {%- assign additional_product = block.settings.additional_product -%}
+            {%- assign custom_description = block.settings.custom_description -%}
 
             {% render 'card-product-additional',
               card_product: additional_product,
@@ -31,15 +32,10 @@
               show_rating: section.settings.show_rating,
               show_quick_add: true,
               section_id: section.id,
-              custom_description: block.settings.custom_description 
+              custom_description: custom_description
             %}
 
       
-            {%- ########################################################################## 
-            # Label: Custom Description
-            # Returns: a string or an empty object(if nothing has been entered)
-            # Filters: https://shopify.dev/api/liquid/objects#string 
-            ########################################################################## -%}
             
 
       

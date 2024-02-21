@@ -182,7 +182,7 @@
           -%}
           <li
             id="Slide-Thumbnails-{{ section.id }}-0{{ id_append }}"
-            class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}"
+            class="thumbnail-list__item {% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}"
             data-target="{{ section.id }}-{{ featured_media.id }}"
             data-media-position="{{ media_index }}"
           >

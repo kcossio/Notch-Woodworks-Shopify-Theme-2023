@@ -165,8 +165,8 @@
 
 
 .slick-dots {
-    position: absolute;
-    bottom: -3.5rem;
+    position: relative;
+    padding-top:1.8rem;
     list-style: none;
     display: flex;
     width: 100%;
@@ -178,6 +178,13 @@
     margin: 0;
     width: 100%;
     z-index:15;
+    @include breakpoint(tablet) {
+
+        position: absolute;
+        bottom: -3.5rem;
+        padding-top:0;
+
+    }
     li {
         position: relative;
         display: inline-block;

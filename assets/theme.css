@@ -177,7 +177,6 @@ EASING
 
 .slick-dots {
   position: relative;
-  padding-top: 1.8rem;
   list-style: none;
   display: flex;
   width: 100%;
@@ -185,7 +184,7 @@ EASING
   justify-content: center;
   gap: 1.2rem;
   text-align: center;
-  padding: 0;
+  padding: 1.8rem 0 0 0;
   margin: 0;
   width: 100%;
   z-index: 15;
@@ -194,7 +193,7 @@ EASING
   .slick-dots {
     position: absolute;
     bottom: -3.5rem;
-    padding-top: 0;
+    padding: 0;
   }
 }
 .slick-dots li {

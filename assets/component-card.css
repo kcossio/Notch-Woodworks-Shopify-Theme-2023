@@ -721,3 +721,22 @@ EASING
     width: 50%;
   }
 }
+.card-product-additional .card-media {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .card-product-additional .card-media {
+    width: 50%;
+  }
+}
+.card-product-additional .card-content {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .card-product-additional .card-content {
+    width: 50%;
+  }
+}
+.card-product-additional .card-content .card-heading {
+  color: var(--color-accent);
+}

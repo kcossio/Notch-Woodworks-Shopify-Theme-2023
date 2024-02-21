@@ -5,30 +5,3 @@ EASING
   display: flex;
   flex-wrap: wrap;
 }
-.additional-product-cards .card {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .additional-product-cards .card {
-    width: 50%;
-  }
-}
-.additional-product-cards .card .card-media {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .additional-product-cards .card .card-media {
-    width: 50%;
-  }
-}
-.additional-product-cards .card .card-content {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .additional-product-cards .card .card-content {
-    width: 50%;
-  }
-}
-.additional-product-cards .card .card-content .card-heading {
-  color: var(--color-accent);
-}

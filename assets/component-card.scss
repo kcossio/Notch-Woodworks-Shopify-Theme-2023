@@ -742,4 +742,26 @@
     @include breakpoint(tablet) {
       width:50%;
     }
+
+    .card-media {
+        width: 100%;
+        
+        @include breakpoint(tablet) {
+            width: 50%;
+        }
+
+    }
+
+    .card-content {
+        width: 100%;
+        
+        @include breakpoint(tablet) {
+            width: 50%;
+        }
+
+        .card-heading {
+            color:var(--color-accent);
+        }
+
+    }
   }

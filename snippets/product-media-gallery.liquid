@@ -310,6 +310,11 @@ jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}').slick({
     ]
   });
 
+  jQuery("#Slider-Thumbnails-{{ section.id }}{{ id_append }} .slick-slide").bind("click", function() {
+    var slidx = jQuery(this).attr('data-slick-index');
+    $jQuery('#Slider-Gallery-{{ section.id }}{{ id_append }}').slick('slickGoTo', slidx); 
+});
+
 
 // Main images
 jQuery('#Slider-Gallery-{{ section.id }}{{ id_append }}').slick({

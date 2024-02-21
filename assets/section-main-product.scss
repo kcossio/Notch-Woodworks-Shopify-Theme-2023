@@ -1064,7 +1064,7 @@ a.product__text {
 
 
 .thumbnail {
-  border:1px solid red;
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -1076,6 +1076,8 @@ a.product__text {
   color: rgb(var(--color-foreground));
   cursor: pointer;
   background-color: transparent;
+  transform: all .3s ease 0s;
+  border:0;
 }
 
 .thumbnail:hover {
@@ -1084,8 +1086,7 @@ a.product__text {
 
 
 .thumbnail[aria-current] {
-  box-shadow: 0 0 0rem 0.1rem rgb(var(--color-foreground));
-  border-color: rgb(var(--color-foreground));
+  border:0;
 }
 
 

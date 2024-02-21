@@ -872,6 +872,13 @@ a.product__text {
   display: none;
 }
 
+.product__modal-opener:not(.product__modal-opener--image) {
+  display: none;
+}
+.product-media-container .product__modal-opener:not(.product__modal-opener--image) {
+  display: none;
+}
+
 @media screen and (min-width: 750px) {
   .product-media-modal__content {
     padding-bottom: 2rem;
@@ -881,9 +888,7 @@ a.product__text {
     display: block;
   }
 
-  .product__modal-opener:not(.product__modal-opener--image) {
-    display: none;
-  }
+ 
 
   .product__media-list .deferred-media {
     display: block;
@@ -1421,11 +1426,6 @@ a.product__text {
   position: relative;
 }
 
-@media screen and (min-width: 750px) {
-  .product-media-container .product__modal-opener:not(.product__modal-opener--image) {
-    display: none;
-  }
-}
 
 /* Recipient form */
 .recipient-form {

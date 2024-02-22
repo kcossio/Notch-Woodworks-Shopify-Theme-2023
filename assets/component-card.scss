@@ -738,11 +738,11 @@
     width:100%;
     display:flex;
     flex-wrap:wrap;
+    justify-content: space-between;
 
     @include breakpoint(tablet) {
       width:48%;
       align-items: center;
-      padding-right:5%;
     }
 
     .card-media {
@@ -759,8 +759,9 @@
         text-align:center;
         
         @include breakpoint(tablet) {
-            width: 63%;
+            width: 61%;
             text-align: left;
+            padding-right:5%;
         }
 
         .card-heading {

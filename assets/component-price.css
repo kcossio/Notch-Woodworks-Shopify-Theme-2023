@@ -8,14 +8,21 @@ EASING
   color: inherit;
   font-style: italic;
 }
+.product-price p.price-shipping-text {
+  font-size: 1.35rem;
+  margin: 0;
+  display: none;
+}
 @media (min-width: 768px) {
-  .product-price .price {
-    font-size: 2.4rem;
+  .product-price p.price-shipping-text {
+    display: block;
+    line-height: 1.1em;
   }
 }
-.product-price p.price-shipping-text {
-  font-size: 1.6rem;
-  margin: 0;
+@media (min-width: 1680px) {
+  .product-price p.price-shipping-text {
+    font-size: 1.8rem;
+  }
 }
 
 .price > * {

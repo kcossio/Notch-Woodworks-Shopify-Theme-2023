@@ -106,7 +106,7 @@ section {
         font-size:1.35rem;
 
         @include breakpoint(tablet) {
-            displaty:inline-block;
+            display:inline-block;
             padding-left:1rem;
         }
     }

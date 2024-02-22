@@ -578,7 +578,7 @@ section .jdgm-prev-badge__text {
 }
 @media (min-width: 768px) {
   section .jdgm-prev-badge__text {
-    displaty: inline-block;
+    display: inline-block;
     padding-left: 1rem;
   }
 }

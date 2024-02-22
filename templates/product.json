@@ -226,6 +226,37 @@
         "main_details": "{{ section.settings.associated_product.metafields.custom.product_details | metafield_tag }}"
       }
     },
+    "rich_text_z7pxfj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dRNfP3": {
+          "type": "heading",
+          "settings": {
+            "heading_style": "blue_w_notch_underline",
+            "heading": "The Notch Promise"
+          }
+        },
+        "text_a6pJCq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque non tellus. Elementum tempus egestas sed sed risus pretium quam vulputate. Proin libero nunc consequat interdum varius sit amet mattis vulputate. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dRNfP3",
+        "text_a6pJCq"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "background_style": "bg-chevron-white"
+      }
+    },
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689": {
       "type": "product-faq",
       "blocks": {
@@ -302,37 +333,6 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "rich_text_z7pxfj": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_dRNfP3": {
-          "type": "heading",
-          "settings": {
-            "heading_style": "blue_w_notch_underline",
-            "heading": "The Notch Promise"
-          }
-        },
-        "text_a6pJCq": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque non tellus. Elementum tempus egestas sed sed risus pretium quam vulputate. Proin libero nunc consequat interdum varius sit amet mattis vulputate. <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_dRNfP3",
-        "text_a6pJCq"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "background_style": "bg-chevron-white"
-      }
     }
   },
   "order": [
@@ -341,9 +341,9 @@
     "31849e1d-eb5b-4e7e-b8cd-db8c367a89fe",
     "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3",
     "7d2c50cb-25cf-45a7-832b-8089ade81cda",
+    "rich_text_z7pxfj",
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
     "product_additional_products_p74Baw",
-    "1700257961a6f4236e",
-    "rich_text_z7pxfj"
+    "1700257961a6f4236e"
   ]
 }

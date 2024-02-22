@@ -740,14 +740,14 @@
     flex-wrap:wrap;
 
     @include breakpoint(tablet) {
-      width:50%;
+      width:42%;
     }
 
     .card-media {
         width: 100%;
         
         @include breakpoint(tablet) {
-            width: 50%;
+            width: 37%;
         }
 
     }
@@ -756,11 +756,11 @@
         width: 100%;
         
         @include breakpoint(tablet) {
-            width: 50%;
+            width: 63%;
         }
 
         .card-heading {
-            color:var(--color-accent);
+            color:var(--color-text);
         }
 
     }

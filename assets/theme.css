@@ -584,8 +584,14 @@ section .jdgm-prev-badge__text {
 }
 section .jdgm-star {
   width: 1.8rem;
+  height: auto;
   aspect-ratio: 18.23/17.33;
   display: inline-block !important;
+}
+@media (min-width: 1440px) {
+  section .jdgm-star {
+    width: 2.4rem;
+  }
 }
 section .jdgm-star.jdgm--on {
   background: url("icon-star-rating-on.svg") center no-repeat;

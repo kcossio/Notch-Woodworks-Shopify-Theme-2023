@@ -1,16 +1,16 @@
 /*-----------------------
 EASING 
 ---------------------- */
-.section.section-main-product {
+.section-main-product {
   padding: 0;
 }
 @media (min-width: 768px) {
-  .section.section-main-product {
+  .section-main-product {
     padding: 0 3rem;
   }
 }
 @media (min-width: 1280px) {
-  .section.section-main-product {
+  .section-main-product {
     padding: 0 5rem;
   }
 }

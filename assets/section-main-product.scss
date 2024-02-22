@@ -1,6 +1,6 @@
 @import 'mixins';
 
-.section.section-main-product {
+.section-main-product {
   padding:0;
 
   @include breakpoint(tablet) {

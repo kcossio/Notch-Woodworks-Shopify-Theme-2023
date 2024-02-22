@@ -587,10 +587,14 @@ section .jdgm-star {
   height: auto;
   aspect-ratio: 18.23/17.33;
   display: inline-block !important;
+  margin: 0 0.6rem;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1680px) {
   section .jdgm-star {
     width: 2.4rem;
+  }
+  section .jdgm-star:first-child {
+    margin-left: 0;
   }
 }
 section .jdgm-star.jdgm--on {

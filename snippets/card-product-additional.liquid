@@ -87,11 +87,13 @@
 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
             
+            <div class="product-description">
             {%- if custom_description and custom_description != empty -%}
               {{ custom_description }}
             {%- else -%}
               {{ card_product.content }}
             {%- endif -%}
+          </div><!--End product-desc-->
 
             {%- if show_quick_add -%}
               <div class="quick-add no-js-hidden">

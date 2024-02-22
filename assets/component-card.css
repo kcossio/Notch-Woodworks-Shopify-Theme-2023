@@ -743,6 +743,7 @@ EASING
   font-size: 2.7rem;
   text-transform: uppercase;
   margin: 0;
+  letter-spacing: 0.1rem;
 }
 @media (min-width: 1680px) {
   .card-product-additional .card-content .card-heading {
@@ -752,9 +753,16 @@ EASING
 .card-product-additional .card-content .price {
   font-size: 2.4rem;
   font-style: italic;
+  line-height: 1em;
 }
 @media (min-width: 1440px) {
   .card-product-additional .card-content .price {
     font-size: 3.2rem;
   }
+}
+.card-product-additional .card-content .product-description {
+  margin: 2rem 0;
+}
+.card-product-additional .card-content .product-description p:last-child {
+  margin-bottom: 0;
 }

@@ -130,6 +130,7 @@ toggle-element {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 @media (min-width: 768px) {
   toggle-element {

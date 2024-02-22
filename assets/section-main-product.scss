@@ -1,5 +1,16 @@
 @import 'mixins';
 
+.section.section-main-product {
+  padding:0;
+
+  @include breakpoint(tablet) {
+    padding:0 3rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding:0 5rem;
+  }
+}
 .product {
   margin: 0;
 

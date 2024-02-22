@@ -131,7 +131,7 @@
                   }
                   @media screen and (min-width: 1440px) {
                     #{{ icon_id }} {
-                      width: {{ block.settings.desktop_width }} px;
+                      width: {{ block.settings.desktop_width }}px;
                     }
                   }
                 {%- endstyle -%}
@@ -394,13 +394,6 @@
         },
         {
           "type": "number",
-          "id": "desktop_width",
-          "label": "Desktop Width",
-          "default": 175,
-          "info": "Enter the maximum width (in pixels) that you'd like this image to be on Desktops"
-        },
-        {
-          "type": "number",
           "id": "mobile_width",
           "label": "Mobile Width",
           "default": 175,
@@ -410,6 +403,13 @@
           "type": "number",
           "id": "laptop_width",
           "label": "Laptop Width",
+          "default": 175,
+          "info": "Enter the maximum width (in pixels) that you'd like this image to be on Desktops"
+        },
+        {
+          "type": "number",
+          "id": "desktop_width",
+          "label": "Desktop Width",
           "default": 175,
           "info": "Enter the maximum width (in pixels) that you'd like this image to be on Desktops"
         }

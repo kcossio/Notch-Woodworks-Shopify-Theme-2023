@@ -572,3 +572,13 @@ section .jdgm-carousel-item .jdgm-carousel-item__reviewer-name {
     font-size: 3.6rem;
   }
 }
+section .jdgm-prev-badge__text {
+  display: block;
+  font-size: 1.35rem;
+}
+@media (min-width: 768px) {
+  section .jdgm-prev-badge__text {
+    displaty: inline-block;
+    padding-left: 1rem;
+  }
+}

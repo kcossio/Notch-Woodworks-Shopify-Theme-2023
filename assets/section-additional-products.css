@@ -4,6 +4,7 @@ EASING
 .additional-product-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 4.5rem 0;
 }
 @media (min-width: 768px) {

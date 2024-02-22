@@ -741,6 +741,7 @@
 
     @include breakpoint(tablet) {
       width:42%;
+      align-items: center;
     }
 
     .card-media {

@@ -33,11 +33,13 @@ EASING
 .product .product__info-wrapper {
   order: 2;
   padding: 0 3rem;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .product .product__info-wrapper {
     width: 37%;
     padding: 0 10.5rem 0 6rem;
+    text-align: left;
   }
 }
 

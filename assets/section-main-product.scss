@@ -34,10 +34,12 @@
 
     order:2;
     padding:0 3rem;
+    text-align:center;
 
     @include breakpoint(tablet) {
       width:37%;
       padding:0 10.5rem 0 6rem;
+      text-align:left;
     }
 
   }

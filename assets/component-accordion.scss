@@ -212,11 +212,15 @@
               margin: 0;
               word-break: break-word;
               font-family:var(--font-family-body);
-              font-size:1.5rem;
+              font-size:1.6rem;
               font-weight: bold;
               color:var(--color-text);
               text-transform: none;
-              letter-spacing:.05rem;
+              letter-spacing:0rem;
+
+              @include breakpoint(laptop) {
+                font-size:1.8rem;
+              }
             }
 
             .section-product-faq & {

@@ -789,10 +789,10 @@
         }
 
         .product-description {
-          margin:2rem 0;
+          margin:0 0 2rem 0;
 
           @include breakpoint(tablet) {
-            margin:2rem 0 2.8rem 0;
+            margin:0 0 2.8rem 0;
           }
 
           p {

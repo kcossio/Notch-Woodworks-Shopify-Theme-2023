@@ -765,11 +765,11 @@ EASING
   }
 }
 .card-product-additional .card-content .product-description {
-  margin: 2rem 0;
+  margin: 0 0 2rem 0;
 }
 @media (min-width: 768px) {
   .card-product-additional .card-content .product-description {
-    margin: 2rem 0 2.8rem 0;
+    margin: 0 0 2.8rem 0;
   }
 }
 .card-product-additional .card-content .product-description p {

@@ -330,7 +330,8 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 80,
-        "padding_bottom": 80
+        "padding_bottom": 80,
+        "background_style": "bg-chevron-white"
       }
     }
   },

@@ -115,8 +115,8 @@ section {
 
     .jdgm-star {
         width:1.8rem;
-        height: auto;
-        aspect-ratio: 18.23 / 17.33;
+        height: 1.8rem;
+        aspect-ratio: 1 / 1;
         display: inline-block !important;
         margin:0 .6rem;
 
@@ -124,6 +124,7 @@ section {
 
         @include breakpoint(desktopwide) {
             width:2.4rem;
+            height:2.4rem;
 
             &:first-child {
                 margin-left:0;

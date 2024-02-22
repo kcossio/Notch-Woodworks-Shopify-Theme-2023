@@ -584,14 +584,15 @@ section .jdgm-prev-badge__text {
 }
 section .jdgm-star {
   width: 1.8rem;
-  height: auto;
-  aspect-ratio: 18.23/17.33;
+  height: 1.8rem;
+  aspect-ratio: 1/1;
   display: inline-block !important;
   margin: 0 0.6rem;
 }
 @media (min-width: 1680px) {
   section .jdgm-star {
     width: 2.4rem;
+    height: 2.4rem;
   }
   section .jdgm-star:first-child {
     margin-left: 0;

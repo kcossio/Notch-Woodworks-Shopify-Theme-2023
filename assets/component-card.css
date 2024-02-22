@@ -763,6 +763,9 @@ EASING
 .card-product-additional .card-content .product-description {
   margin: 2rem 0;
 }
+.card-product-additional .card-content .product-description p {
+  line-height: 1.4em;
+}
 .card-product-additional .card-content .product-description p:last-child {
   margin-bottom: 0;
 }

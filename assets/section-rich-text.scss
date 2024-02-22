@@ -154,4 +154,16 @@
     width:100%;
     justify-content: center;
     gap:2rem;
+
+    &:empty {
+      display: none;
+    }
+
+    &:not(:empty) {
+      margin-top:4rem;
+
+      @include breakpoint(tablet) {
+        margin-top:6rem;
+      }
+    }
   }

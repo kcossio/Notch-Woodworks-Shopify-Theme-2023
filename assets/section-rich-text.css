@@ -147,3 +147,14 @@ EASING
   justify-content: center;
   gap: 2rem;
 }
+.rt-icons:empty {
+  display: none;
+}
+.rt-icons:not(:empty) {
+  margin-top: 4rem;
+}
+@media (min-width: 768px) {
+  .rt-icons:not(:empty) {
+    margin-top: 6rem;
+  }
+}

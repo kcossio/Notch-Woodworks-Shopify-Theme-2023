@@ -104,9 +104,11 @@ section {
     .jdgm-prev-badge__text {
         display:block;
         font-size:1.35rem;
+        padding-top:.2rem;
 
         @include breakpoint(tablet) {
             display:inline-block;
+            vertical-align:top;
             padding-left:1rem;
         }
     }

@@ -575,10 +575,12 @@ section .jdgm-carousel-item .jdgm-carousel-item__reviewer-name {
 section .jdgm-prev-badge__text {
   display: block;
   font-size: 1.35rem;
+  padding-top: 0.2rem;
 }
 @media (min-width: 768px) {
   section .jdgm-prev-badge__text {
     display: inline-block;
+    vertical-align: top;
     padding-left: 1rem;
   }
 }

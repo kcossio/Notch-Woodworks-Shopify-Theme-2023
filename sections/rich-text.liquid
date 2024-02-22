@@ -14,7 +14,9 @@
   }
 {%- endstyle -%}
 
-<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
+{%- assign bg_class = section.settings.background_style -%}
+
+<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %} {{ section.settings.bg_class }}">
   <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
@@ -106,7 +108,7 @@
 {
   "name": "t:sections.rich-text.name",
   "tag": "section",
-  "class": "section",
+  "class": "section section-rich-text",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -187,6 +189,22 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 80
+    },
+    {
+      "type": "select",
+      "id": "background_style",
+      "label": "Background Style",
+      "options": [
+        {
+          "value": "white",
+          "label": "White"
+        },
+        {
+          "value": "bg-chevron-white",
+          "label": "Grey Chevron"
+        }
+      ],
+      "info": "Choose a style for the background"
     }
   ],
   "blocks": [

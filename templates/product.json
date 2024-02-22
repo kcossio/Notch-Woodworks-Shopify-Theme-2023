@@ -241,11 +241,21 @@
           "settings": {
             "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque non tellus. Elementum tempus egestas sed sed risus pretium quam vulputate. Proin libero nunc consequat interdum varius sit amet mattis vulputate. <\/p>"
           }
+        },
+        "icon_BP7RAP": {
+          "type": "icon",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/icon-notch-quality.svg",
+            "desktop_width": 269,
+            "mobile_width": 174,
+            "laptop_width": 200
+          }
         }
       },
       "block_order": [
         "heading_dRNfP3",
-        "text_a6pJCq"
+        "text_a6pJCq",
+        "icon_BP7RAP"
       ],
       "settings": {
         "desktop_content_position": "center",

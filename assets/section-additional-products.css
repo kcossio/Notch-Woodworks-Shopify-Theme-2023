@@ -1,14 +1,17 @@
 /*-----------------------
 EASING 
 ---------------------- */
+.section-additional-products {
+  padding: 4.5rem 0;
+}
+@media (min-width: 768px) {
+  .section-additional-products {
+    padding: 9rem 0;
+  }
+}
+
 .additional-product-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 4.5rem 0;
-}
-@media (min-width: 768px) {
-  .additional-product-cards {
-    padding: 9rem 0;
-  }
 }

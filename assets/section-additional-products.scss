@@ -2,15 +2,21 @@
 
 // Additional Products Section
 
-.additional-product-cards {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-
+.section-additional-products {
+    
     padding:4.5rem 0;
 
     @include breakpoint(tablet) {
         padding:9rem 0;
     }
+
+}
+
+.additional-product-cards {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+    
 
 }

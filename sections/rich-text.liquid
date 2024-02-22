@@ -99,6 +99,46 @@
               </div>
           {%- endcase -%}
         {%- endfor -%}
+
+        <div class="rt-icons">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+          
+              
+          
+              {%- when 'icon' -%}
+                {%- ########################################################################## 
+                # Label: Icon Image
+                # Returns: an image object or nil(if no selection has been made)
+                # Image Properties: https://shopify.dev/api/liquid/objects#image
+                # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
+                ########################################################################## -%}
+                {%- assign icon_image = block.settings.icon_image -%}
+                {%- if icon_image != blank %}
+                  {%- assign block_id = block.id %}
+                  {%- assign icon_id = "icon-" | append: block_id -%}
+                {{ icon_image | image_url: width: icon_image.width | image_tag: class: 'rt-icon', id: icon_id, loading: 'lazy' }}
+                {%- endif -%}
+          
+               {%- style -%}
+                  #{{ icon_id }} {
+                      width: {{ block.settings.mobile_width }}px;
+                    }
+                  @media screen and (min-width: 750px) {
+                    #{{ icon_id }} {
+                      width: {{ block.settings.laptop_width }}px;
+                    }
+                  }
+                  @media screen and (min-width: 1440px) {
+                    #{{ icon_id }} {
+                      width: {{ block.settings.desktop_width }} px;
+                    }
+                  }
+                {%- endstyle -%}
+          
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
       </div>
     </div>
   </div>
@@ -339,6 +379,39 @@
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_2.label"
+        }
+      ]
+    },
+    {
+      "name": "Icon",
+      "type": "icon",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon Image",
+          "info": "Add an icon to this section"
+        },
+        {
+          "type": "number",
+          "id": "desktop_width",
+          "label": "Desktop Width",
+          "default": 175,
+          "info": "Enter the maximum width (in pixels) that you'd like this image to be on Desktops"
+        },
+        {
+          "type": "number",
+          "id": "mobile_width",
+          "label": "Mobile Width",
+          "default": 175,
+          "info": "Enter the maximum width (in pixels) that you'd like this image to be on Laptops"
+        },
+        {
+          "type": "number",
+          "id": "laptop_width",
+          "label": "Laptop Width",
+          "default": 175,
+          "info": "Enter the maximum width (in pixels) that you'd like this image to be on Desktops"
         }
       ]
     }

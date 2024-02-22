@@ -749,3 +749,12 @@ EASING
     font-size: 3.6rem;
   }
 }
+.card-product-additional .card-content .price {
+  font-size: 2.4rem;
+  font-style: italic;
+}
+@media (min-width: 1440px) {
+  .card-product-additional .card-content .price {
+    font-size: 3.2rem;
+  }
+}

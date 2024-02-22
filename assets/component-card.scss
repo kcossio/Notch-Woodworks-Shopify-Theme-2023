@@ -775,5 +775,14 @@
             }
         }
 
+        .price {
+          font-size:2.4rem;
+          font-style: italic;
+
+          @include breakpoint(desktop) {
+            font-size:3.2rem;
+          }
+        }
+
     }
   }

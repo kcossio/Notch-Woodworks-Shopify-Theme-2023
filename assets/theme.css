@@ -582,3 +582,22 @@ section .jdgm-prev-badge__text {
     padding-left: 1rem;
   }
 }
+section .jdgm-star {
+  width: 1.8rem;
+  aspect-ratio: 18.23/17.33;
+  display: inline-block !important;
+}
+section .jdgm-star.jdgm--on {
+  background: url("icon-star-rating-on.svg") center no-repeat;
+  background-size: cover;
+}
+section .jdgm-star.jdgm--on:before {
+  opacity: 0;
+}
+section .jdgm-star.jdgm--off {
+  background: url("icon-star-rating-off.svg") center no-repeat;
+  background-size: cover;
+}
+section .jdgm-star.jdgm--off:before {
+  opacity: 0;
+}

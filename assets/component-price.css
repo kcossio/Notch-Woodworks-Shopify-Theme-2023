@@ -6,7 +6,7 @@ EASING
 }
 @media (min-width: 768px) {
   .product__info-wrapper .product-price {
-    margin: 2.4rem 0 2.4rem 0;
+    margin: 1.2rem 0 2.4rem 0;
   }
 }
 .product-price .price {

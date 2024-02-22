@@ -33,6 +33,7 @@
   .product__info-wrapper {
 
     order:2;
+    padding:0 3rem;
 
     @include breakpoint(tablet) {
       width:37%;

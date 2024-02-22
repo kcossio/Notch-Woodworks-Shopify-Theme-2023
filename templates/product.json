@@ -261,22 +261,6 @@
         "associated_product": "board-no-1"
       }
     },
-    "1700257961a6f4236e": {
-      "type": "apps",
-      "blocks": {
-        "7122121d-fcf5-4323-8257-634c50b92e30": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "7122121d-fcf5-4323-8257-634c50b92e30"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "product_additional_products_p74Baw": {
       "type": "product-additional_products",
       "blocks": {
@@ -302,6 +286,22 @@
       "settings": {
         "heading": "Care of Your Board"
       }
+    },
+    "1700257961a6f4236e": {
+      "type": "apps",
+      "blocks": {
+        "7122121d-fcf5-4323-8257-634c50b92e30": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "7122121d-fcf5-4323-8257-634c50b92e30"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -311,7 +311,7 @@
     "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3",
     "7d2c50cb-25cf-45a7-832b-8089ade81cda",
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
-    "1700257961a6f4236e",
-    "product_additional_products_p74Baw"
+    "product_additional_products_p74Baw",
+    "1700257961a6f4236e"
   ]
 }

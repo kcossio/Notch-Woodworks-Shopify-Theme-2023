@@ -1,6 +1,19 @@
 /*-----------------------
 EASING 
 ---------------------- */
+.section-product-faq {
+  padding: 6rem 0;
+}
+@media (min-width: 768px) {
+  .section-product-faq {
+    padding: 9rem 0;
+  }
+}
+@media (min-width: 768px) {
+  .section-product-faq {
+    padding: 14rem 0;
+  }
+}
 .section-product-faq .faq-wrap {
   display: block;
   width: 81.7rem;

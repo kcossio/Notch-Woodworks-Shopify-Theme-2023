@@ -2,6 +2,16 @@
 
 .section-product-faq {
 
+    padding:6rem 0;
+
+    @include breakpoint(tablet) {
+        padding:9rem 0;
+    }
+
+    @include breakpoint(tablet) {
+        padding:14rem 0;
+    }
+
     .faq-wrap {
         display:block;
         width:81.7rem;

@@ -118,7 +118,7 @@ section {
         height: 1.8rem;
         aspect-ratio: 1 / 1;
         display: inline-block !important;
-        margin:0 .6rem;
+        margin:0 .1rem !important;
 
         
 
@@ -127,7 +127,7 @@ section {
             height:2.4rem;
 
             &:first-child {
-                margin-left:0;
+                margin-left:0 !important;
             }
         }
 

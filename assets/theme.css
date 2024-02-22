@@ -587,7 +587,7 @@ section .jdgm-star {
   height: 1.8rem;
   aspect-ratio: 1/1;
   display: inline-block !important;
-  margin: 0 0.6rem;
+  margin: 0 0.1rem !important;
 }
 @media (min-width: 1680px) {
   section .jdgm-star {
@@ -595,7 +595,7 @@ section .jdgm-star {
     height: 2.4rem;
   }
   section .jdgm-star:first-child {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 }
 section .jdgm-star.jdgm--on {

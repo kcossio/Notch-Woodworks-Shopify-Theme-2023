@@ -733,10 +733,12 @@ EASING
 }
 .card-product-additional .card-content {
   width: 100%;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .card-product-additional .card-content {
     width: 63%;
+    text-align: left;
   }
 }
 .card-product-additional .card-content .card-heading {

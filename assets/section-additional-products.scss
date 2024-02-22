@@ -6,4 +6,10 @@
     display:flex;
     flex-wrap:wrap;
 
+    padding:4.5rem 0;
+
+    @include breakpoint(tablet) {
+        padding:9rem 0;
+    }
+
 }

@@ -740,8 +740,9 @@
     flex-wrap:wrap;
 
     @include breakpoint(tablet) {
-      width:42%;
+      width:48%;
       align-items: center;
+      padding-right:5%;
     }
 
     .card-media {

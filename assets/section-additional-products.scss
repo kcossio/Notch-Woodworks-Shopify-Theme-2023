@@ -3,7 +3,7 @@
 // Additional Products Section
 
 .section-additional-products {
-    
+
     padding:4.5rem 0;
 
     @include breakpoint(tablet) {
@@ -16,7 +16,9 @@
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
-
+    width:133.5rem;
+    max-width: 100%;
+    margin:0 auto;
     
 
 }

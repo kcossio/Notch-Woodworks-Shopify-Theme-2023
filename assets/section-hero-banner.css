@@ -4,11 +4,17 @@ EASING
 .section-hero-banner {
   width: 100vw;
   height: 82.4rem;
-  max-height: 70vh;
+  max-height: 26rem;
   position: relative;
+}
+@media (min-width: 768px) {
+  .section-hero-banner {
+    max-height: 70vh;
+  }
 }
 .section-hero-banner.hero-banner-top {
   height: 89.8rem;
+  max-height: 70vh;
 }
 .section-hero-banner.w-notch::before {
   content: "";

@@ -22,7 +22,7 @@ EASING
 }
 .section-our-method .our-method .our-method-content {
   width: 100%;
-  padding: 8rem 5rem;
+  padding: 8rem 3rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -38,9 +38,13 @@ EASING
   max-width: 100%;
   width: 54rem;
 }
+.section-our-method .our-method .our-method-content p.om-subheading {
+  text-align: center;
+}
 @media (min-width: 768px) {
   .section-our-method .our-method .our-method-content p.om-subheading {
     padding-right: 15%;
+    text-align: left;
   }
 }
 .section-our-method ul.om-slides {

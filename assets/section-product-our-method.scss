@@ -21,7 +21,7 @@
 
         .our-method-content {
             width:100%;
-            padding:8rem 5rem;
+            padding:8rem 3rem;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -39,8 +39,12 @@
                 width:54rem;
             }
             p.om-subheading {
+
+                text-align:center;
+
                 @include breakpoint(tablet) {
                     padding-right: 15%;
+                    text-align:left;
                 }
             }
         }

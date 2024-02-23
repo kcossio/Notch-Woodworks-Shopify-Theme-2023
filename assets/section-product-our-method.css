@@ -28,6 +28,14 @@ EASING
   align-items: center;
   justify-content: center;
 }
+.section-our-method .our-method .our-method-content h2 {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .section-our-method .our-method .our-method-content h2 {
+    text-align: left;
+  }
+}
 @media (min-width: 768px) {
   .section-our-method .our-method .our-method-content {
     width: 50%;

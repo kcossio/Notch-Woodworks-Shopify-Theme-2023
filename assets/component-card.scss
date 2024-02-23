@@ -746,7 +746,8 @@
     }
 
     .card-media {
-        width: 100%;
+        width: 60%;
+        margin:0 auto;
         
         @include breakpoint(tablet) {
             width: 37%;

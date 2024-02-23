@@ -724,7 +724,8 @@ EASING
   }
 }
 .card-product-additional .card-media {
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .card-product-additional .card-media {

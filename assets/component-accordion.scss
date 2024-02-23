@@ -194,11 +194,12 @@
             width: 100%;
             position: relative;
             margin:0;
+            text-align: left;
 
             font-family:var(--font-family-header-cn);
             font-size:3rem;
             font-weight: normal;
-            letter-spacing:.2rem;
+            letter-spacing:.1rem;
             text-transform: uppercase;
             color:var(--color-main);
 
@@ -228,6 +229,7 @@
                 font-size:1.8rem;
                 text-transform: uppercase;
                 color:var(--color-main);
+                letter-spacing: 0;
         
                 @include breakpoint(tablet) {
                     font-size:2.25rem;

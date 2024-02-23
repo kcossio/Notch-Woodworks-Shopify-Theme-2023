@@ -19,7 +19,9 @@ EASING
   width: 81.7rem;
   max-width: 100%;
   margin: 0px auto;
+  padding: 0 3rem;
 }
 .section-product-faq .faq-wrap h2 {
   text-align: center;
+  margin: 0;
 }

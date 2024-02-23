@@ -170,10 +170,11 @@ toggle-element toggle-item h2 {
   width: 100%;
   position: relative;
   margin: 0;
+  text-align: left;
   font-family: var(--font-family-header-cn);
   font-size: 3rem;
   font-weight: normal;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: var(--color-main);
 }
@@ -204,6 +205,7 @@ product-info toggle-element toggle-item h2 {
   font-size: 1.8rem;
   text-transform: uppercase;
   color: var(--color-main);
+  letter-spacing: 0;
 }
 @media (min-width: 768px) {
   .section-product-faq toggle-element toggle-item h2 {

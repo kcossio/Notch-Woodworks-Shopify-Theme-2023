@@ -78,6 +78,9 @@ EASING
 .section-product-details .product-details .product-main-details ul strong {
   font-family: var(--font-family-header-ex);
 }
+.section-product-details .product-details .product-main-details p {
+  margin-bottom: 0;
+}
 .section-product-details .product-details .product-key-details {
   margin: 3rem 0 0 0;
 }

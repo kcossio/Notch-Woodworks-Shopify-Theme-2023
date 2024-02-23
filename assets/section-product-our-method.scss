@@ -49,10 +49,13 @@
             p.om-subheading {
 
                 text-align:center;
+                line-height:1.6em;
+                padding:0 2rem;
 
                 @include breakpoint(tablet) {
                     padding-right: 15%;
                     text-align:left;
+                    padding:0;
                 }
             }
         }

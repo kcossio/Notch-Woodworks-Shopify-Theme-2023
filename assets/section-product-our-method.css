@@ -48,11 +48,14 @@ EASING
 }
 .section-our-method .our-method .our-method-content p.om-subheading {
   text-align: center;
+  line-height: 1.6em;
+  padding: 0 2rem;
 }
 @media (min-width: 768px) {
   .section-our-method .our-method .our-method-content p.om-subheading {
     padding-right: 15%;
     text-align: left;
+    padding: 0;
   }
 }
 .section-our-method ul.om-slides {

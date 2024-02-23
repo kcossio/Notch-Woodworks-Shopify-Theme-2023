@@ -246,6 +246,18 @@
                 top: calc(50% - .65rem);
                 transform: rotate(45deg);
                 transition:all .3s ease 0s;
+
+                product-info & {
+                  height:1em;
+                  top: calc(50% - .5rem);
+
+                  @include breakpoint(tablet) {
+                    height:1.3rem;
+                    top: calc(50% - .65rem);
+                  }
+                }
+
+               
             
                 path {
                     transition: all .3s ease 0s;

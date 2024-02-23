@@ -221,6 +221,16 @@ toggle-element toggle-item h2 .icon-close {
   transform: rotate(45deg);
   transition: all 0.3s ease 0s;
 }
+product-info toggle-element toggle-item h2 .icon-close {
+  height: 1em;
+  top: calc(50% - 0.5rem);
+}
+@media (min-width: 768px) {
+  product-info toggle-element toggle-item h2 .icon-close {
+    height: 1.3rem;
+    top: calc(50% - 0.65rem);
+  }
+}
 toggle-element toggle-item h2 .icon-close path {
   transition: all 0.3s ease 0s;
   fill: var(--color-accent);

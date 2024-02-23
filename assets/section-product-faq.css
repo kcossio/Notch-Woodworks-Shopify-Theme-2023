@@ -25,7 +25,7 @@ EASING
   text-align: center;
   margin: 0;
 }
-toggle-item .section-product-faq .faq-wrap h2 {
+.section-product-faq .faq-wrap toggle-item h2 {
   text-align: left;
   padding-right: 4rem;
 }

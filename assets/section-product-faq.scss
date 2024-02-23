@@ -23,10 +23,15 @@
             text-align:center;
             margin: 0;
 
-            toggle-item & {
+        }
+
+        toggle-item {
+
+            h2 {
                 text-align:left;
                 padding-right:4rem;
             }
-        }
+
+        } 
     }
 }

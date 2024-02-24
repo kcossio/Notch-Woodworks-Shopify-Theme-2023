@@ -62,6 +62,7 @@ body {
 
 p {
     font-size:1.6rem;
+    line-height:1.6em;
 
     @include breakpoint(desktopwide) {
         font-size:1.65rem;

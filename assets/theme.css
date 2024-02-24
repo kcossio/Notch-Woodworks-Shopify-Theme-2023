@@ -319,6 +319,7 @@ body {
 
 p {
   font-size: 1.6rem;
+  line-height: 1.6em;
 }
 @media (min-width: 1680px) {
   p {

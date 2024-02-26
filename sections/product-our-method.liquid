@@ -55,6 +55,14 @@
                       </h2>
                       <div class="info">
                           <div class="content">
+                            {%- # Label: Hero Image -%}
+                            {%- assign hero_image = block.settings.hero_image -%}
+                            {%- if hero_image != blank -%}
+                            <div class="mobile-hero photo mobile-only has-bg" id="mobile-img-{{ forloop.index0 }}">
+                            {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'bg om-mobile-hero-img', loading: 'lazy' }}
+                            </div>
+                            {%- endif -%}
+
                             {{ block.settings.description }} 
                           </div>
                       </div>

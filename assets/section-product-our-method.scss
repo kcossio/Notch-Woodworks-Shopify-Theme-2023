@@ -219,6 +219,34 @@
                         margin:0;
                     }
                 }
+
+                .mobile-hero {
+                    display:block;
+                    width:100%;
+                    position: relative;
+                    aspect-ratio: 318 / 98;
+                    height: auto;
+                    margin-bottom:2rem;
+
+                    @include breakpoint(tablet) {
+                        display:none;
+                    }
+
+                    &::after {
+                        content:"";
+                        position: absolute;
+                        bottom:0px;
+                        left:50%;
+                        transform:translateX(-50%);
+                        z-index:1;
+                        width:4.2rem;
+                        aspect-ratio: 2 / 1;
+                        background:url('triangle-notch-up.svg') top center no-repeat;
+                        background-repeat: no-repeat;
+
+        
+                    }
+                }
             }
         }
     }

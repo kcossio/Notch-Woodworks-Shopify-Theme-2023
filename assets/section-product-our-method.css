@@ -201,7 +201,7 @@ EASING
   position: relative;
   aspect-ratio: 318/198;
   height: auto;
-  margin-bottom: 2rem;
+  margin: 1.4rem 0 2rem 0;
 }
 @media (min-width: 768px) {
   .section-our-method ul.method-list li.method-item .info .mobile-hero {

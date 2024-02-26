@@ -226,7 +226,7 @@
                     position: relative;
                     aspect-ratio: 318 / 198;
                     height: auto;
-                    margin-bottom:2rem;
+                    margin:1.4rem 0 2rem 0;
 
                     @include breakpoint(tablet) {
                         display:none;

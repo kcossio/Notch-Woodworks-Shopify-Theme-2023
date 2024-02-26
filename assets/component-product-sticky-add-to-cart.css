@@ -14,6 +14,25 @@ EASING
   transform: translateY(100%);
   transition: 0.4s ease-in-out;
   padding: 2rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .product-sticky-add-cart-new.custom-sticky-form {
+    width: auto;
+  }
+}
+.product-sticky-add-cart-new.custom-sticky-form .product-price .price {
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .product-sticky-add-cart-new.custom-sticky-form .product-price .price {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 1440px) {
+  .product-sticky-add-cart-new.custom-sticky-form .product-price .price {
+    font-size: 3.2rem;
+  }
 }
 .product-sticky-add-cart-new.custom-sticky-form .sticky-buy {
   display: inline-flex;
@@ -24,6 +43,7 @@ EASING
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
   margin: 0;
+  padding: 1.2rem 2rem 1rem 2rem;
 }
 .product-sticky-add-cart-new.custom-sticky-form ul.sticky-product-menu {
   display: none;

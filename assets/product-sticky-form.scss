@@ -1,23 +1,38 @@
+@import "mixins";
+
 .product--sticky-form {
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100vw;
     z-index: 2;
-    background-color:rgba(243,243,243,0.5);
+
+    position: fixed;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index: 9999;
+    background: #f4f4f4;
+    transform: translateY(100%);
+    transition: .4s ease-in-out;
+    padding:2rem;
+
+    &.product--sticky-form__inactive {
+        visibility: hidden;
+        opacity:0;
+        transform: translateY(100%);
+      }
+
+    &.product--sticky-form__active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
   }
   
-  .product--sticky-form__inactive {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 1.15s ease-out, opacity 1.15s ease-out;
-  }
+ 
   
-  .product--sticky-form__active {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 1.15s ease-out;
-  }
+  
   
   .product--sticky-form form{
     display: flex;
@@ -63,3 +78,68 @@
   .quick-add-modal .product--sticky-form {
     display: none;
   }
+
+
+  // ------ Sticky Cart setup ---------- //
+
+
+
+.product-sticky-add-cart-new.custom-sticky-form {
+    
+
+
+    .product-price .price {
+        font-size:2.4rem;
+
+        @include breakpoint(tablet) {
+            font-size:2.4rem;
+        }
+        @include breakpoint(desktop) {
+            font-size:3.2rem;
+        }
+    }
+
+    .sticky-buy {
+        display:inline-flex;
+        align-items:center;
+        gap:1rem;
+
+        button.product-form__submit {
+            font-size:1.4rem;
+            letter-spacing:.2rem;
+            margin:0;
+
+            padding:1.2rem 2rem 1rem 2rem;
+        }
+    }
+
+    ul.sticky-product-menu {
+        display:none;
+        margin:0;
+        padding:0;
+        gap:3rem;
+
+        @include breakpoint(tablet) {
+            display:inline-flex;
+            list-style: none;
+        }
+
+        li {
+
+            margin:0;
+            padding:0;
+
+            a {
+                color:var(--color-dark-grey);
+                text-decoration: none;
+                font-size:1.5rem;
+                font-weight: normal;
+                font-style: italic;
+
+                &:hover {
+                    color:var(--color-main);
+                }
+            }
+        }
+    }
+}

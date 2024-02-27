@@ -79,10 +79,13 @@
 
         @include breakpoint(tablet) {
             width: 8rem;
-            width:38%;
 
-            svg {
-                width:1rem;
+            .quantity__button {
+                width:38%;
+    
+                svg {
+                    width:1rem;
+                }
             }
         }
     }

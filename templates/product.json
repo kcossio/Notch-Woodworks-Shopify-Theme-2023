@@ -122,6 +122,13 @@
         "hero_image": "shopify:\/\/shop_images\/product-general-info-hero.png"
       }
     },
+    "product_anchor_point_BJJ4Wt": {
+      "type": "product_anchor_point",
+      "settings": {
+        "title": "Our Method",
+        "id": "product-our-method"
+      }
+    },
     "31849e1d-eb5b-4e7e-b8cd-db8c367a89fe": {
       "type": "product-our-method",
       "blocks": {
@@ -186,6 +193,13 @@
         "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg"
       }
     },
+    "product_anchor_point_VBTzYh": {
+      "type": "product_anchor_point",
+      "settings": {
+        "title": "Details",
+        "id": "product-details"
+      }
+    },
     "7d2c50cb-25cf-45a7-832b-8089ade81cda": {
       "type": "product-details",
       "blocks": {
@@ -227,6 +241,13 @@
         "main_details": "{{ section.settings.associated_product.metafields.custom.product_details | metafield_tag }}"
       }
     },
+    "product_anchor_point_9QpVUr": {
+      "type": "product_anchor_point",
+      "settings": {
+        "title": "Guarantee",
+        "id": "product-guarantee"
+      }
+    },
     "rich_text_z7pxfj": {
       "type": "rich-text",
       "blocks": {
@@ -266,6 +287,13 @@
         "padding_top": 124,
         "padding_bottom": 112,
         "background_style": "bg-chevron-white"
+      }
+    },
+    "product_anchor_point_8L4VhD": {
+      "type": "product_anchor_point",
+      "settings": {
+        "title": "FAQs",
+        "id": "product-faqs"
       }
     },
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689": {
@@ -329,6 +357,13 @@
         "heading": "Care of Your Board"
       }
     },
+    "product_anchor_point_kkWedL": {
+      "type": "product_anchor_point",
+      "settings": {
+        "title": "Reviews",
+        "id": "product-reviews"
+      }
+    },
     "1700257961a6f4236e": {
       "type": "apps",
       "blocks": {
@@ -344,41 +379,22 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "product_anchor_point_CpKTbW": {
-      "type": "product_anchor_point",
-      "settings": {
-        "title": "Overview",
-        "id": "product-overview"
-      }
-    },
-    "product_anchor_point_BJJ4Wt": {
-      "type": "product_anchor_point",
-      "settings": {
-        "title": "Our Method",
-        "id": "product-our-method"
-      }
-    },
-    "product_anchor_point_VBTzYh": {
-      "type": "product_anchor_point",
-      "settings": {
-        "title": "Details",
-        "id": "product-details"
-      }
     }
   },
   "order": [
     "main",
     "9b0b4eb4-feda-4a4a-b695-5c6c1e21383c",
+    "product_anchor_point_BJJ4Wt",
     "31849e1d-eb5b-4e7e-b8cd-db8c367a89fe",
     "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3",
+    "product_anchor_point_VBTzYh",
     "7d2c50cb-25cf-45a7-832b-8089ade81cda",
+    "product_anchor_point_9QpVUr",
     "rich_text_z7pxfj",
+    "product_anchor_point_8L4VhD",
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
     "product_additional_products_p74Baw",
-    "1700257961a6f4236e",
-    "product_anchor_point_CpKTbW",
-    "product_anchor_point_BJJ4Wt",
-    "product_anchor_point_VBTzYh"
+    "product_anchor_point_kkWedL",
+    "1700257961a6f4236e"
   ]
 }

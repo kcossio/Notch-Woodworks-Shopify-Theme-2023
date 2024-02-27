@@ -1,0 +1,65 @@
+.product--sticky-form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 2;
+    background-color:rgba(243,243,243,0.5);
+  }
+  
+  .product--sticky-form__inactive {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1.15s ease-out, opacity 1.15s ease-out;
+  }
+  
+  .product--sticky-form__active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1.15s ease-out;
+  }
+  
+  .product--sticky-form form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 10px;
+  }
+  
+  .product--sticky-form-info {
+    font-size: clamp(0.75rem, 2vw, calc(var(--font-heading-scale) * 4rem));
+    line-height: 1;
+    text-align: right;
+    padding-right: 10px;
+  }
+  
+  .product--sticky-form .price {
+    margin-top: -5px;
+  }
+  
+  .product--sticky-form__buttons {
+    width: 100%;
+    max-width: 438px;
+    height: 47px;
+    padding-left: 10px;
+  }
+  
+  .product--sticky-form__variants,
+  .product--sticky-form__quantity {
+    display: none;
+  }
+  
+  @media screen and (min-width: 990px) {
+    .product--sticky-form__variants,
+    .product--sticky-form__quantity {
+      height: 47px;
+      display: block;
+    }
+  }
+  
+  
+  
+  .quick-add-modal .product--sticky-form {
+    display: none;
+  }

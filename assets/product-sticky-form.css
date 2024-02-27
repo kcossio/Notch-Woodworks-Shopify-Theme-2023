@@ -72,7 +72,9 @@ EASING
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  -moz-column-gap: 1.8rem;
+       column-gap: 1.8rem;
   width: auto;
 }
 .product--sticky-form .product--sticky-form-info {

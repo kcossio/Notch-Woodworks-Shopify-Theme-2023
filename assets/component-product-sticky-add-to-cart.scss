@@ -16,7 +16,7 @@
     width: 100%;
 
     @include breakpoint(tablet) {
-        width: auto;
+        width: 100%;
     }
 
     .product-price .price {

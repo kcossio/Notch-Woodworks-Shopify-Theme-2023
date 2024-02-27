@@ -18,7 +18,7 @@ EASING
 }
 @media (min-width: 768px) {
   .product-sticky-add-cart-new.custom-sticky-form {
-    width: auto;
+    width: 100%;
   }
 }
 .product-sticky-add-cart-new.custom-sticky-form .product-price .price {

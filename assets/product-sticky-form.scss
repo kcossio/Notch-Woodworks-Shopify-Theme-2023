@@ -121,6 +121,12 @@
 
       .product-form__buttons {
         max-width:15.4rem;
+        width:15.4rem;
+
+        @include breakpoint(tablet) {
+            max-width:19.6rem;
+            width:19.6rem;
+        }
 
         button.product-form__submit {
             font-size:1.4rem;
@@ -134,9 +140,7 @@
             }
         }
 
-        @include breakpoint(tablet) {
-            max-width:19.6rem;
-        }
+        
       }
 
       .price {

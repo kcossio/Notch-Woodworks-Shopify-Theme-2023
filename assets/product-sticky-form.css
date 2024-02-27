@@ -109,6 +109,13 @@ EASING
 }
 .product--sticky-form .product-form__buttons {
   max-width: 15.4rem;
+  width: 15.4rem;
+}
+@media (min-width: 768px) {
+  .product--sticky-form .product-form__buttons {
+    max-width: 19.6rem;
+    width: 19.6rem;
+  }
 }
 .product--sticky-form .product-form__buttons button.product-form__submit {
   font-size: 1.4rem;
@@ -119,11 +126,6 @@ EASING
 @media (min-width: 768px) {
   .product--sticky-form .product-form__buttons button.product-form__submit {
     padding: 1.2rem 2rem 1rem 2rem;
-  }
-}
-@media (min-width: 768px) {
-  .product--sticky-form .product-form__buttons {
-    max-width: 19.6rem;
   }
 }
 .product--sticky-form .price {

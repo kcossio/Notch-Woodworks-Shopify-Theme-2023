@@ -46,7 +46,13 @@
     const buttonOffsetHeight = document.querySelector('.product-form__buttons').offsetTop;
     console.log(buttonOffsetHeight)
     if (pageYOffset > buttonOffsetHeight) {
-    document.body.classList.add('sticky-cart2');
+      // Move add to cart to sticky bar
+      const elementToMove = document.querySelector('.qty-price-wrap');
+      const newParentElement = document.querySelector('.sticky bar');
+      newParentElement.appendChild(elementToMove);
+      
+      // Add sticky cart class to body 
+      document.body.classList.add('sticky-cart2');
     }else{
     document.body.classList.remove('sticky-cart2');
     }

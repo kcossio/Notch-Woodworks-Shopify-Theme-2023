@@ -42,22 +42,15 @@
     <script>
     
     window.addEventListener('scroll', function(){
-    const pageYOffset = window.pageYOffset;
-    const buttonOffsetHeight = document.querySelector('.product-form__buttons').offsetTop;
-    console.log(buttonOffsetHeight);
+        const pageYOffset = window.pageYOffset;
+        const buttonOffsetHeight = document.querySelector('.product-form__buttons').offsetTop;
+        console.log(buttonOffsetHeight);
 
-    // Get elements
-    const elementToMove = document.querySelector('.qty-price-wrap');
-    const newParentElement = document.querySelector('.sticky-buy');
-
-    if (pageYOffset > buttonOffsetHeight) {
-      // Move add to cart to sticky bar
-      newParentElement.appendChild(elementToMove);
-      
-      // Add sticky cart class to body 
-      document.body.classList.add('sticky-cart2');
-    }else{
-    document.body.classList.remove('sticky-cart2');
-    }
+      if (pageYOffset > buttonOffsetHeight) {        
+        // Add sticky cart class to body 
+        document.body.classList.add('sticky-cart2');
+      }else{
+        document.body.classList.remove('sticky-cart2');
+      }
     })
     </script>

@@ -317,6 +317,11 @@ body {
   overflow-x: clip;
 }
 
+.section.anchor-point {
+  display: block;
+  width: 100%;
+}
+
 p {
   font-size: 1.6rem;
   line-height: 1.6em;

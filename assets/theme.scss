@@ -57,6 +57,13 @@ body {
     overflow-x: clip;
 
 }
+.section {
+
+    &.anchor-point {
+        display: block;
+        width: 100%;
+    }
+}
 
 // ----- General Styles ----- //
 

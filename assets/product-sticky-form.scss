@@ -153,16 +153,18 @@
 
         .product--sticky-form__variants {
             display: none;
-            height:4.7rem;
+            height:4rem;
             @include breakpoint(tablet) {
                 display:block;
+                height:4.7rem;
             }
         }
 
         .product--sticky-form__quantity {
-            height:4.7rem;
+            height:4rem;
             @include breakpoint(tablet) {            
                 display:block;
+                height:4.7rem;
             }
         }
 

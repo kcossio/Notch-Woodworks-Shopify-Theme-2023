@@ -142,19 +142,21 @@ EASING
 }
 .product--sticky-form .product--sticky-form__variants {
   display: none;
-  height: 4.7rem;
+  height: 4rem;
 }
 @media (min-width: 768px) {
   .product--sticky-form .product--sticky-form__variants {
     display: block;
+    height: 4.7rem;
   }
 }
 .product--sticky-form .product--sticky-form__quantity {
-  height: 4.7rem;
+  height: 4rem;
 }
 @media (min-width: 768px) {
   .product--sticky-form .product--sticky-form__quantity {
     display: block;
+    height: 4.7rem;
   }
 }
 

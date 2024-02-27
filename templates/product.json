@@ -99,6 +99,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "show_sticky_cart_button": true,
         "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -343,6 +344,27 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "product_anchor_point_CpKTbW": {
+      "type": "product_anchor_point",
+      "settings": {
+        "title": "Overview",
+        "id": "product-overview"
+      }
+    },
+    "product_anchor_point_BJJ4Wt": {
+      "type": "product_anchor_point",
+      "settings": {
+        "title": "Our Method",
+        "id": "product-our-method"
+      }
+    },
+    "product_anchor_point_VBTzYh": {
+      "type": "product_anchor_point",
+      "settings": {
+        "title": "Details",
+        "id": "product-details"
+      }
     }
   },
   "order": [
@@ -354,6 +376,9 @@
     "rich_text_z7pxfj",
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
     "product_additional_products_p74Baw",
-    "1700257961a6f4236e"
+    "1700257961a6f4236e",
+    "product_anchor_point_CpKTbW",
+    "product_anchor_point_BJJ4Wt",
+    "product_anchor_point_VBTzYh"
   ]
 }

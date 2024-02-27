@@ -52,7 +52,14 @@ EASING
 .product--sticky-form ul.sticky-product-menu li a:hover {
   color: var(--color-main);
 }
-
+.product--sticky-form .quantity {
+  width: 6rem;
+}
+@media (min-width: 768px) {
+  .product--sticky-form .quantity {
+    width: 8rem;
+  }
+}
 .product--sticky-form form {
   display: flex;
   flex-direction: row;
@@ -60,12 +67,22 @@ EASING
   justify-content: space-evenly;
   width: auto;
 }
-
-.product--sticky-form-info {
+.product--sticky-form .product--sticky-form-info {
   font-size: clamp(0.75rem, 2vw, var(--font-heading-scale) * 4rem);
   line-height: 1;
   text-align: right;
   padding-right: 10px;
+}
+.product--sticky-form .product--sticky-form-info h2 {
+  display: none;
+}
+.product--sticky-form .product-form__buttons {
+  max-width: 15.4rem;
+}
+@media (min-width: 768px) {
+  .product--sticky-form .product-form__buttons {
+    max-width: 19.6rem;
+  }
 }
 
 .product--sticky-form .price {

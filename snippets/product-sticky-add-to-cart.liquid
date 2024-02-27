@@ -44,11 +44,13 @@
     window.addEventListener('scroll', function(){
     const pageYOffset = window.pageYOffset;
     const buttonOffsetHeight = document.querySelector('.product-form__buttons').offsetTop;
-    console.log(buttonOffsetHeight)
+    console.log(buttonOffsetHeight);
+
+    const elementToMove = document.querySelector('.qty-price-wrap');
+    const newParentElement = document.querySelector('.sticky-bar');
+
     if (pageYOffset > buttonOffsetHeight) {
       // Move add to cart to sticky bar
-      const elementToMove = document.querySelector('.qty-price-wrap');
-      const newParentElement = document.querySelector('.sticky bar');
       newParentElement.appendChild(elementToMove);
       
       // Add sticky cart class to body 

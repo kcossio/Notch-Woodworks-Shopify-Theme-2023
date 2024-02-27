@@ -109,13 +109,14 @@
         }
       }
 
-      .product-price .price {
+      .price {
             font-size:2.4rem;
+            margin-top: -5px;
 
             @include breakpoint(tablet) {
                 font-size:2.4rem;
             }
-            @include breakpoint(desktop) {
+            @include breakpoint(desktopwide) {
                 font-size:3.2rem;
             }
         }
@@ -123,22 +124,9 @@
   }
   // End .product--sticky-form 
   
- 
   
   
   
-  
-  
-  .product--sticky-form .price {
-    margin-top: -5px;
-  }
-  
-  .product--sticky-form__buttons {
-    width: 100%;
-    max-width: 438px;
-    height: 47px;
-    padding-left: 10px;
-  }
   
   .product--sticky-form__variants,
   .product--sticky-form__quantity {

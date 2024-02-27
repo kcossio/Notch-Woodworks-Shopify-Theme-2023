@@ -98,29 +98,19 @@ EASING
     max-width: 19.6rem;
   }
 }
-.product--sticky-form .product-price .price {
+.product--sticky-form .price {
   font-size: 2.4rem;
+  margin-top: -5px;
 }
 @media (min-width: 768px) {
-  .product--sticky-form .product-price .price {
+  .product--sticky-form .price {
     font-size: 2.4rem;
   }
 }
-@media (min-width: 1440px) {
-  .product--sticky-form .product-price .price {
+@media (min-width: 1680px) {
+  .product--sticky-form .price {
     font-size: 3.2rem;
   }
-}
-
-.product--sticky-form .price {
-  margin-top: -5px;
-}
-
-.product--sticky-form__buttons {
-  width: 100%;
-  max-width: 438px;
-  height: 47px;
-  padding-left: 10px;
 }
 
 .product--sticky-form__variants,

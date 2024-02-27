@@ -694,9 +694,9 @@
 
   {%- if section.settings.show_sticky_cart_button-%}
     {% render 'product-sticky-form', product: product %}
+    <script src="{{ 'product-sticky-menu.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 
-  <script src="{{ 'product-sticky-menu.js' | asset_url }}" defer="defer"></script>
 
   <script type="application/ld+json">
     {

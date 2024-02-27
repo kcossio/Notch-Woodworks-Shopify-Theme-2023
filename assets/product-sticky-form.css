@@ -63,9 +63,19 @@ EASING
 .product--sticky-form .quantity {
   width: 6rem;
 }
+.product--sticky-form .quantity .quantity__button {
+  width: 30%;
+}
+.product--sticky-form .quantity .quantity__button svg {
+  width: 0.8rem;
+}
 @media (min-width: 768px) {
   .product--sticky-form .quantity {
     width: 8rem;
+    width: 38%;
+  }
+  .product--sticky-form .quantity svg {
+    width: 1rem;
   }
 }
 .product--sticky-form form {

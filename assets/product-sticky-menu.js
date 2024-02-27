@@ -1,4 +1,4 @@
-const anchorPoints = document.querySelectorAll(".anchor-point");
+var anchorPoints = document.querySelectorAll(".anchor-point");
 
 
 for (var i = 0; i < anchorPoints.length; i++) {

@@ -5,6 +5,16 @@
 {%- assign sticky_product_form_id = 'product-form-' | append: section.id -%}
 
 <sticky-product-form class="product--sticky-form product--sticky-form__inactive">
+
+    <ul class="sticky-product-menu">
+        <li><a href="#MainProduct-{{ section.id }}">Overview</a></li>
+        <li><a href="">Our Method</a></li>
+        <li><a href="">Details</a></li>
+        <li><a href="">Guarantee</a></li>
+        <li><a href="">FAQs</a></li>
+        <li><a href="">Reviews</a></li>
+  </ul>
+
   <product-form>
   {%- form 'product', product, id: sticky_product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 

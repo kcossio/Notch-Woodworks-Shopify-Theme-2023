@@ -114,25 +114,24 @@ EASING
     font-size: 3.2rem;
   }
 }
-
-.product--sticky-form__variants,
-.product--sticky-form__quantity {
+.product--sticky-form .product--sticky-form__variants {
   display: none;
+  height: 4.7rem;
 }
-
-@media screen and (min-width: 990px) {
-  .product--sticky-form__variants,
-  .product--sticky-form__quantity {
-    height: 47px;
+@media (min-width: 768px) {
+  .product--sticky-form .product--sticky-form__variants {
     display: block;
   }
 }
-.quick-add-modal .product--sticky-form {
-  display: none;
+.product--sticky-form .product--sticky-form__quantity {
+  height: 4.7rem;
+}
+@media (min-width: 768px) {
+  .product--sticky-form .product--sticky-form__quantity {
+    display: block;
+  }
 }
 
-.product-sticky-add-cart-new.custom-sticky-form .sticky-buy {
-  display: inline-flex;
-  align-items: center;
-  gap: 1rem;
+.quick-add-modal .product--sticky-form {
+  display: none;
 }

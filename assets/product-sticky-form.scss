@@ -122,6 +122,21 @@
             }
         }
 
+        .product--sticky-form__variants {
+            display: none;
+            height:4.7rem;
+            @include breakpoint(tablet) {
+                display:block;
+            }
+        }
+
+        .product--sticky-form__quantity {
+            height:4.7rem;
+            @include breakpoint(tablet) {            
+                display:block;
+            }
+        }
+
   }
   // End .product--sticky-form 
   
@@ -129,43 +144,10 @@
   
   
   
-  .product--sticky-form__variants,
-  .product--sticky-form__quantity {
-    display: none;
-  }
-  
-  @media screen and (min-width: 990px) {
-    .product--sticky-form__variants,
-    .product--sticky-form__quantity {
-      height: 47px;
-      display: block;
-    }
-  }
+
   
   
   
   .quick-add-modal .product--sticky-form {
     display: none;
   }
-
-
-  // ------ Sticky Cart setup ---------- //
-
-
-
-.product-sticky-add-cart-new.custom-sticky-form {
-    
-
-
-    
-
-    .sticky-buy {
-        display:inline-flex;
-        align-items:center;
-        gap:1rem;
-
-        
-    }
-
-    
-}

@@ -26,6 +26,14 @@ EASING
   opacity: 1;
   transform: translateY(0%);
 }
+.product--sticky-form product-form {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .product--sticky-form product-form {
+    width: 50%;
+  }
+}
 .product--sticky-form ul.sticky-product-menu {
   display: none;
   margin: 0;
@@ -90,6 +98,19 @@ EASING
     max-width: 19.6rem;
   }
 }
+.product--sticky-form .product-price .price {
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .product--sticky-form .product-price .price {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 1440px) {
+  .product--sticky-form .product-price .price {
+    font-size: 3.2rem;
+  }
+}
 
 .product--sticky-form .price {
   margin-top: -5px;
@@ -118,19 +139,6 @@ EASING
   display: none;
 }
 
-.product-sticky-add-cart-new.custom-sticky-form .product-price .price {
-  font-size: 2.4rem;
-}
-@media (min-width: 768px) {
-  .product-sticky-add-cart-new.custom-sticky-form .product-price .price {
-    font-size: 2.4rem;
-  }
-}
-@media (min-width: 1440px) {
-  .product-sticky-add-cart-new.custom-sticky-form .product-price .price {
-    font-size: 3.2rem;
-  }
-}
 .product-sticky-add-cart-new.custom-sticky-form .sticky-buy {
   display: inline-flex;
   align-items: center;

@@ -28,6 +28,14 @@
         transform: translateY(0%);
     }
 
+    product-form {
+        width:100%;
+
+        @include breakpoint(tablet) {
+            width: 50%;
+        }
+    }
+
     ul.sticky-product-menu {
         display:none;
         margin:0;
@@ -101,6 +109,17 @@
         }
       }
 
+      .product-price .price {
+            font-size:2.4rem;
+
+            @include breakpoint(tablet) {
+                font-size:2.4rem;
+            }
+            @include breakpoint(desktop) {
+                font-size:3.2rem;
+            }
+        }
+
   }
   // End .product--sticky-form 
   
@@ -149,16 +168,7 @@
     
 
 
-    .product-price .price {
-        font-size:2.4rem;
-
-        @include breakpoint(tablet) {
-            font-size:2.4rem;
-        }
-        @include breakpoint(desktop) {
-            font-size:3.2rem;
-        }
-    }
+    
 
     .sticky-buy {
         display:inline-flex;

@@ -189,7 +189,7 @@
     "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3": {
       "type": "product-hero-banner",
       "settings": {
-        "associated_product": "board-no-1",
+        "associated_product": "",
         "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg"
       }
     },

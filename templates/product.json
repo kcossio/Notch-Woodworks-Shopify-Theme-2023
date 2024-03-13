@@ -235,10 +235,10 @@
         "dd5e0096-48a1-405e-9e71-015ed18f020f"
       ],
       "settings": {
-        "associated_product": "board-no-1",
+        "associated_product": "",
         "heading": "Product Details",
         "hero_image": "shopify:\/\/shop_images\/product-board-dimensons-fpo.jpg",
-        "main_details": "{{ section.settings.associated_product.metafields.custom.product_details | metafield_tag }}"
+        "main_details": "<p>{{ section.settings.associated_product.metafields.custom.product_details | metafield_tag }}<\/p>"
       }
     },
     "product_anchor_point_9QpVUr": {

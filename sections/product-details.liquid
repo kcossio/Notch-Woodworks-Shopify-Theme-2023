@@ -1,9 +1,5 @@
 {{ 'section-product-details.css' | asset_url | stylesheet_tag }}
 
-{%- # Label: Associated Product -%}
-{%- assign associated_product = section.settings.associated_product -%}
-
-{%- if section.settings.associated_product == product.handle -%}
 
 <div class="product-details">
   
@@ -42,7 +38,6 @@
 
     
 </div>
-{%- endif -%}
 
 
 {% schema %}

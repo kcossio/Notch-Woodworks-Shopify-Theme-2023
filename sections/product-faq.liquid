@@ -1,10 +1,7 @@
 {{ 'section-product-faq.css' | asset_url | stylesheet_tag }}
 
 
-{%- # Label: Associated Product -%}
-{%- assign associated_product = section.settings.associated_product -%}
 
-{%- if section.settings.associated_product == product.handle -%}
 <div class="faq-wrap">
   {%- # Label: Heading -%}
   <h2 class="block-header-v3">{{ section.settings.heading }}</h2>
@@ -34,7 +31,6 @@
   {%- endfor -%}
   </div><!--End faq-inner-->
 </div>
-{%- endif -%}
 
 {% schema %}
   {

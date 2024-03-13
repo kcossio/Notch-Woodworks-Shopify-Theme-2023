@@ -189,7 +189,6 @@
     "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3": {
       "type": "product-hero-banner",
       "settings": {
-        "associated_product": "",
         "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg"
       }
     },
@@ -235,10 +234,9 @@
         "dd5e0096-48a1-405e-9e71-015ed18f020f"
       ],
       "settings": {
-        "associated_product": "",
         "heading": "Product Details",
         "hero_image": "shopify:\/\/shop_images\/product-board-dimensons-fpo.jpg",
-        "main_details": "<p>{{ section.settings.associated_product.metafields.custom.product_details | metafield_tag }}<\/p>"
+        "main_details": "{{ product.metafields.custom.product_details | metafield_tag }}"
       }
     },
     "product_anchor_point_9QpVUr": {

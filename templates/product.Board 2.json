@@ -1,0 +1,398 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "breadcrumbs_NHTanr": {
+          "type": "breadcrumbs",
+          "settings": {
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "bd2f840e-623e-4ff0-8ca1-0cdecf670930": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "shipping_text": "Shipping calculated at checkout"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "3fbb5fcc-1cdd-4ce3-9ff0-71883a5b4a54": {
+          "type": "notch_icons",
+          "settings": {
+            "icon_1": "shopify:\/\/shop_images\/hand-crafted.svg",
+            "icon_2": "shopify:\/\/shop_images\/made-in-usa.svg",
+            "icon_3": "shopify:\/\/shop_images\/texas-pecan.svg"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "994837d1-afe4-450e-a8a0-78b4d8a08232": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product Details",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.product_details | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "bcd297c2-00d5-440f-bd45-5ea5e1cf308d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping Info",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.shipping_info | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "5f57f620-9a13-4727-9166-dd017e29585f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Warranty Info",
+            "icon": "none",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae vehicula nisl. Aliquam in feugiat felis. Maecenas nisi dolor, ultrices non quam a, sollicitudin rutrum lectus. Phasellus eu orci sit amet lacus viverra commodo vitae sed felis. <\/p><p>Nam semper nec dolor non condimentum. In efficitur lorem et turpis scelerisque, non pellentesque enim mattis. Vivamus ac lacus ligula. Quisque augue leo, scelerisque eu est at, tincidunt aliquet est.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumbs_NHTanr",
+        "title",
+        "bd2f840e-623e-4ff0-8ca1-0cdecf670930",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "3fbb5fcc-1cdd-4ce3-9ff0-71883a5b4a54",
+        "description",
+        "994837d1-afe4-450e-a8a0-78b4d8a08232",
+        "bcd297c2-00d5-440f-bd45-5ea5e1cf308d",
+        "5f57f620-9a13-4727-9166-dd017e29585f"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "show_sticky_cart_button": true,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "9b0b4eb4-feda-4a4a-b695-5c6c1e21383c": {
+      "type": "product-general-info",
+      "settings": {
+        "heading": "CHARACTER INGRAINED™",
+        "subheading": "Each peace is hand selected for grain and pattern",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque tellus. Elementum tempus egestas sed sed risus pretium quam vulputate. Proin libero nunc consequat interdum varius sit amet mattis vulputate. <\/p>",
+        "hero_image": "shopify:\/\/shop_images\/product-general-info-hero.png"
+      }
+    },
+    "product_anchor_point_BJJ4Wt": {
+      "type": "product_anchor_point",
+      "settings": {
+        "title": "Our Method",
+        "id": "product-our-method"
+      }
+    },
+    "31849e1d-eb5b-4e7e-b8cd-db8c367a89fe": {
+      "type": "product-our-method",
+      "blocks": {
+        "7737f6a9-fe5e-404f-80cc-a42c16d4ecf3": {
+          "type": "slide",
+          "settings": {
+            "title": "Reclaim",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque tellus. Elementum tempus egestas sed sed risus pretium quam vulputate. Proin libero nunc consequat interdum varius sit amet mattis.<\/p>",
+            "hero_image": "shopify:\/\/shop_images\/board-1-fpo-4.jpg"
+          }
+        },
+        "slide_LdkpQH": {
+          "type": "slide",
+          "settings": {
+            "title": "Mill",
+            "description": "<p>Lorem Ipsum Dolor Sit amet, obsequiem mundus vilago.<\/p>",
+            "hero_image": "shopify:\/\/shop_images\/bg-hero-our-story-3.jpg"
+          }
+        },
+        "slide_kG978G": {
+          "type": "slide",
+          "settings": {
+            "title": "Stack & Age",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis tortor vitae ipsum scelerisque egestas. Maecenas quis cursus tortor. Integer quis lectus non est aliquet rutrum at quis dolor.<\/p>",
+            "hero_image": "shopify:\/\/shop_images\/fpo-home-slide-2.jpg"
+          }
+        },
+        "slide_yQc48t": {
+          "type": "slide",
+          "settings": {
+            "title": "Select",
+            "description": "<p>Maecenas nec arcu leo. Pellentesque est ligula, condimentum non aliquam <br\/>semper, placerat eu elit. Cras justo leo, rhoncus tristique massa vel, <br\/>rutrum egestas tortor.<\/p>",
+            "hero_image": "shopify:\/\/shop_images\/bg-hero-our-story-1.jpg"
+          }
+        },
+        "slide_UmJ9fJ": {
+          "type": "slide",
+          "settings": {
+            "title": "Finish",
+            "description": "<p>Quisque tempus vel velit at commodo. Aenean faucibus dignissim justo. Nam a fermentum quam, sit amet mollis augue.<\/p>",
+            "hero_image": "shopify:\/\/shop_images\/bg-hero-our-story-2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "7737f6a9-fe5e-404f-80cc-a42c16d4ecf3",
+        "slide_LdkpQH",
+        "slide_kG978G",
+        "slide_yQc48t",
+        "slide_UmJ9fJ"
+      ],
+      "settings": {
+        "heading": "Our Method",
+        "subheading": "From towering Texas Pecan tree to Notch kitchen essential. These are the steps we take:",
+        "starting_image": "shopify:\/\/shop_images\/bg-hero-our-story-top.jpg"
+      }
+    },
+    "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3": {
+      "type": "product-hero-banner",
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg"
+      }
+    },
+    "product_anchor_point_VBTzYh": {
+      "type": "product_anchor_point",
+      "settings": {
+        "title": "Details",
+        "id": "product-details"
+      }
+    },
+    "7d2c50cb-25cf-45a7-832b-8089ade81cda": {
+      "type": "product-details",
+      "blocks": {
+        "0207a6fa-95e9-411e-a3a3-3745cd455c4f": {
+          "type": "key_details",
+          "settings": {
+            "key_detail": "Hand crafted"
+          }
+        },
+        "96c2c400-a98c-4479-9dd7-dd5fc018a27e": {
+          "type": "key_details",
+          "settings": {
+            "key_detail": "Reclaimed"
+          }
+        },
+        "4b367f87-f6c0-4516-81b1-ba7e5d4773d3": {
+          "type": "key_details",
+          "settings": {
+            "key_detail": "Food Safe"
+          }
+        },
+        "dd5e0096-48a1-405e-9e71-015ed18f020f": {
+          "type": "key_details",
+          "settings": {
+            "key_detail": "Durable Hardwood"
+          }
+        }
+      },
+      "block_order": [
+        "0207a6fa-95e9-411e-a3a3-3745cd455c4f",
+        "96c2c400-a98c-4479-9dd7-dd5fc018a27e",
+        "4b367f87-f6c0-4516-81b1-ba7e5d4773d3",
+        "dd5e0096-48a1-405e-9e71-015ed18f020f"
+      ],
+      "settings": {
+        "heading": "Product Details",
+        "hero_image": "shopify:\/\/shop_images\/product-board-dimensons-fpo.jpg",
+        "main_details": "{{ product.metafields.custom.product_details | metafield_tag }}"
+      }
+    },
+    "product_anchor_point_9QpVUr": {
+      "type": "product_anchor_point",
+      "settings": {
+        "title": "Guarantee",
+        "id": "product-guarantee"
+      }
+    },
+    "rich_text_z7pxfj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dRNfP3": {
+          "type": "heading",
+          "settings": {
+            "heading_style": "blue_w_notch_underline",
+            "heading": "The Notch Promise"
+          }
+        },
+        "text_a6pJCq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus in hendrerit gravida rutrum quisque non tellus. Elementum tempus egestas sed sed risus pretium quam vulputate. Proin libero nunc consequat interdum varius sit amet mattis vulputate. <\/p>"
+          }
+        },
+        "icon_BP7RAP": {
+          "type": "icon",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/icon-notch-quality.svg",
+            "mobile_width": 174,
+            "laptop_width": 200,
+            "desktop_width": 269
+          }
+        }
+      },
+      "block_order": [
+        "heading_dRNfP3",
+        "text_a6pJCq",
+        "icon_BP7RAP"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 124,
+        "padding_bottom": 112,
+        "background_style": "bg-chevron-white"
+      }
+    },
+    "product_anchor_point_8L4VhD": {
+      "type": "product_anchor_point",
+      "settings": {
+        "title": "FAQs",
+        "id": "product-faqs"
+      }
+    },
+    "24b50a05-3a7b-44ec-acc8-0f048e0f4689": {
+      "type": "product-faq",
+      "blocks": {
+        "3cbe462c-9837-4490-a14b-cc0fe35489c8": {
+          "type": "qa",
+          "settings": {
+            "title": "How do you clean the board?",
+            "answer": "<p>Sed id lobortis dui, at vulputate eros. Morbi posuere vel libero vitae cursus. Cras ante elit, luctus quis risus in, facilisis interdum enim. Sed felis ligula, venenatis nec facilisis in, eleifend vulputate nunc. Duis pellentesque odio lacus, at pharetra arcu varius sed.<\/p>"
+          }
+        },
+        "ae797196-2e1f-4a5d-997d-a6b0fe39525e": {
+          "type": "qa",
+          "settings": {
+            "title": "How do you wax the board?",
+            "answer": "<p>Morbi posuere vel libero vitae cursus. Cras ante elit, luctus quis risus in, facilisis interdum enim. Sed felis ligula, venenatis nec facilisis in, eleifend vulputate nunc. Duis pellentesque odio lacus, at pharetra arcu varius sed.<\/p>"
+          }
+        },
+        "84bd2b53-69f9-403b-b17a-a5d2d928c991": {
+          "type": "qa",
+          "settings": {
+            "title": "How do you care for the board?",
+            "answer": "<p>Nunc magna augue, ultricies eu dignissim non, pulvinar eget nunc. Morbi rhoncus purus velit, sit amet hendrerit leo tristique ac. Nulla aliquam ex a nunc tempus mollis.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "3cbe462c-9837-4490-a14b-cc0fe35489c8",
+        "ae797196-2e1f-4a5d-997d-a6b0fe39525e",
+        "84bd2b53-69f9-403b-b17a-a5d2d928c991"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "associated_product": "board-no-1"
+      }
+    },
+    "product_additional_products_p74Baw": {
+      "type": "product-additional_products",
+      "blocks": {
+        "product_UXypAe": {
+          "type": "product",
+          "settings": {
+            "additional_product": "renewal-oil",
+            "custom_description": ""
+          }
+        },
+        "product_XDDEW6": {
+          "type": "product",
+          "settings": {
+            "additional_product": "protective-wax",
+            "custom_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_UXypAe",
+        "product_XDDEW6"
+      ],
+      "settings": {
+        "heading": "Care of Your Board"
+      }
+    },
+    "product_anchor_point_kkWedL": {
+      "type": "product_anchor_point",
+      "settings": {
+        "title": "Reviews",
+        "id": "product-reviews"
+      }
+    },
+    "1700257961a6f4236e": {
+      "type": "apps",
+      "blocks": {
+        "7122121d-fcf5-4323-8257-634c50b92e30": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "7122121d-fcf5-4323-8257-634c50b92e30"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9b0b4eb4-feda-4a4a-b695-5c6c1e21383c",
+    "product_anchor_point_BJJ4Wt",
+    "31849e1d-eb5b-4e7e-b8cd-db8c367a89fe",
+    "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3",
+    "product_anchor_point_VBTzYh",
+    "7d2c50cb-25cf-45a7-832b-8089ade81cda",
+    "product_anchor_point_9QpVUr",
+    "rich_text_z7pxfj",
+    "product_anchor_point_8L4VhD",
+    "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
+    "product_additional_products_p74Baw",
+    "product_anchor_point_kkWedL",
+    "1700257961a6f4236e"
+  ]
+}

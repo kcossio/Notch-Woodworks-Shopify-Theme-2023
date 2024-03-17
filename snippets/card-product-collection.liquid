@@ -59,7 +59,11 @@
                 class="full-unstyled-link"
                 aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
               >
-                {{ card_product.title | escape }}
+                {%- if card_product.metafields.custom.collection_cart_title.value -%}
+                  {{ card_product.metafields.custom.collection_cart_title }}
+                {%-  else  -%}
+                  {{ card_product.title | escape }}
+                {%- endif -%}
               </a>
             </h3>
 

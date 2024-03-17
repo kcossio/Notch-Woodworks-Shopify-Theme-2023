@@ -209,12 +209,17 @@
     }
     .icon-close {
       height: .9rem;
+      display: block;
 
       position: absolute;
       right: 0;
       top: calc(50% - .45rem);
       transform: rotate(45deg);
       transition: all .3s ease 0s;
+
+      @include breakpoint(tablet) {
+        display: none;
+      }
 
       path {
           transition: all .3s ease 0s;

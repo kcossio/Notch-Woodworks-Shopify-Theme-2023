@@ -185,11 +185,17 @@ EASING
 }
 .footer-block__heading .icon-close {
   height: 0.9rem;
+  display: block;
   position: absolute;
   right: 0;
   top: calc(50% - 0.45rem);
   transform: rotate(45deg);
   transition: all 0.3s ease 0s;
+}
+@media (min-width: 768px) {
+  .footer-block__heading .icon-close {
+    display: none;
+  }
 }
 .footer-block__heading .icon-close path {
   transition: all 0.3s ease 0s;

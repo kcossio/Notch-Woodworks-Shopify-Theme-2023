@@ -2571,8 +2571,8 @@ sticky-header {
   @include breakpoint(laptop) {
     width:16.4rem;
   }
-  @include breakpoint(desktopwide) {
-    width:21.8rem;
+  @include breakpoint(desktop) {
+    width:21.6rem;
   }
 }
 

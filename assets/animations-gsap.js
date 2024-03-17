@@ -106,13 +106,6 @@
 // Run jQuery-specific functions
 (function( $ ) {
 
-    /* Footer Toggle Open Title */
-	jQuery('.footer-block__heading').click(function () { // Enable the toggle view list for ul.toggle-view for toggle-able lists
-        console.log('footer title clicked');
-        var container = jQuery(this).closest('.footer-block');
-        var content = jQuery(this).closest('.footer-block').children('ul');
-        jQuery(this).toggleClass('open');
-        content.toggleClass('open');
-   });
+    
 
 })( jQuery );

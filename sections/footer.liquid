@@ -259,6 +259,17 @@
         {%- endif -%}
       </div><!--End footer__column--info-->
     </div>
+
+    <script>
+      /* Footer Toggle Open Title */
+        jQuery('.footer-block__heading').click(function () {
+          console.log('footer title clicked');
+          var container = jQuery(this).closest('.footer-block');
+          var content = jQuery(this).closest('.footer-block').children('ul');
+          jQuery(this).toggleClass('open');
+          content.toggleClass('open');
+      });
+    </script>
    
 </footer>
 

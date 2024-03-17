@@ -1248,6 +1248,10 @@ summary::-webkit-details-marker {
   //height: 100%;
   width: 100%;
 }
+.video-section .media img {
+  top: 0;
+  left: 0;
+}
 
 .media > img {
   object-fit: cover;

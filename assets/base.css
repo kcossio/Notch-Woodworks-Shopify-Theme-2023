@@ -1203,6 +1203,11 @@ summary::-webkit-details-marker {
   width: 100%;
 }
 
+.video-section .media img {
+  top: 0;
+  left: 0;
+}
+
 .media > img {
   -o-object-fit: cover;
      object-fit: cover;

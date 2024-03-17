@@ -170,6 +170,24 @@ EASING
   letter-spacing: 0.3em;
   text-transform: uppercase;
   font-family: var(--font-family-header-ex);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer-block__heading {
+    text-align: left;
+  }
+}
+
+.footer-block--menu ul {
+  display: none;
+}
+.footer-block--menu ul.open {
+  display: block;
+}
+@media (min-width: 768px) {
+  .footer-block--menu ul {
+    display: block;
+  }
 }
 
 .footer__follow-on-shop {

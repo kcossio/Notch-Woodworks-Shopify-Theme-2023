@@ -53,8 +53,6 @@
 
     items.forEach((item, i) => {
 
-
-
         item.tl = gsap.timeline({
             paused: true,
             onStart: () => item.classList.add("active")
@@ -71,9 +69,6 @@
             stagger: 0.25,
             ease: "expo"
         }, 0.5);
-
-
-        
         
         item.addEventListener("click", e => {
 
@@ -93,13 +88,13 @@
             items.forEach(myItem => myItem.tl.reverse());
             item.tl.play();
             lastItem = item;
-            console.log('Opened new item');
+            //console.log('Opened new item');
             } else {
                 
             lastItem = undefined;
-            console.log('Same item');
+            //console.log('Same item');
             }
-            console.log(lastItem);
+            //console.log(lastItem);
 
         });
     });
@@ -110,4 +105,13 @@
 
 // Run jQuery-specific functions
 (function( $ ) {
+
+    /* Footer Toggle Open Title */
+	jQuery('.footer-block__heading').click(function () { // Enable the toggle view list for ul.toggle-view for toggle-able lists
+        var container = jQuery(this).closest('.footer-block');
+       var content = jQuery(this).closest('.footer-block').children('ul');
+       jQuery(this).toggleClass('open');
+       content.toggleClass('open');
+   });
+
 })( jQuery );

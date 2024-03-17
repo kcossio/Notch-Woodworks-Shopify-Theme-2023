@@ -183,7 +183,8 @@
     }
   }
 
-  
+  // Footer Menus - Add ability to toggle //
+
   .footer-block__heading {
     margin-bottom: 1rem;
     margin-top: 0;
@@ -192,6 +193,26 @@
     letter-spacing:.3em;
     text-transform: uppercase;
     font-family: var(--font-family-header-ex);
+    text-align:center;
+
+    @include breakpoint(tablet) {
+      text-align:left;
+    }
+  }
+
+  .footer-block--menu {
+
+    ul {
+      display: none;
+
+      &.open {
+        display: block;
+      }
+
+      @include breakpoint(tablet) {
+        display: block;
+      }
+    }
   }
   
   

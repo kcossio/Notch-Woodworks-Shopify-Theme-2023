@@ -35,7 +35,6 @@
 
     .footer__content-meta {
       width:100%;
-      border-top: solid 0.1rem #175E72;
       padding-top: 3rem;
       justify-content:  center;
 
@@ -43,6 +42,7 @@
       flex-wrap: wrap;
 
       @include breakpoint(tablet) {
+        border-top: solid 0.1rem #175E72;
         width:75%;
         margin-left:auto;
         justify-content: space-between;

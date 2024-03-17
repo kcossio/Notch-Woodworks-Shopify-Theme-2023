@@ -70,7 +70,14 @@
       display: block;
     }
   
-    
+    .footer-block.grid__item {
+      padding: 0;
+      width: 100%;
+    }
+  
+    .footer-block.grid__item:first-child {
+      margin-top: 0;
+    }
   
     .footer__content-top {
       padding-bottom: 3rem;
@@ -176,16 +183,6 @@
   }
 
   // ---------- Footer Menus - Add ability to toggle //
-
-  .footer-block.grid__item {
-    padding: 0;
-    margin:0;
-    width: 100%;
-  }
-
-  .footer-block.grid__item:first-child {
-    margin-top: 0;
-  }
 
   .footer-block__heading {
     margin:0;

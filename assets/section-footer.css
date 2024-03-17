@@ -171,10 +171,14 @@ EASING
   text-transform: uppercase;
   font-family: var(--font-family-header-ex);
   text-align: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
 }
 @media (min-width: 768px) {
   .footer-block__heading {
     text-align: left;
+    cursor: auto;
   }
 }
 

@@ -194,9 +194,13 @@
     text-transform: uppercase;
     font-family: var(--font-family-header-ex);
     text-align:center;
+    cursor:pointer;
+    position: relative;
+    z-index: 3;
 
     @include breakpoint(tablet) {
       text-align:left;
+      cursor:auto;
     }
   }
 

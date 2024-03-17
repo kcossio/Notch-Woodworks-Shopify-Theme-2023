@@ -70,15 +70,7 @@
       display: block;
     }
   
-    .footer-block.grid__item {
-      padding: 0;
-      margin: 4rem 0;
-      width: 100%;
-    }
-  
-    .footer-block.grid__item:first-child {
-      margin-top: 0;
-    }
+    
   
     .footer__content-top {
       padding-bottom: 3rem;
@@ -183,11 +175,21 @@
     }
   }
 
-  // Footer Menus - Add ability to toggle //
+  // ---------- Footer Menus - Add ability to toggle //
+
+  .footer-block.grid__item {
+    padding: 0;
+    margin:0;
+    width: 100%;
+  }
+
+  .footer-block.grid__item:first-child {
+    margin-top: 0;
+  }
 
   .footer-block__heading {
-    margin-bottom: 1rem;
-    margin-top: 0;
+    margin:0;
+    padding:1.7rem 0 1.5rem 0;
     color:rgba(255,255,255,.84);
     font-size:1.5rem;
     letter-spacing:.3em;

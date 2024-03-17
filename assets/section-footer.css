@@ -173,11 +173,6 @@ EASING
   cursor: pointer;
   position: relative;
   z-index: 3;
-  height: 1.3rem;
-  position: absolute;
-  right: 0;
-  top: calc(50% - 0.65rem);
-  transform: rotate(45deg);
 }
 @media (min-width: 768px) {
   .footer-block__heading {
@@ -185,9 +180,19 @@ EASING
     cursor: auto;
   }
 }
-.footer-block__heading path {
+.footer-block__heading .icon-close {
+  height: 1.3rem;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 0.65rem);
+  transform: rotate(45deg);
+}
+.footer-block__heading .icon-close path {
   transition: all 0.3s ease 0s;
   fill: var(--color-light-grey);
+}
+.open .footer-block__heading .icon-close {
+  transform: rotate(0deg);
 }
 
 .footer-block--menu {

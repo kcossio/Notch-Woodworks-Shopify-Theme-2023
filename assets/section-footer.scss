@@ -202,17 +202,25 @@
       cursor:auto;
     }
 
-    height: 1.3rem;
+    .icon-close {
+      height: 1.3rem;
 
-    position: absolute;
-    right: 0;
-    top: calc(50% - .65rem);
-    transform: rotate(45deg);
+      position: absolute;
+      right: 0;
+      top: calc(50% - .65rem);
+      transform: rotate(45deg);
 
-    path {
-        transition: all .3s ease 0s;
-        fill: var(--color-light-grey);
+      path {
+          transition: all .3s ease 0s;
+          fill: var(--color-light-grey);
+      }
+
+      .open & {
+        transform:rotate(0deg);
+      }
+
     }
+    
 
   }
 

@@ -182,7 +182,7 @@
     }
   }
 
-  // ---------- Footer Menus - Add ability to toggle //
+  // ---------- Footer Menus - Add ability to toggle --------------- //
 
   .footer-block__heading {
     margin:0;
@@ -201,6 +201,19 @@
       text-align:left;
       cursor:auto;
     }
+
+    height: 1.3rem;
+
+    position: absolute;
+    right: 0;
+    top: calc(50% - .65rem);
+    transform: rotate(45deg);
+
+    path {
+        transition: all .3s ease 0s;
+        fill: var(--color-light-grey);
+    }
+
   }
 
   .footer-block--menu {

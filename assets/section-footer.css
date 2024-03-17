@@ -173,12 +173,21 @@ EASING
   cursor: pointer;
   position: relative;
   z-index: 3;
+  height: 1.3rem;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 0.65rem);
+  transform: rotate(45deg);
 }
 @media (min-width: 768px) {
   .footer-block__heading {
     text-align: left;
     cursor: auto;
   }
+}
+.footer-block__heading path {
+  transition: all 0.3s ease 0s;
+  fill: var(--color-light-grey);
 }
 
 .footer-block--menu {

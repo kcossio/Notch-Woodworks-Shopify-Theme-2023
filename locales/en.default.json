@@ -511,7 +511,11 @@
   "shopify": {
     "checkout": {
       "shop_policies": {
-        "privacy_policy": "Privacy Policy"
+        "privacy_policy": "Privacy Policy",
+        "terms_of_service": "Terms and Conditions",
+        "terms_of_sale": "Terms of Sale",
+        "contact_information": "Contact Information",
+        "purchase_options_cancellation_policy": "Cancellation Policy"
       }
     }
   },

@@ -188,8 +188,24 @@
     },
     "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3": {
       "type": "product-hero-banner",
+      "disabled": true,
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg"
+      }
+    },
+    "video_pcaAcK": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/pexels-roman-odintsov-6421255(Original).mp4",
+        "video_url": "",
+        "description": "Video of product",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "product_anchor_point_VBTzYh": {
@@ -325,8 +341,7 @@
         "84bd2b53-69f9-403b-b17a-a5d2d928c991"
       ],
       "settings": {
-        "heading": "Frequently Asked Questions",
-        "associated_product": "board-no-1"
+        "heading": "Frequently Asked Questions"
       }
     },
     "product_additional_products_p74Baw": {
@@ -385,6 +400,7 @@
     "product_anchor_point_BJJ4Wt",
     "31849e1d-eb5b-4e7e-b8cd-db8c367a89fe",
     "5ac34a44-315f-42a5-b9bd-88bb3a4e6dc3",
+    "video_pcaAcK",
     "product_anchor_point_VBTzYh",
     "7d2c50cb-25cf-45a7-832b-8089ade81cda",
     "product_anchor_point_9QpVUr",

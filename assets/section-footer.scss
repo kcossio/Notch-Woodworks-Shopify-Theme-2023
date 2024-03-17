@@ -205,8 +205,11 @@
 
   .footer-block--menu {
 
-    border-top:1px solid #175E72;
     border-bottom:1px solid #175E72;
+
+    @include breakpoint(tablet) {
+      border:0;
+    }
 
     ul {
       display: none;

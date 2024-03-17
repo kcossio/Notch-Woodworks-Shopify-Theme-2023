@@ -182,8 +182,12 @@ EASING
 }
 
 .footer-block--menu {
-  border-top: 1px solid #175E72;
   border-bottom: 1px solid #175E72;
+}
+@media (min-width: 768px) {
+  .footer-block--menu {
+    border: 0;
+  }
 }
 .footer-block--menu ul {
   display: none;

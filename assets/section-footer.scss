@@ -202,6 +202,11 @@
       cursor:auto;
     }
 
+    &.open {
+      .icon-close {
+        transform:rotate(0deg);
+      }
+    }
     .icon-close {
       height: 1.3rem;
 
@@ -209,15 +214,14 @@
       right: 0;
       top: calc(50% - .65rem);
       transform: rotate(45deg);
+      transition: all .3s ease 0s;
 
       path {
           transition: all .3s ease 0s;
           fill: var(--color-light-grey);
       }
 
-      .open & {
-        transform:rotate(0deg);
-      }
+      
 
     }
     

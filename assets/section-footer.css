@@ -207,6 +207,9 @@ EASING
 .footer-block--menu ul {
   display: none;
 }
+.footer-block--menu ul.footer-block__details-content {
+  margin: 0;
+}
 .footer-block--menu ul.open {
   display: block;
 }

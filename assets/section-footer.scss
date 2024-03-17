@@ -221,10 +221,7 @@
           fill: var(--color-light-grey);
       }
 
-      
-
     }
-    
 
   }
 
@@ -238,6 +235,10 @@
 
     ul {
       display: none;
+
+      &.footer-block__details-content {
+        margin:0;
+      }
 
       &.open {
         display: block;

@@ -507,7 +507,7 @@ p {
 }
 .shopify-policy__container h2 {
   font-family: var(--font-family-header-alt);
-  color: var(--color-main);
+  color: var(--color-text);
   position: relative;
   font-size: 2.6rem;
   padding-bottom: 1rem;
@@ -524,7 +524,7 @@ p {
 .shopify-policy__container h2::after {
   content: "";
   height: 0.2rem;
-  background: var(--color-text);
+  background: var(--color-accent);
   display: block;
   position: absolute;
   bottom: 0px;
@@ -536,6 +536,13 @@ p {
   font-family: var(--font-family-header-ex);
   text-transform: uppercase;
   font-weight: normal;
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  .shopify-policy__container h3 {
+    font-size: 2.2rem;
+  }
 }
 
 section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {

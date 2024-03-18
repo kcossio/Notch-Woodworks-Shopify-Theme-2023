@@ -2741,7 +2741,7 @@ sticky-header {
   content: "";
   top: 0px;
   left: 0;
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: block;
   position: absolute;

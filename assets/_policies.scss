@@ -82,5 +82,9 @@
     ul, ol {
         list-style-position: outside;
         list-style-type: square;
+
+        li {
+            margin-bottom:1em;
+        }
     }
 }

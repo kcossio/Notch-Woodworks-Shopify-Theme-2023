@@ -565,6 +565,9 @@ p {
   list-style-position: outside;
   list-style-type: square;
 }
+.shopify-policy__container ul li, .shopify-policy__container ol li {
+  margin-bottom: 1em;
+}
 
 section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {
   font-family: var(--font-family-script);

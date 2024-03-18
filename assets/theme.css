@@ -339,6 +339,7 @@ p {
   font-size: 45px;
   padding-bottom: 1em;
   line-height: 1.15em;
+  font-weight: normal;
 }
 @media (min-width: 768px) {
   .block-header-v1 {
@@ -508,26 +509,33 @@ p {
   font-family: var(--font-family-header-alt);
   color: var(--color-main);
   position: relative;
-  font-size: 36px;
-  padding-bottom: 1em;
+  font-size: 2.6rem;
+  padding-bottom: 1rem;
   line-height: 1.15em;
+  letter-spacing: 0;
 }
 @media (min-width: 768px) {
   .shopify-policy__container h2 {
-    font-size: 45px;
-    padding-bottom: 1em;
+    font-size: 3.4rem;
+    padding-bottom: 1rem;
+    font-weight: normal;
   }
 }
 .shopify-policy__container h2::after {
   content: "";
-  height: 0.15rem;
-  background: var(--color-accent);
+  height: 0.2rem;
+  background: var(--color-text);
   display: block;
   position: absolute;
   bottom: 0px;
   left: 0px;
   width: 100%;
   z-index: 1;
+}
+.shopify-policy__container h3 {
+  font-family: var(--font-family-header-ex);
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {

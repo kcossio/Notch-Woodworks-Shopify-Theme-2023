@@ -84,6 +84,7 @@ p {
     font-size:45px;
     padding-bottom:1em;
     line-height:1.15em;
+    font-weight: normal;
 
     @include breakpoint(tablet) {
         font-size:45px;

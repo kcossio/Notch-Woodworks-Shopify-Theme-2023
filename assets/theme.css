@@ -544,6 +544,18 @@ p {
     font-size: 2.2rem;
   }
 }
+.shopify-policy__container h4 {
+  font-family: var(--font-family-header-cn);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: normal;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .shopify-policy__container h4 {
+    font-size: 2.4rem;
+  }
+}
 
 section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {
   font-family: var(--font-family-script);

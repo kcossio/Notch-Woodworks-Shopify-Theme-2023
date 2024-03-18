@@ -564,6 +564,7 @@ p {
 .shopify-policy__container ul, .shopify-policy__container ol {
   list-style-position: outside;
   list-style-type: square;
+  padding-left: 4em;
 }
 .shopify-policy__container ul li, .shopify-policy__container ol li {
   margin-bottom: 1em;

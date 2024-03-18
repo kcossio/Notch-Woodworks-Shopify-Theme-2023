@@ -62,6 +62,25 @@ menu-drawer > details[open] > summary::before {
       color:var(--color-main);
     }
   }
+
+  .list-menu__item {
+    justify-content: flex-end;
+  }
+
+  ul {
+
+  }
+
+  ul.sub-menu {
+    display:none;
+    text-align:right;
+
+    a {
+      font-family:var(font-family-body);
+      font-size:1.5rem;
+      font-weight: normal;
+    }
+  }
 }
 .js .menu-drawer {
   //height: calc(100vh - 100%);

@@ -24,18 +24,18 @@
               {%- for link in linklists.mobile-menu-primary.links -%}
                 <li>
                   {%- if link.links != blank -%}
-                    <div id="Details-menu-drawer-menu-item-{{ forloop.index }}">
-                      <div
+                    <div class="container-menu__item" id="Details-menu-drawer-menu-item-{{ forloop.index }}">
+                      <a
                         id="HeaderDrawer-{{ link.handle }}"
-                        class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}"
+                        class="menu-drawer__menu-item list-menu__item link link--text focus-inset has_sub-menu{% if link.child_active %} menu-drawer__menu-item--active{% endif %}"
                       >
                         {{ link.title | escape }}
                         {% render 'icon-arrow' %}
                         {% render 'icon-caret' %}
-                      </div>
+                      </a>
                       <div class="menu-drawer__inner-submenu">
                           
-                        <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                        <ul class="menu-drawer__menu sub-menu list-menu" role="list" tabindex="-1">
                           {%- for childlink in link.links -%}
                             <li>
                               {%- if childlink.links == blank -%}
@@ -300,4 +300,21 @@
       </div>
     </div>
   </details>
+
+<script>
+  // Toggle open submenu
+  jQuery('#menu-drawer a.has_sub-menu').on('click',function(e) {
+    e.preventDefault();
+    
+    jQuery('.container-menu__item').find('.sub-menu').slideUp(200,'easeInOutQuad');
+    
+    if(jQuery(this).hasClass('open')) {
+       jQuery(this).closest('.container-menu__item').find('.sub-menu').slideUp(500, 'easeInOutQuad'); 
+    } else {
+       jQuery(this).closest('.container-menu__item').find('.sub-menu').slideDown(500, 'easeInOutQuad'); 
+    }
+    jQuery(this).toggleClass('open');
+    
+});
+</script>
 </header-drawer>

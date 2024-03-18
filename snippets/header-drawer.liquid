@@ -306,12 +306,12 @@
   jQuery('#menu-drawer a.has_sub-menu').on('click',function(e) {
     e.preventDefault();
     
-    jQuery('.container-menu__item').find('.sub-menu').slideUp(200,'easeInOutQuad');
+    jQuery('.container-menu__item').find('.sub-menu').slideUp(200);
     
     if(jQuery(this).hasClass('open')) {
-       jQuery(this).closest('.container-menu__item').find('.sub-menu').slideUp(500, 'easeInOutQuad'); 
+       jQuery(this).closest('.container-menu__item').find('.sub-menu').slideUp(500); 
     } else {
-       jQuery(this).closest('.container-menu__item').find('.sub-menu').slideDown(500, 'easeInOutQuad'); 
+       jQuery(this).closest('.container-menu__item').find('.sub-menu').slideDown(500); 
     }
     jQuery(this).toggleClass('open');
     

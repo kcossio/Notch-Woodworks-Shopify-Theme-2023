@@ -20,8 +20,11 @@
       <div class="menu-drawer__inner-container">
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
+            {%  comment %}
+              Primary Menu - pulled from handle in link list
+            {%  endcomment %}
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
-              {%- for link in section.settings.mobile-menu.links -%}
+              {%- for link in linklists.mobile-menu-primary.links -%}
                 <li>
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">

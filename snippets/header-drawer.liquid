@@ -227,7 +227,6 @@
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
                 class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide"
               >
-                {% render 'icon-account' %}
                 {%- liquid
                   if customer
                     echo 'customer.account_fallback' | t
@@ -235,6 +234,8 @@
                     echo 'customer.log_in' | t
                   endif
                 -%}
+                {% render 'icon-notch-icon' %}
+                
               </a>
             {%- endif -%}
             {%- if localization.available_countries or localization.available_languages -%}

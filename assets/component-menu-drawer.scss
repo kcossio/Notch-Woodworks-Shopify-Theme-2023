@@ -92,6 +92,11 @@ menu-drawer > details[open] > summary::before {
   
       }
     }
+
+    &.no-child {
+      letter-spacing:.4rem;
+      font-size:1.5rem;
+    }
   }
 
   .list-menu__item {

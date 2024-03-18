@@ -85,6 +85,10 @@ menu-drawer > details[open] > summary::before {
   transition: all 0.3s ease 0s;
   fill: var(--color-main);
 }
+.menu-drawer .link--text.no-child {
+  letter-spacing: 0.4rem;
+  font-size: 1.5rem;
+}
 .menu-drawer .list-menu__item {
   justify-content: flex-end;
   position: relative;

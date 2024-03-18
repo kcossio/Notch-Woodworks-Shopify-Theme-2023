@@ -77,7 +77,10 @@
     strong {
         font-family:var(--font-family-header-ex);
         font-weight:normal;
-        letter-spacing: .1rem;
-        font-size:120%;
+    }
+
+    ul, ol {
+        list-style-position: outside;
+        list-style-type: square;
     }
 }

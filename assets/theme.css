@@ -560,8 +560,10 @@ p {
 .shopify-policy__container strong {
   font-family: var(--font-family-header-ex);
   font-weight: normal;
-  letter-spacing: 0.1rem;
-  font-size: 120%;
+}
+.shopify-policy__container ul, .shopify-policy__container ol {
+  list-style-position: outside;
+  list-style-type: square;
 }
 
 section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {

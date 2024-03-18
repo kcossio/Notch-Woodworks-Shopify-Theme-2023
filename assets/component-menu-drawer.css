@@ -319,6 +319,10 @@ details[open].menu-opening > .menu-drawer__submenu {
   width: 2rem;
   margin-right: 1rem;
 }
+.menu-drawer__account .icon-account svg {
+  width: 3.27rem;
+  height: auto;
+}
 
 .menu-drawer__account:hover .icon-account {
   transform: scale(1.07);

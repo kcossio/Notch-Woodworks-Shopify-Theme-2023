@@ -342,6 +342,11 @@ details[open].menu-opening > .menu-drawer__submenu {
   height: 2rem;
   width: 2rem;
   margin-right: 1rem;
+
+  svg {
+    width:3.27rem;
+    height: auto;
+  }
 }
 
 .menu-drawer__account:hover .icon-account {

@@ -483,6 +483,28 @@ p {
   }
 }
 
+.shopify-policy__container {
+  width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 3rem;
+  max-width: 100%;
+}
+.shopify-policy__container h1 {
+  font-family: var(--font-family-script);
+  font-weight: normal;
+  font-size: 6rem;
+}
+@media (min-width: 1280px) {
+  .shopify-policy__container h1 {
+    font-size: 7.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  .shopify-policy__container h1 {
+    font-size: 10rem;
+  }
+}
+
 section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {
   font-family: var(--font-family-script);
   font-weight: normal;

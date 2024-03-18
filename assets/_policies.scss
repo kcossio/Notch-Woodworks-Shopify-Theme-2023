@@ -1,0 +1,22 @@
+.shopify-policy__container {
+
+    width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 3rem;
+    max-width:100%;
+    
+    h1 {
+   
+        font-family: var(--font-family-script);
+        font-weight: normal;
+        font-size:6rem;
+
+        @include breakpoint(laptop) {
+            font-size:7.5rem;
+        }
+        @include breakpoint(desktop) {
+            font-size:10rem;
+        }
+    
+    }
+}

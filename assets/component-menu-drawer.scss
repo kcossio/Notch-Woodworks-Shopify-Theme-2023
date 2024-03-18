@@ -331,7 +331,12 @@ details[open].menu-opening > .menu-drawer__submenu {
   font-weight: normal;
   //color: rgb(var(--color-foreground));
   margin-bottom: 0;
-  gap:6px
+  gap:6px;
+
+  svg {
+    width:3.27rem;
+    height: auto;
+  }
 }
 
 .menu-drawer__utility-links:has(.menu-drawer__localization) .menu-drawer__account {
@@ -342,11 +347,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   height: 2rem;
   width: 2rem;
   margin-right: 1rem;
-
-  svg {
-    width:3.27rem;
-    height: auto;
-  }
+  
 }
 
 .menu-drawer__account:hover .icon-account {

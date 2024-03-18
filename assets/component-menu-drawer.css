@@ -309,6 +309,10 @@ details[open].menu-opening > .menu-drawer__submenu {
   margin-bottom: 0;
   gap: 6px;
 }
+.menu-drawer__account svg {
+  width: 3.27rem;
+  height: auto;
+}
 
 .menu-drawer__utility-links:has(.menu-drawer__localization) .menu-drawer__account {
   margin: 0;
@@ -318,10 +322,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   height: 2rem;
   width: 2rem;
   margin-right: 1rem;
-}
-.menu-drawer__account .icon-account svg {
-  width: 3.27rem;
-  height: auto;
 }
 
 .menu-drawer__account:hover .icon-account {

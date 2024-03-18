@@ -22,32 +22,27 @@
 
     h2 {
         font-family: var(--font-family-header-alt);
-    color:var(--color-main);
-    position:relative;
-    font-size:45px;
-    padding-bottom:1em;
-    line-height:1.15em;
-
-    @include breakpoint(tablet) {
-        font-size:45px;
+        color:var(--color-main);
+        position:relative;
+        font-size:36px;
         padding-bottom:1em;
-    }
-
-    &::after {
-        content:"";
-        background:url('divider-notch-mobile.svg') center center no-repeat;
-        display:block;
-        position:absolute;
-        bottom:0px;
-        left:0px;
-        height: 20px;
-        width: 100%;
-        z-index: 1;
+        line-height:1.15em;
 
         @include breakpoint(tablet) {
-            background:url('divider-notch-desktop.svg') center center no-repeat;
+            font-size:45px;
+            padding-bottom:1em;
         }
 
-    }
+        &::after {
+            content:"";
+            height:.15rem;
+            background:var(--color-accent);
+            display:block;
+            position:absolute;
+            bottom:0px;
+            left:0px;
+            width: 100%;
+            z-index: 1;
+        }
     }
 }

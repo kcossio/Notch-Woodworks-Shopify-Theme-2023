@@ -508,7 +508,7 @@ p {
   font-family: var(--font-family-header-alt);
   color: var(--color-main);
   position: relative;
-  font-size: 45px;
+  font-size: 36px;
   padding-bottom: 1em;
   line-height: 1.15em;
 }
@@ -520,19 +520,14 @@ p {
 }
 .shopify-policy__container h2::after {
   content: "";
-  background: url("divider-notch-mobile.svg") center center no-repeat;
+  height: 0.15rem;
+  background: var(--color-accent);
   display: block;
   position: absolute;
   bottom: 0px;
   left: 0px;
-  height: 20px;
   width: 100%;
   z-index: 1;
-}
-@media (min-width: 768px) {
-  .shopify-policy__container h2::after {
-    background: url("divider-notch-desktop.svg") center center no-repeat;
-  }
 }
 
 section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {

@@ -546,6 +546,7 @@ p {
 }
 .shopify-policy__container h4 {
   font-family: var(--font-family-header-cn);
+  color: var(--color-text);
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-weight: normal;

@@ -76,9 +76,10 @@ menu-drawer > details[open] > summary::before {
     text-align:right;
 
     a {
-      font-family:var(font-family-body);
+      font-family:var(--font-family-body);
       font-size:1.5rem;
       font-weight: normal;
+      text-transform: none;
     }
   }
 }
@@ -134,9 +135,9 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__navigation-container {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  align-content: space-between;
+  //display: grid;
+  //grid-template-rows: 1fr auto;
+  //align-content: space-between;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
@@ -281,10 +282,11 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__account {
   display: inline-flex;
   align-items: center;
+  justify-content: flex-end;
   text-decoration: none;
   padding: 1rem 0;
   font-size: 1.4rem;
-  color: rgb(var(--color-foreground));
+  //color: rgb(var(--color-foreground));
   margin-bottom: 0;
 }
 

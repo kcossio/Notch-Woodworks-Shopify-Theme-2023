@@ -63,10 +63,6 @@ menu-drawer > details[open] > summary::before {
     }
   }
 
-  .list-menu {
-    padding: 0 4.4rem 0 0;
-  }
-
   .list-menu__item {
     justify-content: flex-end;
   }
@@ -145,6 +141,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
+  padding: 0 4.4rem 0 0;
 }
 
 .menu-drawer__navigation {

@@ -60,9 +60,6 @@ menu-drawer > details[open] > summary::before {
 .menu-drawer .link--text:hover {
   color: var(--color-main);
 }
-.menu-drawer .list-menu {
-  padding: 0 4.4rem 0 0;
-}
 .menu-drawer .list-menu__item {
   justify-content: flex-end;
 }
@@ -129,6 +126,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
+  padding: 0 4.4rem 0 0;
 }
 
 .menu-drawer__navigation {

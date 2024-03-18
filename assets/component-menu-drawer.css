@@ -308,6 +308,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   font-weight: normal;
   margin-bottom: 0;
   gap: 6px;
+  letter-spacing: 0;
 }
 .menu-drawer__account svg {
   width: 3.27rem;

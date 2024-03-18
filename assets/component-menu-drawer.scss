@@ -61,6 +61,11 @@ menu-drawer > details[open] > summary::before {
     &:hover {
       color:var(--color-main);
     }
+
+    &.parent-link {
+      letter-spacing:.4rem;
+      font-size:1.5rem;
+    }
   }
 
   .list-menu__item {
@@ -75,11 +80,12 @@ menu-drawer > details[open] > summary::before {
     display:none;
     text-align:right;
 
-    a {
+    a.child-link {
       font-family:var(--font-family-body);
       font-size:1.5rem;
       font-weight: normal;
       text-transform: none;
+      padding:0;
     }
   }
 }
@@ -145,7 +151,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__navigation {
-  padding: 3rem 0;
+  padding: 5rem 0 3rem 0;
 }
 
 .menu-drawer__inner-submenu {

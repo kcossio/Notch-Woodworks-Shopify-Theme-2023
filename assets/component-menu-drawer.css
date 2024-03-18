@@ -60,6 +60,10 @@ menu-drawer > details[open] > summary::before {
 .menu-drawer .link--text:hover {
   color: var(--color-main);
 }
+.menu-drawer .link--text.parent-link {
+  letter-spacing: 0.4rem;
+  font-size: 1.5rem;
+}
 .menu-drawer .list-menu__item {
   justify-content: flex-end;
 }
@@ -67,11 +71,12 @@ menu-drawer > details[open] > summary::before {
   display: none;
   text-align: right;
 }
-.menu-drawer ul.sub-menu a {
+.menu-drawer ul.sub-menu a.child-link {
   font-family: var(--font-family-body);
   font-size: 1.5rem;
   font-weight: normal;
   text-transform: none;
+  padding: 0;
 }
 
 .js .menu-drawer {
@@ -130,7 +135,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__navigation {
-  padding: 3rem 0;
+  padding: 5rem 0 3rem 0;
 }
 
 .menu-drawer__inner-submenu {

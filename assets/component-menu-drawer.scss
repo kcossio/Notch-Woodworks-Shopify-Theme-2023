@@ -79,6 +79,11 @@ menu-drawer > details[open] > summary::before {
   ul.sub-menu {
     display:none;
     text-align:right;
+    margin-bottom:1rem;
+
+    li {
+      margin-bottom:.4rem;
+    }
 
     a.child-link {
       font-family:var(--font-family-body);

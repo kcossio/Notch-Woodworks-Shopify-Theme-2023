@@ -92,6 +92,11 @@ menu-drawer > details[open] > summary::before {
   
       }
     }
+
+    &.no-child {
+      letter-spacing:.4rem;
+      font-size:1.5rem;
+    }
   }
 
   .list-menu__item {
@@ -101,6 +106,9 @@ menu-drawer > details[open] > summary::before {
 
   ul {
 
+    &.mobile-menu-secondary {
+      margin-top:4rem;
+    }
   }
 
   ul.sub-menu {
@@ -209,7 +217,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__menu-item {
-  padding: 1.1rem 0;
+  padding: 1rem 0;
   text-decoration: none;
   font-size: 1.8rem;
 }
@@ -341,17 +349,4 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__account:hover .icon-account {
   transform: scale(1.07);
-}
-
-.menu-drawer .list-social {
-  justify-content: flex-start;
-  margin-left: -1.25rem;
-}
-
-.menu-drawer .list-social:empty {
-  display: none;
-}
-
-.menu-drawer .list-social__link {
-  padding: 1.1rem 1.1rem;
 }

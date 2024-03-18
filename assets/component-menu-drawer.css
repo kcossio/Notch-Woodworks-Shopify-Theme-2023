@@ -85,9 +85,16 @@ menu-drawer > details[open] > summary::before {
   transition: all 0.3s ease 0s;
   fill: var(--color-main);
 }
+.menu-drawer .link--text.no-child {
+  letter-spacing: 0.4rem;
+  font-size: 1.5rem;
+}
 .menu-drawer .list-menu__item {
   justify-content: flex-end;
   position: relative;
+}
+.menu-drawer ul.mobile-menu-secondary {
+  margin-top: 4rem;
 }
 .menu-drawer ul.sub-menu {
   display: none;
@@ -187,7 +194,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__menu-item {
-  padding: 1.1rem 0;
+  padding: 1rem 0;
   text-decoration: none;
   font-size: 1.8rem;
 }
@@ -318,17 +325,4 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__account:hover .icon-account {
   transform: scale(1.07);
-}
-
-.menu-drawer .list-social {
-  justify-content: flex-start;
-  margin-left: -1.25rem;
-}
-
-.menu-drawer .list-social:empty {
-  display: none;
-}
-
-.menu-drawer .list-social__link {
-  padding: 1.1rem 1.1rem;
 }

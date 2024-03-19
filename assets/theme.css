@@ -575,6 +575,7 @@ p {
 }
 .shopify-policy__container ul li ul, .shopify-policy__container ol li ul {
   list-style-type: none;
+  margin-top: 2rem;
 }
 .shopify-policy__container ul li ul li, .shopify-policy__container ol li ul li {
   position: relative;
@@ -582,8 +583,17 @@ p {
 .shopify-policy__container ul li ul li::before, .shopify-policy__container ol li ul li::before {
   content: "»";
   position: absolute;
-  left: 0;
-  top: 0.3rem;
+  left: -1.5rem;
+  top: 0;
+}
+.shopify-policy__container ul li ul li li, .shopify-policy__container ol li ul li li {
+  position: relative;
+}
+.shopify-policy__container ul li ul li li::before, .shopify-policy__container ol li ul li li::before {
+  content: "—";
+  position: absolute;
+  left: -1.5rem;
+  top: 0;
 }
 
 section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {

@@ -252,9 +252,15 @@ section {
                 text-transform: uppercase;
                 font-weight: normal;
                 font-size:2rem;
+                letter-spacing:.1rem;
 
                 @include breakpoint(tablet) {
                     font-size:3rem;
+                    letter-spacing:.2rem;
+                }
+
+                &.jdgm-subtab__name.jdgm--active {
+                    
                 }
             }
         }

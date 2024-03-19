@@ -806,9 +806,11 @@ section .jdgm-star.jdgm--off:before {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 2rem;
+  letter-spacing: 0.1rem;
 }
 @media (min-width: 768px) {
   .jdgm-rev-widg.jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab span {
     font-size: 3rem;
+    letter-spacing: 0.2rem;
   }
 }

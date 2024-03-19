@@ -796,3 +796,19 @@ section .jdgm-star.jdgm--off:before {
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-media .jdgm-gallery__thumbnail-link {
   float: none;
 }
+.jdgm-rev-widg.jdgm-rev-widg .jdgm-subtab .jdgm-rev-widg__actions {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.jdgm-rev-widg.jdgm-rev-widg .jdgm-subtab .jdgm-rev-widg__actions span {
+  font-family: var(--font-family-header-ex);
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .jdgm-rev-widg.jdgm-rev-widg .jdgm-subtab .jdgm-rev-widg__actions span {
+    font-size: 3rem;
+  }
+}

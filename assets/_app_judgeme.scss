@@ -239,4 +239,26 @@ section {
         }
     }
 
+    // Review + Questions Actions
+
+    .jdgm-subtab {
+        .jdgm-rev-widg__actions {
+            display:flex;
+            justify-content: center;
+            text-align: center;
+
+            span {
+                font-family:var(--font-family-header-ex);
+                text-transform: uppercase;
+                font-weight: normal;
+                font-size:2rem;
+
+                @include breakpoint(tablet) {
+                    font-size:3rem;
+                }
+            }
+        }
+    }
+    
+
 }

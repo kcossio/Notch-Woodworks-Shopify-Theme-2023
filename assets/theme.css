@@ -746,6 +746,7 @@ section .jdgm-star.jdgm--off:before {
   width: 100%;
   flex-wrap: wrap;
   position: relative;
+  padding-bottom: 5.4rem;
 }
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-stars::after {
   content: "";

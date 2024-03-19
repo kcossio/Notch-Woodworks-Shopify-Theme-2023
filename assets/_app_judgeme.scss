@@ -168,7 +168,7 @@ section {
 .jdgm--leex-script-loaded .jdgm-rev-widg__actions, 
 .jdgm--leex-script-loaded .jdgm-rev, 
 .jdgm--leex-script-loaded .jdgm-quest {
-    box-shadow:none;
+    box-shadow:none !important;
 }
 .jdgm-rev-widg.jdgm-rev-widg {
 
@@ -220,6 +220,7 @@ section {
     // Media
     .jdgm-row-media {
         text-align:center;
+        border:0;
 
         // Thumbnail
         .jdgm-gallery__thumbnail-link {

@@ -739,7 +739,7 @@ section .jdgm-star.jdgm--off:before {
 .jdgm--leex-script-loaded .jdgm-rev-widg__actions,
 .jdgm--leex-script-loaded .jdgm-rev,
 .jdgm--leex-script-loaded .jdgm-quest {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-stars {
@@ -781,6 +781,7 @@ section .jdgm-star.jdgm--off:before {
 }
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-media {
   text-align: center;
+  border: 0;
 }
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-media .jdgm-gallery__thumbnail-link {
   float: none;

@@ -176,6 +176,24 @@ section {
     .jdgm-row-stars {
         width:100%;
         flex-wrap: wrap;
+        position:relative;
+
+        &::after {
+            content:"";
+            background:url('divider-notch-mobile.svg') center center no-repeat;
+            display:block;
+            position:absolute;
+            bottom:0px;
+            left:0px;
+            height: 20px;
+            width: 100%;
+            z-index: 1;
+    
+            @include breakpoint(tablet) {
+                background:url('divider-notch-desktop.svg') center center no-repeat;
+            }
+    
+        }
     }
 
     .jdgm-rev-widg__summary {

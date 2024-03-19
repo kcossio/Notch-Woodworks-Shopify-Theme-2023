@@ -745,6 +745,23 @@ section .jdgm-star.jdgm--off:before {
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-stars {
   width: 100%;
   flex-wrap: wrap;
+  position: relative;
+}
+.jdgm-rev-widg.jdgm-rev-widg .jdgm-row-stars::after {
+  content: "";
+  background: url("divider-notch-mobile.svg") center center no-repeat;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 20px;
+  width: 100%;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-stars::after {
+    background: url("divider-notch-desktop.svg") center center no-repeat;
+  }
 }
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-rev-widg__summary {
   width: 100%;

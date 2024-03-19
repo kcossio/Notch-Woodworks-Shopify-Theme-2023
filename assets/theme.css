@@ -745,6 +745,16 @@ section .jdgm-star.jdgm--off:before {
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-rev-widg__summary-inner {
   text-align: center;
 }
+.jdgm-rev-widg.jdgm-rev-widg .jdgm-widget-actions-wrapper {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.jdgm-rev-widg.jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link {
+  margin: 0px;
+  width: auto;
+}
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-media {
   text-align: center;
 }

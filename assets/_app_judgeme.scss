@@ -178,6 +178,19 @@ section {
         text-align: center;
     }
 
+    //Action Buttons
+    .jdgm-widget-actions-wrapper {
+        width:100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:2rem;
+
+        .jdgm-write-rev-link {
+            margin:0px;
+            width: auto;
+        }
+    }
+
     // Media
     .jdgm-row-media {
         text-align:center;

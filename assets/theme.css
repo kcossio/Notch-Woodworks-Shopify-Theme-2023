@@ -735,6 +735,13 @@ section .jdgm-star.jdgm--off:before {
   opacity: 0;
 }
 
+.jdgm--leex-script-loaded .jdgm-rev-widg__header,
+.jdgm--leex-script-loaded .jdgm-rev-widg__actions,
+.jdgm--leex-script-loaded .jdgm-rev,
+.jdgm--leex-script-loaded .jdgm-quest {
+  box-shadow: none;
+}
+
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-stars {
   width: 100%;
   flex-wrap: wrap;

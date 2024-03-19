@@ -162,6 +162,14 @@ section {
 }
 
 // Cards Layout
+
+// Remove box shadow from all elements
+.jdgm--leex-script-loaded .jdgm-rev-widg__header, 
+.jdgm--leex-script-loaded .jdgm-rev-widg__actions, 
+.jdgm--leex-script-loaded .jdgm-rev, 
+.jdgm--leex-script-loaded .jdgm-quest {
+    box-shadow:none;
+}
 .jdgm-rev-widg.jdgm-rev-widg {
 
     // Header 

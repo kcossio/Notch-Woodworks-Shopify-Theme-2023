@@ -734,3 +734,14 @@ section .jdgm-star.jdgm--off {
 section .jdgm-star.jdgm--off:before {
   opacity: 0;
 }
+
+.jdgm-rev-widg.jdgm-rev-widg .jdgm-row-stars {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.jdgm-rev-widg.jdgm-rev-widg .jdgm-rev-widg__summary {
+  width: 100%;
+}
+.jdgm-rev-widg.jdgm-rev-widg .jdgm-rev-widg__summary-inner {
+  text-align: center;
+}

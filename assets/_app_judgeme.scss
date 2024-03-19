@@ -160,3 +160,20 @@ section {
 
     
 }
+
+.jdgm-rev-widg.jdgm-rev-widg {
+
+    .jdgm-row-stars {
+        width:100%;
+        flex-wrap: wrap;
+    }
+
+    .jdgm-rev-widg__summary {
+        width:100%;
+    }
+
+    .jdgm-rev-widg__summary-inner {
+        text-align: center;
+    }
+
+}

@@ -174,10 +174,10 @@ section {
 
     // Header 
     .jdgm-row-stars {
-        width:100%;
+        width:100% !important;
         flex-wrap: wrap;
         position:relative;
-        padding-bottom:5.4rem;
+        padding-bottom:5.4rem !important;
 
         &::after {
             content:"";
@@ -207,12 +207,17 @@ section {
 
     //Action Buttons
     .jdgm-widget-actions-wrapper {
-        width:100%;
+        width:100% !important;
         flex-direction: row !important;
         flex-wrap: wrap !important;
         border:0px !important;
         gap:2rem;
 
+        .jdgm-write-rev-link, .jdgm-ask-question-btn {
+            font-family:var(--font-family-header-ex);
+            text-transform: uppercase;
+            font-weight: normal;
+        }
         .jdgm-write-rev-link {
             margin:0px;
             width: auto;

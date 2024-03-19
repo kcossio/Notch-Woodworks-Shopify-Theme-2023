@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ------ Custom Styles for this theme -------- */
 /*-----------------------
 EASING 
@@ -514,6 +515,7 @@ p {
   line-height: 1.15em;
   letter-spacing: 0;
   margin-bottom: 1.2em;
+  margin-top: 2em;
 }
 @media (min-width: 768px) {
   .shopify-policy__container h2 {
@@ -570,6 +572,18 @@ p {
 }
 .shopify-policy__container ul li, .shopify-policy__container ol li {
   margin-bottom: 1em;
+}
+.shopify-policy__container ul li ul, .shopify-policy__container ol li ul {
+  list-style-type: none;
+}
+.shopify-policy__container ul li ul li, .shopify-policy__container ol li ul li {
+  position: relative;
+}
+.shopify-policy__container ul li ul li::before, .shopify-policy__container ol li ul li::before {
+  content: "»";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
 }
 
 section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {

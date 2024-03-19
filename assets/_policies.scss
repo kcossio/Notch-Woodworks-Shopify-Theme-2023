@@ -29,6 +29,7 @@
         line-height:1.15em;
         letter-spacing: 0;
         margin-bottom: 1.2em;
+        margin-top:2em;
 
         @include breakpoint(tablet) {
             font-size: 3.4rem;
@@ -88,6 +89,21 @@
 
         li {
             margin-bottom:1em;
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    position: relative;
+                    &::before {
+                        content:"»";
+                        position:absolute;
+                        left:0;
+                        top:.3rem;
+
+                    }
+                }
+            }
         }
     }
 }

@@ -53,16 +53,20 @@ EASING
   font-size: 28px;
   letter-spacing: 0px;
   color: var(--color-white);
+  line-height: 1.2em;
 }
 @media (min-width: 768px) {
   .section-home-banner h1 p {
     font-size: 3.6rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .section-home-banner h1 p {
     font-size: 4.8rem;
   }
+}
+.section-home-banner .subhead {
+  margin-bottom: 3em;
 }
 .section-home-banner p {
   font-size: 1.6rem;

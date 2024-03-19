@@ -21,16 +21,21 @@
             font-size:28px;
             letter-spacing:0px;
             color:var(--color-white);
+            line-height:1.2em;
 
             @include breakpoint(tablet) {
                 font-size:3.6rem;
             }
-            @include breakpoint(desktop) {
+            @include breakpoint(laptop) {
                 font-size:4.8rem;
             }
         }
     }
 
+    .subhead {
+        margin-bottom:3em;
+    }
+    
     p {
         font-size:1.6rem;
         color:#D5D5D5;

@@ -576,6 +576,7 @@ p {
 .shopify-policy__container ul li ul, .shopify-policy__container ol li ul {
   list-style-type: none;
   margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 .shopify-policy__container ul li ul li, .shopify-policy__container ol li ul li {
   position: relative;
@@ -592,7 +593,7 @@ p {
 .shopify-policy__container ul li ul li li::before, .shopify-policy__container ol li ul li li::before {
   content: "—";
   position: absolute;
-  left: -1.5rem;
+  left: -2rem;
   top: 0;
 }
 

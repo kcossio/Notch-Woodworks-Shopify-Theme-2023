@@ -93,6 +93,7 @@
             ul {
                 list-style-type: none;
                 margin-top: 2rem;
+                margin-bottom: 3rem;
 
                 li {
                     position: relative;
@@ -109,7 +110,7 @@
                         &::before {
                             content:"—";
                             position:absolute;
-                            left:-1.5rem;
+                            left:-2rem;
                             top:0;
     
                         }

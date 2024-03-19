@@ -161,8 +161,10 @@ section {
     
 }
 
+// Cards Layout
 .jdgm-rev-widg.jdgm-rev-widg {
 
+    // Header 
     .jdgm-row-stars {
         width:100%;
         flex-wrap: wrap;
@@ -174,6 +176,16 @@ section {
 
     .jdgm-rev-widg__summary-inner {
         text-align: center;
+    }
+
+    // Media
+    .jdgm-row-media {
+        text-align:center;
+
+        // Thumbnail
+        .jdgm-gallery__thumbnail-link {
+            float:none;
+        }
     }
 
 }

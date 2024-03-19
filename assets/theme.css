@@ -745,3 +745,9 @@ section .jdgm-star.jdgm--off:before {
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-rev-widg__summary-inner {
   text-align: center;
 }
+.jdgm-rev-widg.jdgm-rev-widg .jdgm-row-media {
+  text-align: center;
+}
+.jdgm-rev-widg.jdgm-rev-widg .jdgm-row-media .jdgm-gallery__thumbnail-link {
+  float: none;
+}

@@ -53,7 +53,7 @@ EASING
   font-size: 28px;
   letter-spacing: 0px;
   color: var(--color-white);
-  line-height: 1.2em;
+  line-height: 1.3em;
 }
 @media (min-width: 768px) {
   .section-home-banner h1 p {

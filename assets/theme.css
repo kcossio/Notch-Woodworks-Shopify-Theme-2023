@@ -764,15 +764,16 @@ section .jdgm-star.jdgm--off:before {
   }
 }
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-rev-widg__summary {
-  width: 100%;
+  width: 100% !important;
 }
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-rev-widg__summary-inner {
-  text-align: center;
+  text-align: center !important;
 }
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-widget-actions-wrapper {
   width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  border: 0px !important;
   gap: 2rem;
 }
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link {

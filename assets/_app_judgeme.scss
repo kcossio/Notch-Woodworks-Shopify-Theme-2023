@@ -197,18 +197,19 @@ section {
     }
 
     .jdgm-rev-widg__summary {
-        width:100%;
+        width:100% !important;
     }
 
     .jdgm-rev-widg__summary-inner {
-        text-align: center;
+        text-align: center !important;
     }
 
     //Action Buttons
     .jdgm-widget-actions-wrapper {
         width:100%;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        border:0px !important;
         gap:2rem;
 
         .jdgm-write-rev-link {

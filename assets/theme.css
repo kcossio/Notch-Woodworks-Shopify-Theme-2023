@@ -847,6 +847,17 @@ section .jdgm-row-actions {
     letter-spacing: 0.2rem;
   }
 }
+.jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab span.jdgm-subtab__name.jdgm--active {
+  background-color: transparent;
+  display: inline-block;
+  padding: 0px 1.5rem 1rem 1.5rem;
+  border-style: dotted;
+  border-width: 0 0 6px 0;
+  border-color: var(--color-accent);
+  border-image-source: url("border-dot-red.svg?v=1");
+  border-image-slice: 24% 24% 24% 24%;
+  border-image-repeat: round;
+}
 .jdgm-rev-widg .jdgm-rev-widg__body {
   border-top: 0.2rem solid var(--color-main);
   border-bottom: 0.2rem solid var(--color-main);

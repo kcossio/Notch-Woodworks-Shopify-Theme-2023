@@ -39,6 +39,22 @@ EASING
   font-weight: normal;
   font-style: normal;
 }
+:root {
+  --font-family-script: "Buinton", cursive;
+  --font-family-header-cn: "FSIndustrieCondensedBold", sans-serif;
+  --font-family-header-ex: "FSIndustrieExtendedBlack", sans-serif;
+  --font-family-header-alt: "Editor", serif;
+  --font-family-body: "FSKimText", serif;
+  --color-text:#121212;
+  --color-main:#004356;
+  --color-accent:#C15232;
+  --color-grey:#d5d5d5;
+  --color-light-grey:#ededed;
+  --color-dark-grey:#6D6D6D;
+  --color-white:#ffffff;
+  --color-black:#121212;
+}
+
 /* --------------- Slick Slider-------------------- */
 /* Slider */
 .slider-full-width {
@@ -275,22 +291,6 @@ EASING
 
 .product-hero-images .slider__slide img {
   aspect-ratio: 892/832;
-}
-
-:root {
-  --font-family-script: "Buinton", cursive;
-  --font-family-header-cn: "FSIndustrieCondensedBold", sans-serif;
-  --font-family-header-ex: "FSIndustrieExtendedBlack", sans-serif;
-  --font-family-header-alt: "Editor", serif;
-  --font-family-body: "FSKimText", serif;
-  --color-text:#121212;
-  --color-main:#004356;
-  --color-accent:#C15232;
-  --color-grey:#d5d5d5;
-  --color-light-grey:#ededed;
-  --color-dark-grey:#6D6D6D;
-  --color-white:#ffffff;
-  --color-black:#121212;
 }
 
 .script {
@@ -599,6 +599,7 @@ p {
 
 section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {
   font-family: var(--font-family-script);
+  color: var(--color-main);
   font-weight: normal;
   font-size: 6rem;
 }
@@ -703,6 +704,10 @@ section .jdgm-prev-badge__text {
     vertical-align: top;
     padding-left: 1rem;
   }
+}
+section .jdgm-rev-widg__summary-average {
+  display: block;
+  color: var(--color-dark-grey);
 }
 section .jdgm-star {
   width: 1.8rem;

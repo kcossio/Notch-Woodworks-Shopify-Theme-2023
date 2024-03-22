@@ -320,11 +320,17 @@ section {
     }
     .jdgm-gallery-title {
         color:var(--color-main);
-        margin-bottom:.1rem;
+        margin-bottom:2rem;
         font-family: var(--font-family-header-alt);
     }
     .jdgm-gallery {
         width:100%;
+
+        .jdgm-gallery__thumbnail.jdgm-gallery__thumbnail {
+            @include breakpoint(tablet) {
+                padding:.6rem;
+            }
+        }
     }
 
     // Review + Questions Actions

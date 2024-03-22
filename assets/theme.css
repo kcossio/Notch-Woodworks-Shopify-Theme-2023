@@ -875,11 +875,16 @@ section .jdgm-row-actions {
 }
 .jdgm-rev-widg .jdgm-gallery-title {
   color: var(--color-main);
-  margin-bottom: 0.1rem;
+  margin-bottom: 2rem;
   font-family: var(--font-family-header-alt);
 }
 .jdgm-rev-widg .jdgm-gallery {
   width: 100%;
+}
+@media (min-width: 768px) {
+  .jdgm-rev-widg .jdgm-gallery .jdgm-gallery__thumbnail.jdgm-gallery__thumbnail {
+    padding: 0.6rem;
+  }
 }
 .jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab {
   display: flex;

@@ -330,6 +330,12 @@ section {
                     width: 100%;
                 }
 
+                //Individual review pics (place in media bar instead)
+                .jdgm-rev__pics {
+                    display:none !important;
+                }
+
+                // Individual review content
                 .jdgm-rev__content {
                     order:1;
                     .jdgm-rev__body {
@@ -361,6 +367,7 @@ section {
                         }
                     }
                 }
+                // Individual review header (title, stars)
                 .jdgm-rev__header {
                     order:2;
                     display:inline-flex;

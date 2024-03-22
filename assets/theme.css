@@ -867,6 +867,9 @@ section .jdgm-row-actions {
 .jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev > * {
   width: 100%;
 }
+.jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-rev__pics {
+  display: none !important;
+}
 .jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-rev__content {
   order: 1;
 }

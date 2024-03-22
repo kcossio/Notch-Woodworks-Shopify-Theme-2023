@@ -126,6 +126,14 @@ section {
     .jdgm-rev-widg__summary-text {
         color:var(--color-dark-grey);
     }
+    .jdgm-rev-widg__summary-stars {
+        .jdgm-star {
+            @include breakpoint(laptop) {
+                width:3rem;
+                height:3rem;
+            }
+        }        
+    }
 
     .jdgm-star {
         width:1.8rem;
@@ -144,12 +152,7 @@ section {
                 margin-left:0 !important;
             }
         }
-        .jdgm-rev-widg__summary-stars & {
-            @include breakpoint(laptop) {
-                width:3rem;
-                height:3rem;
-            }
-        }
+       
 
         
 

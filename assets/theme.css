@@ -715,6 +715,12 @@ section .jdgm-rev-widg__summary-average {
 section .jdgm-rev-widg__summary-text {
   color: var(--color-dark-grey);
 }
+@media (min-width: 1280px) {
+  section .jdgm-rev-widg__summary-stars .jdgm-star {
+    width: 3rem;
+    height: 3rem;
+  }
+}
 section .jdgm-star {
   width: 1.8rem;
   height: 1.8rem;
@@ -729,12 +735,6 @@ section .jdgm-star {
   }
   section .jdgm-star:first-child {
     margin-left: 0 !important;
-  }
-}
-@media (min-width: 1280px) {
-  .jdgm-rev-widg__summary-stars section .jdgm-star {
-    width: 3rem;
-    height: 3rem;
   }
 }
 section .jdgm-star.jdgm--on {

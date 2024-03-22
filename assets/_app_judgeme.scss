@@ -278,6 +278,7 @@ section {
             @include breakpoint(tablet) {
                 font-size:1.6rem;
                 padding:1.5rem 2rem;
+                max-width: 26rem;
             }
 
             @include breakpoint(laptop) {
@@ -308,6 +309,8 @@ section {
     }
     .jdgm-gallery-wrapper {
         padding-right: 0 !important;
+        width:112rem;
+        max-width: 100%;
     }
     .jdgm-gallery-title {
         color:var(--color-dark-grey);

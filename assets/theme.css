@@ -1045,6 +1045,9 @@ section .jdgm-row-actions {
   font-size: 90%;
   margin-top: 12px;
 }
+.jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-rev__header .jdgm-row-rating .jdgm-rev__timestamp {
+  display: none;
+}
 .jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-rev__header .jdgm-row-profile {
   order: 1;
   font-family: var(--font-family-script);

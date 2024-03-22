@@ -510,6 +510,11 @@ section {
                         order:1;
                         font-size:90%;
                         margin-top:12px;
+
+                        // hide date of review
+                        .jdgm-rev__timestamp {
+                            display:none;
+                        }
                     }
                     .jdgm-row-profile {
                         order:1;

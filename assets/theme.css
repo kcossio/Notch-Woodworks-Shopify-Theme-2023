@@ -858,3 +858,61 @@ section .jdgm-row-actions {
     padding: 6rem 0;
   }
 }
+.jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev {
+  color: var(--color-text);
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev > * {
+  width: 100%;
+}
+.jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-rev__content {
+  order: 1;
+}
+.jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-rev__content .jdgm-rev__body p {
+  font-size: 1.24rem;
+}
+@media (min-width: 1280px) {
+  .jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-rev__content .jdgm-rev__body p {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1440px) {
+  .jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-rev__content .jdgm-rev__body p {
+    font-size: 1.8rem;
+  }
+}
+.jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-rev__content .jdgm-rev__title {
+  color: var(--color-main);
+  font-size: 1.5rem;
+  line-height: 1.1em;
+  font-family: var(--font-family-header-ex);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+@media (min-width: 1440px) {
+  .jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-rev__content .jdgm-rev__title {
+    font-size: 2.1rem;
+  }
+}
+.jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-row-rating {
+  order: 2;
+  font-size: 90%;
+  margin-top: 12px;
+}
+.jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-row-profile {
+  font-family: var(--font-family-script);
+  font-weight: normal;
+  font-size: 2.7rem;
+  color: var(--color-main);
+  opacity: 1;
+  margin-top: 24px;
+}
+@media (min-width: 1440px) {
+  .jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-row-profile {
+    font-size: 3.6rem;
+  }
+}

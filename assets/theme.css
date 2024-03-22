@@ -747,6 +747,7 @@ section .jdgm-star.jdgm--off:before {
 }
 section .jdgm-row-actions {
   border: 0;
+  display: none !important;
 }
 
 .jdgm--leex-script-loaded .jdgm-rev-widg__header,
@@ -833,6 +834,18 @@ section .jdgm-row-actions {
   display: flex;
   justify-content: center;
   text-align: center;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+@media (min-width: 768px) {
+  .jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab {
+    gap: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab {
+    gap: 4rem;
+  }
 }
 .jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab span {
   font-family: var(--font-family-header-ex);
@@ -840,17 +853,33 @@ section .jdgm-row-actions {
   font-weight: normal;
   font-size: 2rem;
   letter-spacing: 0.1rem;
+  padding: 0;
+  color: var(--color-main);
 }
 @media (min-width: 768px) {
+  .jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab span {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+  }
+}
+@media (min-width: 1366px) {
   .jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab span {
     font-size: 3rem;
     letter-spacing: 0.2rem;
   }
 }
+.jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab span.jdgm-subtab__name {
+  text-decoration: none;
+}
+.jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab span.jdgm-subtab__name:hover {
+  transition: all 0.3s ease 0s;
+  color: var(--color-accent);
+  opacity: 1;
+}
 .jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab span.jdgm-subtab__name.jdgm--active {
   background-color: transparent;
   display: inline-block;
-  padding: 0px 1.5rem 1rem 1.5rem;
+  padding: 0 1rem 0 1rem;
   border-style: dotted;
   border-width: 0 0 6px 0;
   border-color: var(--color-accent);
@@ -858,12 +887,18 @@ section .jdgm-row-actions {
   border-image-slice: 24% 24% 24% 24%;
   border-image-repeat: round;
 }
+@media (min-width: 768px) {
+  .jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab span.jdgm-subtab__name.jdgm--active {
+    border-width: 0 0 8px 0;
+    border-image-slice: 26% 26% 26% 26%;
+  }
+}
 .jdgm-rev-widg .jdgm-rev-widg__body {
   border-top: 0.2rem solid var(--color-main);
   border-bottom: 0.2rem solid var(--color-main);
   padding: 5rem 0;
 }
-@media (min-width: 1680px) {
+@media (min-width: 1280px) {
   .jdgm-rev-widg .jdgm-rev-widg__body {
     border-width: 0.3rem;
     padding: 6rem 0;

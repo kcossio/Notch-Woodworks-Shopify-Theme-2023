@@ -170,8 +170,10 @@ section {
         }
     }
 
+    // Actions (Sorting) Row
     .jdgm-row-actions {
         border:0;
+        display: none !important;
     }
 
     
@@ -284,6 +286,15 @@ section {
             display:flex;
             justify-content: center;
             text-align: center;
+            align-items: flex-start;
+            gap:1.2rem;
+
+            @include breakpoint(tablet) {
+                gap:2rem;
+            }
+            @include breakpoint(laptop) {
+                gap:4rem;
+            }
 
             
 
@@ -293,22 +304,42 @@ section {
                 font-weight: normal;
                 font-size:2rem;
                 letter-spacing:.1rem;
+                padding:0;
+                color: var(--color-main);
 
                 @include breakpoint(tablet) {
+                    font-size:2.5rem;
+                    letter-spacing:.1rem;
+                }
+                @include breakpoint(laptopwide) {
                     font-size:3rem;
                     letter-spacing:.2rem;
                 }
 
+                &.jdgm-subtab__name {
+                    text-decoration: none;
+
+                    &:hover {
+                        transition:all .3s ease 0s;
+                        color:var(--color-accent);
+                        opacity:1;
+                    }
+                }
                 &.jdgm-subtab__name.jdgm--active {
                     background-color:transparent;
                     display:inline-block;
-                    padding:0px 1.5rem 1rem 1.5rem;
+                    padding:0 1rem 0 1rem;
                     border-style: dotted;
                     border-width: 0 0 6px 0;
                     border-color: var(--color-accent);
                     border-image-source: url('border-dot-red.svg?v=1');
                     border-image-slice: 24% 24% 24% 24%;
                     border-image-repeat: round;
+
+                    @include breakpoint(tablet) {
+                        border-width: 0 0 8px 0;
+                        border-image-slice: 26% 26% 26% 26%;
+                    }
                 }
             }
         }
@@ -321,7 +352,7 @@ section {
         border-bottom:.2rem solid var(--color-main);
         padding:5rem 0;
 
-        @include breakpoint(desktopwide) {
+        @include breakpoint(laptop) {
             border-width:.3rem;
             padding:6rem 0;
         }

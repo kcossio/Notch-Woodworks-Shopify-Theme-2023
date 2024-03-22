@@ -874,7 +874,9 @@ section .jdgm-row-actions {
   max-width: 100%;
 }
 .jdgm-rev-widg .jdgm-gallery-title {
-  color: var(--color-dark-grey);
+  color: var(--color-main);
+  margin-bottom: 0.1rem;
+  font-family: var(--font-family-header-alt);
 }
 .jdgm-rev-widg .jdgm-gallery {
   width: 100%;

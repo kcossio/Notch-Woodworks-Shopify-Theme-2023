@@ -319,7 +319,9 @@ section {
         max-width: 100%;
     }
     .jdgm-gallery-title {
-        color:var(--color-dark-grey);
+        color:var(--color-main);
+        margin-bottom:.1rem;
+        font-family: var(--font-family-header-alt);
     }
     .jdgm-gallery {
         width:100%;

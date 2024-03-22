@@ -1114,5 +1114,5 @@ section .jdgm-row-actions {
 }
 .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-ans .jdgm-rev__timestamp, .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-ans .jdgm-rev__pinned {
   color: var(--color-text);
-  font-family: --font-family-body;
+  font-family: var(--font-family-body);
 }

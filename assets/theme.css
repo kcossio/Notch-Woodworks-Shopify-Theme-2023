@@ -810,6 +810,9 @@ section .jdgm-star.jdgm--off:before {
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-media .jdgm-gallery__thumbnail-link {
   float: none;
 }
+.jdgm-rev-widg.jdgm-rev-widg .jdgm-gallery-title {
+  color: var(--color-dark-grey);
+}
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab {
   display: flex;
   justify-content: center;

@@ -540,6 +540,11 @@ section {
 
     .jdgm-quest-widg__body {
         .jdgm-quest {
+
+            width:107.3rem;
+            max-width:100%;
+            margin:0 auto;
+
             .jdgm-row-profile {
                 font-family: var(--font-family-script);
                 font-weight: normal;
@@ -584,11 +589,17 @@ section {
                 }
             }
 
-        }
-        .jdgm-ans {
-            .jdgm-rev__timestamp, .jdgm-rev__pinned {
-                color:var(--color-text);
+            .jdgm-ans {
+                padding:2rem;
+                
+                .jdgm-rev__timestamp, .jdgm-rev__pinned {
+                    color:var(--color-text);
+                    font-family:(--font-family-body);
+                    
+                }
             }
+            
+
         }
         
     }

@@ -1062,6 +1062,11 @@ section .jdgm-row-actions {
     font-size: 3.6rem;
   }
 }
+.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest {
+  width: 107.3rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
 .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-row-profile {
   font-family: var(--font-family-script);
   font-weight: normal;
@@ -1104,6 +1109,10 @@ section .jdgm-row-actions {
     font-size: 1.8rem;
   }
 }
-.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-ans .jdgm-rev__timestamp, .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-ans .jdgm-rev__pinned {
+.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-ans {
+  padding: 2rem;
+}
+.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-ans .jdgm-rev__timestamp, .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-ans .jdgm-rev__pinned {
   color: var(--color-text);
+  font-family: --font-family-body;
 }

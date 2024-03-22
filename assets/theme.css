@@ -762,7 +762,7 @@ section .jdgm-row-actions {
 }
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-stars::after {
   content: "";
-  background: url("divider-notch-wide.svg") center center no-repeat;
+  background: url("divider-notch-wide.svg?v=1") center center no-repeat;
   display: block;
   position: absolute;
   bottom: 0px;

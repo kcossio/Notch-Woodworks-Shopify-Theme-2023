@@ -709,6 +709,9 @@ section .jdgm-rev-widg__summary-average {
   display: block;
   color: var(--color-dark-grey);
 }
+section .jdgm-rev-widg__summary-text {
+  color: var(--color-dark-grey);
+}
 section .jdgm-star {
   width: 1.8rem;
   height: 1.8rem;
@@ -781,6 +784,12 @@ section .jdgm-star.jdgm--off:before {
   flex-wrap: wrap !important;
   border: 0px !important;
   gap: 2rem;
+  margin-top: 2.4rem;
+}
+@media (min-width: 768px) {
+  .jdgm-rev-widg.jdgm-rev-widg .jdgm-widget-actions-wrapper {
+    margin-top: 4rem;
+  }
 }
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link, .jdgm-rev-widg.jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn {
   font-family: var(--font-family-header-ex);

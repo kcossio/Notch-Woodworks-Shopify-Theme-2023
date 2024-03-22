@@ -120,6 +120,9 @@ section {
         display:block;
         color:var(--color-dark-grey);
     }
+    .jdgm-rev-widg__summary-text {
+        color:var(--color-dark-grey);
+    }
 
     .jdgm-star {
         width:1.8rem;
@@ -218,6 +221,11 @@ section {
         flex-wrap: wrap !important;
         border:0px !important;
         gap:2rem;
+        margin-top:2.4rem;
+
+        @include breakpoint(tablet) {
+            margin-top:4rem;
+        }
 
         .jdgm-write-rev-link, .jdgm-ask-question-btn {
             font-family:var(--font-family-header-ex);

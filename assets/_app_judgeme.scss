@@ -555,7 +555,8 @@ section {
                 //active/current page
             
                 &.jdgm-curt {
-                    font-size:100%;
+                    font-size:120%;
+                    padding-bottom:0;
                     font-family: var(--font-family-header-ex);
                     font-weight: normal;
                     color:var(--color-main);

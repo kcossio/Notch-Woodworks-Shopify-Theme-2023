@@ -1077,7 +1077,8 @@ section .jdgm-row-actions {
   }
 }
 .jdgm-rev-widg .jdgm-rev-widg__body .jdgm-paginate .jdgm-paginate__page.jdgm-curt {
-  font-size: 100%;
+  font-size: 120%;
+  padding-bottom: 0;
   font-family: var(--font-family-header-ex);
   font-weight: normal;
   color: var(--color-main);

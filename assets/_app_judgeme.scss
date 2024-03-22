@@ -225,6 +225,10 @@ section {
         position:relative;
         padding-bottom:5.4rem !important;
 
+        @include breakpoint(laptop) {
+            padding-bottom:7.4rem !important;
+        }
+
         &::after {
             content:"";
             background:url('divider-notch-wide.svg?v=1') center center no-repeat;
@@ -268,6 +272,18 @@ section {
             font-family:var(--font-family-header-ex);
             text-transform: uppercase;
             font-weight: normal;
+            font-size:1.2rem;
+            padding:8rem 4rem;
+
+            @include breakpoint(tablet) {
+                font-size:1.6rem;
+                padding:1.5rem 2rem;
+            }
+
+            @include breakpoint(laptop) {
+                font-size: 1.8rem; 
+                padding:1.5rem 2rem;
+            }
         }
         .jdgm-write-rev-link {
             margin:0px;
@@ -283,14 +299,21 @@ section {
     .jdgm-row-media {
         text-align:center;
         border:0;
+        margin-top:2rem;
 
         // Thumbnail
         .jdgm-gallery__thumbnail-link {
             float:none;
         }
     }
+    .jdgm-gallery-wrapper {
+        padding-right: 0 !important;
+    }
     .jdgm-gallery-title {
         color:var(--color-dark-grey);
+    }
+    .jdgm-gallery {
+        width:100%;
     }
 
     // Review + Questions Actions

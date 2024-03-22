@@ -361,23 +361,41 @@ section {
                         }
                     }
                 }
-                .jdgm-row-rating {
+                .jdgm-rev__header {
                     order:2;
-                    font-size:90%;
-                    margin-top:12px;
-                }
-                .jdgm-row-profile {
-                    font-family: var(--font-family-script);
-                    font-weight: normal;
-                    font-size:2.7rem;
-                    color:var(--color-main);
-                    opacity:1;
-                    margin-top:24px;
-        
-                    @include breakpoint(desktop) {
-                        font-size:3.6rem;
+                    display:inline-flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+            
+                    & > * {
+                        width: 100%;
                     }
+
+                    .jdgm-row-rating {
+                        order:1;
+                        font-size:90%;
+                        margin-top:12px;
+                    }
+                    .jdgm-row-profile {
+                        order:1;
+                        font-family: var(--font-family-script);
+                        font-weight: normal;
+                        font-size:2.7rem;
+                        color:var(--color-main);
+                        opacity:1;
+                        margin-top:24px;
+
+                        .jdgm-rev__icon {
+                            display: none !important;
+                        }
+            
+                        @include breakpoint(desktop) {
+                            font-size:3.6rem;
+                        }
+                    }
+
                 }
+                
             }
         }
     }

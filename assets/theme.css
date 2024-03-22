@@ -742,12 +742,16 @@ section .jdgm-star.jdgm--off {
 section .jdgm-star.jdgm--off:before {
   opacity: 0;
 }
+section .jdgm-row-actions {
+  border: 0;
+}
 
 .jdgm--leex-script-loaded .jdgm-rev-widg__header,
 .jdgm--leex-script-loaded .jdgm-rev-widg__actions,
 .jdgm--leex-script-loaded .jdgm-rev,
 .jdgm--leex-script-loaded .jdgm-quest {
   box-shadow: none !important;
+  border: 0;
 }
 
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-stars {
@@ -758,7 +762,7 @@ section .jdgm-star.jdgm--off:before {
 }
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-stars::after {
   content: "";
-  background: url("divider-notch-mobile.svg") center center no-repeat;
+  background: url("divider-notch-wide.svg") center center no-repeat;
   display: block;
   position: absolute;
   bottom: 0px;
@@ -767,9 +771,9 @@ section .jdgm-star.jdgm--off:before {
   width: 100%;
   z-index: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 1680px) {
   .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-stars::after {
-    background: url("divider-notch-desktop.svg") center center no-repeat;
+    height: 30px;
   }
 }
 .jdgm-rev-widg.jdgm-rev-widg .jdgm-rev-widg__summary {

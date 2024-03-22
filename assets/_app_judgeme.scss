@@ -10,11 +10,11 @@ section {
             font-size:6rem;
             margin-bottom:2.5rem;
 
-            @include breakpoint(laptop) {
+            @include breakpoint(tablet) {
                 font-size:7.5rem;
                 margin-bottom:5rem;
             }
-            @include breakpoint(desktop) {
+            @include breakpoint(laptop) {
                 font-size:10rem;
                 margin-bottom:5rem;
             }
@@ -193,7 +193,7 @@ section {
 
 .jdgm--leex-script-loaded .jdgm-rev-widg__title {
     color:var(--color-main) !important;
-    margin-bottom:2.5rem !important;
+    margin-bottom:0rem !important;
 }
 
 // Actions (Sort)

@@ -604,13 +604,13 @@ section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {
   font-size: 6rem;
   margin-bottom: 2.5rem;
 }
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {
     font-size: 7.5rem;
     margin-bottom: 5rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {
     font-size: 10rem;
     margin-bottom: 5rem;
@@ -760,7 +760,7 @@ section .jdgm-row-actions {
 
 .jdgm--leex-script-loaded .jdgm-rev-widg__title {
   color: var(--color-main) !important;
-  margin-bottom: 2.5rem !important;
+  margin-bottom: 0rem !important;
 }
 
 .jdgm--leex-script-loaded .jdgm-subtab + .jdgm-row-actions {

@@ -1022,7 +1022,7 @@ section .jdgm-row-actions {
   line-height: 1.1em;
   font-family: var(--font-family-header-ex);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.12rem;
   font-weight: normal;
   margin-bottom: 1em;
 }
@@ -1076,6 +1076,21 @@ section .jdgm-row-actions {
 @media (min-width: 768px) {
   .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-row-profile {
     font-size: 3.6rem;
+  }
+}
+.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-quest__body {
+  color: var(--color-main);
+  font-size: 1.5rem;
+  line-height: 1.1em;
+  font-family: var(--font-family-header-ex);
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+@media (min-width: 1440px) {
+  .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-quest__body {
+    font-size: 2.1rem;
   }
 }
 .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-rev__timestamp, .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-rev__pinned {

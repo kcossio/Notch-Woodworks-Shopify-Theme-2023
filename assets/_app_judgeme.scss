@@ -486,7 +486,7 @@ section {
                         line-height:1.1em;
                         font-family: var(--font-family-header-ex);
                         text-transform: uppercase;
-                        letter-spacing:.12em;
+                        letter-spacing:.12rem;
                         font-weight: normal;
                         margin-bottom:1em;
     
@@ -554,6 +554,21 @@ section {
     
                 @include breakpoint(tablet) {
                     font-size:3.6rem;
+                }
+            }
+
+            .jdgm-quest__body {
+                color:var(--color-main);
+                font-size:1.5rem;
+                line-height:1.1em;
+                font-family: var(--font-family-header-ex);
+                text-transform: uppercase;
+                letter-spacing:.12rem;
+                font-weight: normal;
+                margin-bottom:1em;
+
+                @include breakpoint(desktop) {
+                    font-size:2.1rem;
                 }
             }
 

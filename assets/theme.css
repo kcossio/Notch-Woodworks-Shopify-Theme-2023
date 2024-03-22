@@ -1073,7 +1073,7 @@ section .jdgm-row-actions {
 .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-row-profile .jdgm-rev__icon {
   display: none !important;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-row-profile {
     font-size: 3.6rem;
   }

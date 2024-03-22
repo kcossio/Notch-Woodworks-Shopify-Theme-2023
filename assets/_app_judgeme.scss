@@ -552,7 +552,7 @@ section {
                     display: none !important;
                 }
     
-                @include breakpoint(desktop) {
+                @include breakpoint(tablet) {
                     font-size:3.6rem;
                 }
             }

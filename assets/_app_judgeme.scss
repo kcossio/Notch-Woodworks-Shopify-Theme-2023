@@ -309,9 +309,11 @@ section {
     .jdgm-rev-widg__body {
         border-top:.2rem solid var(--color-main);
         border-bottom:.2rem solid var(--color-main);
+        padding:5rem 0;
 
         @include breakpoint(desktopwide) {
             border-width:.3rem;
+            padding:6rem 0;
         }
     }
     

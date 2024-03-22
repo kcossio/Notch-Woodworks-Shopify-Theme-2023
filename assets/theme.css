@@ -850,9 +850,11 @@ section .jdgm-row-actions {
 .jdgm-rev-widg .jdgm-rev-widg__body {
   border-top: 0.2rem solid var(--color-main);
   border-bottom: 0.2rem solid var(--color-main);
+  padding: 5rem 0;
 }
 @media (min-width: 1680px) {
   .jdgm-rev-widg .jdgm-rev-widg__body {
     border-width: 0.3rem;
+    padding: 6rem 0;
   }
 }

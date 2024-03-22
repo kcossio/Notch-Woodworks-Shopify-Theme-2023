@@ -187,7 +187,15 @@ section {
     box-shadow:none !important;
     border:0;
 }
-.jdgm-rev-widg.jdgm-rev-widg {
+// Review Widget Title
+
+.jdgm--leex-script-loaded .jdgm-rev-widg__title {
+    color:var(--color-main);
+    margin-bottom:2.5rem;
+}
+
+// Main Review Widget
+.jdgm-rev-widg {
 
     // Header 
     .jdgm-row-stars {

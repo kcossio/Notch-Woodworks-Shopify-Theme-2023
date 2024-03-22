@@ -574,7 +574,7 @@ section {
 
                 p {
                     font-size:1.8rem;
-                    @include breakpoint(desktop) {
+                    @include breakpoint(laptop) {
                         font-size:2.1rem;
                     }
                 }
@@ -591,7 +591,7 @@ section {
 
             .jdgm-ans {
                 padding:2rem;
-                
+
                 .jdgm-rev__timestamp, .jdgm-rev__pinned {
                     color:var(--color-text);
                     font-family:(--font-family-body);

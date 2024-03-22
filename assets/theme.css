@@ -841,7 +841,7 @@ section .jdgm-row-actions {
   .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link, .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn {
     font-size: 1.6rem;
     padding: 1.5rem 2rem;
-    max-width: 26rem;
+    max-width: 26rem !important;
     letter-spacing: 0.1rem;
   }
 }
@@ -850,6 +850,7 @@ section .jdgm-row-actions {
     font-size: 1.8rem;
     padding: 1.9rem 2rem;
     letter-spacing: 0.3rem;
+    max-width: 26rem !important;
   }
 }
 .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link {

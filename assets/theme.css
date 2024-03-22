@@ -711,6 +711,7 @@ section .jdgm-prev-badge__text {
 section .jdgm-rev-widg__summary-average {
   display: block;
   color: var(--color-dark-grey);
+  margin-top: 1.6rem;
 }
 section .jdgm-rev-widg__summary-text {
   color: var(--color-dark-grey);
@@ -719,6 +720,7 @@ section .jdgm-rev-widg__summary-text {
   section .jdgm-rev-widg__summary-stars .jdgm-star {
     width: 3rem;
     height: 3rem;
+    margin: 0 0.4rem !important;
   }
 }
 section .jdgm-star {
@@ -833,18 +835,21 @@ section .jdgm-row-actions {
   font-weight: normal;
   font-size: 1.2rem;
   padding: 8rem 4rem;
+  letter-spacing: 0;
 }
 @media (min-width: 768px) {
   .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link, .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn {
     font-size: 1.6rem;
     padding: 1.5rem 2rem;
     max-width: 26rem;
+    letter-spacing: 0.1rem;
   }
 }
 @media (min-width: 1280px) {
   .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link, .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn {
     font-size: 1.8rem;
-    padding: 1.5rem 2rem;
+    padding: 1.9rem 2rem;
+    letter-spacing: 0.3rem;
   }
 }
 .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link {

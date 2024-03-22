@@ -602,15 +602,18 @@ section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {
   color: var(--color-main);
   font-weight: normal;
   font-size: 6rem;
+  margin-bottom: 2.5rem;
 }
 @media (min-width: 1280px) {
   section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {
     font-size: 7.5rem;
+    margin-bottom: 5rem;
   }
 }
 @media (min-width: 1440px) {
   section h2.jdgm-carousel-title, section h2.jdgm-rev-widg__title {
     font-size: 10rem;
+    margin-bottom: 5rem;
   }
 }
 section .jdgm-carousel__item-container {
@@ -771,7 +774,7 @@ section .jdgm-row-actions {
   width: 100%;
   z-index: 1;
 }
-@media (min-width: 1680px) {
+@media (min-width: 1280px) {
   .jdgm-rev-widg.jdgm-rev-widg .jdgm-row-stars::after {
     height: 30px;
   }

@@ -8,12 +8,15 @@ section {
             color:var(--color-main);
             font-weight: normal;
             font-size:6rem;
+            margin-bottom:2.5rem;
 
             @include breakpoint(laptop) {
                 font-size:7.5rem;
+                margin-bottom:5rem;
             }
             @include breakpoint(desktop) {
                 font-size:10rem;
+                margin-bottom:5rem;
             }
         }
     }
@@ -180,7 +183,7 @@ section {
 .jdgm--leex-script-loaded .jdgm-rev-widg__header, 
 .jdgm--leex-script-loaded .jdgm-rev-widg__actions, 
 .jdgm--leex-script-loaded .jdgm-rev, 
-.jdgm--leex-script-loaded .jdgm-quest, {
+.jdgm--leex-script-loaded .jdgm-quest {
     box-shadow:none !important;
     border:0;
 }
@@ -204,7 +207,7 @@ section {
             width: 100%;
             z-index: 1;
     
-            @include breakpoint(desktopwide) {
+            @include breakpoint(laptop) {
                 height: 30px;
             }
     

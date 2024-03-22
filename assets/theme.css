@@ -914,13 +914,16 @@ section .jdgm-row-actions {
   border: 2px solid var(--color-main);
   color: var(--color-main);
   font-style: italic;
-  background-color: var(--color-light-grey);
+  background-color: #f4f4f4;
   font-size: 1.6rem;
 }
 @media (min-width: 1280px) {
   .jdgm-rev-widg .jdgm-row-search .jdgm-review-search:not([type=submit]) {
     font-size: 1.8rem;
   }
+}
+.jdgm-rev-widg .jdgm-row-search .jdgm-review-search:not([type=submit])::after {
+  color: var(--color-main);
 }
 .jdgm-rev-widg .jdgm-row-search .jdgm-review-search:not([type=submit])::-moz-placeholder {
   color: var(--color-main);

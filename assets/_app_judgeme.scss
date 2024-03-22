@@ -366,11 +366,14 @@ section {
             border:2px solid var(--color-main);
             color:var(--color-main);
             font-style:italic;
-            background-color:var(--color-light-grey);
+            background-color:#f4f4f4;
             font-size:1.6rem;
 
             @include breakpoint(laptop) {
                 font-size:1.8rem;
+            }
+            &::after {
+                color:var(--color-main);
             }
 
             &::placeholder {

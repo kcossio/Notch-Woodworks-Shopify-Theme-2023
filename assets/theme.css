@@ -1065,6 +1065,23 @@ section .jdgm-row-actions {
     font-size: 3.6rem;
   }
 }
+.jdgm-rev-widg .jdgm-rev-widg__body .jdgm-paginate a.jdgm-paginate__last-page {
+  display: none;
+}
+.jdgm-rev-widg .jdgm-rev-widg__body .jdgm-paginate .jdgm-paginate__page {
+  font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+  .jdgm-rev-widg .jdgm-rev-widg__body .jdgm-paginate .jdgm-paginate__page {
+    font-size: 2rem;
+  }
+}
+.jdgm-rev-widg .jdgm-rev-widg__body .jdgm-paginate .jdgm-paginate__page.jdgm-curt {
+  font-size: 100%;
+  font-family: var(--font-family-header-ex);
+  font-weight: normal;
+  color: var(--color-main);
+}
 .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest {
   width: 107.3rem;
   max-width: 100%;

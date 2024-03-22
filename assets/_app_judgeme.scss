@@ -538,6 +538,32 @@ section {
                 
             }
         }
+
+        // Pagination
+        .jdgm-paginate {
+            //hide last page button
+            a.jdgm-paginate__last-page {
+                display: none;
+            }
+            .jdgm-paginate__page {
+
+                font-size:1.6rem;
+
+                @include breakpoint(tablet) {
+                    font-size:2rem;
+                }
+                //active/current page
+            
+                &.jdgm-curt {
+                    font-size:100%;
+                    font-family: var(--font-family-header-ex);
+                    font-weight: normal;
+                    color:var(--color-main);
+                }
+
+            }
+            
+        }
     }
     
 

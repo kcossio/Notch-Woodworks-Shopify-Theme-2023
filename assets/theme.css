@@ -1004,7 +1004,7 @@ section .jdgm-row-actions {
   order: 1;
 }
 .jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-rev__content .jdgm-rev__body p {
-  font-size: 1.24rem;
+  font-size: 1.6rem;
 }
 @media (min-width: 1280px) {
   .jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev .jdgm-rev__content .jdgm-rev__body p {

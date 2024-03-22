@@ -758,8 +758,12 @@ section .jdgm-row-actions {
 }
 
 .jdgm--leex-script-loaded .jdgm-rev-widg__title {
-  color: var(--color-main);
-  margin-bottom: 2.5rem;
+  color: var(--color-main) !important;
+  margin-bottom: 2.5rem !important;
+}
+
+.jdgm--leex-script-loaded .jdgm-subtab + .jdgm-row-actions {
+  border: 0;
 }
 
 .jdgm-rev-widg .jdgm-row-stars {
@@ -841,5 +845,14 @@ section .jdgm-row-actions {
   .jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab span {
     font-size: 3rem;
     letter-spacing: 0.2rem;
+  }
+}
+.jdgm-rev-widg .jdgm-rev-widg__body {
+  border-top: 0.2rem solid var(--color-main);
+  border-bottom: 0.2rem solid var(--color-main);
+}
+@media (min-width: 1680px) {
+  .jdgm-rev-widg .jdgm-rev-widg__body {
+    border-width: 0.3rem;
   }
 }

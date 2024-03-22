@@ -190,8 +190,13 @@ section {
 // Review Widget Title
 
 .jdgm--leex-script-loaded .jdgm-rev-widg__title {
-    color:var(--color-main);
-    margin-bottom:2.5rem;
+    color:var(--color-main) !important;
+    margin-bottom:2.5rem !important;
+}
+
+// Actions (Sort)
+.jdgm--leex-script-loaded .jdgm-subtab+.jdgm-row-actions {
+    border:0;
 }
 
 // Main Review Widget
@@ -296,6 +301,17 @@ section {
                     
                 }
             }
+        }
+    }
+
+    // Review Columns/Masonry Blocks
+
+    .jdgm-rev-widg__body {
+        border-top:.2rem solid var(--color-main);
+        border-bottom:.2rem solid var(--color-main);
+
+        @include breakpoint(desktopwide) {
+            border-width:.3rem;
         }
     }
     

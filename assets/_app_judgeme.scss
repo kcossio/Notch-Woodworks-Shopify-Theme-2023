@@ -597,6 +597,17 @@ section {
             .jdgm-ans {
                 padding:2rem;
 
+                .jdgm-rev__br {
+                    margin-top:.8rem;
+                }
+
+                p {
+                    font-size:1.6rem;
+                    @include breakpoint(laptop) {
+                        font-size:1.8rem;
+                    }
+                }
+
                 .jdgm-rev__timestamp, .jdgm-rev__pinned {
                     color:var(--color-text);
                     font-family:var(--font-family-body);

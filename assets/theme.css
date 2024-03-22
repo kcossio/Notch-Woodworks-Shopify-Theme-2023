@@ -1115,6 +1115,17 @@ section .jdgm-row-actions {
 .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-ans {
   padding: 2rem;
 }
+.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-ans .jdgm-rev__br {
+  margin-top: 0.8rem;
+}
+.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-ans p {
+  font-size: 1.6rem;
+}
+@media (min-width: 1280px) {
+  .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-ans p {
+    font-size: 1.8rem;
+  }
+}
 .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-ans .jdgm-rev__timestamp, .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-ans .jdgm-rev__pinned {
   color: var(--color-text);
   font-family: var(--font-family-body);

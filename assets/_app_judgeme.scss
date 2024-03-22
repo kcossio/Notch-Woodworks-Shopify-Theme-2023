@@ -213,6 +213,11 @@ section {
 // Main Review Widget
 .jdgm-rev-widg {
 
+    font-size:1.6rem;
+
+    @include breakpoint(laptop) {
+        font-size:1.8rem;
+    }
     // Header 
     .jdgm-row-stars {
         width:100% !important;
@@ -351,6 +356,17 @@ section {
                     }
                 }
             }
+        }
+    }
+
+    // Search Bar
+    .jdgm-row-search {
+        border:0;
+        .jdgm-review-search:not([type="submit"]) {
+            border:2px solid var(--color-main);
+            color:var(--color-main);
+            font-style:italic;
+            background-color:var(--color-grey);
         }
     }
 

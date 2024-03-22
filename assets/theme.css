@@ -773,6 +773,14 @@ section .jdgm-row-actions {
   border: 0;
 }
 
+.jdgm-rev-widg {
+  font-size: 1.6rem;
+}
+@media (min-width: 1280px) {
+  .jdgm-rev-widg {
+    font-size: 1.8rem;
+  }
+}
 .jdgm-rev-widg .jdgm-row-stars {
   width: 100% !important;
   flex-wrap: wrap;
@@ -898,6 +906,15 @@ section .jdgm-row-actions {
     border-width: 0 0 8px 0;
     border-image-slice: 26% 26% 26% 26%;
   }
+}
+.jdgm-rev-widg .jdgm-row-search {
+  border: 0;
+}
+.jdgm-rev-widg .jdgm-row-search .jdgm-review-search:not([type=submit]) {
+  border: 2px solid var(--color-main);
+  color: var(--color-main);
+  font-style: italic;
+  background-color: var(--color-grey);
 }
 .jdgm-rev-widg .jdgm-rev-widg__body {
   border-top: 0.2rem solid var(--color-main);

@@ -559,29 +559,38 @@ section {
 
             .jdgm-quest__body {
                 color:var(--color-main);
-                font-size:1.5rem;
-                line-height:1.1em;
+                line-height:1.2em;
                 font-family: var(--font-family-header-ex);
                 text-transform: uppercase;
-                letter-spacing:.12rem;
                 font-weight: normal;
                 margin-bottom:1em;
 
-                @include breakpoint(desktop) {
-                    font-size:2.1rem;
+                
+
+                p {
+                    font-size:1.8rem;
+                    @include breakpoint(desktop) {
+                        font-size:2.1rem;
+                    }
+                }
+            }
+            .jdgm-rev__timestamp, .jdgm-rev__pinned {
+                color:var(--color-main);
+                font-size:1.4rem;
+                font-family: var(--font-family-header-alt);
+    
+                @include breakpoint(tablet) {
+                    font-size:1.8rem;
                 }
             }
 
         }
-        .jdgm-rev__timestamp, .jdgm-rev__pinned {
-            color:var(--color-main);
-            font-size:1.4rem;
-            font-family: var(--font-family-header-alt);
-
-            @include breakpoint(tablet) {
-                font-size:1.8rem;
+        .jdgm-ans {
+            .jdgm-rev__timestamp, .jdgm-rev__pinned {
+                color:var(--color-text);
             }
         }
+        
     }
 
 }

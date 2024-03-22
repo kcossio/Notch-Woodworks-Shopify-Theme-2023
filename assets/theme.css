@@ -1080,26 +1080,30 @@ section .jdgm-row-actions {
 }
 .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-quest__body {
   color: var(--color-main);
-  font-size: 1.5rem;
-  line-height: 1.1em;
+  line-height: 1.2em;
   font-family: var(--font-family-header-ex);
   text-transform: uppercase;
-  letter-spacing: 0.12rem;
   font-weight: normal;
   margin-bottom: 1em;
 }
+.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-quest__body p {
+  font-size: 1.8rem;
+}
 @media (min-width: 1440px) {
-  .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-quest__body {
+  .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-quest__body p {
     font-size: 2.1rem;
   }
 }
-.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-rev__timestamp, .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-rev__pinned {
+.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-rev__timestamp, .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-rev__pinned {
   color: var(--color-main);
   font-size: 1.4rem;
   font-family: var(--font-family-header-alt);
 }
 @media (min-width: 768px) {
-  .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-rev__timestamp, .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-rev__pinned {
+  .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-rev__timestamp, .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-rev__pinned {
     font-size: 1.8rem;
   }
+}
+.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-ans .jdgm-rev__timestamp, .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-ans .jdgm-rev__pinned {
+  color: var(--color-text);
 }

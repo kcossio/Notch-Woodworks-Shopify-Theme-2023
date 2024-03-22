@@ -536,4 +536,37 @@ section {
     }
     
 
+    // Questions 
+
+    .jdgm-quest-widg__body {
+        .jdgm-quest {
+            .jdgm-row-profile {
+                font-family: var(--font-family-script);
+                font-weight: normal;
+                font-size:2.7rem;
+                color:var(--color-main);
+                opacity:1;
+                margin-top:0;
+
+                .jdgm-rev__icon {
+                    display: none !important;
+                }
+    
+                @include breakpoint(desktop) {
+                    font-size:3.6rem;
+                }
+            }
+
+        }
+        .jdgm-rev__timestamp, .jdgm-rev__pinned {
+            color:var(--color-main);
+            font-size:1.4rem;
+            font-family: var(--font-family-header-alt);
+
+            @include breakpoint(tablet) {
+                font-size:1.8rem;
+            }
+        }
+    }
+
 }

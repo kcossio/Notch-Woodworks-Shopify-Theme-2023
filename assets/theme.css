@@ -1062,3 +1062,29 @@ section .jdgm-row-actions {
     font-size: 3.6rem;
   }
 }
+.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-row-profile {
+  font-family: var(--font-family-script);
+  font-weight: normal;
+  font-size: 2.7rem;
+  color: var(--color-main);
+  opacity: 1;
+  margin-top: 0;
+}
+.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-row-profile .jdgm-rev__icon {
+  display: none !important;
+}
+@media (min-width: 1440px) {
+  .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-quest .jdgm-row-profile {
+    font-size: 3.6rem;
+  }
+}
+.jdgm-rev-widg .jdgm-quest-widg__body .jdgm-rev__timestamp, .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-rev__pinned {
+  color: var(--color-main);
+  font-size: 1.4rem;
+  font-family: var(--font-family-header-alt);
+}
+@media (min-width: 768px) {
+  .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-rev__timestamp, .jdgm-rev-widg .jdgm-quest-widg__body .jdgm-rev__pinned {
+    font-size: 1.8rem;
+  }
+}

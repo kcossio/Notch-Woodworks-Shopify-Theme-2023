@@ -722,13 +722,19 @@ section .jdgm-star {
   display: inline-block !important;
   margin: 0 0.1rem !important;
 }
-@media (min-width: 1680px) {
+@media (min-width: 1440px) {
   section .jdgm-star {
     width: 2.4rem;
     height: 2.4rem;
   }
   section .jdgm-star:first-child {
     margin-left: 0 !important;
+  }
+}
+@media (min-width: 1280px) {
+  .jdgm-rev-widg__summary-stars section .jdgm-star {
+    width: 3rem;
+    height: 3rem;
   }
 }
 section .jdgm-star.jdgm--on {

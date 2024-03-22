@@ -136,12 +136,18 @@ section {
 
         
 
-        @include breakpoint(desktopwide) {
+        @include breakpoint(desktop) {
             width:2.4rem;
             height:2.4rem;
 
             &:first-child {
                 margin-left:0 !important;
+            }
+        }
+        .jdgm-rev-widg__summary-stars & {
+            @include breakpoint(laptop) {
+                width:3rem;
+                height:3rem;
             }
         }
 

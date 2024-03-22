@@ -863,6 +863,7 @@ section .jdgm-row-actions {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  text-align: center;
 }
 .jdgm-rev-widg .jdgm-rev-widg__body .jdgm-rev-widg__reviews .jdgm-rev.jdgm-rev > * {
   width: 100%;

@@ -776,11 +776,13 @@ section .jdgm-row-actions {
 }
 
 .jdgm-rev-widg {
+  margin: 6rem auto 8rem auto;
   font-size: 1.6rem;
 }
 @media (min-width: 1280px) {
   .jdgm-rev-widg {
     font-size: 1.8rem;
+    margin: 8rem auto 12rem auto;
   }
 }
 .jdgm-rev-widg .jdgm-row-stars {

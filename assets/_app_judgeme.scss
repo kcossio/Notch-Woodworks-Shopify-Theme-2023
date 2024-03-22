@@ -215,10 +215,13 @@ section {
 // Main Review Widget
 .jdgm-rev-widg {
 
+    margin:6rem auto 8rem auto;
+
     font-size:1.6rem;
 
     @include breakpoint(laptop) {
         font-size:1.8rem;
+        margin:8rem auto 12rem auto;
     }
     // Header 
     .jdgm-row-stars {

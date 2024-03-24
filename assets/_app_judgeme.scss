@@ -784,6 +784,10 @@ section {
 
         
     }
+    &.jdgm-review-widget--small .jdgm-form__fieldset-actions .jdgm-cancel-question, 
+    &.jdgm-review-widget--small .jdgm-form__fieldset-actions .jdgm-cancel-rev {
+        margin-top:0px;
+    }
     .jdgm-form .jdgm-form__fieldset>label, 
     .jdgm-form .jdgm-form__fieldset .jdgm-form__inline-label {
         color:var(--color-main);

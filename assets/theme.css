@@ -1186,3 +1186,7 @@ section .jdgm-row-actions {
   font-family: var(--font-family-header-alt);
   margin-bottom: 2rem;
 }
+.jdgm-rev-widg .jdgm-form__fieldset:not(:last-of-type),
+.jdgm-rev-widg .jdgm-form__fieldset-actions {
+  margin-bottom: 5rem;
+}

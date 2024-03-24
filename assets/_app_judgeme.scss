@@ -681,5 +681,9 @@ section {
         font-family:var(--font-family-header-alt);
         margin-bottom:2rem;
     }
+    .jdgm-form__fieldset:not(:last-of-type), 
+    .jdgm-form__fieldset-actions {
+        margin-bottom:5rem;
+    }
 
 }

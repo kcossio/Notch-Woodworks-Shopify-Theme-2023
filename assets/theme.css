@@ -1155,6 +1155,28 @@ section .jdgm-row-actions {
   padding: 5rem;
   border: 0;
 }
+.jdgm-rev-widg .jdgm-form__title {
+  color: var(--color-main);
+  font-family: var(--font-family-header-ex);
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2.7rem;
+  letter-spacing: 0;
+  margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+  .jdgm-rev-widg .jdgm-form__title {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .jdgm-rev-widg .jdgm-form__title {
+    font-size: 3.6rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 5rem;
+  }
+}
 .jdgm-rev-widg .jdgm-form input[type=text],
 .jdgm-rev-widg .jdgm-form input[type=email],
 .jdgm-rev-widg .jdgm-form input[type=url],

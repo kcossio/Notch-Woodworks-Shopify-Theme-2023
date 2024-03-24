@@ -658,6 +658,27 @@ section {
         border:0;
     }
 
+    .jdgm-form__title {
+        color:var(--color-main);
+        font-family:var(--font-family-header-ex);
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size:2.7rem;
+        letter-spacing: 0;
+        margin-bottom:4rem;
+
+        @include breakpoint(tablet) {
+            font-size:3.0rem;
+            letter-spacing:.1rem;
+        }
+
+        @include breakpoint(laptop) {
+            font-size: 3.6rem; 
+            letter-spacing:.3rem;
+            margin-bottom:5rem;
+        }
+
+    }
     .jdgm-form input[type="text"], 
     .jdgm-form input[type="email"], 
     .jdgm-form input[type="url"], 

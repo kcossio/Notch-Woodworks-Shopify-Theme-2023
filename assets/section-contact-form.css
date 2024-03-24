@@ -152,6 +152,13 @@ EASING
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .contact__button {
+    margin-top: 4rem;
+  }
+}
+.contact__button button {
   border: 0 !important;
   position: relative;
   background-image: url("triangle-notch-left.svg");
@@ -180,12 +187,7 @@ EASING
   }
   */
 }
-@media (min-width: 768px) {
-  .contact__button {
-    margin-top: 4rem;
-  }
-}
-.contact__button:hover {
+.contact__button button:hover {
   background-position: right center;
 }
 

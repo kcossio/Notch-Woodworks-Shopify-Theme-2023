@@ -168,8 +168,9 @@
   @include breakpoint(tablet) {
     margin-top:4rem;
   }
-
-  @include hover_notch();
+  button {
+    @include hover_notch();
+  }
 }
 
 

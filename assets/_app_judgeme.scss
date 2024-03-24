@@ -312,7 +312,7 @@ section {
             margin:0px;
             width: auto;
             &:hover {
-                background-color:var(--color-accent);
+                background-color:var(--color-accent) !important;
             }
             @include hover_notch();
         }
@@ -777,6 +777,7 @@ section {
 
             &:hover {
                 opacity: 1;
+                transition:all .25s ease 0s;
             }
 
             @include breakpoint(tablet) {
@@ -802,7 +803,7 @@ section {
     }
     input[type=submit].jdgm-btn {
         &:hover {
-            background-color:var(--color-accent);
+            background-color:var(--color-accent) !important;
         }
         @include hover_notch();
     }

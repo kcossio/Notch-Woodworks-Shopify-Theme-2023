@@ -897,7 +897,7 @@ section .jdgm-row-actions {
   */
 }
 .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link:hover {
-  background-color: var(--color-accent);
+  background-color: var(--color-accent) !important;
 }
 .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link:hover {
   background-position: right 0 center;
@@ -1314,6 +1314,7 @@ section .jdgm-row-actions {
 .jdgm-rev-widg .jdgm-btn:hover,
 .jdgm-rev-widg input[type=submit].jdgm-btn:hover {
   opacity: 1;
+  transition: all 0.25s ease 0s;
 }
 @media (min-width: 768px) {
   .jdgm-rev-widg .jdgm-btn--solid,
@@ -1373,7 +1374,7 @@ section .jdgm-row-actions {
   */
 }
 .jdgm-rev-widg input[type=submit].jdgm-btn:hover {
-  background-color: var(--color-accent);
+  background-color: var(--color-accent) !important;
 }
 .jdgm-rev-widg input[type=submit].jdgm-btn:hover {
   background-position: right 0 center;

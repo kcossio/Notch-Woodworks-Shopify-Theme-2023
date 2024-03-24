@@ -1329,5 +1329,5 @@ section .jdgm-row-actions {
   */
 }
 .jdgm-rev-widg input[type=submit].jdgm-btn:hover {
-  background-position: right center;
+  background-position: right 0 center;
 }

@@ -170,9 +170,8 @@
   }
   button {
     position: relative;
-    &:hover {
-        @include hover_notch();
-    }
+    border:0;
+    @include hover_notch();
   }
 }
 

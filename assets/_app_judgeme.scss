@@ -514,6 +514,10 @@ section {
                     width: 100%;
                 }
 
+                .jdgm-rev__custom-form:empty {
+                    margin:0;
+                }
+
                 //Individual review pics (place in media bar instead)
                 .jdgm-rev__pics {
                     display:none !important;

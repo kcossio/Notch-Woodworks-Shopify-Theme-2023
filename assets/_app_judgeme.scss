@@ -728,5 +728,15 @@ section {
     .jdgm-form__fieldset-actions {
         margin-bottom:5rem;
     }
+    .jdgm-sort-dropdown {
+        color:var(--color-main);
+        font-family:var(--font-family-header-alt);
+        border-style: dotted;
+        border-width: 0 0 6px 0;
+        border-color: var(--color-accent);
+        border-image-source: url('border-dot-red.svg?v=1');
+        border-image-slice: 24% 24% 24% 24%;
+        border-image-repeat: round;
+    }
 
 }

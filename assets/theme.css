@@ -995,10 +995,10 @@ section .jdgm-row-actions {
   font-family: var(--font-family-header-ex);
   text-transform: uppercase;
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 0.1rem;
   padding: 0;
-  color: var(--color-main);
+  color: var(--color-main) !important;
 }
 @media (min-width: 768px) {
   .jdgm-rev-widg .jdgm-rev-widg__actions .jdgm-subtab span {

@@ -38,9 +38,17 @@
 // Add animated notch that comes in on hover
 @mixin hover_notch() {
 
+  border:0 !important;
   position: relative;
-  background-image: url("triangle-notch-left.svg") right center no-repeat;
+  background-image: url("triangle-notch-left.svg");
+  background-repeat:no-repeat;
+  background-position:right -1.4rem center;
   background-size:1.4rem 2.8rem;
+  transition:all .3s ease 0s;
+
+  &:hover {
+    background-position: right center;
+  }
 
   /*
   &::after {

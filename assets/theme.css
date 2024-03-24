@@ -1287,9 +1287,13 @@ section .jdgm-row-actions {
   }
 }
 .jdgm-rev-widg input[type=submit].jdgm-btn {
+  border: 0 !important;
   position: relative;
-  background-image: url("triangle-notch-left.svg") right center no-repeat;
+  background-image: url("triangle-notch-left.svg");
+  background-repeat: no-repeat;
+  background-position: right -1.4rem center;
   background-size: 1.4rem 2.8rem;
+  transition: all 0.3s ease 0s;
   /*
   &::after {
     content: "";
@@ -1310,4 +1314,7 @@ section .jdgm-row-actions {
     }
   }
   */
+}
+.jdgm-rev-widg input[type=submit].jdgm-btn:hover {
+  background-position: right center;
 }

@@ -849,7 +849,7 @@ section .jdgm-row-actions {
   font-weight: normal;
   letter-spacing: 0.35em;
   font-size: 1.2rem;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1rem;
   letter-spacing: 0.1rem;
   transition: all 0.25s ease 0s;
   width: 48%;

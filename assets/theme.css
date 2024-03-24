@@ -1270,7 +1270,7 @@ section .jdgm-row-actions {
   .jdgm-rev-widg input[type=submit].jdgm-btn {
     font-size: 1.6rem;
     padding: 1.5rem 2rem;
-    max-width: 26rem !important;
+    max-width: none !important;
     letter-spacing: 0.1rem;
   }
 }
@@ -1283,6 +1283,6 @@ section .jdgm-row-actions {
     font-size: 1.8rem;
     padding: 1.9rem 3rem;
     letter-spacing: 0.3rem;
-    max-width: 26rem !important;
+    max-width: none !important;
   }
 }

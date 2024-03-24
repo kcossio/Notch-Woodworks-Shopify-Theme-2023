@@ -761,7 +761,7 @@ section {
             @include breakpoint(tablet) {
                 font-size:1.6rem;
                 padding:1.5rem 2rem;
-                max-width: 26rem !important;
+                max-width: none !important;
                 letter-spacing:.1rem;
             }
 
@@ -769,7 +769,7 @@ section {
                 font-size: 1.8rem; 
                 padding:1.9rem 3rem;
                 letter-spacing:.3rem;
-                max-width:26rem !important;
+                max-width:none !important;
             }
     }
 

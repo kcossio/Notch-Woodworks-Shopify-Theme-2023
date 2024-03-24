@@ -46,15 +46,16 @@
     top: 50%;
     right: 100%;
     z-index: 100;
-    width: 3.4rem;
+    width: 1.4rem;
     aspect-ratio: 1/2;
-    transform:translate3d(0, -50%);
+    transform:translate3d(0, -50%, 0);
     background: url("triangle-notch-left.svg") top center no-repeat;
     background-repeat: no-repeat;
+    transition:all .3s ease-in 0s;
   }
   &:hover {
     &::after {
-      transform:translate3d(-100%, -50%);
+      transform:translate3d(-100%, -50%, 0);
     }
   }
 }

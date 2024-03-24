@@ -1306,7 +1306,7 @@ section .jdgm-row-actions {
   background-repeat: no-repeat;
   background-position: right -1.4rem center;
   background-size: 1.4rem 2.8rem;
-  transition: all 0.25s ease-in 0s;
+  transition: all 0.25s ease-in-out 0s;
   /*
   &::after {
     content: "";

@@ -1150,6 +1150,11 @@ section .jdgm-row-actions {
   color: var(--color-text);
   font-family: var(--font-family-body);
 }
+.jdgm-rev-widg .jdgm-question-form-wrapper,
+.jdgm-rev-widg .jdgm-form-wrapper {
+  padding: 5rem;
+  border: 0;
+}
 .jdgm-rev-widg .jdgm-form input[type=text],
 .jdgm-rev-widg .jdgm-form input[type=email],
 .jdgm-rev-widg .jdgm-form input[type=url],

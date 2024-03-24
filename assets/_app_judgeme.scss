@@ -652,6 +652,12 @@ section {
 
     // Review / Question Form
 
+    .jdgm-question-form-wrapper, 
+    .jdgm-form-wrapper {
+        padding:5rem;
+        border:0;
+    }
+
     .jdgm-form input[type="text"], 
     .jdgm-form input[type="email"], 
     .jdgm-form input[type="url"], 

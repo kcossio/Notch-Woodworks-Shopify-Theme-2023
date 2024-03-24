@@ -289,9 +289,11 @@ section {
             font-size:1.2rem;
             padding:8rem 4rem;
             letter-spacing: 0;
+            transition:all .25s ease 0s;
 
             &:hover {
                 opacity:1;
+                transition:all .25s ease 0s;
             }
 
             @include breakpoint(tablet) {
@@ -797,7 +799,7 @@ section {
     }
     .jdgm-btn--border {
         &:hover {
-            color:var(--color-accent);
+            color:var(--color-accent) !important;
             border-color:var(--color-accent);
           }
     }

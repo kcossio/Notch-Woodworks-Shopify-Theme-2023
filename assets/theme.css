@@ -1301,6 +1301,26 @@ section .jdgm-row-actions {
   align-items: stretch;
   justify-content: center;
 }
+.jdgm-rev-widg .jdgm-form__fieldset-actions {
+  width: 100% !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: stretch !important;
+  justify-content: space-between;
+  border: 0px !important;
+  gap: 0rem;
+  margin-top: 2.4rem;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .jdgm-rev-widg .jdgm-form__fieldset-actions {
+    margin-top: 4rem;
+    flex-wrap: wrap !important;
+    align-items: stretch !important;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
 .jdgm-rev-widg .jdgm-form .jdgm-form__fieldset > label,
 .jdgm-rev-widg .jdgm-form .jdgm-form__fieldset .jdgm-form__inline-label {
   color: var(--color-main);
@@ -1355,10 +1375,15 @@ section .jdgm-row-actions {
   font-family: var(--font-family-header-ex);
   text-transform: uppercase;
   font-weight: normal;
+  letter-spacing: 0.35em;
   font-size: 1.2rem;
-  padding: 8rem 4rem;
-  letter-spacing: 0;
+  padding: 1.5rem 0.5rem;
+  letter-spacing: 0.2rem;
   transition: all 0.25s ease 0s;
+  width: 48%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .jdgm-rev-widg .jdgm-btn--solid:hover,
 .jdgm-rev-widg .jdgm-btn--border:hover,
@@ -1374,9 +1399,10 @@ section .jdgm-row-actions {
   .jdgm-rev-widg input[type=submit],
   .jdgm-rev-widg .jdgm-btn,
   .jdgm-rev-widg input[type=submit].jdgm-btn {
+    width: auto;
     font-size: 1.6rem;
-    padding: 1.5rem 2rem;
-    max-width: none !important;
+    padding: 2rem 3rem;
+    max-width: 26rem !important;
     letter-spacing: 0.1rem;
   }
 }
@@ -1389,7 +1415,7 @@ section .jdgm-row-actions {
     font-size: 1.8rem;
     padding: 1.9rem 3rem;
     letter-spacing: 0.3rem;
-    max-width: none !important;
+    max-width: 26rem !important;
   }
 }
 .jdgm-rev-widg .jdgm-btn--border:hover {

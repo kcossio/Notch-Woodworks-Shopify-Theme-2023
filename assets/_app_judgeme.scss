@@ -275,6 +275,7 @@ section {
         width:100% !important;
         flex-direction: row !important;
         flex-wrap: wrap !important;
+        justify-content: space-between;
         border:0px !important;
         gap:0rem;
         margin-top:2.4rem;
@@ -283,6 +284,7 @@ section {
         @include breakpoint(tablet) {
             margin-top:4rem;
             flex-wrap: wrap !important;
+            justify-content: center;
             gap:2rem;
         }
 
@@ -291,8 +293,9 @@ section {
             text-transform: uppercase;
             font-weight: normal;
             letter-spacing: .35em;
+            font-size:1.2rem;
             padding:1.5rem 2rem;
-            letter-spacing: 0;
+            letter-spacing: 0.1rem;
             transition:all .25s ease 0s;
             width:48%;
 

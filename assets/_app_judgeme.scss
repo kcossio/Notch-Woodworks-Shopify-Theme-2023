@@ -514,8 +514,8 @@ section {
                     width: 100%;
                 }
 
-                .jdgm-rev__custom-form:empty {
-                    margin:0;
+                .jdgm-rev__custom-form {
+                    margin:0 !important;
                 }
 
                 //Individual review pics (place in media bar instead)
@@ -569,7 +569,7 @@ section {
                     .jdgm-row-rating {
                         order:1;
                         font-size:90%;
-                        margin-top:12px;
+                        margin-top:0;
 
                         // hide date of review
                         .jdgm-rev__timestamp {

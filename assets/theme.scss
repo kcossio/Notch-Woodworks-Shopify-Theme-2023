@@ -50,6 +50,10 @@ body {
 
 // ----- General Styles ----- //
 
+a,
+a:visited {
+    color:inherit;
+}
 p {
     font-size:1.6rem;
     line-height:1.6em;

@@ -675,4 +675,11 @@ section {
         }
     }
 
+    .jdgm-form .jdgm-form__fieldset>label, 
+    .jdgm-form .jdgm-form__fieldset .jdgm-form__inline-label {
+        color:var(--color-main);
+        font-family:var(--font-family-header-alt);
+        margin-bottom:2rem;
+    }
+
 }

@@ -758,11 +758,7 @@ section {
         border:2px solid var(--color-main);
         background-color:#f4f4f4;
     }
-    .jdgm-form__fieldset-actions {
-        display:flex;
-        align-items: stretch;
-        justify-content: center;
-    }
+    .
     .jdgm-form__fieldset-actions  {
         width:100% !important;
         flex-direction: row !important;
@@ -780,6 +776,10 @@ section {
             align-items: stretch !important;
             justify-content: center;
             gap:2rem;
+        }
+
+        .jdgm-cancel-rev {
+            margin:0;
         }
 
         

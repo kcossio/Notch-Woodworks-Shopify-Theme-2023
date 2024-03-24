@@ -860,6 +860,7 @@ section .jdgm-row-actions {
 }
 @media (min-width: 768px) {
   .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link, .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn {
+    width: auto;
     font-size: 1.6rem;
     padding: 2rem 3rem;
     max-width: 26rem !important;
@@ -876,7 +877,6 @@ section .jdgm-row-actions {
 }
 .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link {
   margin: 0px;
-  width: auto;
   border: 0 !important;
   position: relative;
   background-image: url("triangle-notch-left.svg");

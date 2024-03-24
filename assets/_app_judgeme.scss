@@ -305,6 +305,7 @@ section {
             }
 
             @include breakpoint(tablet) {
+                width: auto;
                 font-size:1.6rem;
                 padding:2rem 3rem;
                 max-width: 26rem !important;
@@ -320,7 +321,6 @@ section {
         }
         .jdgm-write-rev-link {
             margin:0px;
-            width: auto;
             &:hover {
                 background-color:var(--color-accent) !important;
             }

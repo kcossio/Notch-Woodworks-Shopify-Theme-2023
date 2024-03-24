@@ -1468,3 +1468,8 @@ section .jdgm-row-actions {
 .jdgm-rev-widg input[type=submit].jdgm-btn:hover {
   background-position: right 0 center;
 }
+
+.jdgm-review-widget--small .jdgm-form__fieldset-actions .jdgm-cancel-question,
+.jdgm-review-widget--small .jdgm-form__fieldset-actions .jdgm-cancel-rev {
+  margin-top: 0 !important;
+}

@@ -1309,12 +1309,19 @@ section .jdgm-row-actions {
 .jdgm-rev-widg .jdgm-form .jdgm-form__fieldset label[for^=jdgm_review_reviewer_name] {
   margin-bottom: 0;
 }
+@media (min-width: 768px) {
+  .jdgm-rev-widg .jdgm-form .jdgm-form__fieldset label[for^=jdgm_review_reviewer_name] {
+    margin-bottom: 2rem;
+  }
+}
 .jdgm-rev-widg .jdgm-form__reviewer-name-format-container {
   display: block;
+  margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .jdgm-rev-widg .jdgm-form__reviewer-name-format-container {
     display: inline-block;
+    margin-bottom: 0;
   }
 }
 .jdgm-rev-widg .jdgm-sort-dropdown {

@@ -774,12 +774,18 @@ section {
     }
     .jdgm-form .jdgm-form__fieldset label[for^="jdgm_review_reviewer_name"] {
         margin-bottom:0;
+
+        @include breakpoint(tablet) {
+            margin-bottom: 2rem;
+        }
     }
     .jdgm-form__reviewer-name-format-container {
         display:block;
+        margin-bottom:2rem;
 
         @include breakpoint(tablet) {
             display: inline-block;
+            margin-bottom:0;
         }
     }
     .jdgm-sort-dropdown {

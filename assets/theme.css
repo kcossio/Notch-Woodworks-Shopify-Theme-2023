@@ -820,6 +820,7 @@ section .jdgm-row-actions {
 .jdgm-rev-widg .jdgm-row-stars::after {
   content: "";
   background: url("divider-notch-wide.svg?v=1") center center no-repeat;
+  background-size: auto 100%;
   display: block;
   position: absolute;
   bottom: 0px;
@@ -866,7 +867,7 @@ section .jdgm-row-actions {
   letter-spacing: 0.35em;
   font-size: 1.2rem;
   padding: 1.5rem 0.5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   transition: all 0.25s ease 0s;
   width: 48%;
   display: inline-flex;

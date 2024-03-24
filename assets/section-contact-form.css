@@ -189,8 +189,10 @@ EASING
   }
   */
 }
-.contact__button button:hover {
-  background-position: right 0 center;
+@media (hover: hover) {
+  .contact__button button:hover {
+    background-position: right 0 center;
+  }
 }
 
 @media screen and (min-width: 750px) {

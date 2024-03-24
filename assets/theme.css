@@ -938,8 +938,10 @@ section .jdgm-row-actions {
 .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link:hover {
   background-color: var(--color-accent) !important;
 }
-.jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link:hover {
-  background-position: right 0 center;
+@media (hover: hover) {
+  .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link:hover {
+    background-position: right 0 center;
+  }
 }
 .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn.jdgm-ask-question-btn {
   margin: 0;
@@ -1465,8 +1467,10 @@ section .jdgm-row-actions {
 .jdgm-rev-widg input[type=submit].jdgm-btn:hover {
   background-color: var(--color-accent) !important;
 }
-.jdgm-rev-widg input[type=submit].jdgm-btn:hover {
-  background-position: right 0 center;
+@media (hover: hover) {
+  .jdgm-rev-widg input[type=submit].jdgm-btn:hover {
+    background-position: right 0 center;
+  }
 }
 
 .jdgm-review-widget--small .jdgm-form__fieldset-actions .jdgm-cancel-question,

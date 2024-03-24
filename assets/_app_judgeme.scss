@@ -746,7 +746,8 @@ section {
     }
     //Form Submit buttons 
 
-    .jdgm-btn--solid, 
+    .jdgm-btn--solid,
+    .jdgm-btn--border, 
     input[type=submit] {
         font-family:var(--font-family-header-ex);
             text-transform: uppercase;

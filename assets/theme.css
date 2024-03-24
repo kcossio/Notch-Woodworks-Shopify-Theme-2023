@@ -1251,6 +1251,7 @@ section .jdgm-row-actions {
   font-size: inherit;
 }
 .jdgm-rev-widg .jdgm-btn--solid,
+.jdgm-rev-widg .jdgm-btn--border,
 .jdgm-rev-widg input[type=submit] {
   font-family: var(--font-family-header-ex);
   text-transform: uppercase;
@@ -1261,6 +1262,7 @@ section .jdgm-row-actions {
 }
 @media (min-width: 768px) {
   .jdgm-rev-widg .jdgm-btn--solid,
+  .jdgm-rev-widg .jdgm-btn--border,
   .jdgm-rev-widg input[type=submit] {
     font-size: 1.6rem;
     padding: 1.5rem 2rem;
@@ -1270,6 +1272,7 @@ section .jdgm-row-actions {
 }
 @media (min-width: 1280px) {
   .jdgm-rev-widg .jdgm-btn--solid,
+  .jdgm-rev-widg .jdgm-btn--border,
   .jdgm-rev-widg input[type=submit] {
     font-size: 1.8rem;
     padding: 1.9rem 2rem;

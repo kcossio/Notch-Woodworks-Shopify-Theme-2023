@@ -1250,3 +1250,30 @@ section .jdgm-row-actions {
 .jdgm-rev-widg .jdgm-sort-dropdown::placeholder {
   font-size: inherit;
 }
+.jdgm-rev-widg .jdgm-btn--solid,
+.jdgm-rev-widg input[type=submit] {
+  font-family: var(--font-family-header-ex);
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.2rem;
+  padding: 8rem 4rem;
+  letter-spacing: 0;
+}
+@media (min-width: 768px) {
+  .jdgm-rev-widg .jdgm-btn--solid,
+  .jdgm-rev-widg input[type=submit] {
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+    max-width: 26rem !important;
+    letter-spacing: 0.1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .jdgm-rev-widg .jdgm-btn--solid,
+  .jdgm-rev-widg input[type=submit] {
+    font-size: 1.8rem;
+    padding: 1.9rem 2rem;
+    letter-spacing: 0.3rem;
+    max-width: 26rem !important;
+  }
+}

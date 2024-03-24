@@ -666,7 +666,10 @@ section {
         padding:5rem;
         border:0;
     }
-
+    .jdgm-form {
+        width:81.5rem;
+        max-width:100%;
+    }
     .jdgm-form__title {
         color:var(--color-text);
         font-family:var(--font-family-header-ex);
@@ -712,6 +715,7 @@ section {
     }
     .jdgm-picture-fieldset__box-wrapper {
         border:2px solid var(--color-main);
+        background-color:#f4f4f4;
     }
 
     .jdgm-form .jdgm-form__fieldset>label, 

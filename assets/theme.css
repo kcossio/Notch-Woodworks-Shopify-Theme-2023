@@ -1222,6 +1222,11 @@ section .jdgm-row-actions {
   border: 2px solid var(--color-main);
   background-color: #f4f4f4;
 }
+.jdgm-rev-widg jdgm-form__fieldset-actions {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
 .jdgm-rev-widg .jdgm-form .jdgm-form__fieldset > label,
 .jdgm-rev-widg .jdgm-form .jdgm-form__fieldset .jdgm-form__inline-label {
   color: var(--color-main);

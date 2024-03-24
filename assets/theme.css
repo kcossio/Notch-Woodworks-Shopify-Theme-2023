@@ -893,7 +893,7 @@ section .jdgm-row-actions {
     width: auto;
     font-size: 1.6rem;
     padding: 2rem 3rem;
-    max-width: 26rem !important;
+    max-width: 28rem !important;
     letter-spacing: 0.1rem;
   }
 }
@@ -902,7 +902,7 @@ section .jdgm-row-actions {
     font-size: 1.8rem;
     padding: 1.9rem 3rem;
     letter-spacing: 0.3rem;
-    max-width: 26rem !important;
+    max-width: 28rem !important;
   }
 }
 .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link {
@@ -1415,7 +1415,7 @@ section .jdgm-row-actions {
     width: auto;
     font-size: 1.6rem;
     padding: 2rem 3rem;
-    max-width: 26rem !important;
+    max-width: 28rem !important;
     letter-spacing: 0.1rem;
   }
 }
@@ -1428,7 +1428,7 @@ section .jdgm-row-actions {
     font-size: 1.8rem;
     padding: 1.9rem 3rem;
     letter-spacing: 0.3rem;
-    max-width: 26rem !important;
+    max-width: 28rem !important;
   }
 }
 .jdgm-rev-widg .jdgm-btn--border:hover {

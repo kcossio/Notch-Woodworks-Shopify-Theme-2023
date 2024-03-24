@@ -275,7 +275,7 @@ section {
         width:100% !important;
         flex-direction: row !important;
         flex-wrap: wrap !important;
-        align-items: center;
+        align-items: center !important;
         justify-content: space-between;
         border:0px !important;
         gap:0rem;
@@ -285,7 +285,7 @@ section {
         @include breakpoint(tablet) {
             margin-top:4rem;
             flex-wrap: wrap !important;
-            align-items: stretch;
+            align-items: stretch !important;
             justify-content: center;
             gap:2rem;
         }

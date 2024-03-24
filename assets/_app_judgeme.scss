@@ -7,7 +7,7 @@ section {
             font-family: var(--font-family-script);
             color:var(--color-main);
             font-weight: normal;
-            font-size:5.8rem;
+            font-size:5.6rem;
             margin-bottom:2.5rem;
             line-height:1em;
 
@@ -274,10 +274,11 @@ section {
     .jdgm-widget-actions-wrapper {
         width:100% !important;
         flex-direction: row !important;
-        flex-wrap: nowrap !important;
+        flex-wrap: wrap !important;
         border:0px !important;
-        gap:1rem;
+        gap:0rem;
         margin-top:2.4rem;
+        display: flex;
 
         @include breakpoint(tablet) {
             margin-top:4rem;
@@ -289,10 +290,11 @@ section {
             font-family:var(--font-family-header-ex);
             text-transform: uppercase;
             font-weight: normal;
-            font-size:1.2rem;
+            letter-spacing: .35em;
             padding:1.5rem 2rem;
             letter-spacing: 0;
             transition:all .25s ease 0s;
+            width:48%;
 
             &:hover {
                 opacity:1;

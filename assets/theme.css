@@ -828,14 +828,16 @@ section .jdgm-row-actions {
 .jdgm-rev-widg .jdgm-widget-actions-wrapper {
   width: 100% !important;
   flex-direction: row !important;
-  flex-wrap: wrap !important;
+  flex-wrap: nowrap !important;
   border: 0px !important;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 2.4rem;
 }
 @media (min-width: 768px) {
   .jdgm-rev-widg .jdgm-widget-actions-wrapper {
     margin-top: 4rem;
+    flex-wrap: wrap !important;
+    gap: 2rem;
   }
 }
 .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link, .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn {

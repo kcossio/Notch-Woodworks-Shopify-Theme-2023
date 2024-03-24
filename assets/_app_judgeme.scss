@@ -273,13 +273,15 @@ section {
     .jdgm-widget-actions-wrapper {
         width:100% !important;
         flex-direction: row !important;
-        flex-wrap: wrap !important;
+        flex-wrap: nowrap !important;
         border:0px !important;
-        gap:2rem;
+        gap:1rem;
         margin-top:2.4rem;
 
         @include breakpoint(tablet) {
             margin-top:4rem;
+            flex-wrap: wrap !important;
+            gap:2rem;
         }
 
         .jdgm-write-rev-link, .jdgm-ask-question-btn {

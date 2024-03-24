@@ -290,6 +290,10 @@ section {
             padding:8rem 4rem;
             letter-spacing: 0;
 
+            &:hover {
+                opacity:1;
+            }
+
             @include breakpoint(tablet) {
                 font-size:1.6rem;
                 padding:1.5rem 2rem;
@@ -307,10 +311,18 @@ section {
         .jdgm-write-rev-link {
             margin:0px;
             width: auto;
+            &:hover {
+                background-color:var(--color-accent);
+            }
+            @include hover_notch();
         }
 
         .jdgm-ask-question-btn.jdgm-ask-question-btn {
             margin:0;
+            &:hover {
+                color:var(--color-accent);
+                border-color:var(--color-accent);
+              }
         }
     }
 
@@ -782,7 +794,16 @@ section {
             }
             
     }
+    .jdgm-btn--border {
+        &:hover {
+            color:var(--color-accent);
+            border-color:var(--color-accent);
+          }
+    }
     input[type=submit].jdgm-btn {
+        &:hover {
+            background-color:var(--color-accent);
+        }
         @include hover_notch();
     }
 

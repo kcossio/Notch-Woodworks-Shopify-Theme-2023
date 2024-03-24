@@ -846,6 +846,9 @@ section .jdgm-row-actions {
   padding: 8rem 4rem;
   letter-spacing: 0;
 }
+.jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link:hover, .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn:hover {
+  opacity: 1;
+}
 @media (min-width: 768px) {
   .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link, .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn {
     font-size: 1.6rem;
@@ -865,9 +868,46 @@ section .jdgm-row-actions {
 .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link {
   margin: 0px;
   width: auto;
+  border: 0 !important;
+  position: relative;
+  background-image: url("triangle-notch-left.svg");
+  background-repeat: no-repeat;
+  background-position: right -1.4rem center;
+  background-size: 1.4rem 2.8rem;
+  transition: all 0.2s ease-out 0s;
+  /*
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    z-index: 100;
+    width: 1.4rem;
+    aspect-ratio: 1/2;
+    transform:translate3d(0, -50%, 0);
+    background-image: url("triangle-notch-left.svg") top center no-repeat;
+    background-repeat: no-repeat;
+    transition:all .3s ease-in 0s;
+  }
+  &:hover {
+    &::after {
+      transform:translate3d(-100%, -50%, 0);
+    }
+  }
+  */
+}
+.jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link:hover {
+  background-color: var(--color-accent);
+}
+.jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link:hover {
+  background-position: right 0 center;
 }
 .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn.jdgm-ask-question-btn {
   margin: 0;
+}
+.jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn.jdgm-ask-question-btn:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 .jdgm-rev-widg .jdgm-row-media {
   text-align: center;
@@ -1299,6 +1339,10 @@ section .jdgm-row-actions {
     max-width: none !important;
   }
 }
+.jdgm-rev-widg .jdgm-btn--border:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
 .jdgm-rev-widg input[type=submit].jdgm-btn {
   border: 0 !important;
   position: relative;
@@ -1327,6 +1371,9 @@ section .jdgm-row-actions {
     }
   }
   */
+}
+.jdgm-rev-widg input[type=submit].jdgm-btn:hover {
+  background-color: var(--color-accent);
 }
 .jdgm-rev-widg input[type=submit].jdgm-btn:hover {
   background-position: right 0 center;

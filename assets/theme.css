@@ -1150,3 +1150,33 @@ section .jdgm-row-actions {
   color: var(--color-text);
   font-family: var(--font-family-body);
 }
+.jdgm-rev-widg .jdgm-form input[type=text],
+.jdgm-rev-widg .jdgm-form input[type=email],
+.jdgm-rev-widg .jdgm-form input[type=url],
+.jdgm-rev-widg .jdgm-form textarea {
+  padding: 12px 40px 12px 16px;
+  border: 2px solid var(--color-main);
+  color: var(--color-main);
+  font-style: italic;
+  background-color: #f4f4f4;
+  font-size: 1.6rem;
+  letter-spacing: 0;
+}
+@media (min-width: 1280px) {
+  .jdgm-rev-widg .jdgm-form input[type=text],
+  .jdgm-rev-widg .jdgm-form input[type=email],
+  .jdgm-rev-widg .jdgm-form input[type=url],
+  .jdgm-rev-widg .jdgm-form textarea {
+    font-size: 1.8rem;
+    padding: 12px 40px 12px 16px;
+  }
+}
+.jdgm-rev-widg .jdgm-form input[type=text]::-moz-placeholder, .jdgm-rev-widg .jdgm-form input[type=email]::-moz-placeholder, .jdgm-rev-widg .jdgm-form input[type=url]::-moz-placeholder, .jdgm-rev-widg .jdgm-form textarea::-moz-placeholder {
+  color: var(--color-main);
+}
+.jdgm-rev-widg .jdgm-form input[type=text]::placeholder,
+.jdgm-rev-widg .jdgm-form input[type=email]::placeholder,
+.jdgm-rev-widg .jdgm-form input[type=url]::placeholder,
+.jdgm-rev-widg .jdgm-form textarea::placeholder {
+  color: var(--color-main);
+}

@@ -829,6 +829,7 @@ section .jdgm-row-actions {
   width: 100% !important;
   flex-direction: row !important;
   flex-wrap: wrap !important;
+  align-items: center;
   justify-content: space-between;
   border: 0px !important;
   gap: 0rem;
@@ -839,6 +840,7 @@ section .jdgm-row-actions {
   .jdgm-rev-widg .jdgm-widget-actions-wrapper {
     margin-top: 4rem;
     flex-wrap: wrap !important;
+    align-items: stretch;
     justify-content: center;
     gap: 2rem;
   }
@@ -849,7 +851,7 @@ section .jdgm-row-actions {
   font-weight: normal;
   letter-spacing: 0.35em;
   font-size: 1.2rem;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0.5rem;
   letter-spacing: 0.1rem;
   transition: all 0.25s ease 0s;
   width: 48%;

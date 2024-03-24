@@ -169,7 +169,10 @@
     margin-top:4rem;
   }
   button {
-    @include hover_notch();
+    position: relative;
+    &:hover {
+        @include hover_notch();
+    }
   }
 }
 

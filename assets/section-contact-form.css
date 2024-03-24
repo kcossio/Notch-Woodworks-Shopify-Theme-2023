@@ -159,6 +159,9 @@ EASING
   }
 }
 .contact__button button {
+  position: relative;
+}
+.contact__button button:hover {
   border: 0 !important;
   position: relative;
   background-image: url("triangle-notch-left.svg");
@@ -187,7 +190,7 @@ EASING
   }
   */
 }
-.contact__button button:hover {
+.contact__button button:hover:hover {
   background-position: right center;
 }
 

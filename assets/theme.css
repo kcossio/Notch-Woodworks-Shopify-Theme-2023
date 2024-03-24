@@ -845,7 +845,7 @@ section .jdgm-row-actions {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 1.2rem;
-  padding: 8rem 4rem;
+  padding: 1.5rem 2rem;
   letter-spacing: 0;
   transition: all 0.25s ease 0s;
 }
@@ -856,7 +856,7 @@ section .jdgm-row-actions {
 @media (min-width: 768px) {
   .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link, .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn {
     font-size: 1.6rem;
-    padding: 1.5rem 2rem;
+    padding: 2rem 3rem;
     max-width: 26rem !important;
     letter-spacing: 0.1rem;
   }
@@ -864,7 +864,7 @@ section .jdgm-row-actions {
 @media (min-width: 1280px) {
   .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link, .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn {
     font-size: 1.8rem;
-    padding: 1.9rem 2rem;
+    padding: 1.9rem 3rem;
     letter-spacing: 0.3rem;
     max-width: 26rem !important;
   }

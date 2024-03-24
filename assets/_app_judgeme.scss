@@ -289,7 +289,7 @@ section {
             text-transform: uppercase;
             font-weight: normal;
             font-size:1.2rem;
-            padding:8rem 4rem;
+            padding:1.5rem 2rem;
             letter-spacing: 0;
             transition:all .25s ease 0s;
 
@@ -300,14 +300,14 @@ section {
 
             @include breakpoint(tablet) {
                 font-size:1.6rem;
-                padding:1.5rem 2rem;
+                padding:2rem 3rem;
                 max-width: 26rem !important;
                 letter-spacing:.1rem;
             }
 
             @include breakpoint(laptop) {
                 font-size: 1.8rem; 
-                padding:1.9rem 2rem;
+                padding:1.9rem 3rem;
                 letter-spacing:.3rem;
                 max-width:26rem !important;
             }

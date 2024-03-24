@@ -7,7 +7,7 @@ section {
             font-family: var(--font-family-script);
             color:var(--color-main);
             font-weight: normal;
-            font-size:5.6rem;
+            font-size:6rem;
             margin-bottom:2.5rem;
             line-height:1em;
 
@@ -130,8 +130,8 @@ section {
     }
     .jdgm-rev-widg__summary-stars {
         .jdgm-star {
-            width:3.1rem;
-            height:3.1rem;
+            width:2.5rem;
+            height:2.5rem;
             margin:0 .4rem !important;
 
             @include breakpoint(laptop) {
@@ -143,6 +143,11 @@ section {
     }
     .jdgm-form__rating {
         .jdgm-star {
+
+            height:2.5rem;
+            width: 2.5rem;
+            margin:0 .4rem !important;
+
             @include breakpoint(laptop) {
                 width:3.1rem;
                 height:3.1rem;
@@ -214,6 +219,9 @@ section {
     box-shadow:none !important;
     border:0;
 }
+.jdgm--leex-script-loaded .jdgm-rev-widg__header {
+    padding:0;
+}
 // Review Widget Title
 
 .jdgm--leex-script-loaded .jdgm-rev-widg__title {
@@ -279,7 +287,7 @@ section {
         width:100% !important;
         flex-direction: row !important;
         flex-wrap: wrap !important;
-        align-items: center !important;
+        align-items: stretch !important;
         justify-content: space-between;
         border:0px !important;
         gap:0rem;

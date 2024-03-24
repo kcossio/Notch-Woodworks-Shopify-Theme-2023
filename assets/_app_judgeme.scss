@@ -757,6 +757,11 @@ section {
             font-size:1.2rem;
             padding:8rem 4rem;
             letter-spacing: 0;
+            transition:all .25s ease 0s;
+
+            &:hover {
+                opacity: 1;
+            }
 
             @include breakpoint(tablet) {
                 font-size:1.6rem;

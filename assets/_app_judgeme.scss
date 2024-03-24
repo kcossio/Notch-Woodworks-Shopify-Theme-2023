@@ -771,6 +771,8 @@ section {
                 letter-spacing:.3rem;
                 max-width:none !important;
             }
+            @include hover_notch();
     }
+
 
 }

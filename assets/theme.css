@@ -1306,7 +1306,7 @@ section .jdgm-row-actions {
 .jdgm-rev-widg .jdgm-form__fieldset-actions {
   margin-bottom: 5rem;
 }
-.jdgm-rev-widg .jdgm-form__inline-label[for="jdgm_review_reviewer_name*"] {
+.jdgm-rev-widg .jdgm-form .jdgm-form__fieldset label[for^=jdgm_review_reviewer_name] {
   margin-bottom: 0;
 }
 .jdgm-rev-widg .jdgm-form__reviewer-name-format-container {

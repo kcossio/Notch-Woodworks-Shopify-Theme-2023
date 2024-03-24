@@ -39,7 +39,10 @@
 @mixin hover_notch() {
 
   position: relative;
+  background-image: url("triangle-notch-left.svg") right center no-repeat;
+  background-size:1.4rem 2.8rem;
 
+  /*
   &::after {
     content: "";
     position: absolute;
@@ -49,7 +52,7 @@
     width: 1.4rem;
     aspect-ratio: 1/2;
     transform:translate3d(0, -50%, 0);
-    background: url("triangle-notch-left.svg") top center no-repeat;
+    background-image: url("triangle-notch-left.svg") top center no-repeat;
     background-repeat: no-repeat;
     transition:all .3s ease-in 0s;
   }
@@ -58,6 +61,7 @@
       transform:translate3d(-100%, -50%, 0);
     }
   }
+  */
 }
 /*-----------------------
 EASING 

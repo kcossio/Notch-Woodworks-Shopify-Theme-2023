@@ -785,7 +785,7 @@ section .jdgm-row-actions {
 }
 
 .jdgm--leex-script-loaded .jdgm-rev-widg__header {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .jdgm--leex-script-loaded .jdgm-rev-widg__title {
@@ -869,6 +869,9 @@ section .jdgm-row-actions {
   letter-spacing: 0.1rem;
   transition: all 0.25s ease 0s;
   width: 48%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-write-rev-link:hover, .jdgm-rev-widg .jdgm-widget-actions-wrapper .jdgm-ask-question-btn:hover {
   opacity: 1;

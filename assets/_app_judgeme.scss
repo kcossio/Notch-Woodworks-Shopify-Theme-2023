@@ -220,7 +220,7 @@ section {
     border:0;
 }
 .jdgm--leex-script-loaded .jdgm-rev-widg__header {
-    padding:0;
+    padding:0 !important;
 }
 // Review Widget Title
 
@@ -312,6 +312,9 @@ section {
             letter-spacing: 0.1rem;
             transition:all .25s ease 0s;
             width:48%;
+            display:inline-flex;
+            align-items: center;
+            justify-content: center;
 
             &:hover {
                 opacity:1;

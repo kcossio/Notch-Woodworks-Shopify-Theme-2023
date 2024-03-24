@@ -771,7 +771,10 @@ section {
                 letter-spacing:.3rem;
                 max-width:none !important;
             }
-            @include hover_notch();
+            
+    }
+    input[type=submit].jdgm-btn {
+        @include hover_notch();
     }
 
 

@@ -130,6 +130,10 @@ section {
     }
     .jdgm-rev-widg__summary-stars {
         .jdgm-star {
+            width:3.1rem;
+            height:3.1rem;
+            margin:0 .4rem !important;
+
             @include breakpoint(laptop) {
                 width:3.1rem;
                 height:3.1rem;

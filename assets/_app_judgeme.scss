@@ -7,8 +7,9 @@ section {
             font-family: var(--font-family-script);
             color:var(--color-main);
             font-weight: normal;
-            font-size:6rem;
+            font-size:5.8rem;
             margin-bottom:2.5rem;
+            line-height:1em;
 
             @include breakpoint(tablet) {
                 font-size:7.5rem;
@@ -213,7 +214,7 @@ section {
 
 .jdgm--leex-script-loaded .jdgm-rev-widg__title {
     color:var(--color-main) !important;
-    margin-bottom:0rem !important;
+   // margin-bottom:0rem !important;
 }
 
 // Actions (Sort)

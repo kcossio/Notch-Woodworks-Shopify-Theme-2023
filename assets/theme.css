@@ -1241,4 +1241,12 @@ section .jdgm-row-actions {
   border-image-source: url("border-dot-red.svg?v=1");
   border-image-slice: 24% 24% 24% 24%;
   border-image-repeat: round;
+  font-size: 1.6rem;
+  padding: 0;
+}
+.jdgm-rev-widg .jdgm-sort-dropdown::-moz-placeholder {
+  font-size: inherit;
+}
+.jdgm-rev-widg .jdgm-sort-dropdown::placeholder {
+  font-size: inherit;
 }

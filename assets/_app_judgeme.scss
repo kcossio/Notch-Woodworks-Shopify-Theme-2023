@@ -737,6 +737,12 @@ section {
         border-image-source: url('border-dot-red.svg?v=1');
         border-image-slice: 24% 24% 24% 24%;
         border-image-repeat: round;
+        font-size:1.6rem;
+        padding:0;
+
+        &::placeholder {
+            font-size:inherit;
+        }
     }
 
 }

@@ -1371,6 +1371,8 @@ button.shopify-payment-button__button--unbranded,
         color:var(--color-white);
       }
     }
+
+    @include hover_notch();
   }
 }
 

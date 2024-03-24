@@ -748,7 +748,9 @@ section {
 
     .jdgm-btn--solid,
     .jdgm-btn--border, 
-    input[type=submit] {
+    input[type=submit],
+    .jdgm-btn, 
+    input[type=submit].jdgm-btn {
         font-family:var(--font-family-header-ex);
             text-transform: uppercase;
             font-weight: normal;
@@ -765,7 +767,7 @@ section {
 
             @include breakpoint(laptop) {
                 font-size: 1.8rem; 
-                padding:1.9rem 2rem;
+                padding:1.9rem 3rem;
                 letter-spacing:.3rem;
                 max-width:26rem !important;
             }

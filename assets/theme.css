@@ -787,6 +787,11 @@ section .jdgm-row-actions {
 .jdgm--leex-script-loaded .jdgm-quest {
   box-shadow: none !important;
   border: 0;
+  padding: 0px !important;
+}
+
+.jdgm--leex-script-loaded .jdgm-rev-widg__actions {
+  padding: 0 !important;
 }
 
 .jdgm--leex-script-loaded .jdgm-rev-widg__header {
@@ -1298,11 +1303,6 @@ section .jdgm-row-actions {
   background-color: #f4f4f4;
 }
 .jdgm-rev-widg .jdgm-form__fieldset-actions {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-}
-.jdgm-rev-widg .jdgm-form__fieldset-actions {
   width: 100% !important;
   flex-direction: row !important;
   flex-wrap: wrap !important;
@@ -1321,6 +1321,12 @@ section .jdgm-row-actions {
     justify-content: center;
     gap: 2rem;
   }
+}
+.jdgm-rev-widg .jdgm-form__fieldset-actions .jdgm-cancel-rev {
+  margin: 0;
+}
+.jdgm-rev-widg.jdgm-review-widget--small .jdgm-form__fieldset-actions .jdgm-cancel-question, .jdgm-rev-widg.jdgm-review-widget--small .jdgm-form__fieldset-actions .jdgm-cancel-rev {
+  margin-top: 0px;
 }
 .jdgm-rev-widg .jdgm-form .jdgm-form__fieldset > label,
 .jdgm-rev-widg .jdgm-form .jdgm-form__fieldset .jdgm-form__inline-label {

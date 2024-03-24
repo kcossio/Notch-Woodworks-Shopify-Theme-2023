@@ -218,7 +218,7 @@ section {
 .jdgm--leex-script-loaded .jdgm-quest {
     box-shadow:none !important;
     border:0;
-    padding:0;
+    padding: 0px !important;
 }
 .jdgm--leex-script-loaded .jdgm-rev-widg__actions {
     padding:0 !important;
@@ -762,7 +762,6 @@ section {
         border:2px solid var(--color-main);
         background-color:#f4f4f4;
     }
-    .
     .jdgm-form__fieldset-actions  {
         width:100% !important;
         flex-direction: row !important;

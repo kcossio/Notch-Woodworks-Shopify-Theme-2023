@@ -703,7 +703,7 @@ section {
 
     .jdgm-question-form-wrapper, 
     .jdgm-form-wrapper {
-        padding:5rem;
+        padding:5rem 0;
         border:0;
     }
     .jdgm-form {
@@ -771,6 +771,16 @@ section {
     .jdgm-form__fieldset:not(:last-of-type), 
     .jdgm-form__fieldset-actions {
         margin-bottom:5rem;
+    }
+    .jdgm-form__inline-label[for="jdgm_review_reviewer_name_u1yoi0v4f"] {
+        margin-bottom:0;
+    }
+    .jdgm-form__reviewer-name-format-container {
+        display:block;
+
+        @include breakpoint(tablet) {
+            display: inline-block;
+        }
     }
     .jdgm-sort-dropdown {
         color:var(--color-main);

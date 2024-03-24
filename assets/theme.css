@@ -1228,7 +1228,7 @@ section .jdgm-row-actions {
 }
 .jdgm-rev-widg .jdgm-question-form-wrapper,
 .jdgm-rev-widg .jdgm-form-wrapper {
-  padding: 5rem;
+  padding: 5rem 0;
   border: 0;
 }
 .jdgm-rev-widg .jdgm-form {
@@ -1305,6 +1305,17 @@ section .jdgm-row-actions {
 .jdgm-rev-widg .jdgm-form__fieldset:not(:last-of-type),
 .jdgm-rev-widg .jdgm-form__fieldset-actions {
   margin-bottom: 5rem;
+}
+.jdgm-rev-widg .jdgm-form__inline-label[for=jdgm_review_reviewer_name_u1yoi0v4f] {
+  margin-bottom: 0;
+}
+.jdgm-rev-widg .jdgm-form__reviewer-name-format-container {
+  display: block;
+}
+@media (min-width: 768px) {
+  .jdgm-rev-widg .jdgm-form__reviewer-name-format-container {
+    display: inline-block;
+  }
 }
 .jdgm-rev-widg .jdgm-sort-dropdown {
   color: var(--color-main);

@@ -323,8 +323,7 @@ body {
   width: 100%;
 }
 
-a,
-a:visited {
+a {
   color: inherit;
 }
 

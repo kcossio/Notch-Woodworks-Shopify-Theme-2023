@@ -147,7 +147,7 @@ section {
 .bg-img.svg, .has-bg.svg {
   align-items: center;
 }
-.bg-img img.bg, .bg-img picture.bg, .bg-img svg.bg, .has-bg img.bg, .has-bg picture.bg, .has-bg svg.bg {
+.bg-img img.bg, .bg-img picture.bg, .bg-img svg.bg, .bg-img video.bg, .has-bg img.bg, .has-bg picture.bg, .has-bg svg.bg, .has-bg video.bg {
   z-index: 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -156,11 +156,11 @@ section {
   width: 100%;
   display: block;
 }
-.bg-img img.parallax-img, .bg-img picture.parallax-img, .bg-img svg.parallax-img, .has-bg img.parallax-img, .has-bg picture.parallax-img, .has-bg svg.parallax-img {
+.bg-img img.parallax-img, .bg-img picture.parallax-img, .bg-img svg.parallax-img, .bg-img video.parallax-img, .has-bg img.parallax-img, .has-bg picture.parallax-img, .has-bg svg.parallax-img, .has-bg video.parallax-img {
   -o-object-position: center bottom;
      object-position: center bottom;
 }
-.bg-img img.top-banner, .bg-img picture.top-banner, .bg-img svg.top-banner, .has-bg img.top-banner, .has-bg picture.top-banner, .has-bg svg.top-banner {
+.bg-img img.top-banner, .bg-img picture.top-banner, .bg-img svg.top-banner, .bg-img video.top-banner, .has-bg img.top-banner, .has-bg picture.top-banner, .has-bg svg.top-banner, .has-bg video.top-banner {
   -o-object-position: center top;
      object-position: center top;
 }

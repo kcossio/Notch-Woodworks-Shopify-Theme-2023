@@ -1,3 +1,6 @@
+/*-----------------------
+EASING 
+---------------------- */
 .video-section__media {
   --ratio-percent: 56.25%;
   position: relative;
@@ -14,8 +17,7 @@
 }
 
 .video-section__media.deferred-media {
-  box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
-    rgba(var(--color-shadow), var(--media-shadow-opacity));
+  box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius) rgba(var(--color-shadow), var(--media-shadow-opacity));
 }
 
 .video-section__media.deferred-media:after {
@@ -44,5 +46,13 @@
 }
 
 .video-section__media.media-fit-cover video {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video-container video {
+  width: 100%;
+}
+.video-container.parallax-video-container {
+  aspect-ratio: 16/5;
 }

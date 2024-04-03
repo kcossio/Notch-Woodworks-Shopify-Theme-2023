@@ -199,6 +199,7 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": true,
+        "enable_autoplay": true,
         "video": "shopify:\/\/files\/videos\/pexels-roman-odintsov-6421255(Original).mp4",
         "video_url": "",
         "description": "Video of product",

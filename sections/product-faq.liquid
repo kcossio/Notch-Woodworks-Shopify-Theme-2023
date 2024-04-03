@@ -1,10 +1,13 @@
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
 {{ 'section-product-faq.css' | asset_url | stylesheet_tag }}
 
 
 
 <div class="faq-wrap">
-  {%- # Label: Heading -%}
-  <h2 class="block-header-v3">{{ section.settings.heading }}</h2>
+  {%- assign heading = section.settings.heading -%}
+    {%- if heading != blank -%}
+      <h2 class="block-header-v3">{{ section.settings.heading }}</h2>
+    {%-  endif -%}
   <div class="faq-inner">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
@@ -34,7 +37,7 @@
 
 {% schema %}
   {
-  "name": "Product FAQs",
+  "name": "FAQs",
   "class": "section section-product-faq section-faq",
   "tag": "section",
   "settings": [
@@ -43,7 +46,7 @@
       "id": "heading",
       "label": "Heading",
       "default": "Frequently Asked Questions",
-      "info": "Enter the title of this FAQs section"
+      "info": "Enter the title of this FAQs section (can be left blank)"
     }
   ],
   "blocks": [

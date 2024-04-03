@@ -38,7 +38,7 @@
   {%- endif %}
 {%- endcapture -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient video-wrapper">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     <div
       {% if section.settings.full_width %}
@@ -51,6 +51,26 @@
         </div>
       {%- endunless -%}
     </div>
+
+    {%-  comment -%}
+      // If the video is set to autoplay automatically, then simply add it to the page and start playing it
+    {%- endcomment -%}
+    {%- if section.settings.enable_autoplay -%}
+      
+      {{
+        section.settings.video
+        | video_tag:
+          image_size: '1100x',
+          autoplay: true,
+          loop: section.settings.enable_video_looping,
+          controls: false,
+          muted: true
+      }}
+
+    {%-  comment -%}
+      // Otherwise, if autoplay is not enabled, then run the media as deferred (play on button click)
+    {%- endcomment -%}
+    {%- else -%}
     <noscript>
       <div
         class="video-section__media"
@@ -149,6 +169,11 @@
         {%- endif -%}
       </template>
     </deferred-media>
+
+  {%- endif -%}
+  {%  comment  %}
+    // End if video is set to autoplay
+  {% endcomment %}
   </div>
 </div>
 
@@ -191,6 +216,12 @@
       "type": "checkbox",
       "id": "enable_video_looping",
       "label": "t:sections.video.settings.enable_video_looping.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_autoplay",
+      "label": "Autoplay Video",
       "default": false
     },
     {

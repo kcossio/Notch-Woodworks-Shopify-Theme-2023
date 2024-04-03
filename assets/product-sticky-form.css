@@ -143,7 +143,6 @@ EASING
   }
 }
 .product--sticky-form .product--sticky-form__variants {
-  display: none;
   height: 4rem;
 }
 @media (min-width: 768px) {

@@ -156,7 +156,7 @@
         }
 
         .product--sticky-form__variants {
-            display: none;
+            //display: none;
             height:4rem;
             @include breakpoint(tablet) {
                 display:block;

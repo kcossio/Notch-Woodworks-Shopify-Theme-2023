@@ -312,6 +312,14 @@
         "id": "product-faqs"
       }
     },
+    "page_hero_banner_9MhW4J": {
+      "type": "page-hero-banner",
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/bg-hero-board-1-fpo.jpg",
+        "enable_parallax_scrolling": true,
+        "show_notch": true
+      }
+    },
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689": {
       "type": "product-faq",
       "blocks": {
@@ -408,6 +416,7 @@
     "product_anchor_point_9QpVUr",
     "rich_text_z7pxfj",
     "product_anchor_point_8L4VhD",
+    "page_hero_banner_9MhW4J",
     "24b50a05-3a7b-44ec-acc8-0f048e0f4689",
     "product_additional_products_p74Baw",
     "product_anchor_point_kkWedL",

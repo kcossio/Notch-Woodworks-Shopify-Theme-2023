@@ -10,40 +10,41 @@
         invalidateOnRefresh: true,
         //markers:true
     });
+    window.addEventListener('load', function(event) {
+        //Parallax Background
+        const bgParallax = gsap.utils.toArray('.parallax-img');
+        bgParallax.forEach(box => {
+            if(jQuery(box).hasClass('top-banner')) {
+                
+                var pos_start = "50% 100%";           
+                var pos_end = "50% 0%";
+                var trigger_start = "top top";
+                var trigger_end = "bottom top";
+            }
+            else {
+                
+                var pos_start = "50% 100%";
+                var pos_end = "50% 0%";
+                var trigger_start = "top bottom";
+                var trigger_end = "bottom top"
+            }
+            gsap.set(box, {objectPosition: pos_start});
+            gsap.to(box, { 
 
-   //Parallax Background
-   const bgParallax = gsap.utils.toArray('.parallax-img');
-   bgParallax.forEach(box => {
-       if(jQuery(box).hasClass('top-banner')) {
-           
-           var pos_start = "50% 100%";           
-           var pos_end = "50% 0%";
-           var trigger_start = "top top";
-           var trigger_end = "bottom top";
-       }
-       else {
-          
-           var pos_start = "50% 100%";
-           var pos_end = "50% 0%";
-           var trigger_start = "top bottom";
-           var trigger_end = "bottom top"
-       }
-       gsap.set(box, {objectPosition: pos_start});
-       gsap.to(box, { 
-
-           scrollTrigger: {
-               trigger: box, // start the animation when ".box" enters the viewport (once),
-               start: trigger_start,
-               end: trigger_end,
-               scrub: true, //enable scrub
-               toggleClass: "onscreen"
-           },        
-           objectPosition: pos_end,
-           //scale: 1.1,
-           ease: "none"
-       
-       })
-   });
+                scrollTrigger: {
+                    trigger: box, // start the animation when ".box" enters the viewport (once),
+                    start: trigger_start,
+                    end: trigger_end,
+                    scrub: true, //enable scrub
+                    toggleClass: "onscreen"
+                },        
+                objectPosition: pos_end,
+                //scale: 1.1,
+                ease: "none"
+            
+            })
+        });
+    });
 
    // ------ Toggle Items (aka Accordions) --------- //
    window.addEventListener('load', function(event) {

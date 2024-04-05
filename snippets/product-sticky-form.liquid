@@ -21,7 +21,7 @@
         disabled
       >
     <span class="h2">{{ product.title | escape }}</span>
-    <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+    <div class="no-js-hidden" id="sticky-price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
         {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--end' -%}
     </div>
   </div>
@@ -58,6 +58,17 @@
             {{ block.shopify_attributes }}
             >
             {%- for option in product.options_with_values -%}
+
+              {%- liquid 
+                if option.name == "Grain Type"
+                  assign option_class = 'lower'
+                else
+                  assign option_class = 'normal'
+                endif -%}
+              <fieldset class="js product-form__input">
+                <legend class="form__label option__select_title">Select <span class="{{  option_class }}">{{ option.name }}</span></legend>
+              </fieldset>
+
               <div class="product-form__input product-form__input--dropdown">
                 <div class="select">
                     <select

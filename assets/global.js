@@ -1024,10 +1024,10 @@ class VariantSelects extends HTMLElement {
     shareButton.updateUrl(`${window.shopUrl}${this.dataset.url}?variant=${this.currentVariant.id}`);
   }
 
-  // Add sticky to variant input ID to update
+  // Add sticky
   updateVariantInput() {
     const productForms = document.querySelectorAll(
-      `#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}, .main-product-form`
+      `#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}, #sticky-product-form-${this.dataset.section}`
     );
     productForms.forEach((productForm) => {
       const input = productForm.querySelector('input[name="id"]');
@@ -1208,6 +1208,7 @@ class VariantSelects extends HTMLElement {
 }
 
 customElements.define('variant-selects', VariantSelects);
+customElements.define('sticky-variant-selects', VariantSelects);
 
 class VariantRadios extends VariantSelects {
   constructor() {

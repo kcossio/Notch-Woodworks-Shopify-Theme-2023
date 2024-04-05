@@ -162,6 +162,19 @@
                 display:block;
                 height:4.7rem;
             }
+
+            variant-selects {
+                display:inline-flex;
+                align-items:center;
+                align-content:center;
+                height:100%;
+                
+                fieldset {
+                    width: auto;
+                }
+
+            }
+            
         }
 
         .product--sticky-form__quantity {

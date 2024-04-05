@@ -151,6 +151,15 @@ EASING
     height: 4.7rem;
   }
 }
+.product--sticky-form .product--sticky-form__variants variant-selects {
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+.product--sticky-form .product--sticky-form__variants variant-selects fieldset {
+  width: auto;
+}
 .product--sticky-form .product--sticky-form__quantity {
   height: 4rem;
 }

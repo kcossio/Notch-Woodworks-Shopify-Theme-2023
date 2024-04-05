@@ -67,6 +67,9 @@
                 endif -%}
               <fieldset class="js product-form__input">
                 <legend class="form__label option__select_title">Select <span class="{{  option_class }}">{{ option.name }}</span></legend>
+                {% comment %}
+                  //Update snippet to utilize this sticky form ID
+                {%  endcomment %}
                 {% render 'product-variant-options', product: product, option: option, block: block %}
               </fieldset>
               

@@ -126,13 +126,7 @@
         }
       }
 
-      .product--sticky-form__quantity {
-        order:3;
-
-        @include breakpoint(tablet) {
-            order:3;
-        }
-      }
+      
 
       .product-form__buttons {
         max-width:15.4rem;
@@ -207,16 +201,18 @@
         }
 
         .product--sticky-form__buttons {
-            order:4;
+            order:5;
             height: 100%;
         }
         
 
         .product--sticky-form__quantity {
             height:4rem;
+            order:3;
             @include breakpoint(tablet) {            
                 display:block;
                 height:4.7rem;
+                order:4;
             }
         }
 

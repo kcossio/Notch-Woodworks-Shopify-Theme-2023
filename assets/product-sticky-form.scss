@@ -105,9 +105,7 @@
             justify-content:flex-end;
             height:4.7rem;
 
-            & > * {
-                height:100%;
-            }
+           
         }
         
       }
@@ -143,6 +141,7 @@
         @include breakpoint(tablet) {
             max-width:19.6rem;
             width:19.6rem;
+            display: inline-flex;
         }
 
         button.product-form__submit {

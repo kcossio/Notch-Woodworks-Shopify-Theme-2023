@@ -94,9 +94,6 @@ EASING
     justify-content: flex-end;
     height: 4.7rem;
   }
-  .product--sticky-form form > * {
-    height: 100%;
-  }
 }
 .product--sticky-form .product--sticky-form-info {
   font-size: clamp(0.75rem, 2vw, var(--font-heading-scale) * 4rem);
@@ -129,6 +126,7 @@ EASING
   .product--sticky-form .product-form__buttons {
     max-width: 19.6rem;
     width: 19.6rem;
+    display: inline-flex;
   }
 }
 .product--sticky-form .product-form__buttons button.product-form__submit {

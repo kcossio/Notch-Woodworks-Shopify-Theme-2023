@@ -142,6 +142,8 @@
                     <span>
                       {%- if card_product.selected_or_first_available_variant.available -%}
                         {{ 'products.product.add_to_cart' | t }}
+                      {%- elsif card_product.variants.size > 1 or qty_rules -%}
+                        {{ 'products.product.choose_options' | t }}
                       {%- else -%}
                         {{ 'products.product.sold_out' | t }}
                       {%- endif -%}

@@ -1027,7 +1027,7 @@ class VariantSelects extends HTMLElement {
   // Add sticky to variant input ID to update
   updateVariantInput() {
     const productForms = document.querySelectorAll(
-      `#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}, #sticky-product-form-${this.dataset.section}`
+      `#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}, .main-product-form`
     );
     productForms.forEach((productForm) => {
       const input = productForm.querySelector('input[name="id"]');

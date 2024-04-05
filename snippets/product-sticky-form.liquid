@@ -2,7 +2,7 @@
 
 <script src="{{ 'product-sticky-form.js' | asset_url }}" defer="defer"></script>
 
-{%- assign sticky_product_form_id = 'sticky-product-form-' | append: section.id -%}
+{%- assign sticky_product_form_id = 'product-form-' | append: section.id -%}
 
 <sticky-product-form class="product--sticky-form product--sticky-form__inactive">
 
@@ -11,7 +11,7 @@
     </ul>
 
   <product-form>
-  {%- form 'product', product, id: sticky_product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+  {%- form 'product', product, id: sticky_product_form_id, class: 'form main-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 
   <div class="product--sticky-form-info">
     <input

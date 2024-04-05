@@ -127,6 +127,7 @@ EASING
     max-width: 19.6rem;
     width: 19.6rem;
     display: inline-flex;
+    height: 100%;
   }
 }
 .product--sticky-form .product-form__buttons button.product-form__submit {

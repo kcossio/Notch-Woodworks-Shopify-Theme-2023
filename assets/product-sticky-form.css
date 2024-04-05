@@ -92,12 +92,14 @@ EASING
 @media (min-width: 768px) {
   .product--sticky-form form {
     justify-content: flex-end;
+    height: 4.7rem;
   }
 }
 .product--sticky-form .product--sticky-form-info {
   font-size: clamp(0.75rem, 2vw, var(--font-heading-scale) * 4rem);
   line-height: 1;
   text-align: right;
+  order: 2;
 }
 .product--sticky-form .product--sticky-form-info .h2 {
   display: none;
@@ -105,6 +107,15 @@ EASING
 @media (min-width: 768px) {
   .product--sticky-form .product--sticky-form-info {
     padding-right: 10px;
+    order: 1;
+  }
+}
+.product--sticky-form .product--sticky-form__quantity {
+  order: 3;
+}
+@media (min-width: 768px) {
+  .product--sticky-form .product--sticky-form__quantity {
+    order: 3;
   }
 }
 .product--sticky-form .product-form__buttons {
@@ -144,11 +155,13 @@ EASING
 }
 .product--sticky-form .product--sticky-form__variants {
   height: 4rem;
+  order: 1;
 }
 @media (min-width: 768px) {
   .product--sticky-form .product--sticky-form__variants {
     display: block;
     height: 4.7rem;
+    order: 3;
   }
 }
 .product--sticky-form .product--sticky-form__variants variant-selects {
@@ -160,9 +173,14 @@ EASING
 .product--sticky-form .product--sticky-form__variants variant-selects fieldset {
   width: auto;
   margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0;
 }
 .product--sticky-form .product--sticky-form__variants variant-selects .product-form__input--dropdown {
   margin: 0;
+}
+.product--sticky-form .product--sticky-form__buttons {
+  order: 4;
 }
 .product--sticky-form .product--sticky-form__quantity {
   height: 4rem;

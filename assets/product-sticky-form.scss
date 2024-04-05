@@ -101,6 +101,7 @@
 
         @include breakpoint(tablet) {
             justify-content:flex-end;
+            height:4.7rem;
         }
         
       }
@@ -109,6 +110,7 @@
         font-size: clamp(0.75rem, 2vw, calc(var(--font-heading-scale) * 4rem));
         line-height: 1;
         text-align: right;
+        order:2;
 
         .h2 {
             display: none;
@@ -116,6 +118,15 @@
 
         @include breakpoint(tablet) {
             padding-right: 10px;
+            order:1;
+        }
+      }
+
+      .product--sticky-form__quantity {
+        order:3;
+
+        @include breakpoint(tablet) {
+            order:3;
         }
       }
 
@@ -158,9 +169,11 @@
         .product--sticky-form__variants {
             //display: none;
             height:4rem;
+            order:1;
             @include breakpoint(tablet) {
                 display:block;
                 height:4.7rem;
+                order:3;
             }
 
             variant-selects {
@@ -172,6 +185,8 @@
                 fieldset {
                     width: auto;
                     margin:0;
+                    font-size:1.5rem;
+                    letter-spacing: 0;
                 }
                 .product-form__input--dropdown {
                     margin:0;
@@ -180,6 +195,11 @@
             }
             
         }
+
+        .product--sticky-form__buttons {
+            order:4;
+        }
+        
 
         .product--sticky-form__quantity {
             height:4rem;

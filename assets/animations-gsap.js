@@ -47,7 +47,7 @@
     });
 
    // ------ Toggle Items (aka Accordions) --------- //
-   window.addEventListener('load', function(event) {
+   window.addEventListener('DOMContentLoaded', function(event) {
     const items = gsap.utils.toArray("toggle-element toggle-item");
 
     let lastItem;

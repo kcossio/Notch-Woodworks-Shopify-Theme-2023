@@ -2,7 +2,7 @@
 
 <script src="{{ 'product-sticky-form.js' | asset_url }}" defer="defer"></script>
 
-{%- assign sticky_product_form_id = 'product-form-' | append: section.id -%}
+{%- assign sticky_product_form_id = 'sticky-product-form-' | append: section.id -%}
 
 <sticky-product-form class="product--sticky-form product--sticky-form__inactive">
 
@@ -21,7 +21,7 @@
         disabled
       >
     <span class="h2">{{ product.title | escape }}</span>
-    <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+    <div class="no-js-hidden" id="sticky-price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
         {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--end' -%}
     </div>
   </div>

@@ -1124,6 +1124,7 @@ class VariantSelects extends HTMLElement {
         const volumePricingDestination = document.getElementById(`Volume-${this.dataset.section}`);
 
         if (source && destination) destination.innerHTML = source.innerHTML;
+        
         // Added duplicate for sticky price bar
         if (sourceSticky && destinationSticky) destinationSticky.innerHTML = sourceSticky.innerHTML;
 

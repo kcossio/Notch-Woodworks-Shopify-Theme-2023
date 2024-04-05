@@ -99,9 +99,15 @@
         column-gap: 1.8rem;
         width:auto;
 
+       
+
         @include breakpoint(tablet) {
             justify-content:flex-end;
             height:4.7rem;
+
+            & > * {
+                height:100%;
+            }
         }
         
       }

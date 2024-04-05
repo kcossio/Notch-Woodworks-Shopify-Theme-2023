@@ -185,6 +185,7 @@ EASING
 }
 .product--sticky-form .product--sticky-form__buttons {
   order: 4;
+  height: 100%;
 }
 .product--sticky-form .product--sticky-form__quantity {
   height: 4rem;

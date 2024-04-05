@@ -110,9 +110,10 @@ menu-drawer > details[open] > summary::before {
 .menu-drawer ul.sub-menu a.child-link {
   font-family: var(--font-family-body);
   font-size: 1.5rem;
+  letter-spacing: 0;
   font-weight: normal;
   text-transform: none;
-  padding: 0;
+  padding: 0 0.5rem 0 0;
 }
 
 .js .menu-drawer {

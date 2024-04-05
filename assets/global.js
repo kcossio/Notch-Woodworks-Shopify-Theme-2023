@@ -1208,7 +1208,6 @@ class VariantSelects extends HTMLElement {
 }
 
 customElements.define('variant-selects', VariantSelects);
-customElements.define('sticky-variant-selects', VariantSelects);
 
 class VariantRadios extends VariantSelects {
   constructor() {

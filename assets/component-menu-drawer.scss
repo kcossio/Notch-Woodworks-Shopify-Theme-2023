@@ -58,6 +58,8 @@ menu-drawer > details[open] > summary::before {
     color:var(--color-main);
     text-transform: uppercase;
     font-family:var(--font-family-header-ex);
+    letter-spacing:.4rem;
+    font-size:1.5rem;
 
     &:hover {
       color:var(--color-main);

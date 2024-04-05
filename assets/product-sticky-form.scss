@@ -32,7 +32,7 @@
     product-form {
         width:100%;
 
-        @include breakpoint(tablet) {
+        @include breakpoint(laptop) {
             width: 50%;
         }
     }
@@ -43,9 +43,13 @@
         padding:0;
         gap:3rem;
 
-        @include breakpoint(tablet) {
+        @include breakpoint(laptop) {
             display:inline-flex;
             list-style: none;
+            gap:2rem;
+        }
+        @include breakpoint(laptopwide) {
+            gap:3rem;
         }
 
         li {

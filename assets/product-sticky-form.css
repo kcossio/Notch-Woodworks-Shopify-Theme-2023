@@ -29,7 +29,7 @@ EASING
 .product--sticky-form product-form {
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .product--sticky-form product-form {
     width: 50%;
   }
@@ -40,10 +40,16 @@ EASING
   padding: 0;
   gap: 3rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .product--sticky-form ul.sticky-product-menu {
     display: inline-flex;
     list-style: none;
+    gap: 2rem;
+  }
+}
+@media (min-width: 1366px) {
+  .product--sticky-form ul.sticky-product-menu {
+    gap: 3rem;
   }
 }
 .product--sticky-form ul.sticky-product-menu li {

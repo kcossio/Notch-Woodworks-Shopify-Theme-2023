@@ -185,8 +185,12 @@
                 fieldset {
                     width: auto;
                     margin:0;
-                    font-size:1.5rem;
-                    letter-spacing: 0;
+
+                    .form__label {
+                        font-size:1.5rem;
+                        letter-spacing: 0;
+                        padding-right:1rem;
+                    }
                 }
                 .product-form__input--dropdown {
                     margin:0;

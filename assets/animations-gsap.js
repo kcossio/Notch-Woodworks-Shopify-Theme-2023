@@ -10,7 +10,7 @@
         invalidateOnRefresh: true,
         //markers:true
     });
-    window.addEventListener('load', function(event) {
+    window.addEventListener('DOMContentLoaded', function(event) {
         //Parallax Background
         const bgParallax = gsap.utils.toArray('.parallax-img');
         bgParallax.forEach(box => {

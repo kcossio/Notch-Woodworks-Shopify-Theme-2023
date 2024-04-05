@@ -1043,7 +1043,7 @@ class VariantSelects extends HTMLElement {
     inputWrappers.forEach((option, index) => {
       if (index === 0) return;
       const optionInputs = [...option.querySelectorAll('input[type="radio"], option')];
-      const previousOptionSelected = inputWrappers[index - 1].querySelectorAll(':checked', ':selected').value;
+      const previousOptionSelected = inputWrappers[index - 1].querySelector(':checked').value;
       const availableOptionInputsValue = selectedOptionOneVariants
         .filter((variant) => variant.available && variant[`option${index}`] === previousOptionSelected)
         .map((variantOption) => variantOption[`option${index + 1}`]);
@@ -1124,7 +1124,7 @@ class VariantSelects extends HTMLElement {
         const volumePricingDestination = document.getElementById(`Volume-${this.dataset.section}`);
 
         if (source && destination) destination.innerHTML = source.innerHTML;
-
+        
         // Added duplicate for sticky price bar
         if (sourceSticky && destinationSticky) destinationSticky.innerHTML = sourceSticky.innerHTML;
 

@@ -25,25 +25,7 @@ class StickyVariantSelects extends VariantSelects {
     // Update price and other info through renderProductInfo
     this.renderProductInfo();
 
-    // Find and update the main variant selects
-    const mainVariantSelects = document.querySelector(`variant-selects[data-section="${this.dataset.section}"]`);
-    if (mainVariantSelects) {
-      const mainSelects = mainVariantSelects.querySelectorAll('select');
-      const stickySelects = this.querySelectorAll('select');
-      
-      // Update main form's select values and trigger their native change handlers
-      mainSelects.forEach((mainSelect, index) => {
-        const stickySelect = stickySelects[index];
-        if (stickySelect && mainSelect.value !== stickySelect.value) {
-          mainSelect.value = stickySelect.value;
-        }
-      });
-
-      // Trigger the main form's variant change handler
-      mainVariantSelects.onVariantChange();
-    }
-
-    // Dispatch our own variant:changed event after main form is updated
+    // Dispatch our own variant:changed event
     this.dispatchEvent(
       new CustomEvent('variant:changed', {
         detail: {
@@ -53,6 +35,22 @@ class StickyVariantSelects extends VariantSelects {
         cancelable: true
       })
     );
+
+    // Find and update the main variant selects
+    const mainVariantSelects = document.querySelector(`variant-selects[data-section="${this.dataset.section}"]`);
+    if (mainVariantSelects) {
+      const mainSelects = mainVariantSelects.querySelectorAll('select');
+      const stickySelects = this.querySelectorAll('select');
+      
+      // Update main form's select values to match sticky form
+      mainSelects.forEach((mainSelect, index) => {
+        const stickySelect = stickySelects[index];
+        if (stickySelect && mainSelect.value !== stickySelect.value) {
+          mainSelect.value = stickySelect.value;
+          mainSelect.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+      });
+    }
   }
 
   updateVariantInput() {

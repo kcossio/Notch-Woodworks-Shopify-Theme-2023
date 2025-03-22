@@ -36,20 +36,35 @@ class StickyVariantSelects extends VariantSelects {
       })
     );
 
-    // Find and update the main variant selects
+    // Find and update the main variant selects or radios
+    const mainVariantRadios = document.querySelector(`variant-radios[data-section="${this.dataset.section}"]`);
     const mainVariantSelects = document.querySelector(`variant-selects[data-section="${this.dataset.section}"]`);
-    if (mainVariantSelects) {
-      const mainSelects = mainVariantSelects.querySelectorAll('select');
+    const mainVariantPicker = mainVariantRadios || mainVariantSelects;
+
+    if (mainVariantPicker) {
       const stickySelects = this.querySelectorAll('select');
       
-      // Update main form's select values to match sticky form
-      mainSelects.forEach((mainSelect, index) => {
-        const stickySelect = stickySelects[index];
-        if (stickySelect && mainSelect.value !== stickySelect.value) {
-          mainSelect.value = stickySelect.value;
-          mainSelect.dispatchEvent(new Event('change', { bubbles: true }));
-        }
-      });
+      if (mainVariantRadios) {
+        // Update radio buttons in the main form
+        stickySelects.forEach((stickySelect, index) => {
+          const selectedValue = stickySelect.value;
+          const radio = mainVariantRadios.querySelector(`input[type="radio"][value="${selectedValue}"]`);
+          if (radio && !radio.checked) {
+            radio.checked = true;
+            radio.dispatchEvent(new Event('change', { bubbles: true }));
+          }
+        });
+      } else if (mainVariantSelects) {
+        // Update dropdowns in the main form
+        const mainSelects = mainVariantSelects.querySelectorAll('select');
+        mainSelects.forEach((mainSelect, index) => {
+          const stickySelect = stickySelects[index];
+          if (stickySelect && mainSelect.value !== stickySelect.value) {
+            mainSelect.value = stickySelect.value;
+            mainSelect.dispatchEvent(new Event('change', { bubbles: true }));
+          }
+        });
+      }
     }
   }
 
@@ -104,7 +119,7 @@ customElements.define('sticky-product-form', class StickyProductForm extends HTM
     constructor() {
       super();
       this.stickyForm = this.querySelector('product-form');
-      this.variantSelects = this.querySelector('sticky-variant-selects');  // Updated to use sticky-variant-selects
+      this.variantSelects = this.querySelector('sticky-variant-selects');
       this.mainProductSection = null;
       this.stickyPriceContainer = null;
     }
@@ -121,9 +136,12 @@ customElements.define('sticky-product-form', class StickyProductForm extends HTM
         this.stickyPriceContainer = this.querySelector(`#sticky-price-${sectionId}`);
         
         // Listen for variant changes from both forms
+        const mainVariantRadios = document.querySelector(`variant-radios[data-section="${sectionId}"]`);
         const mainVariantSelects = document.querySelector(`variant-selects[data-section="${sectionId}"]`);
-        if (mainVariantSelects) {
-          mainVariantSelects.addEventListener('variant:changed', this.handleVariantChange.bind(this));
+        const mainVariantPicker = mainVariantRadios || mainVariantSelects;
+        
+        if (mainVariantPicker) {
+          mainVariantPicker.addEventListener('variant:changed', this.handleVariantChange.bind(this));
         }
         // Listen to our own variant changes too
         this.variantSelects.addEventListener('variant:changed', this.handleVariantChange.bind(this));
@@ -139,9 +157,12 @@ customElements.define('sticky-product-form', class StickyProductForm extends HTM
       window.removeEventListener('scroll', this.onScrollHandler);
       const sectionId = this.variantSelects?.dataset.section;
       if (sectionId) {
+        const mainVariantRadios = document.querySelector(`variant-radios[data-section="${sectionId}"]`);
         const mainVariantSelects = document.querySelector(`variant-selects[data-section="${sectionId}"]`);
-        if (mainVariantSelects) {
-          mainVariantSelects.removeEventListener('variant:changed', this.handleVariantChange);
+        const mainVariantPicker = mainVariantRadios || mainVariantSelects;
+        
+        if (mainVariantPicker) {
+          mainVariantPicker.removeEventListener('variant:changed', this.handleVariantChange);
         }
         if (this.variantSelects) {
           this.variantSelects.removeEventListener('variant:changed', this.handleVariantChange);
@@ -178,13 +199,26 @@ customElements.define('sticky-product-form', class StickyProductForm extends HTM
 
       // Update select elements to match main form if the event came from the main form
       if (this.variantSelects && event.target !== this.variantSelects) {
-        const mainSelects = document.querySelectorAll(`variant-selects[data-section="${this.variantSelects.dataset.section}"] select`);
         const stickySelects = this.variantSelects.querySelectorAll('select');
         
-        mainSelects.forEach((mainSelect, index) => {
+        // Get the current values from the main form
+        const mainVariantRadios = document.querySelector(`variant-radios[data-section="${this.variantSelects.dataset.section}"]`);
+        const mainVariantSelects = document.querySelector(`variant-selects[data-section="${this.variantSelects.dataset.section}"]`);
+        
+        let mainValues = [];
+        if (mainVariantRadios) {
+          // Get values from radio buttons
+          mainValues = Array.from(mainVariantRadios.querySelectorAll('input[type="radio"]:checked')).map(radio => radio.value);
+        } else if (mainVariantSelects) {
+          // Get values from dropdowns
+          mainValues = Array.from(mainVariantSelects.querySelectorAll('select')).map(select => select.value);
+        }
+
+        // Update sticky form's select values
+        mainValues.forEach((value, index) => {
           const stickySelect = stickySelects[index];
-          if (stickySelect && mainSelect.value !== stickySelect.value) {
-            stickySelect.value = mainSelect.value;
+          if (stickySelect && stickySelect.value !== value) {
+            stickySelect.value = value;
           }
         });
       }

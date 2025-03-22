@@ -18,6 +18,7 @@
         type="hidden"
         name="id"
         value="{{ product.selected_or_first_available_variant.id }}"
+        data-sticky-variant-input
         disabled
       >
     <span class="h2">{{ product.title | escape }}</span>
@@ -55,6 +56,7 @@
             class="no-js-hidden"
             data-section="{{ section.id }}"
             data-url="{{ product.url }}"
+            data-sticky="true"
             {{ block.shopify_attributes }}
             >
             {%- for option in product.options_with_values -%}

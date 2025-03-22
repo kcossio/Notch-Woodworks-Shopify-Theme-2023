@@ -1,8 +1,34 @@
 class StickyVariantSelects extends VariantSelects {
   constructor() {
     super();
-    // Override the change event listener to prevent the parent class from handling it
+    // Override the change event listener to use our own handler
     this.removeEventListener('change', this.onVariantChange);
+    this.addEventListener('change', this.onStickyVariantChange.bind(this));
+  }
+
+  onStickyVariantChange() {
+    this.updateOptions();
+    this.updateMasterId();
+
+    if (!this.currentVariant) {
+      return;
+    }
+
+    // Find and update the main variant selects
+    const mainVariantSelects = document.querySelector(`variant-selects[data-section="${this.dataset.section}"]`);
+    if (mainVariantSelects) {
+      const mainSelects = mainVariantSelects.querySelectorAll('select');
+      const stickySelects = this.querySelectorAll('select');
+      
+      // Update main form's select values to match sticky form
+      mainSelects.forEach((mainSelect, index) => {
+        const stickySelect = stickySelects[index];
+        if (stickySelect && mainSelect.value !== stickySelect.value) {
+          mainSelect.value = stickySelect.value;
+          mainSelect.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+      });
+    }
   }
 
   updateVariantStatuses() {
@@ -17,7 +43,7 @@ customElements.define('sticky-product-form', class StickyProductForm extends HTM
     constructor() {
       super();
       this.stickyForm = this.querySelector('product-form');
-      this.variantSelects = this.querySelector('variant-selects');
+      this.variantSelects = this.querySelector('sticky-variant-selects');  // Updated to use sticky-variant-selects
       this.mainProductSection = null;
       this.stickyPriceContainer = null;
     }

@@ -1,3 +1,18 @@
+class StickyVariantSelects extends VariantSelects {
+  constructor() {
+    super();
+    // Override the change event listener to prevent the parent class from handling it
+    this.removeEventListener('change', this.onVariantChange);
+  }
+
+  updateVariantStatuses() {
+    // Override with empty implementation since we don't need to update statuses in the sticky form
+    return;
+  }
+}
+
+customElements.define('sticky-variant-selects', StickyVariantSelects);
+
 customElements.define('sticky-product-form', class StickyProductForm extends HTMLElement {
     constructor() {
       super();

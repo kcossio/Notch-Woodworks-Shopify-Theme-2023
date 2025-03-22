@@ -14,6 +14,20 @@ class StickyVariantSelects extends VariantSelects {
       return;
     }
 
+    // Update our own variant input first
+    this.updateVariantInput();
+
+    // Dispatch our own variant:changed event
+    this.dispatchEvent(
+      new CustomEvent('variant:changed', {
+        detail: {
+          variant: this.currentVariant
+        },
+        bubbles: true,
+        cancelable: true
+      })
+    );
+
     // Find and update the main variant selects
     const mainVariantSelects = document.querySelector(`variant-selects[data-section="${this.dataset.section}"]`);
     if (mainVariantSelects) {
@@ -29,6 +43,19 @@ class StickyVariantSelects extends VariantSelects {
         }
       });
     }
+  }
+
+  updateVariantInput() {
+    const productForms = document.querySelectorAll(
+      `#sticky-product-form-${this.dataset.section}`
+    );
+    productForms.forEach((productForm) => {
+      const input = productForm.querySelector('input[name="id"]');
+      if (input) {
+        input.value = this.currentVariant.id;
+        input.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+    });
   }
 
   updateVariantStatuses() {
@@ -59,11 +86,13 @@ customElements.define('sticky-product-form', class StickyProductForm extends HTM
         this.mainProductSection = document.querySelector(`#MainProduct-${sectionId}`);
         this.stickyPriceContainer = this.querySelector(`#sticky-price-${sectionId}`);
         
-        // Listen for variant changes from the main form's variant-selects
+        // Listen for variant changes from both forms
         const mainVariantSelects = document.querySelector(`variant-selects[data-section="${sectionId}"]`);
         if (mainVariantSelects) {
           mainVariantSelects.addEventListener('variant:changed', this.handleVariantChange.bind(this));
         }
+        // Listen to our own variant changes too
+        this.variantSelects.addEventListener('variant:changed', this.handleVariantChange.bind(this));
       }
 
       this.onScrollHandler = this.onScroll.bind(this);
@@ -79,6 +108,9 @@ customElements.define('sticky-product-form', class StickyProductForm extends HTM
         const mainVariantSelects = document.querySelector(`variant-selects[data-section="${sectionId}"]`);
         if (mainVariantSelects) {
           mainVariantSelects.removeEventListener('variant:changed', this.handleVariantChange);
+        }
+        if (this.variantSelects) {
+          this.variantSelects.removeEventListener('variant:changed', this.handleVariantChange);
         }
       }
     }
@@ -110,8 +142,8 @@ customElements.define('sticky-product-form', class StickyProductForm extends HTM
         addButton.disabled = !variant.available;
       }
 
-      // Update select elements to match main form
-      if (this.variantSelects) {
+      // Update select elements to match main form if the event came from the main form
+      if (this.variantSelects && event.target !== this.variantSelects) {
         const mainSelects = document.querySelectorAll(`variant-selects[data-section="${this.variantSelects.dataset.section}"] select`);
         const stickySelects = this.variantSelects.querySelectorAll('select');
         

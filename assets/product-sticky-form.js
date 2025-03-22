@@ -14,11 +14,14 @@ customElements.define('sticky-product-form', class StickyProductForm extends HTM
       
       // Setup variant change handling
       if (this.variantSelects) {
-        this.mainProductSection = document.querySelector(`#MainProduct-${this.variantSelects.dataset.section}`);
-        this.stickyPriceContainer = this.querySelector(`#sticky-price-${this.variantSelects.dataset.section}`);
+        const sectionId = this.variantSelects.dataset.section;
+        this.mainProductSection = document.querySelector(`#MainProduct-${sectionId}`);
+        this.stickyPriceContainer = this.querySelector(`#sticky-price-${sectionId}`);
         
-        if (this.mainProductSection) {
-          this.mainProductSection.addEventListener('variant:changed', this.handleVariantChange.bind(this));
+        // Listen for variant changes from the main form's variant-selects
+        const mainVariantSelects = document.querySelector(`variant-selects[data-section="${sectionId}"]`);
+        if (mainVariantSelects) {
+          mainVariantSelects.addEventListener('variant:changed', this.handleVariantChange.bind(this));
         }
       }
 
@@ -30,8 +33,12 @@ customElements.define('sticky-product-form', class StickyProductForm extends HTM
 
     disconnectedCallback() {
       window.removeEventListener('scroll', this.onScrollHandler);
-      if (this.mainProductSection) {
-        this.mainProductSection.removeEventListener('variant:changed', this.handleVariantChange);
+      const sectionId = this.variantSelects?.dataset.section;
+      if (sectionId) {
+        const mainVariantSelects = document.querySelector(`variant-selects[data-section="${sectionId}"]`);
+        if (mainVariantSelects) {
+          mainVariantSelects.removeEventListener('variant:changed', this.handleVariantChange);
+        }
       }
     }
 
@@ -60,6 +67,19 @@ customElements.define('sticky-product-form', class StickyProductForm extends HTM
         const buttonSpan = addButton.querySelector('span');
         if (buttonSpan) buttonSpan.textContent = buttonText;
         addButton.disabled = !variant.available;
+      }
+
+      // Update select elements to match main form
+      if (this.variantSelects) {
+        const mainSelects = document.querySelectorAll(`variant-selects[data-section="${this.variantSelects.dataset.section}"] select`);
+        const stickySelects = this.variantSelects.querySelectorAll('select');
+        
+        mainSelects.forEach((mainSelect, index) => {
+          const stickySelect = stickySelects[index];
+          if (stickySelect && mainSelect.value !== stickySelect.value) {
+            stickySelect.value = mainSelect.value;
+          }
+        });
       }
     }
 

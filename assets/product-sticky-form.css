@@ -174,22 +174,22 @@ EASING
     text-align: start;
   }
 }
-.product--sticky-form .product--sticky-form__variants variant-selects {
+.product--sticky-form .product--sticky-form__variants sticky-variant-selects {
   display: inline-flex;
   align-items: center;
   align-content: center;
   height: 100%;
 }
-.product--sticky-form .product--sticky-form__variants variant-selects fieldset {
+.product--sticky-form .product--sticky-form__variants sticky-variant-selects fieldset {
   width: auto;
   margin: 0;
 }
-.product--sticky-form .product--sticky-form__variants variant-selects fieldset .form__label {
+.product--sticky-form .product--sticky-form__variants sticky-variant-selects fieldset .form__label {
   font-size: 1.5rem;
   letter-spacing: 0;
   padding-right: 1rem;
 }
-.product--sticky-form .product--sticky-form__variants variant-selects .product-form__input--dropdown {
+.product--sticky-form .product--sticky-form__variants sticky-variant-selects .product-form__input--dropdown {
   margin: 0;
 }
 .product--sticky-form .product--sticky-form__buttons {

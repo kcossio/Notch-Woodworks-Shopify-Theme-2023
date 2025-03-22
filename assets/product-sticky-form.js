@@ -11,11 +11,19 @@ class StickyVariantSelects extends VariantSelects {
     this.updateMasterId();
 
     if (!this.currentVariant) {
+      this.toggleAddButton(true, '', true);
+      this.setUnavailable();
       return;
     }
 
+    // Update URL if needed
+    this.updateURL();
+
     // Update our own variant input first
     this.updateVariantInput();
+
+    // Update price and other info through renderProductInfo
+    this.renderProductInfo();
 
     // Dispatch our own variant:changed event
     this.dispatchEvent(
@@ -53,6 +61,7 @@ class StickyVariantSelects extends VariantSelects {
       const input = productForm.querySelector('input[name="id"]');
       if (input) {
         input.value = this.currentVariant.id;
+        input.disabled = false;
         input.dispatchEvent(new Event('change', { bubbles: true }));
       }
     });
@@ -61,6 +70,31 @@ class StickyVariantSelects extends VariantSelects {
   updateVariantStatuses() {
     // Override with empty implementation since we don't need to update statuses in the sticky form
     return;
+  }
+
+  setUnavailable() {
+    const addButton = this.closest('sticky-product-form').querySelector('.product-form__submit');
+    const addButtonText = addButton?.querySelector('span');
+    if (addButton && addButtonText) {
+      addButtonText.textContent = window.variantStrings.unavailable;
+      addButton.disabled = true;
+    }
+  }
+
+  toggleAddButton(disable = true, text, modifyClass = true) {
+    const productForm = this.closest('sticky-product-form');
+    if (!productForm) return;
+    const addButton = productForm.querySelector('.product-form__submit');
+    const addButtonText = addButton?.querySelector('span');
+    if (!addButton || !addButtonText) return;
+
+    if (disable) {
+      addButton.setAttribute('disabled', 'disabled');
+      if (text) addButtonText.textContent = text;
+    } else {
+      addButton.removeAttribute('disabled');
+      addButtonText.textContent = window.variantStrings.addToCart;
+    }
   }
 }
 
